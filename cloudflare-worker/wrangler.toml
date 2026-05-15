@@ -1,0 +1,35 @@
+# Wrangler config — Cloudflare Worker "claudepa-gateway"
+#
+# Setup (à faire UNE FOIS) :
+#
+# 1) cd cloudflare-worker && npm install
+# 2) npx wrangler login
+# 3) Pose les secrets côté Worker (chacun via prompt interactif) :
+#      npx wrangler secret put TELEGRAM_BOT_TOKEN
+#      npx wrangler secret put TELEGRAM_WEBHOOK_SECRET   # random, à toi de générer
+#      npx wrangler secret put TELEGRAM_CHAT_PERSO       # ton chat id 1:1 avec le bot
+#      npx wrangler secret put TELEGRAM_CHAT_FAMILLE     # id du groupe famille
+#      npx wrangler secret put GITHUB_TOKEN              # PAT fine-grained, scopes:
+#                                                        #   actions:write + contents:write
+#                                                        #   sur ArtPlaie/claudePA uniquement
+# 4) Ajuste vars (publiques, non secrètes) ci-dessous : GITHUB_REPO + GITHUB_REF.
+# 5) npx wrangler deploy
+# 6) Récupère l'URL publique du Worker, puis enregistre le webhook Telegram :
+#      curl "https://api.telegram.org/bot<TOKEN>/setWebhook" \
+#        -d "url=https://claudepa-gateway.<ton-subdomain>.workers.dev/telegram" \
+#        -d "secret_token=<même TELEGRAM_WEBHOOK_SECRET qu'au step 3>"
+#
+# Endpoints exposés :
+#   POST /telegram   webhook Telegram (vérifié par X-Telegram-Bot-Api-Secret-Token)
+#   GET  /health     ping (200 ok)
+
+name = "claudepa-gateway"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+# Repo cible pour les appels Contents API + workflow_dispatches.
+GITHUB_REPO = "ArtPlaie/claudePA"
+# Branche sur laquelle dispatch les workflows. Mets "main" en prod, ou
+# "claude/explore-menu-ATz4Y" pour tester sur une branche de dev.
+GITHUB_REF = "main"

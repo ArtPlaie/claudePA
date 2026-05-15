@@ -1,0 +1,76 @@
+name: apply-draft
+
+# Déclenché par le Cloudflare Worker quand l'utilisateur répond à un
+# draft via les boutons inline (OK / SKIP / EDIT) sur Telegram.
+# Cf. tasks/apply_draft.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      draft_path:
+        description: "drafts/...md"
+        required: true
+        type: string
+      action:
+        description: "OK | SKIP | EDIT"
+        required: true
+        type: string
+      chat_id:
+        description: "Telegram chat id (pour la confirmation)"
+        required: true
+        type: string
+      reason:
+        description: "raison libre (utile pour SKIP)"
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claudepa-write
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install deps
+        run: uv sync
+
+      - name: Apply
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
+          TELEGRAM_CHAT_FAMILLE: ${{ secrets.TELEGRAM_CHAT_FAMILLE }}
+          DRAFT_PATH: ${{ inputs.draft_path }}
+          ACTION: ${{ inputs.action }}
+          CHAT_ID: ${{ inputs.chat_id }}
+          REASON: ${{ inputs.reason }}
+        run: uv run python -m tasks.apply_draft
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config user.name "claudePA bot"
+          git config user.email "bot@claudepa.local"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "draft ${{ inputs.action }}: ${{ inputs.draft_path }}"
+            for i in 1 2 3 4; do
+              if git push; then break; fi
+              sleep $((2 ** i))
+            done
+          fi

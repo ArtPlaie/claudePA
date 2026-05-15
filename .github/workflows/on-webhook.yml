@@ -1,0 +1,71 @@
+name: on-webhook
+
+# Déclenché par le Cloudflare Worker quand un message libre arrive en
+# inbox/. Le script `tasks/respond.py` charge le contexte et répond
+# via Telegram.
+
+on:
+  workflow_dispatch:
+    inputs:
+      inbox_path:
+        description: "chemin du fichier inbox/ déposé par le Worker"
+        required: true
+        type: string
+      chat_id:
+        description: "Telegram chat id pour la réponse"
+        required: true
+        type: string
+      channel:
+        description: "perso | famille"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claudepa-write
+  cancel-in-progress: false
+
+jobs:
+  respond:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install deps
+        run: uv sync
+
+      - name: Respond
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
+          TELEGRAM_CHAT_FAMILLE: ${{ secrets.TELEGRAM_CHAT_FAMILLE }}
+          INBOX_PATH: ${{ inputs.inbox_path }}
+          CHAT_ID: ${{ inputs.chat_id }}
+          CHANNEL: ${{ inputs.channel }}
+        run: uv run python -m tasks.respond
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config user.name "claudePA bot"
+          git config user.email "bot@claudepa.local"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "auto: respond to ${{ inputs.inbox_path }}"
+            for i in 1 2 3 4; do
+              if git push; then break; fi
+              sleep $((2 ** i))
+            done
+          fi
