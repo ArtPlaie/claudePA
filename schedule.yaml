@@ -1,0 +1,96 @@
+# schedule.yaml — registre des tâches récurrentes
+#
+# Source de vérité unique pour : cron, canal Telegram, tier modèle,
+# statut activé/désactivé. Le code Python (tasks/_lib/schedule.py) lit
+# ce fichier au démarrage de chaque workflow.
+#
+# Note crons : tous en UTC (GitHub Actions). Pour cadences "tous les N
+# jours" non-divisibles, le workflow tourne plus souvent et le script
+# vérifie la dernière exécution dans working-memory/ avant d'agir
+# (cf. `cadence_days`).
+#
+# Ajout d'une tâche : voir CLAUDE.md > "Pour ajouter une nouvelle tâche".
+
+defaults:
+  channel: perso        # perso | famille
+  model: sonnet         # haiku | sonnet | opus
+  enabled: false        # tâches désactivées par défaut, à activer explicitement
+  retry_max: 2
+  timeout_minutes: 5
+
+tasks:
+
+  mail_review:
+    description: "Revue mails 5j passés. Détecte oublis, suggère relances. Lecture seule, drafts uniquement."
+    cron: "0 6 * * *"     # daily 06:00 UTC, gated by cadence_days
+    cadence_days: 5
+    channel: perso
+    model: sonnet
+
+  local_activities:
+    description: "Veille mensuelle activités locales (1h15 isochrone). Famille / art / intellectuel."
+    cron: "0 7 1 * *"     # 1st of month, 07:00 UTC
+    channel: famille
+    model: sonnet
+
+  activities_next10days:
+    description: "Sélection actionnable dans 10j depuis la liste local_activities."
+    cron: "0 16 * * 4"    # Thursday 16:00 UTC (18:00 Paris)
+    channel: famille
+    model: haiku
+
+  ai_jobs_formations:
+    description: "Veille formations (MATS, ARENA, masters) + jobs AI / AI Safety."
+    cron: "30 5 * * 2"    # Tuesday 05:30 UTC, gated by cadence_days
+    cadence_days: 14
+    channel: perso
+    model: sonnet
+
+  sydney_opportunities:
+    description: "Focus Sydney + Suisse : jobs intello, news visa PR, leads."
+    cron: "30 5 * * 3"    # Wednesday 05:30 UTC
+    channel: perso
+    model: sonnet
+
+  weekly_briefing:
+    description: "Briefing monde / IA / local, faits + analyse. Post groupe Telegram."
+    cron: "0 17 * * 0"    # Sunday 17:00 UTC (19:00 Paris)
+    channel: famille
+    model: sonnet         # le sous-agent d'analyse utilise opus, géré dans le code
+
+  network_followups:
+    description: "Anniversaires à venir + relances dormantes."
+    cron: "0 16 * * 1"    # Monday 16:00 UTC, gated by cadence_days
+    cadence_days: 14
+    channel: perso
+    model: haiku
+
+  location_context:
+    description: "Détecte voyages dans calendar + chats. Met à jour current-location.md."
+    cron: "0 4 * * *"     # daily 04:00 UTC (06:00 Paris)
+    channel: perso
+    model: haiku
+
+  self_reflection:
+    description: "Méta-réflexion mensuelle + propositions d'amélioration (P0/P1/P2)."
+    cron: "0 18 15 * *"   # 15th of month, 18:00 UTC (20:00 Paris)
+    channel: perso
+    model: opus
+
+  sliding_window:
+    description: "Rollup mensuel des working-memory > 30j puis purge."
+    cron: "0 3 * * *"     # daily 03:00 UTC
+    channel: perso
+    model: haiku
+
+# ----------------------------------------------------------------------
+# Tâches additionnelles suggérées (à activer plus tard, voir SPEC.md)
+# ----------------------------------------------------------------------
+#
+#  arxiv_alignment       : veille papers AI Safety (arXiv + Alignment Forum) — 7j
+#  sunday_planning       : prépare agenda semaine depuis calendar + drafts — 7j
+#  morning_kickoff       : 3 lignes le matin sur Telegram — 1j
+#  visa_australia_tracker: dates limites, frais, docs visa PR — 14j
+#  isa_support           : veille opportunités peinture (galeries, expos) — 30j
+#  household_followup    : entretien maison, rappels saisonniers, sinistres — 30j
+#  health_longevity_watch: veille santé / longévité, evidence-based — 30j
