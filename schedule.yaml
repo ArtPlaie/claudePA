@@ -35,13 +35,13 @@ tasks:
   local_activities:
     description: "Veille mensuelle activités locales (1h15 isochrone). Famille / art / intellectuel."
     cron: "0 7 1 * *"     # 1st of month, 07:00 UTC
-    channel: famille
+    channel: perso        # canal famille déprécié — Isa n'utilise pas Telegram
     model: sonnet
 
   activities_next10days:
     description: "Sélection actionnable dans 10j depuis la liste local_activities."
     cron: "0 16 * * 4"    # Thursday 16:00 UTC (18:00 Paris)
-    channel: famille
+    channel: perso        # canal famille déprécié
     model: haiku
 
   ai_jobs_formations:
@@ -58,9 +58,9 @@ tasks:
     model: sonnet
 
   weekly_briefing:
-    description: "Briefing monde / IA / local, faits + analyse. Post groupe Telegram."
+    description: "Briefing monde / IA / local, faits + analyse."
     cron: "0 17 * * 0"    # Sunday 17:00 UTC (19:00 Paris)
-    channel: famille
+    channel: perso        # canal famille déprécié
     model: sonnet         # le sous-agent d'analyse utilise opus, géré dans le code
 
   network_followups:
