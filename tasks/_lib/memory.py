@@ -166,6 +166,71 @@ def read_location() -> dict[str, Any]:
     return MarkdownDoc.read(paths.CURRENT_LOCATION).front_matter
 
 
+_PRIORITY_ORDER = {"high": 0, "medium": 1, "low": 2}
+
+
+def list_pending_drafts(
+    now: datetime | None = None, horizon_days: int | None = None
+) -> list[dict[str, Any]]:
+    """Drafts status=pending, non expirés. Tri par priority.
+
+    `horizon_days`: filtre supplémentaire — ne garde que les drafts dont
+    `expires_at` est ≤ now + horizon_days (None = pas de filtre additionnel).
+    """
+    if not paths.DRAFTS.exists():
+        return []
+    now = now or datetime.now(UTC)
+    today = now.date()
+    horizon_date = (now + timedelta(days=horizon_days)).date() if horizon_days else None
+    out: list[dict[str, Any]] = []
+    for p in sorted(paths.DRAFTS.glob("*.md")):
+        try:
+            doc = MarkdownDoc.read(p)
+        except (OSError, yaml.YAMLError):
+            continue
+        fm = doc.front_matter
+        if fm.get("status") != "pending":
+            continue
+        expires_raw = fm.get("expires_at")
+        exp_date = None
+        if expires_raw:
+            try:
+                exp_date = datetime.fromisoformat(str(expires_raw)).date()
+            except ValueError:
+                exp_date = None
+            if exp_date is not None and exp_date < today:
+                continue
+        if horizon_date is not None and exp_date is not None and exp_date > horizon_date:
+            continue
+        created_raw = fm.get("created_at")
+        age_days: int | None = None
+        if created_raw:
+            ts = _parse_dt(created_raw)
+            if ts is not None:
+                age_days = (now - ts).days
+        out.append(
+            {
+                "title": str(fm.get("title") or p.stem),
+                "priority": str(fm.get("priority") or "medium"),
+                "type": str(fm.get("type") or "unknown"),
+                "age_days": age_days,
+                "path": p.relative_to(paths.REPO_ROOT).as_posix(),
+            }
+        )
+    out.sort(key=lambda d: _PRIORITY_ORDER.get(d["priority"], 1))
+    return out
+
+
+def tail_lines(path: Path, max_chars: int = 2000) -> str:
+    """Renvoie la fin d'un fichier texte, plafonnée à `max_chars`. Vide si absent."""
+    if not path.exists():
+        return ""
+    text = path.read_text(encoding="utf-8")
+    if len(text) <= max_chars:
+        return text
+    return "…\n" + text[-max_chars:]
+
+
 def append_finding(
     *,
     title: str,

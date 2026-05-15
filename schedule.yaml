@@ -58,10 +58,16 @@ tasks:
     model: sonnet
 
   weekly_briefing:
-    description: "Briefing monde / IA / local, faits + analyse."
+    description: "Horizon 10 jours : drafts pendants, RDV, activités proposées via web_search léger."
     cron: "0 17 * * 0"    # Sunday 17:00 UTC (19:00 Paris)
     channel: perso        # canal famille déprécié
-    model: sonnet         # le sous-agent d'analyse utilise opus, géré dans le code
+    model: sonnet
+
+  monthly_outlook:
+    description: "Outlook horizon 3 mois : grosse recherche prospective (Australie, AI Safety, jobs, santé, famille)."
+    cron: "0 18 1 * *"    # 1st of month, 18:00 UTC (20:00 Paris)
+    channel: perso
+    model: sonnet         # web_search lourd (max 10 uses)
 
   network_followups:
     description: "Anniversaires à venir + relances dormantes."

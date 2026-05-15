@@ -1,0 +1,55 @@
+name: task-monthly-outlook
+
+# Outlook mensuel horizon 3 mois. Cf. tasks/monthly_outlook.py.
+# Plus long que les autres tâches (web_search intensif) — timeout 15min.
+
+on:
+  schedule:
+    - cron: "0 18 1 * *"   # 1st of month, 18:00 UTC (20:00 Paris)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claudepa-write
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install deps
+        run: uv sync
+
+      - name: Run task
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
+        run: uv run python -m tasks.monthly_outlook
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config user.name "claudePA bot"
+          git config user.email "bot@claudepa.local"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "auto: monthly_outlook run $(date -u +%FT%TZ)"
+            for i in 1 2 3 4; do
+              if git push; then break; fi
+              sleep $((2 ** i))
+            done
+          fi

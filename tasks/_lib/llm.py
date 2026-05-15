@@ -112,6 +112,9 @@ def _system_blocks(extra: list[dict[str, Any]] | None) -> list[dict[str, Any]]:
     return blocks
 
 
+WEB_SEARCH_TOOL = "web_search_20250305"
+
+
 def call(
     *,
     tier: str,
@@ -120,8 +123,15 @@ def call(
     system_extra: list[dict[str, Any]] | None = None,
     max_tokens: int = 2048,
     temperature: float = 1.0,
+    web_search: bool = False,
+    web_search_max_uses: int = 5,
 ) -> LLMResponse:
-    """Appel Anthropic. Lève BudgetExceeded si budget atteint."""
+    """Appel Anthropic. Lève BudgetExceeded si budget atteint.
+
+    `web_search=True` active le tool server-side Anthropic. Le modèle décide
+    quand l'appeler, on plafonne via `web_search_max_uses`. Non supporté sur
+    Haiku — utiliser sonnet ou opus.
+    """
     import anthropic
 
     usage = _load_usage()
@@ -133,13 +143,22 @@ def call(
 
     model = resolve_model(tier)
     client = anthropic.Anthropic()
-    resp = client.messages.create(
-        model=model,
-        max_tokens=max_tokens,
-        temperature=temperature,
-        system=_system_blocks(system_extra),
-        messages=messages,
-    )
+    create_kwargs: dict[str, Any] = {
+        "model": model,
+        "max_tokens": max_tokens,
+        "temperature": temperature,
+        "system": _system_blocks(system_extra),
+        "messages": messages,
+    }
+    if web_search:
+        create_kwargs["tools"] = [
+            {
+                "type": WEB_SEARCH_TOOL,
+                "name": "web_search",
+                "max_uses": web_search_max_uses,
+            }
+        ]
+    resp = client.messages.create(**create_kwargs)
 
     u = resp.usage
     tokens_in = (

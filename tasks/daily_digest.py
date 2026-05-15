@@ -31,47 +31,6 @@ MAX_DRAFTS = 5
 MAX_EVENTS = 5
 ERROR_LOOKBACK_HOURS = 24
 BUDGET_ALERT_PCT = 0.8
-PRIORITY_ORDER = {"high": 0, "medium": 1, "low": 2}
-
-
-def _load_pending_drafts(now: datetime) -> list[dict[str, Any]]:
-    """Drafts avec status=pending et non expirés. Tri high>medium>low."""
-    if not paths.DRAFTS.exists():
-        return []
-    today = now.date()
-    out: list[dict[str, Any]] = []
-    for p in sorted(paths.DRAFTS.glob("*.md")):
-        try:
-            doc = MarkdownDoc.read(p)
-        except (OSError, yaml.YAMLError):
-            continue
-        fm = doc.front_matter
-        if fm.get("status") != "pending":
-            continue
-        expires_raw = fm.get("expires_at")
-        if expires_raw:
-            try:
-                exp_date = datetime.fromisoformat(str(expires_raw)).date()
-                if exp_date < today:
-                    continue
-            except ValueError:
-                pass
-        created_raw = fm.get("created_at")
-        age_days: int | None = None
-        if created_raw:
-            ts = _parse_dt(created_raw)
-            if ts is not None:
-                age_days = (now - ts).days
-        out.append(
-            {
-                "title": str(fm.get("title") or p.stem),
-                "priority": str(fm.get("priority") or "medium"),
-                "type": str(fm.get("type") or "unknown"),
-                "age_days": age_days,
-            }
-        )
-    out.sort(key=lambda d: PRIORITY_ORDER.get(d["priority"], 1))
-    return out
 
 
 def _today_events(now: datetime) -> list[calendar.CalendarEvent]:
@@ -241,7 +200,7 @@ def _llm_digest(
 def run(cfg: dict[str, Any]) -> None:
     run_at = datetime.now(UTC)
 
-    drafts = _load_pending_drafts(run_at)
+    drafts = memory.list_pending_drafts(now=run_at)
     events = _today_events(run_at)
     alert = _pick_alert(run_at)
 
