@@ -26,6 +26,9 @@ Les actions ci-dessous **n'ont pas besoin** de passer par `drafts/` :
 - Mise à jour de `core-memory/current-location.md` par la tâche
   `location_context`.
 - Notifications Telegram informatives (briefings, digests, alertes).
+- Append à `core-memory/skip-patterns.md` après un SKIP utilisateur.
+- Append à `journal/decisions.md` **uniquement** sur input explicite Sylvain
+  (pas d'écriture autonome dans le journal).
 
 **Tout le reste passe par `drafts/`** — notamment :
 
@@ -80,6 +83,39 @@ whitelist).
   sur Telegram perso.
 - Si `sliding_window` échoue à produire un digest mensuel, **aucune
   purge** n'est effectuée (idempotence safety).
+
+## Mode vacances
+
+- Flag `vacation_mode: true|false` dans `core-memory/current-location.md`,
+  géré par la tâche `location_context` (détection via calendar + chats)
+  ou édité à la main.
+- Whitelist des tâches qui continuent à tourner en mode vacances (champ
+  `vacation_safe: true` dans `schedule.yaml`) :
+  - `daily_digest` (3 lignes minimal le matin)
+  - `location_context` (pour détecter le retour)
+  - `sliding_window` (housekeeping)
+  - Toute alerte critique (panic, budget dépassé, erreur répétée)
+- Toutes les autres tâches skippent leur run avec un log working-memory.
+
+## Skip patterns
+
+- Chaque `SKIP` Telegram sur un draft append une entrée dans
+  `core-memory/skip-patterns.md` (type d'action, sujet, date, raison
+  optionnelle).
+- `_lib/notify.py` consulte ce fichier avant de proposer un nouveau
+  draft : si match récent (90j), draft annulé silencieusement (loggé
+  en working-memory).
+- Sylvain peut éditer le fichier à la main pour nettoyer ou élargir.
+
+## Panic / kill switch
+
+- Workflow `.github/workflows/panic.yml` déclenchable :
+  - manuellement depuis Actions GitHub,
+  - via commande Telegram `/panic` (worker dispatch).
+- Effet : crée le fichier sentinelle `.panic` à la racine du repo.
+- Toute tâche, au démarrage, vérifie l'existence de `.panic` → exit
+  immédiat, log court, notif Telegram une fois.
+- Sylvain supprime `.panic` à la main (ou via `/resume`) pour réactiver.
 
 ## Évolution de l'autonomie
 

@@ -17,6 +17,11 @@ defaults:
   enabled: false        # tâches désactivées par défaut, à activer explicitement
   retry_max: 2
   timeout_minutes: 5
+  vacation_safe: false  # si true, la tâche tourne aussi en mode vacances
+
+# Whitelist mode vacances : seules les tâches avec vacation_safe: true
+# tournent quand current-location.md a vacation_mode: true.
+# Cible V1 : daily_digest, location_context, sliding_window.
 
 tasks:
 
@@ -65,14 +70,35 @@ tasks:
     channel: perso
     model: haiku
 
+  daily_digest:
+    description: "3-5 lignes Telegram matinal : drafts pendants, RDV du jour, 1 alerte."
+    cron: "30 5 * * *"    # daily 05:30 UTC (07:30 Paris)
+    channel: perso
+    model: haiku
+    vacation_safe: true
+
+  health_watch:
+    description: "Veille santé evidence-based (Sylvain ; Isa ORL + contre-indication antibiotiques systémiques)."
+    cron: "0 7 * * 5"     # Friday 07:00 UTC (09:00 Paris), gated by cadence_days
+    cadence_days: 14
+    channel: perso
+    model: sonnet
+
   location_context:
-    description: "Détecte voyages dans calendar + chats. Met à jour current-location.md."
+    description: "Détecte voyages dans calendar + chats. Met à jour current-location.md (incl. flag vacances)."
     cron: "0 4 * * *"     # daily 04:00 UTC (06:00 Paris)
+    channel: perso
+    model: haiku
+    vacation_safe: true
+
+  findings_index:
+    description: "Regénère digests/findings-by-tag.md et findings-by-month.md."
+    cron: "0 2 * * 6"     # Saturday 02:00 UTC (04:00 Paris)
     channel: perso
     model: haiku
 
   self_reflection:
-    description: "Méta-réflexion mensuelle + propositions d'amélioration (P0/P1/P2)."
+    description: "Méta-réflexion mensuelle + propositions d'amélioration (P0/P1/P2). Lit aussi journal/decisions.md et skip-patterns.md."
     cron: "0 18 15 * *"   # 15th of month, 18:00 UTC (20:00 Paris)
     channel: perso
     model: opus
@@ -82,6 +108,7 @@ tasks:
     cron: "0 3 * * *"     # daily 03:00 UTC
     channel: perso
     model: haiku
+    vacation_safe: true
 
 # ----------------------------------------------------------------------
 # Tâches additionnelles suggérées (à activer plus tard, voir SPEC.md)
@@ -89,8 +116,7 @@ tasks:
 #
 #  arxiv_alignment       : veille papers AI Safety (arXiv + Alignment Forum) — 7j
 #  sunday_planning       : prépare agenda semaine depuis calendar + drafts — 7j
-#  morning_kickoff       : 3 lignes le matin sur Telegram — 1j
 #  visa_australia_tracker: dates limites, frais, docs visa PR — 14j
 #  isa_support           : veille opportunités peinture (galeries, expos) — 30j
 #  household_followup    : entretien maison, rappels saisonniers, sinistres — 30j
-#  health_longevity_watch: veille santé / longévité, evidence-based — 30j
+#  adversarial_review    : second agent critique sur outputs sensibles — V2

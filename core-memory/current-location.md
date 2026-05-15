@@ -3,6 +3,7 @@ location: Bois-le-Roi (77590, France)
 status: home
 since: 2026-05-15
 horizon: indefinite
+vacation_mode: false
 updated_by: bootstrap
 updated_at: 2026-05-15
 ---
