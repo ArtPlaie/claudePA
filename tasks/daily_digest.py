@@ -1,16 +1,15 @@
 """Digest matinal Telegram : drafts pendants, RDV du jour, 1 alerte.
 
-V1 pur Python — aucun appel LLM. Les données sont déjà structurées, un
-format déterministe est plus robuste (et gratuit). Le tier `haiku` dans
-schedule.yaml est gardé pour un futur ajout de synthèse.
+Pipeline :
+1. Python collecte les data brutes (drafts, events, errors, budget).
+2. Haiku synthétise en 3-5 lignes (ton Sylvain hérité du cache
+   profile+policies, déjà chargé dans `_lib/llm.py`).
+3. Envoi Telegram direct (whitelist policies — notif informative).
 
-Whitelist policies : notification Telegram informative → envoi direct,
-pas de draft.
-
-Alerte (1 max, priorité descendante) :
-1. dernière working-memory en `status: error` dans les 24h
-2. budget tokens >= 80% du plafond mensuel
-3. sinon aucune
+Court-circuits :
+- Tout vide (0 draft, 0 event, 0 alerte) → message "RAS" hardcodé,
+  pas d'appel LLM (économie de tokens).
+- Appel LLM raté → fallback déterministe Python (mieux que rien).
 """
 from __future__ import annotations
 
@@ -57,11 +56,18 @@ def _load_pending_drafts(now: datetime) -> list[dict[str, Any]]:
                     continue
             except ValueError:
                 pass
+        created_raw = fm.get("created_at")
+        age_days: int | None = None
+        if created_raw:
+            ts = _parse_dt(created_raw)
+            if ts is not None:
+                age_days = (now - ts).days
         out.append(
             {
                 "title": str(fm.get("title") or p.stem),
                 "priority": str(fm.get("priority") or "medium"),
                 "type": str(fm.get("type") or "unknown"),
+                "age_days": age_days,
             }
         )
     out.sort(key=lambda d: PRIORITY_ORDER.get(d["priority"], 1))
@@ -69,8 +75,7 @@ def _load_pending_drafts(now: datetime) -> list[dict[str, Any]]:
 
 
 def _today_events(now: datetime) -> list[calendar.CalendarEvent]:
-    """Events qui démarrent d'ici minuit (calendrier perso, stub renvoie []
-    sans GCAL_TOKEN_JSON)."""
+    """Events qui démarrent d'ici minuit (stub renvoie [] sans GCAL)."""
     events = calendar.fetch_upcoming(days_ahead=1, now=now)
     end_of_day = (now + timedelta(days=1)).replace(
         hour=0, minute=0, second=0, microsecond=0
@@ -103,7 +108,6 @@ def _recent_errors(now: datetime) -> list[dict[str, Any]]:
 
 
 def _budget_ratio() -> tuple[float, float] | None:
-    """(cost_usd, budget_usd) ou None si pas de données."""
     if not paths.USAGE_JSON.exists():
         return None
     try:
@@ -121,51 +125,117 @@ def _pick_alert(now: datetime) -> str | None:
         e = errors[0]
         when = e["at"].strftime("%H:%M UTC")
         summary = e["summary"] or "(pas de détail)"
-        return f"⚠️ erreur {e['task']} à {when} — {summary}"
+        return f"erreur {e['task']} à {when} — {summary}"
     budget = _budget_ratio()
     if budget:
         cost, cap = budget
         if cap > 0 and cost / cap >= BUDGET_ALERT_PCT:
-            return f"⚠️ budget tokens à {cost / cap:.0%} (${cost:.2f} / ${cap:.2f})"
+            return f"budget tokens à {cost / cap:.0%} (${cost:.2f} / ${cap:.2f})"
     return None
 
 
-def _format_digest(
+def _format_drafts_block(drafts: list[dict[str, Any]]) -> str:
+    if not drafts:
+        return "aucun"
+    shown = drafts[:MAX_DRAFTS]
+    lines = []
+    for d in shown:
+        age = f", {d['age_days']}j" if d.get("age_days") is not None else ""
+        lines.append(
+            f"- [{d['priority']}] {d['title']} (type: {d['type']}{age})"
+        )
+    extra = len(drafts) - len(shown)
+    if extra > 0:
+        lines.append(f"- … +{extra} autre(s) non détaillé(s)")
+    return "\n".join(lines)
+
+
+def _format_events_block(events: list[calendar.CalendarEvent]) -> str:
+    if not events:
+        return "aucun (ou Google Calendar pas encore wiré)"
+    lines = []
+    for e in events[:MAX_EVENTS]:
+        t = e.start.strftime("%H:%M")
+        loc = f" @ {e.location}" if e.location else ""
+        lines.append(f"- {t} — {e.summary}{loc}")
+    return "\n".join(lines)
+
+
+_PROMPT = """\
+Tu rédiges le digest matinal Telegram de Sylvain. Style ton dans profile/policies (déjà en cache).
+
+Date : {date}
+
+# Drafts pendants ({n_drafts})
+{drafts}
+
+# RDV aujourd'hui ({n_events})
+{events}
+
+# Alerte candidate
+{alert}
+
+# Consignes
+- 3 à 5 lignes max, format Telegram plain text (pas de Markdown, pas de listes à puces).
+- Démarre par "☀️ {date}" sur la 1ère ligne.
+- Mentionne uniquement ce qui mérite attention : drafts high-prio, RDV serrés ou inhabituels, l'alerte si pertinente.
+- Si rien de saillant, dis-le franchement en 1-2 lignes.
+- Ne sors pas un dump exhaustif — c'est un digest, pas un listing. Si 5 drafts, mentionne le nombre + le plus urgent.
+- Pas de salutation, pas de signature, pas de question rhétorique.
+
+Sors uniquement le texte à envoyer, rien d'autre.
+"""
+
+
+def _fallback_message(
     now: datetime,
     drafts: list[dict[str, Any]],
     events: list[calendar.CalendarEvent],
     alert: str | None,
 ) -> str:
+    """Format déterministe si LLM indisponible. Pas joli mais informatif."""
     date_str = now.strftime("%d/%m")
-    lines = [f"☀️ digest {date_str}"]
-
+    lines = [f"☀️ {date_str}"]
     if drafts:
-        shown = drafts[:MAX_DRAFTS]
-        extra = len(drafts) - len(shown)
-        lines.append("")
-        lines.append(f"📋 drafts pendants ({len(drafts)})")
-        for d in shown:
-            prio = (d["priority"] or "medium")[0].upper()  # H/M/L
-            lines.append(f"• [{prio}] {d['title']}")
-        if extra > 0:
-            lines.append(f"… +{extra} autre(s)")
-
+        top = drafts[0]
+        lines.append(
+            f"drafts pendants: {len(drafts)} (top: [{top['priority']}] {top['title']})"
+        )
     if events:
-        lines.append("")
-        lines.append("📅 aujourd'hui")
-        for e in events[:MAX_EVENTS]:
-            t = e.start.strftime("%H:%M")
-            loc = f" @ {e.location}" if e.location else ""
-            lines.append(f"• {t} — {e.summary}{loc}")
-
+        first = events[0]
+        lines.append(f"RDV: {first.start.strftime('%H:%M')} {first.summary}"
+                     + (f" +{len(events) - 1}" if len(events) > 1 else ""))
     if alert:
-        lines.append("")
-        lines.append(alert)
-
+        lines.append(f"⚠️ {alert}")
     if not drafts and not events and not alert:
-        lines.append("RAS — 0 draft, pas de RDV connu, no incident.")
-
+        lines.append("RAS.")
     return "\n".join(lines)
+
+
+def _llm_digest(
+    *,
+    now: datetime,
+    drafts: list[dict[str, Any]],
+    events: list[calendar.CalendarEvent],
+    alert: str | None,
+    cfg: dict[str, Any],
+) -> tuple[str, llm.LLMResponse]:
+    prompt = _PROMPT.format(
+        date=now.strftime("%d/%m"),
+        n_drafts=len(drafts),
+        drafts=_format_drafts_block(drafts),
+        n_events=len(events),
+        events=_format_events_block(events),
+        alert=alert or "rien à signaler",
+    )
+    resp = llm.call(
+        tier=cfg.get("model", "haiku"),
+        messages=[{"role": "user", "content": prompt}],
+        task=TASK,
+        max_tokens=300,
+        temperature=0.5,
+    )
+    return resp.text.strip(), resp
 
 
 def run(cfg: dict[str, Any]) -> None:
@@ -175,27 +245,57 @@ def run(cfg: dict[str, Any]) -> None:
     events = _today_events(run_at)
     alert = _pick_alert(run_at)
 
-    message = _format_digest(run_at, drafts, events, alert)
+    used_llm = False
+    llm_error: str | None = None
+    model: str | None = None
+    tokens_in: int | None = None
+    tokens_out: int | None = None
+
+    if not drafts and not events and not alert:
+        message = f"☀️ {run_at.strftime('%d/%m')}\nRAS."
+    else:
+        try:
+            message, resp = _llm_digest(
+                now=run_at, drafts=drafts, events=events, alert=alert, cfg=cfg
+            )
+            used_llm = True
+            model = resp.model
+            tokens_in = resp.tokens_in
+            tokens_out = resp.tokens_out
+        except Exception as e:
+            log.warning("LLM digest failed, fallback déterministe: %s", e)
+            llm_error = f"{type(e).__name__}: {e}"
+            message = _fallback_message(run_at, drafts, events, alert)
+
     channel = cfg.get("channel", "perso")
     sent = telegram.send(channel, message, parse_mode=None)
 
+    extra: dict[str, Any] = {
+        "sent": sent,
+        "drafts_count": len(drafts),
+        "events_count": len(events),
+        "alert": bool(alert),
+        "used_llm": used_llm,
+    }
+    if llm_error:
+        extra["llm_error"] = llm_error
+
     summary = (
         f"{len(drafts)} draft(s), {len(events)} event(s), "
-        f"alert={'yes' if alert else 'no'}, sent={sent}"
+        f"alert={'yes' if alert else 'no'}, "
+        f"llm={'yes' if used_llm else 'no'}, sent={sent}"
     )
 
     memory.write_run_log(
         task=TASK,
         run_at=run_at,
         status="completed",
+        model=model,
+        tokens_in=tokens_in,
+        tokens_out=tokens_out,
         summary=summary,
         body="## Message envoyé\n```\n" + message + "\n```",
-        extra={
-            "sent": sent,
-            "drafts_count": len(drafts),
-            "events_count": len(events),
-            "alert": bool(alert),
-        },
+        extra=extra,
     )
 
 
