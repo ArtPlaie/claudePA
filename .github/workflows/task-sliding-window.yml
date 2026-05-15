@@ -1,0 +1,55 @@
+name: task-sliding-window
+
+# Rollup mensuel des working-memory > 30j puis purge.
+# Cf. tasks/sliding_window.py et schedule.yaml (vacation_safe: true).
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # daily 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claudepa-write
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install deps
+        run: uv sync
+
+      - name: Run task
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
+        run: uv run python -m tasks.sliding_window
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config user.name "claudePA bot"
+          git config user.email "bot@claudepa.local"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "auto: sliding_window run $(date -u +%FT%TZ)"
+            for i in 1 2 3 4; do
+              if git push; then break; fi
+              sleep $((2 ** i))
+            done
+          fi

@@ -1,0 +1,88 @@
+name: panic
+
+# Kill switch global. Pose / retire le fichier sentinelle `.panic` à la racine.
+# Toutes les tâches vérifient sa présence au démarrage (cf. tasks/_lib/schedule.py).
+#
+# Déclenchements :
+# - manuellement depuis l'onglet Actions GitHub (bouton "Run workflow")
+# - via Cloudflare Worker (commande Telegram /panic ou /resume) — workflow_dispatch API
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "activate (pose .panic) ou release (le retire)"
+        required: false
+        default: activate
+        type: choice
+        options:
+          - activate
+          - release
+      reason:
+        description: "raison libre (loggée dans le sentinelle)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claudepa-write
+  cancel-in-progress: false
+
+jobs:
+  toggle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Toggle sentinel
+        id: toggle
+        run: |
+          set -e
+          action="${{ inputs.action }}"
+          reason="${{ inputs.reason }}"
+          if [ "$action" = "release" ]; then
+            rm -f .panic
+            echo "msg=🟢 panic released — tasks will resume on next cron" >> "$GITHUB_OUTPUT"
+            echo "commit_msg=panic: release" >> "$GITHUB_OUTPUT"
+          else
+            {
+              echo "activated_at: $(date -u +%FT%TZ)"
+              echo "by: ${{ github.actor }}"
+              [ -n "$reason" ] && echo "reason: $reason"
+            } > .panic
+            echo "msg=🔴 panic activated — all tasks will skip on next run" >> "$GITHUB_OUTPUT"
+            echo "commit_msg=panic: activate${reason:+ — $reason}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit sentinel change
+        run: |
+          set -e
+          git config user.name "claudePA bot"
+          git config user.email "bot@claudepa.local"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "${{ steps.toggle.outputs.commit_msg }}"
+            for i in 1 2 3 4; do
+              if git push; then break; fi
+              sleep $((2 ** i))
+            done
+          fi
+
+      - name: Notify Telegram (perso)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
+        run: |
+          if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_PERSO" ]; then
+            curl -fsS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+              --data-urlencode "chat_id=${TELEGRAM_CHAT_PERSO}" \
+              --data-urlencode "text=${{ steps.toggle.outputs.msg }}" \
+              > /dev/null
+          else
+            echo "telegram not configured — skipping notify"
+          fi
