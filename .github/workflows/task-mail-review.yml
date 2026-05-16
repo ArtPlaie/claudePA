@@ -1,0 +1,65 @@
+name: task-mail-review
+
+# Revue mails compte perso (read-only) → détecte oublis, drafte relances.
+# Cf. tasks/mail_review.py et schedule.yaml (cadence_days: 5).
+#
+# Requiert :
+#   - GMAIL_TOKEN_PERSO_JSON (refresh token OAuth scope gmail.readonly)
+#   - ANTHROPIC_API_KEY
+#   - TELEGRAM_* pour la notif récap
+#
+# Le cron tourne quotidiennement à 06:00 UTC ; le script saute si la
+# cadence (5j) n'est pas écoulée depuis le dernier run completed.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"  # daily 06:00 UTC (08:00 Paris)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claudepa-write
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install deps
+        run: uv sync
+
+      - name: Run task
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_TOKEN_PERSO_JSON: ${{ secrets.GMAIL_TOKEN_PERSO_JSON }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
+          TOKEN_BUDGET_USD: ${{ secrets.TOKEN_BUDGET_USD }}
+        run: uv run python -m tasks.mail_review
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config user.name "claudePA bot"
+          git config user.email "bot@claudepa.local"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "auto: mail_review run $(date -u +%FT%TZ)"
+            for i in 1 2 3 4; do
+              if git push; then break; fi
+              sleep $((2 ** i))
+            done
+          fi

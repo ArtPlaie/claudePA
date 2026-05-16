@@ -31,6 +31,8 @@ tasks:
     cadence_days: 5
     channel: perso
     model: sonnet
+    # À activer une fois GMAIL_TOKEN_PERSO_JSON en place — cf. docs/setup-gmail.md
+    # enabled: true
 
   local_activities:
     description: "Veille mensuelle activités locales (1h15 isochrone). Famille / art / intellectuel."
