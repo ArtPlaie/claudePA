@@ -129,12 +129,8 @@ _TG_MARKER = "=== TELEGRAM ==="
 _ARCHIVE_MARKER = "=== ARCHIVE ==="
 
 
-def _archive_path(slug: str) -> "paths.Path":
+def _archive_path(slug: str):
     return ARCHIVE_DIR / f"{slug}.md"
-
-
-def _load_archive_tail(slug: str, max_chars: int = MAX_ARCHIVE_CHARS) -> str:
-    return memory.tail_lines(_archive_path(slug), max_chars=max_chars)
 
 
 def _append_archive(slug: str, archive_text: str, run_at: datetime, title: str) -> None:
@@ -215,9 +211,9 @@ def run(cfg: dict[str, Any]) -> None:
     horizon_days = 30 * int(axes_cfg.get("horizon_months") or 3)
     horizon = run_at + timedelta(days=horizon_days)
 
-    findings = memory.tail_lines(paths.FINDINGS, max_chars=MAX_FINDINGS_CHARS)
-    decisions = memory.tail_lines(paths.DECISIONS, max_chars=MAX_DECISIONS_CHARS)
-    archive_tail = _load_archive_tail(axis["slug"])
+    findings = memory.tail_dated_entries(paths.FINDINGS, max_chars=MAX_FINDINGS_CHARS)
+    decisions = memory.tail_dated_entries(paths.DECISIONS, max_chars=MAX_DECISIONS_CHARS)
+    archive_tail = memory.tail_dated_entries(_archive_path(axis["slug"]), max_chars=MAX_ARCHIVE_CHARS)
     location = memory.read_location()
 
     prompt = _PROMPT.format(

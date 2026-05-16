@@ -89,6 +89,10 @@ axes:
 
       Précise les références : titre exact, auteur, lien direct, et 1-2
       lignes sur le pourquoi pour Sylvain spécifiquement.
+
+      Structure de fin TELEGRAM pour cet axe : PAS de section "## À planifier"
+      finale. La sérendipité c'est "voilà des trucs cools", pas un plan
+      d'action. Juste les items, terminer là.
     queries_hints:
       - "best essay 2026 English longform contrarian"
       - "underrated nonfiction 2026 English"

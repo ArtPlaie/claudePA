@@ -16,6 +16,7 @@ Format de référence d'un fichier working-memory (voir SPEC.md) :
 """
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
@@ -229,6 +230,33 @@ def tail_lines(path: Path, max_chars: int = 2000) -> str:
     if len(text) <= max_chars:
         return text
     return "…\n" + text[-max_chars:]
+
+
+_DATED_HEADER_RE = re.compile(r"^#{2,3} \d{4}-\d{2}-\d{2}", re.MULTILINE)
+
+
+def tail_dated_entries(path: Path, max_chars: int = 3000) -> str:
+    """Queue d'un markdown à partir de la 1ère entrée datée `## YYYY-MM-DD`.
+
+    Skip systématiquement le préambule (doc, format, instructions). Si aucune
+    entrée datée n'est trouvée, retourne "" (le caller peut afficher "(vide)").
+    Plafond `max_chars` depuis la fin, en essayant de couper sur un header
+    d'entrée pour ne pas tronquer en plein milieu.
+    """
+    if not path.exists():
+        return ""
+    text = path.read_text(encoding="utf-8")
+    m = _DATED_HEADER_RE.search(text)
+    if not m:
+        return ""
+    entries = text[m.start() :]
+    if len(entries) <= max_chars:
+        return entries
+    tail = entries[-max_chars:]
+    inner = _DATED_HEADER_RE.search(tail)
+    if inner:
+        return "…\n" + tail[inner.start() :]
+    return "…\n" + tail
 
 
 def append_finding(
