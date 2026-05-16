@@ -76,6 +76,7 @@ tasks:
     channel: perso
     model: haiku
     vacation_safe: true
+    enabled: true
 
   health_watch:
     description: "Veille santé evidence-based (Sylvain ; Isa ORL + contre-indication antibiotiques systémiques)."

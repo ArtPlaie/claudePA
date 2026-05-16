@@ -19,17 +19,25 @@ def _chat_id(channel: str) -> str | None:
     return None
 
 
-def send(channel: str, message: str, *, parse_mode: str = "Markdown") -> bool:
-    """Envoie un message Telegram. Retourne False si non configuré ou erreur réseau."""
+def send(channel: str, message: str, *, parse_mode: str | None = "Markdown") -> bool:
+    r"""Envoie un message Telegram. Retourne False si non configuré ou erreur réseau.
+
+    parse_mode=None envoie en plain text (utile si le message contient des
+    caractères spéciaux non-échappés type `_*\`[` qui feraient échouer le
+    parsing Markdown côté Telegram).
+    """
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat = _chat_id(channel)
     if not token or not chat:
         log.info("telegram disabled (channel=%s): %s", channel, message[:120])
         return False
+    payload: dict[str, str] = {"chat_id": chat, "text": message}
+    if parse_mode:
+        payload["parse_mode"] = parse_mode
     try:
         r = httpx.post(
             f"{API_BASE}/bot{token}/sendMessage",
-            json={"chat_id": chat, "text": message, "parse_mode": parse_mode},
+            json=payload,
             timeout=10.0,
         )
     except httpx.HTTPError as e:
