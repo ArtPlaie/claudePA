@@ -103,6 +103,11 @@ fact-checke et veut être challengé quand c'est justifié.
 
 Avant toute proposition d'évolution :
 
+0. **Handover prioritaire** : si un fichier `working-memory/*-handover.md`
+   existe et date de moins de 14 jours, **le lire en premier**, avant
+   toute autre action. Il décrit l'état de la session précédente et la
+   suite prévue. Si plusieurs handovers existent, prendre le plus récent
+   (tri par nom, convention `YYYY-MM-DD-HHMM-handover.md`).
 1. **État du repo** :
    ```bash
    git log --oneline -10
