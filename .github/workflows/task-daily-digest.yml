@@ -1,0 +1,59 @@
+name: task-daily-digest
+
+# Digest matinal Telegram : drafts pending + RDV jour + alertes.
+# Cf. tasks/daily_digest.py et schedule.yaml (vacation_safe: true).
+# V1 : formatting déterministe, pas d'appel LLM. Le secret ANTHROPIC_API_KEY
+# n'est pas requis mais on le passe quand même pour homogénéité avec les
+# autres tâches (et pour V2 quand le digest passera par Haiku).
+
+on:
+  schedule:
+    - cron: "30 5 * * *"  # daily 05:30 UTC (07:30 Paris)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claudepa-write
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install deps
+        run: uv sync
+
+      - name: Run task
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
+          GCAL_TOKEN_JSON: ${{ secrets.GCAL_TOKEN_JSON }}
+        run: uv run python -m tasks.daily_digest
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config user.name "claudePA bot"
+          git config user.email "bot@claudepa.local"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "auto: daily_digest run $(date -u +%FT%TZ)"
+            for i in 1 2 3 4; do
+              if git push; then break; fi
+              sleep $((2 ** i))
+            done
+          fi
