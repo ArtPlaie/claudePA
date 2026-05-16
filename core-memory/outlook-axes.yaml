@@ -39,6 +39,27 @@ axes:
 
       Surveille aussi : 1 ligne sur la situation visa AU (RRV / travel
       facility) si actualité notable, sinon zappe.
+
+      # Format de sortie en DEUX sections marquées textuellement
+      #
+      # Le code Python split sur les marqueurs et envoie seulement la
+      # partie TELEGRAM sur le téléphone de Sylvain. La partie ARCHIVE
+      # reste dans working-memory comme source locale.
+
+      === TELEGRAM ===
+      Top 15 items les plus saillants pour Sylvain.
+      Ordonnés par priorité (urgence deadline + fit profil).
+      Pour chaque item : 2-4 lignes (titre, orga, géo, deadline si connue,
+      pourquoi ça vaut le coup) + 1 URL source la plus actionnable.
+      Termine la section TELEGRAM par "## À planifier" (2-5 bullets).
+
+      === ARCHIVE ===
+      Liste exhaustive de tout ce que la recherche a remonté qui mérite
+      d'être archivé : opportunités borderline, postes de second rang,
+      formations à surveiller plus tard, orgs nouvelles à connaître,
+      signaux faibles. Pas de cap, format plus libre — sert de source
+      locale pour la mémoire long terme (réutilisable par les briefings
+      suivants pour ne pas répéter).
     queries_hints:
       - "AI safety researcher remote close 2026"
       - "AI alignment job Sydney Australia"

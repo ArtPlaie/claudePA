@@ -106,6 +106,23 @@ Pas de salutation, pas de signature, pas de markdown lourd.
 """
 
 
+_TG_MARKER = "=== TELEGRAM ==="
+_ARCHIVE_MARKER = "=== ARCHIVE ==="
+
+
+def _split_output(text: str) -> tuple[str, str]:
+    """Split sortie modèle sur marqueurs `=== TELEGRAM ===` / `=== ARCHIVE ===`.
+
+    Si marqueurs absents : tout part sur Telegram, archive vide.
+    Si marqueurs présents : Telegram = bloc entre les deux, archive = après.
+    """
+    if _TG_MARKER not in text or _ARCHIVE_MARKER not in text:
+        return text.strip(), ""
+    after_tg = text.split(_TG_MARKER, 1)[1]
+    tg_part, _, archive_part = after_tg.partition(_ARCHIVE_MARKER)
+    return tg_part.strip(), archive_part.strip()
+
+
 def _chunk_for_telegram(text: str, limit: int = TELEGRAM_LIMIT) -> list[str]:
     if len(text) <= limit:
         return [text]
@@ -199,8 +216,11 @@ def run(cfg: dict[str, Any]) -> None:
             f"(LLM indispo — {llm_error[:140]})"
         )
 
+    tg_part, archive_part = _split_output(message)
+    has_archive = bool(archive_part)
+
     channel = cfg.get("channel", "perso")
-    chunks = _chunk_for_telegram(message)
+    chunks = _chunk_for_telegram(tg_part)
     sent_count = 0
     for i, chunk in enumerate(chunks, 1):
         prefix = f"[{i}/{len(chunks)}] " if len(chunks) > 1 else ""
@@ -209,7 +229,7 @@ def run(cfg: dict[str, Any]) -> None:
 
     summary = (
         f"axis={axis['slug']}, tier={tier}, ws={ws_max}, "
-        f"chunks={len(chunks)}, sent={sent_count}, "
+        f"chunks={len(chunks)}, sent={sent_count}, archive={has_archive}, "
         f"llm={'yes' if used_llm else 'no'}"
     )
     extra: dict[str, Any] = {
@@ -218,6 +238,7 @@ def run(cfg: dict[str, Any]) -> None:
         "web_search_max": ws_max,
         "chunks": len(chunks),
         "sent": sent_count,
+        "has_archive": has_archive,
         "used_llm": used_llm,
     }
     if llm_error:
