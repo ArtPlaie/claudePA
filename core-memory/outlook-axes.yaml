@@ -40,26 +40,11 @@ axes:
       Surveille aussi : 1 ligne sur la situation visa AU (RRV / travel
       facility) si actualité notable, sinon zappe.
 
-      # Format de sortie en DEUX sections marquées textuellement
-      #
-      # Le code Python split sur les marqueurs et envoie seulement la
-      # partie TELEGRAM sur le téléphone de Sylvain. La partie ARCHIVE
-      # reste dans working-memory comme source locale.
-
-      === TELEGRAM ===
-      Top 15 items les plus saillants pour Sylvain.
-      Ordonnés par priorité (urgence deadline + fit profil).
-      Pour chaque item : 2-4 lignes (titre, orga, géo, deadline si connue,
-      pourquoi ça vaut le coup) + 1 URL source la plus actionnable.
-      Termine la section TELEGRAM par "## À planifier" (2-5 bullets).
-
-      === ARCHIVE ===
-      Liste exhaustive de tout ce que la recherche a remonté qui mérite
-      d'être archivé : opportunités borderline, postes de second rang,
-      formations à surveiller plus tard, orgs nouvelles à connaître,
-      signaux faibles. Pas de cap, format plus libre — sert de source
-      locale pour la mémoire long terme (réutilisable par les briefings
-      suivants pour ne pas répéter).
+      Spécifique TELEGRAM pour cet axe : cap à 15 items max dans la section
+      TELEGRAM (les plus saillants, ordonnés par urgence deadline + fit profil).
+      Section ARCHIVE sans cap : pousse tout ce que la recherche a remonté
+      qui mérite d'être gardé (borderline, second rang, formations à
+      surveiller plus tard, orgs nouvelles, signaux faibles).
     queries_hints:
       - "AI safety researcher remote close 2026"
       - "AI alignment job Sydney Australia"
@@ -68,34 +53,49 @@ axes:
       - "AI policy job Canada Toronto Montreal Mila"
 
   - slug: serendipite
-    title: "✨ Sérendipité de la semaine"
+    title: "✨ Sérendipité"
     day_of_month: 7
     tier: opus
     web_search_max: 10
     focus: |
-      Self-prompt totalement libre. Aucune catégorie obligatoire.
+      Self-prompt totalement libre. Aucune catégorie obligatoire, aucun cap.
+      Ton joueur, prends des risques. Pas de safe choice mou.
 
       Pioche dans tout ce que tu sais de Sylvain (profile.md, decisions,
       findings, current-location, family.md, saison, actu, météo) pour
       proposer ce qui pourrait l'intéresser cette période-ci.
 
-      Cible : 5-8 propositions concrètes, inattendues mais pas absurdes.
       Si tu hésites entre "safe et utile" et "original et un peu fou",
-      choisis original.
+      choisis original. Si tu hésites entre "consensus" et "contrarian
+      argumenté", choisis contrarian. Évite à tout prix les recos
+      génériques type "top 10 books of 2026".
 
-      Pense large : exposition niche, livre récent, projet code de weekend,
-      podcast / vidéo d'auteur, événement IRL, idée business, lecture qui
-      sort de sa filter bubble, expérience physique nouvelle, angle d'attaque
-      inhabituel sur un de ses projets en cours.
+      Sources et géographies :
+      - **Contenu intellectuel pour Sylvain** : EXCLUSIVEMENT en anglais.
+        Sylvain ne consomme aucun contenu francophone perso (livres,
+        podcasts, longreads, essais, vidéos). Anglo-saxon, traductions
+        des autres langues OK.
+      - **Art / événements / sorties physiques** : focus prioritaire
+        SUD Seine-et-Marne (Fontainebleau, Barbizon, Bois-le-Roi, Melun,
+        forêt de Fontainebleau, châteaux locaux) AVANT Paris. Paris reste
+        possible mais seulement si l'événement le justifie vraiment.
+        Étranger ponctuel OK si déplacement worth it.
 
-      Évite les recos génériques type "top 10 books". Précise les références
-      (nom, lien, contexte) — Sylvain juge sur pièces.
+      Pense large : exposition niche, livre EN récent, projet code de
+      weekend, podcast / longread / vidéo d'auteur EN, essai EN qui sort
+      de sa filter bubble, expérience physique nouvelle, angle d'attaque
+      inhabituel sur un de ses projets en cours, idée business, lecture
+      qui pourrait le faire changer d'avis sur un truc.
+
+      Précise les références : titre exact, auteur, lien direct, et 1-2
+      lignes sur le pourquoi pour Sylvain spécifiquement.
     queries_hints:
-      - "exposition Paris cette semaine confidentielle"
-      - "événement Paris weekend insolite original"
-      - "essai récent sortie 2026 auteur inattendu"
-      - "podcast français nouveau penseur"
-      - "expérience originale Paris adultes 2026"
+      - "best essay 2026 English longform contrarian"
+      - "underrated nonfiction 2026 English"
+      - "podcast intellectual heterodox 2026"
+      - "exposition Fontainebleau Barbizon 2026"
+      - "événement insolite sud Seine-et-Marne weekend"
+      - "weekend project AI safety alignment github 2026"
 
   - slug: famille
     title: "👨‍👩‍👧 Famille — sorties & idées"
