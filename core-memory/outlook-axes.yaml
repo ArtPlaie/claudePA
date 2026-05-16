@@ -1,0 +1,94 @@
+# core-memory/outlook-axes.yaml — registre des axes de l'outlook horizon 3 mois.
+#
+# Lu par tasks/outlook.py qui tourne quotidiennement (cron daily 18h UTC).
+# À chaque run, la tâche regarde la date du jour : si un axe matche
+# `day_of_month`, on l'exécute. Sinon skip silent. Étalement = 1 axe / semaine.
+#
+# Modifier ce fichier = pas besoin de toucher au code. Ajouter / retirer
+# un axe, déplacer un day_of_month, changer le tier modèle : tout est ici.
+
+horizon_months: 3
+
+defaults:
+  tier: sonnet
+  web_search_max: 8
+
+axes:
+  - slug: australia
+    title: "🇦🇺 Australie / visa PR"
+    day_of_month: 1
+    tier: opus
+    web_search_max: 10
+    focus: |
+      Actualités immigration AU pour profil PR / subclass 189,
+      étapes travel facility (RRV / 155 / 157), deadlines à anticiper,
+      changements politiques migratoires en cours côté Australie.
+      Voir core-memory/australia-plan.md pour le contexte personnel.
+    queries_hints:
+      - "Australia 189 visa policy 2026"
+      - "Resident Return Visa Australia renewal"
+      - "Sydney migration news AI"
+
+  - slug: ai-safety
+    title: "🧠 AI Safety / formations & cohorts"
+    day_of_month: 8
+    tier: opus
+    web_search_max: 12
+    focus: |
+      Formations alignment qui ouvrent dans les 3 mois : MATS, ARENA,
+      Anthropic Fellows, SERI MATS, Astra Fellowship, masters AI safety,
+      cohorts à venir. Conférences / workshops alignment (ICML safety
+      track, NeurIPS alignment workshops, dedicated venues).
+      Papers / posts récents alignment qui méritent suivi.
+    queries_hints:
+      - "MATS program 2026 cohort applications"
+      - "ARENA AI safety bootcamp 2026"
+      - "Anthropic Fellows program 2026"
+      - "AI safety conferences workshops 2026"
+
+  - slug: jobs
+    title: "💼 Jobs alignment / AI safety / policy"
+    day_of_month: 15
+    tier: opus
+    web_search_max: 12
+    focus: |
+      Postes ouverts en AI safety / alignment / AI policy avec close
+      date dans les 3 mois. Focus géo : Sydney / Australie (priorité),
+      Suisse (Zurich, Lausanne, EPFL/ETH), remote-OK acceptable.
+      Orgs à scanner : labs (Anthropic, OpenAI, DeepMind, Conjecture,
+      Redwood, METR, Apollo, Goodfire), gouvernements (UK AISI, US AISI),
+      académiques (CHAI Berkeley, Mila, ARC Evals, FAR AI).
+    queries_hints:
+      - "AI safety researcher jobs Sydney Australia 2026"
+      - "alignment researcher remote close 2026"
+      - "AI policy job Switzerland Zurich Lausanne"
+      - "Anthropic OpenAI DeepMind jobs alignment"
+
+  - slug: sante-admin
+    title: "🏥 Santé / admin"
+    day_of_month: 22
+    tier: sonnet
+    web_search_max: 5
+    focus: |
+      Renouvellements (passeport, CB, ordonnances longue durée),
+      contrôles annuels (médecin traitant, dentiste, ophtalmo),
+      échéances admin françaises : déclaration impôts, mutuelle,
+      assurances, factures importantes. Voir core-memory/family.md
+      pour les contraintes santé enfants.
+    queries_hints:
+      - "calendrier fiscal France 2026 dates"
+      - "renouvellement passeport délai France 2026"
+
+  - slug: famille-agenda
+    title: "👨‍👩‍👧 Famille / agenda"
+    day_of_month: 28
+    tier: sonnet
+    web_search_max: 5
+    focus: |
+      Vacances scolaires Île-de-France (zone C) à venir, ponts et
+      jours fériés, fenêtres d'organisation famille, anniversaires
+      et échéances déclarés dans core-memory/family.md.
+      Anticiper les réservations (vacances, sorties, billets) sur 3 mois.
+    queries_hints:
+      - "vacances scolaires zone C 2026 dates"
+      - "jours fériés France pont 2026"

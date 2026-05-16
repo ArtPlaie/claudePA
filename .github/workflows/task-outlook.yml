@@ -1,11 +1,13 @@
-name: task-monthly-outlook
+name: task-outlook
 
-# Outlook mensuel horizon 3 mois. Cf. tasks/monthly_outlook.py.
-# Plus long que les autres tâches (web_search intensif) — timeout 15min.
+# Outlook horizon 3 mois — 1 axe / run. Cf. tasks/outlook.py.
+# Cron daily 18h UTC : la tâche regarde la date et tire l'axe configuré
+# pour ce jour-là dans core-memory/outlook-axes.yaml. Sinon skip silent.
+# Web search server-side intensif sur l'axe matché — timeout 15min.
 
 on:
   schedule:
-    - cron: "0 18 1 * *"   # 1st of month, 18:00 UTC (20:00 Paris)
+    - cron: "0 18 * * *"   # daily 18:00 UTC (20:00 Paris)
   workflow_dispatch:
 
 permissions:
@@ -36,7 +38,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
-        run: uv run python -m tasks.monthly_outlook
+        run: uv run python -m tasks.outlook
 
       - name: Commit changes
         run: |
@@ -47,7 +49,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "no change to commit"
           else
-            git commit -m "auto: monthly_outlook run $(date -u +%FT%TZ)"
+            git commit -m "auto: outlook run $(date -u +%FT%TZ)"
             for i in 1 2 3 4; do
               if git push; then break; fi
               sleep $((2 ** i))
