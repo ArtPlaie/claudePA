@@ -135,5 +135,10 @@ def create_draft(
 
 
 def alert(message: str, channel: str = "perso") -> bool:
-    """Notification Telegram best-effort. False si non configuré."""
-    return telegram.send(channel, message)
+    """Notification Telegram best-effort. False si non configuré.
+
+    Envoyé en plain text : on n'a aucune garantie sur le contenu (noms de
+    fichiers avec `_`, titres avec `*`, etc.), un parsing Markdown pète
+    avec 400 Bad Request silencieuse côté Telegram.
+    """
+    return telegram.send(channel, message, parse_mode=None)
