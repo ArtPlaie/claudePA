@@ -32,4 +32,23 @@ compatibility_date = "2024-12-01"
 GITHUB_REPO = "ArtPlaie/claudePA"
 # Branche sur laquelle dispatch les workflows. Doit correspondre à la
 # branche par défaut du repo (workflow files doivent exister sur ce ref).
-GITHUB_REF = "claude/main"
+GITHUB_REF = "main"
+
+# Cron triggers — déclenchent le handler `scheduled()` qui dispatch
+# le workflow GH Actions correspondant. Le mapping cron → workflow
+# vit dans src/index.ts (CRON_TO_WORKFLOW).
+#
+# Pourquoi ici plutôt que les crons natifs GH Actions :
+# les crons GH Actions ont des delays de 30min à 2h (queue partagée).
+# Cloudflare Cron Triggers sont précis à la minute, gratuits jusqu'à
+# 5 triggers (free plan) et 100k requêtes/jour.
+#
+# Note : free plan limite à 5 triggers max. Si on dépasse, fusionner
+# plusieurs en un seul cron + dispatch multi-workflow dans le handler.
+[triggers]
+crons = [
+  "30 5 * * *",   # task-daily-digest      (05:30 UTC, 07:30 Paris été)
+  "0 6 * * *",    # task-mail-review       (06:00 UTC, gated cadence 5j)
+  "0 3 * * *",    # task-sliding-window    (03:00 UTC, rollup nuit)
+  "0 4 * * *",    # task-location-context  (04:00 UTC, avant digest)
+]

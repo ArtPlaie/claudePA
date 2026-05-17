@@ -4,8 +4,9 @@ name: task-location-context
 # vacation_safe: true (tourne aussi en mode vacances pour détecter le retour).
 
 on:
-  schedule:
-    - cron: "0 4 * * *"   # daily 04:00 UTC (06:00 Paris)
+  # Cron déclenché par le Cloudflare Worker (workflow_dispatch via API)
+  # — précision ~1 min vs les delays 30min-2h des crons natifs GH Actions.
+  # Cf. cloudflare-worker/src/index.ts (CRON_TO_WORKFLOW).
   workflow_dispatch:
 
 permissions:

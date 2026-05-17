@@ -48,6 +48,12 @@ def cadence_satisfied(task: str, cadence_days: int, now: datetime | None = None)
     return (now - prev) >= timedelta(days=cadence_days)
 
 
+def _force_flag() -> bool:
+    """env FORCE=1/true/yes bypasse cadence + vacances (jamais panic ni enabled=false)."""
+    import os
+    return os.environ.get("FORCE", "").lower() in ("1", "true", "yes")
+
+
 def preflight(task: str) -> dict[str, Any]:
     """Run tous les gates de démarrage. Lève Skip avec raison sinon retourne la config."""
     if panic_active():
@@ -58,11 +64,15 @@ def preflight(task: str) -> dict[str, Any]:
     if not cfg.get("enabled", False):
         raise Skip("task disabled in schedule.yaml")
 
-    if vacation_active() and not cfg.get("vacation_safe", False):
+    force = _force_flag()
+    if force:
+        log.warning("FORCE=1 — bypass cadence_days/vacances pour %s", task)
+
+    if vacation_active() and not cfg.get("vacation_safe", False) and not force:
         raise Skip("vacation_mode active and task not vacation_safe")
 
     cadence = cfg.get("cadence_days")
-    if cadence and not cadence_satisfied(task, int(cadence)):
+    if cadence and not cadence_satisfied(task, int(cadence)) and not force:
         raise Skip(f"cadence_days={cadence} not elapsed since last completed run")
 
     return cfg

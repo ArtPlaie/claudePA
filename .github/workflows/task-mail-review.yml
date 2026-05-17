@@ -12,9 +12,15 @@ name: task-mail-review
 # cadence (5j) n'est pas écoulée depuis le dernier run completed.
 
 on:
-  schedule:
-    - cron: "0 6 * * *"  # daily 06:00 UTC (08:00 Paris)
+  # Cron déclenché par le Cloudflare Worker (workflow_dispatch via API)
+  # — précision ~1 min vs les delays 30min-2h des crons natifs GH Actions.
+  # Cf. cloudflare-worker/src/index.ts (CRON_TO_WORKFLOW).
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Bypass cadence_days/vacances (dev/test). N'override pas panic ni enabled=false."
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -46,6 +52,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
           TOKEN_BUDGET_USD: ${{ secrets.TOKEN_BUDGET_USD }}
+          FORCE: ${{ inputs.force }}
         run: uv run python -m tasks.mail_review
 
       - name: Commit changes

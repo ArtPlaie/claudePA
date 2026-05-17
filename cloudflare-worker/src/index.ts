@@ -7,6 +7,10 @@
 // - Pour les messages libres : dépose un fichier dans inbox/ via
 //   Contents API, puis dispatch on-webhook.yml. Latence aller-retour
 //   typique ~30-90s (boot GH Actions).
+//
+// Cron triggers (cf. wrangler.toml [triggers]) : déclenchent le handler
+// `scheduled()` qui dispatch les workflows récurrents via l'API GitHub.
+// Latence ~1-2 min vs les 30min-2h des crons natifs GH Actions.
 
 interface Env {
   TELEGRAM_BOT_TOKEN: string;
@@ -50,6 +54,16 @@ interface TelegramUpdate {
   callback_query?: TelegramCallbackQuery;
 }
 
+// Mapping cron pattern (tel que déclaré dans wrangler.toml) → workflow
+// GH Actions à dispatch. Doit rester synchro avec [triggers].crons.
+// Garder UN cron par workflow pour rester lisible côté logs CF.
+const CRON_TO_WORKFLOW: Record<string, string> = {
+  "30 5 * * *": "task-daily-digest.yml",
+  "0 6 * * *": "task-mail-review.yml",
+  "0 3 * * *": "task-sliding-window.yml",
+  "0 4 * * *": "task-location-context.yml",
+};
+
 export default {
   async fetch(req: Request, env: Env): Promise<Response> {
     const url = new URL(req.url);
@@ -58,6 +72,30 @@ export default {
       return handleTelegram(req, env);
     }
     return new Response("not found", { status: 404 });
+  },
+
+  async scheduled(
+    event: ScheduledEvent,
+    env: Env,
+    ctx: ExecutionContext,
+  ): Promise<void> {
+    const workflow = CRON_TO_WORKFLOW[event.cron];
+    if (!workflow) {
+      console.error("unknown cron pattern (no mapping)", event.cron);
+      return;
+    }
+    // waitUntil garantit qu'on attend la fin du dispatch même si le
+    // handler "termine" tôt. Sans ça, le worker peut être tué avant.
+    ctx.waitUntil(
+      (async () => {
+        try {
+          await dispatchWorkflow(env, workflow, {});
+          console.log("cron dispatched", workflow, "at", event.cron);
+        } catch (e) {
+          console.error("cron dispatch failed", workflow, e);
+        }
+      })(),
+    );
   },
 };
 

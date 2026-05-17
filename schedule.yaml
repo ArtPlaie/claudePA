@@ -4,10 +4,15 @@
 # statut activé/désactivé. Le code Python (tasks/_lib/schedule.py) lit
 # ce fichier au démarrage de chaque workflow.
 #
-# Note crons : tous en UTC (GitHub Actions). Pour cadences "tous les N
-# jours" non-divisibles, le workflow tourne plus souvent et le script
-# vérifie la dernière exécution dans working-memory/ avant d'agir
-# (cf. `cadence_days`).
+# Note crons : tous en UTC. Le champ `cron:` ci-dessous est INDICATIF
+# (lecture humaine + doc). Le déclenchement réel passe par les Cron
+# Triggers Cloudflare Worker (cf. cloudflare-worker/wrangler.toml +
+# src/index.ts CRON_TO_WORKFLOW) qui appellent l'API workflow_dispatch
+# de GH Actions. Précision ~1 min vs 30min-2h des crons natifs GH.
+#
+# Pour cadences "tous les N jours" non-divisibles, le workflow tourne
+# plus souvent et `_lib/schedule.cadence_satisfied()` vérifie la
+# dernière exécution dans working-memory/ avant d'agir (cf. `cadence_days`).
 #
 # Ajout d'une tâche : voir CLAUDE.md > "Pour ajouter une nouvelle tâche".
 

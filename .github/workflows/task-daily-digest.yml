@@ -7,8 +7,9 @@ name: task-daily-digest
 # autres tâches (et pour V2 quand le digest passera par Haiku).
 
 on:
-  schedule:
-    - cron: "30 5 * * *"  # daily 05:30 UTC (07:30 Paris)
+  # Cron déclenché par le Cloudflare Worker (workflow_dispatch via API)
+  # — précision ~1 min vs les delays 30min-2h des crons natifs GH Actions.
+  # Cf. cloudflare-worker/src/index.ts (CRON_TO_WORKFLOW).
   workflow_dispatch:
 
 permissions:
