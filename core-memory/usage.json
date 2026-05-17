@@ -1,8 +1,8 @@
 {
   "month": "2026-05",
-  "cost_usd": 0.104182,
+  "cost_usd": 0.116713,
   "by_task": {
-    "respond": 0.050484,
+    "respond": 0.063015,
     "mail_review": 0.053698
   }
 }
