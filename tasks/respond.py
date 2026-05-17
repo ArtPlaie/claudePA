@@ -113,7 +113,7 @@ def main() -> int:
         return 1
 
     reply = resp.text.strip() or "(réponse vide)"
-    telegram.send(channel, reply)
+    telegram.send(channel, reply, parse_mode=None)
 
     memory.write_run_log(
         task=TASK,
