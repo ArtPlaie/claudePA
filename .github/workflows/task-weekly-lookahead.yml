@@ -1,15 +1,23 @@
-name: task-daily-digest
+name: task-weekly-lookahead
 
-# Digest matinal Telegram : drafts pending + RDV jour + à préparer 5j + alertes.
-# Cf. tasks/daily_digest.py et schedule.yaml (vacation_safe: true).
-# Un appel Haiku par run pour classer les events 5j en needs_prep ou non
-# (~$0.001/run, skippé s'il n'y a aucun event qualifiant).
+# Look-forward agenda 20j — gros événements à anticiper, post Telegram perso.
+# Cf. tasks/weekly_lookahead.py et schedule.yaml.
+#
+# Requiert :
+#   - GCAL_TOKEN_JSON (refresh token OAuth scope calendar)
+#   - ANTHROPIC_API_KEY
+#   - TELEGRAM_* pour la notif
 
 on:
   # Cron déclenché par le Cloudflare Worker (workflow_dispatch via API)
-  # — précision ~1 min vs les delays 30min-2h des crons natifs GH Actions.
-  # Cf. cloudflare-worker/src/index.ts (CRON_TO_WORKFLOW).
+  # — Dimanche 18:00 UTC (20:00 Paris). Cf. cloudflare-worker/src/index.ts
+  # (CRON_TO_WORKFLOW).
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Bypass cadence_days/vacances (dev/test). N'override pas panic ni enabled=false."
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -37,10 +45,12 @@ jobs:
       - name: Run task
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GCAL_TOKEN_JSON: ${{ secrets.GCAL_TOKEN_JSON }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
-          GCAL_TOKEN_JSON: ${{ secrets.GCAL_TOKEN_JSON }}
-        run: uv run python -m tasks.daily_digest
+          TOKEN_BUDGET_USD: ${{ secrets.TOKEN_BUDGET_USD }}
+          FORCE: ${{ inputs.force }}
+        run: uv run python -m tasks.weekly_lookahead
 
       - name: Commit changes
         run: |
@@ -51,7 +61,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "no change to commit"
           else
-            git commit -m "auto: daily_digest run $(date -u +%FT%TZ)"
+            git commit -m "auto: weekly_lookahead run $(date -u +%FT%TZ)"
             for i in 1 2 3 4; do
               if git push; then break; fi
               sleep $((2 ** i))

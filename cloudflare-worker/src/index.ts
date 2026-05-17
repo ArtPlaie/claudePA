@@ -62,6 +62,7 @@ const CRON_TO_WORKFLOW: Record<string, string> = {
   "0 6 * * *": "task-mail-review.yml",
   "0 3 * * *": "task-sliding-window.yml",
   "0 4 * * *": "task-location-context.yml",
+  "0 18 * * 0": "task-weekly-lookahead.yml",
 };
 
 export default {

@@ -69,6 +69,13 @@ tasks:
     channel: perso        # canal famille déprécié
     model: sonnet         # le sous-agent d'analyse utilise opus, géré dans le code
 
+  weekly_lookahead:
+    description: "Look-forward agenda 20j : vols, deadlines, RDV importants à anticiper."
+    cron: "0 18 * * 0"    # Sunday 18:00 UTC (20:00 Paris)
+    channel: perso
+    model: haiku
+    enabled: true
+
   network_followups:
     description: "Anniversaires à venir + relances dormantes."
     cron: "0 16 * * 1"    # Monday 16:00 UTC, gated by cadence_days

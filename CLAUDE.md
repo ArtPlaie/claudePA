@@ -138,9 +138,11 @@ Avant toute proposition d'évolution :
 ## Phase de développement actuelle
 
 Voir `SPEC.md` section "Phasage". Statut courant : **Phase 1.5 — boucle
-Telegram end-to-end + 4 tâches actives** (daily_digest, mail_review,
-location_context, sliding_window). OAuth Gmail wiré (perso readonly +
-PA modify). Crons opérés par CF Worker (précision ~1 min vs delays GH).
-Branche par défaut = `main`. Catalogue V1 restant à coder : weekly_briefing,
-ai_jobs_formations, sydney_opportunities, daily_digest++ (calendar),
-network_followups, health_watch, self_reflection.
+Telegram end-to-end + 5 tâches actives** (daily_digest enrichi calendar,
+mail_review, location_context, sliding_window, weekly_lookahead). OAuth
+Gmail wiré (perso readonly + PA modify) et OAuth Google Calendar wiré
+(scope read+write, compte perso, tous calendars `selected:true`). Crons
+opérés par CF Worker (5/5 triggers free plan utilisés, précision ~1 min).
+Branche par défaut = `main`. Catalogue V1 restant à coder : weekly_briefing
+(monde/IA/local, distinct du weekly_lookahead agenda), ai_jobs_formations,
+sydney_opportunities, network_followups, health_watch, self_reflection.

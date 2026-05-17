@@ -51,4 +51,5 @@ crons = [
   "0 6 * * *",    # task-mail-review       (06:00 UTC, gated cadence 5j)
   "0 3 * * *",    # task-sliding-window    (03:00 UTC, rollup nuit)
   "0 4 * * *",    # task-location-context  (04:00 UTC, avant digest)
+  "0 18 * * 0",   # task-weekly-lookahead  (Sunday 18:00 UTC, 20:00 Paris)
 ]

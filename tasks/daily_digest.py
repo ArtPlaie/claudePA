@@ -1,20 +1,25 @@
-"""Digest matinal Telegram : 3-5 lignes — drafts pending, RDV du jour, alertes.
+"""Digest matinal Telegram — drafts pending, RDV jour, à préparer 5j, alertes.
 
 Tourne tous les jours à 05:30 UTC (07:30 Paris). `vacation_safe: true` :
 continue à tourner pendant les vacances pour garder Sylvain au courant
 des drafts pending et des RDV.
 
-Pas d'appel LLM en V1 : formatting déterministe sur des sources déjà
-structurées (front matter drafts, events calendar, usage.json). Budget
-$0/run. Le tier `model: haiku` dans schedule.yaml est conservé pour une
-V2 éventuelle (synthèse contextuelle d'alertes).
+Pipeline :
+1. Drafts pendants (déterministe, lecture front matter).
+2. Events du jour depuis Google Calendar (déterministe).
+3. Events J+1..J+5 → Haiku classif "needs_prep ?" + why court.
+4. Budget tokens si dépassement de seuil (déterministe).
+5. Format + envoi Telegram.
+
+Coût par run : ~$0.001 (un seul appel Haiku, skippé si zéro event 5j).
 """
 from __future__ import annotations
 
 import json
 import logging
 import os
-from datetime import UTC, date, datetime
+import re
+from datetime import UTC, date, datetime, timedelta
 from typing import Any
 
 import yaml
@@ -28,6 +33,9 @@ log = logging.getLogger(TASK)
 
 PRIORITY_RANK = {"high": 0, "medium": 1, "low": 2}
 BUDGET_HEADS_UP_PCT = 0.5
+
+LOOKAHEAD_DAYS = 5
+MAX_EVENTS_TO_CLASSIFY = 15
 
 
 def _list_pending_drafts(today: date) -> list[dict[str, Any]]:
@@ -69,6 +77,100 @@ def _today_events(
     return [e for e in events if e.start.date() <= today <= e.end.date()]
 
 
+def _lookahead_events(
+    events: list[calendar.CalendarEvent], today: date
+) -> list[calendar.CalendarEvent]:
+    """Events strictement après aujourd'hui dans la fenêtre LOOKAHEAD_DAYS."""
+    horizon = today + timedelta(days=LOOKAHEAD_DAYS)
+    return [e for e in events if today < e.start.date() <= horizon]
+
+
+def _parse_json_array(text: str) -> list[dict[str, Any]]:
+    """Tolère prefix/suffix narratif autour d'un array JSON."""
+    text = text.strip()
+    text = re.sub(r"^```(?:json)?\s*", "", text)
+    text = re.sub(r"\s*```$", "", text)
+    start = text.find("[")
+    end = text.rfind("]")
+    if start == -1 or end == -1 or end < start:
+        raise ValueError("no JSON array found")
+    return json.loads(text[start : end + 1])
+
+
+def _needs_prep_classify(
+    events: list[calendar.CalendarEvent], tier: str
+) -> list[tuple[calendar.CalendarEvent, str]]:
+    """Pour chaque event 5j, retourne (event, why) si needs_prep=True. Sinon vide."""
+    if not events:
+        return []
+
+    capped = events[:MAX_EVENTS_TO_CLASSIFY]
+
+    def _when(e: calendar.CalendarEvent) -> str:
+        if e.all_day:
+            return e.start.strftime("%a %d/%m (all-day)")
+        return e.start.strftime("%a %d/%m %Hh%M")
+
+    items = [
+        {
+            "id": e.id or f"idx-{i}",
+            "when": _when(e),
+            "summary": e.summary[:120],
+            "location": e.location[:80],
+            "description": (e.description or "")[:300],
+        }
+        for i, e in enumerate(capped)
+    ]
+
+    prompt = (
+        "Tu es un assistant qui détermine si un event d'agenda nécessite une "
+        "action ou préparation concrète avant qu'il arrive.\n\n"
+        "Marque needs_prep=true pour : vols/déplacements (check-in, bagages), "
+        "conférences ou talks (slides, prep contenu), RDV médicaux (papiers, "
+        "à jeun), RDV pro importants (préparer dossier, lire en amont), "
+        "deadlines, anniversaires/cadeaux famille proches, démarches admin.\n\n"
+        "Marque needs_prep=false pour : routines (sport, déjeuner régulier), "
+        "events récurrents banals, créneaux libres, anniversaires Google de "
+        "contacts lointains, all-day events purement informatifs.\n\n"
+        "Events à classer :\n"
+        f"{json.dumps(items, ensure_ascii=False, indent=2)}\n\n"
+        "Réponds UNIQUEMENT avec un array JSON, un objet par event, format :\n"
+        '[{"id": "<id>", "needs_prep": true|false, "why": "<1 phrase courte ou \\"\\">"}]'
+    )
+
+    resp = llm.call(
+        tier=tier,
+        messages=[{"role": "user", "content": prompt}],
+        task=TASK,
+        max_tokens=600,
+        temperature=0.2,
+    )
+    try:
+        parsed = _parse_json_array(resp.text)
+    except (ValueError, json.JSONDecodeError) as e:
+        log.warning("classif LLM non-parsable, skip section À préparer: %s", e)
+        return []
+
+    by_id = {item["id"]: item for item in items}
+    out: list[tuple[calendar.CalendarEvent, str]] = []
+    for entry in parsed:
+        if not entry.get("needs_prep"):
+            continue
+        eid = entry.get("id")
+        if eid not in by_id:
+            continue
+        # retrouve l'event par index ou id
+        match = next(
+            (e for i, e in enumerate(capped) if (e.id or f"idx-{i}") == eid),
+            None,
+        )
+        if match is None:
+            continue
+        why = str(entry.get("why", "")).strip()
+        out.append((match, why))
+    return out
+
+
 def _budget_status() -> tuple[float, float, float] | None:
     """(pct, cost, budget) si pct >= BUDGET_HEADS_UP_PCT, sinon None."""
     if not paths.USAGE_JSON.exists():
@@ -93,10 +195,17 @@ def _budget_status() -> tuple[float, float, float] | None:
     return pct, cost, budget
 
 
+def _format_event_when(e: calendar.CalendarEvent) -> str:
+    if e.all_day:
+        return e.start.strftime("%a %d/%m")
+    return e.start.strftime("%a %d/%m %Hh%M")
+
+
 def _format_digest(
     today: date,
     drafts: list[dict[str, Any]],
     events_today: list[calendar.CalendarEvent],
+    prep_events: list[tuple[calendar.CalendarEvent, str]],
     budget: tuple[float, float, float] | None,
     location: dict[str, Any],
 ) -> str:
@@ -114,6 +223,14 @@ def _format_digest(
         )
         more = f" +{len(events_today) - 4}" if len(events_today) > 4 else ""
         lines.append(f"RDV : {evs}{more}")
+
+    if prep_events:
+        lines.append(f"À préparer ({LOOKAHEAD_DAYS}j) :")
+        for ev, why in prep_events[:6]:
+            when = _format_event_when(ev)
+            title = ev.summary[:50] or "(sans titre)"
+            tail = f" → {why}" if why else ""
+            lines.append(f"- {when} : {title}{tail}")
 
     if budget:
         pct, cost, b = budget
@@ -134,17 +251,27 @@ def run(cfg: dict[str, Any]) -> None:
     today = run_at.date()
 
     drafts = _list_pending_drafts(today)
-    events = calendar.fetch_upcoming(days_ahead=2, now=run_at)
+    events = calendar.fetch_upcoming(days_ahead=LOOKAHEAD_DAYS, now=run_at)
     events_today = _today_events(events, today)
+    events_lookahead = _lookahead_events(events, today)
+
+    tier = cfg.get("model", "haiku")
+    try:
+        prep_events = _needs_prep_classify(events_lookahead, tier)
+    except Exception:
+        log.exception("classif needs_prep failed — section omise")
+        prep_events = []
+
     budget = _budget_status()
     location = memory.read_location()
 
-    message = _format_digest(today, drafts, events_today, budget, location)
+    message = _format_digest(today, drafts, events_today, prep_events, budget, location)
 
     sent = telegram.send(cfg.get("channel", "perso"), message, parse_mode=None)
 
     summary = (
-        f"{len(drafts)} draft(s), {len(events_today)} évén. — "
+        f"{len(drafts)} draft(s), {len(events_today)} évén. jour, "
+        f"{len(prep_events)} à préparer — "
         + ("envoyé Telegram" if sent else "Telegram off, log only")
     )
 
@@ -157,6 +284,8 @@ def run(cfg: dict[str, Any]) -> None:
         extra={
             "drafts_count": len(drafts),
             "events_today": len(events_today),
+            "events_lookahead": len(events_lookahead),
+            "prep_count": len(prep_events),
             "telegram_sent": sent,
         },
     )
