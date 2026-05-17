@@ -86,11 +86,17 @@ fact-checke et veut être challengé quand c'est justifié.
 ## Pour ajouter une nouvelle tâche
 
 1. Crée `tasks/<nom>.py` (template : `tasks/_lib/template.py`).
-2. Ajoute une entrée dans `schedule.yaml` (cron, channel, model tier).
-3. Crée `.github/workflows/task-<nom>.yml` à partir de `_scaffold.yml`.
-4. Run en local en mode dry-run : `python -m tasks.<nom> --dry-run`.
-5. Vérifie qu'un fichier `working-memory/...` est bien produit.
-6. Commit, push. Le cron prendra le relais au prochain créneau.
+2. Ajoute une entrée dans `schedule.yaml` (cron INDICATIF, channel, model tier).
+3. Crée `.github/workflows/task-<nom>.yml` à partir de `_scaffold.yml` —
+   **sans `schedule:` côté GH**, uniquement `workflow_dispatch:` (les
+   crons natifs GH ont 30min-2h de delay, on les a abandonnés).
+4. Ajoute le cron réel dans `cloudflare-worker/wrangler.toml` ([triggers].crons)
+   + le mapping dans `cloudflare-worker/src/index.ts` (CRON_TO_WORKFLOW).
+   Limite free plan = 5 cron triggers max.
+5. Redéploie le worker : `cd cloudflare-worker && npx wrangler deploy`.
+6. Run en local en mode dry-run : `python -m tasks.<nom> --dry-run`.
+7. Vérifie qu'un fichier `working-memory/...` est bien produit.
+8. Commit, push sur `main`. Le worker dispatchera au prochain créneau.
 
 ## Pour modifier le comportement global
 
@@ -131,5 +137,10 @@ Avant toute proposition d'évolution :
 
 ## Phase de développement actuelle
 
-Voir `SPEC.md` section "Phasage". Statut courant : **Phase 0 — squelette
-en place, code des tâches et workflows à venir.**
+Voir `SPEC.md` section "Phasage". Statut courant : **Phase 1.5 — boucle
+Telegram end-to-end + 4 tâches actives** (daily_digest, mail_review,
+location_context, sliding_window). OAuth Gmail wiré (perso readonly +
+PA modify). Crons opérés par CF Worker (précision ~1 min vs delays GH).
+Branche par défaut = `main`. Catalogue V1 restant à coder : weekly_briefing,
+ai_jobs_formations, sydney_opportunities, daily_digest++ (calendar),
+network_followups, health_watch, self_reflection.
