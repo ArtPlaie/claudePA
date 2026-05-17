@@ -169,12 +169,17 @@ def _draft_reply_text(thread: gmail.GmailThread, my_email: str) -> str:
     history = "\n\n".join(history_lines)
 
     prompt = (
-        "Tu écris une réponse mail courte à la place de Sylvain. Style :\n"
-        "- direct, dense, 2-4 phrases\n"
-        "- ton bro / informel\n"
+        "Tu écris une réponse mail courte à la place de Sylvain. Le style de "
+        "Sylvain est décrit dans profile.md (system) — respecte-le. "
+        "Règles spécifiques au mail :\n"
+        "- casual et poli, sans familiarité excessive ; on n'écrit pas comme "
+        "à un pote sauf si le contexte du thread montre clairement que c'en est un\n"
+        "- adapte le niveau de formalité au destinataire et au ton du dernier "
+        "message reçu (mail pro/admin → un peu plus mesuré ; mail proche → "
+        "plus relax). Reste toujours soi-même, jamais corporate.\n"
+        "- 2-4 phrases, direct, on entre dans le sujet\n"
         "- français par défaut, anglais si le mail entrant est en anglais\n"
-        "- pas de signature (juste le corps), pas de formules pompeuses\n"
-        "- pas de \"j'espère que tu vas bien\", on entre dans le sujet\n"
+        "- pas de signature (juste le corps), pas de \"j'espère que tu vas bien\"\n"
         "- si une info manque pour répondre vraiment, drafte une réponse "
         "qui pose la question manquante plutôt que d'inventer.\n\n"
         f"Sujet du thread : {thread.subject}\n"
