@@ -47,7 +47,7 @@ fact-checke et veut être challengé quand c'est justifié.
 | Dossier | Rôle |
 |---|---|
 | `core-memory/` | Permanent. Profil, family, policies, australia-plan, people, current-location (+ flag vacances), skip-patterns. Jamais purgé. |
-| `working-memory/` | Fenêtre glissante 30j. Un fichier par run de tâche. |
+| `working-memory/` | Fenêtre glissante 30j. Un fichier par run de tâche. Exception : les handovers `*-session-*.md` ne sont jamais purgés (mémoire inter-session). |
 | `journal/decisions.md` | Décisions importantes append-only. Référence pour `self_reflection`. |
 | `digests/monthly/` | Rollup mensuel produit avant purge. |
 | `digests/findings.md` | Pépites cross-task, append-only. Index auto regénérés par `findings_index`. |

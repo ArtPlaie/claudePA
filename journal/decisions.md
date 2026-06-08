@@ -56,3 +56,38 @@ cold start est-il acceptable au quotidien ?), bug paste PowerShell ↔
 wrangler résolu durablement via dashboard CF, premier mois de
 `daily_digest` actif (signal/bruit).
 
+---
+
+## 2026-06-08 — Migration orchestration des veilles vers Claude Code Routines
+
+Décisions prises pendant la session de design (cf.
+`working-memory/2026-06-08-1257-session-routines-migration.md`). Entrée
+ajoutée sur dérogation explicite de Sylvain.
+
+1. **Bascule veilles → Routines** : les veilles (`weekly_briefing`,
+   `ai_jobs_formations`, `sydney_opportunities`, `local_activities`,
+   `activities_next10days`, `health_watch`) passent de GitHub Actions + CF
+   Worker à des **Claude Code Routines** schedulées sur l'infra Anthropic.
+   Logique versionnée dans `.claude/commands/<task>.md`, prompt de routine
+   trivial. **Pourquoi** : WebSearch natif (résout la décision Brave/Tavily
+   restée ouverte), supprime `_lib/llm.py`/clé API/gate budget pour les
+   veilles, et la session lit `core-memory/*.md` en direct (fin de la
+   "photo" qui périme dans `prompts/`). GHA/CF gardés pour les tasks Python
+   legacy + futur PA Telegram inbound.
+
+2. **Push direct sur `main`** pour les routines (unrestricted branch pushes
+   ON), réseau **Full**, livraison v1 = lire le rapport committé dans le
+   repo (connecteur Telegram/email plus tard).
+
+3. **Mémoire inter-session fixée** : les handovers se pushent sur `main`
+   (pas sur une branche feature) et sont lus au démarrage de chaque session
+   — sinon invisibles, car Sylvain ouvre toujours depuis `main`. Les
+   `working-memory/*-session-*.md` sont exemptés de la purge 30j.
+
+4. **Pilote = `sydney_opportunities`** avant de convertir les 5 autres
+   veilles. Pas encore codé au moment de cette entrée.
+
+**À évaluer dans 1 mois** : la boucle routine tourne-t-elle sans
+babysitting (commit fiable, pas de faux "vert") ? Qualité du web search
+natif vs attentes ; faut-il finalement migrer aussi les 4 tasks GHA.
+

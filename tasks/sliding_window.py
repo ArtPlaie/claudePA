@@ -86,6 +86,10 @@ def run(cfg: dict[str, Any]) -> None:
     run_at = datetime.now(UTC)
     old_files = memory.files_older_than(WINDOW_DAYS, now=run_at)
 
+    # Les handovers de session (`*-session-*.md`) sont la seule mémoire
+    # inter-session : jamais purgés, ni bundlés dans le digest mensuel.
+    old_files = [p for p in old_files if "-session-" not in p.stem]
+
     if not old_files:
         log.info("nothing older than %sd — no-op", WINDOW_DAYS)
         return
