@@ -18,6 +18,12 @@ name: task-mail-test
 #   - MAIL_TO             destinataire par défaut si l'input `to` est vide
 
 on:
+  # Déclenchable par push d'un tag `mailtest-*` — utile quand on n'a pas
+  # le scope actions:write pour dispatcher via l'API (ex: l'intégration
+  # Claude). `git tag mailtest-$(date +%s) && git push --tags` suffit.
+  push:
+    tags:
+      - "mailtest-*"
   workflow_dispatch:
     inputs:
       to:
