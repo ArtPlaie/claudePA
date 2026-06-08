@@ -16,6 +16,26 @@ pushes toi-même. Suis les étapes dans l'ordre.
 
 ---
 
+## Règle d'or — le livrable est un mail, pas un rapport machine
+
+Sylvain lit ça dans sa boîte Gmail. Ça doit se lire comme un mail rédigé par
+un **excellent assistant humain** : phrases qui respirent, sections évidentes,
+rien de robotique.
+
+- **Recherche large, sortie courte.** Fouille beaucoup, écris peu. Le but
+  n'est pas de remplir des sections, c'est de remonter ce qui vaut le coup.
+- **Pas de minimum, pas de remplissage.** Si une section n'a rien de solide,
+  dis-le en **une demi-ligne en français** et passe, ou omets-la. Jamais de
+  listing pour faire du volume — un mail court et juste vaut mieux.
+- **Zéro back-office visible.** Pas de méta du type « fenêtre = 6 mois »,
+  « filtre appliqué », « jobs_kept: 4 », rappel de méthode ou de contexte.
+  Sylvain veut les **résultats**, pas le making-of.
+- **Pas de jargon d'IA.** N'écris pas « fit faible/moyen/fort », « score »,
+  « de-dup », « source primaire ». Écris humain. Les scores et filtres servent
+  ton tri **interne** — ils ne s'écrivent pas dans le mail.
+- **N'invente jamais** un poste, une deadline, un lien. Dans le doute : « à
+  reconfirmer » + le lien.
+
 ## Étape 0 — Gardes (avant tout)
 
 1. **Panic** : si le fichier `.panic` existe à la racine du repo, **arrête
@@ -77,16 +97,14 @@ rolling basis). Cibles canoniques à vérifier systématiquement via web search 
   **MILA / Mila McGill**, **Oxford MSc** — uniquement si format compatible
   (Suisse OK avec contrat = master rémunéré, sinon reporter).
 
-Pour chaque programme : nom · org · format (résidentiel / hybride / remote) ·
-durée · **deadline** · **lien direct** · fit profil · fit géo · urgence ·
-note 2-3 lignes (pourquoi ça vaut le coup pour Sylvain spécifiquement, ou
-pourquoi c'est faible).
+Pour chaque programme retenu : nom, org, format, durée, **deadline**, **lien
+direct**, et une phrase qui dit pourquoi ça vaut le coup pour lui. Ne garde que
+ce qui colle vraiment — si le fit est mou, ne le mets pas.
 
-**Score chaque entrée** sur 3 dimensions :
-- **Fit profil** (quanti non-PhD, AI Safety appliqué) : faible / moyen / fort
-- **Fit géo / famille** (Sydney > Suisse > remote > Londres > US strict-no) :
-  compatible / friction / bloquant
-- **Urgence** : deadline imminente (< 30j) / fenêtre normale / rolling
+Pour ton tri **interne** (jamais écrit dans le mail), évalue le fit profil
+(quanti non-PhD, AI Safety appliqué), le fit géo/famille (Sydney > Suisse >
+remote > Londres ; US strict-no sans relocation) et l'urgence (deadline < 30j).
+Tu ne remontes que le fort fit ; le reste, tu le jettes sans le mentionner.
 
 ### B. Postes AI / AI Safety / alignment
 
@@ -102,12 +120,15 @@ Cibles canoniques à scanner via web search :
 - Filtres géo : **Sydney / Australie**, **Suisse**, **remote-friendly**,
   **Londres** acceptable. Ignore les postes US-only sans remote / sans relocation
   Australie possible.
-- Filtres seniority : pas de junior pur, pas de PhD-required strict.
+- Seniority : **le junior et les portes d'entrée atypiques sont les bienvenus**
+  — Sylvain se reconvertit, il ne dirige pas un département et n'a pas de CV
+  salarié linéaire. Ce qu'on écarte, c'est le PhD-required strict et l'exécutant
+  générique sans angle. Ne lui dis jamais « rien de senior ouvert » : il n'en
+  veut pas, il veut le junior iconoclaste qui colle à son profil.
 
-Pour chaque lead : titre · org · localisation (+ remote ?) · seniority visible ·
-**deadline ou "rolling"** · **lien direct** · fit profil · fit géo · urgence ·
-note 2-3 lignes (angle d'attaque si Sylvain candidate : quel point fort pousser,
-quel angle adversaire à anticiper).
+Pour chaque poste retenu : titre, org, lieu (+ remote ?), **deadline ou
+rolling**, **lien direct**, et une phrase d'angle (le point fort à pousser, le
+risque à anticiper). Strong fit uniquement.
 
 ### C. Veille adjacente (si signal fort)
 
@@ -118,12 +139,12 @@ quel angle adversaire à anticiper).
   uniquement si ROI temps correct pour profil quanti.
 - Format : liste courte, 1 ligne par entrée.
 
-**Filtre dur** (toutes sections) : ce qui est **clos**, **deadline dépassée**,
-ou **inapproprié au profil** est éliminé sans mention. Pas de junior / process /
-corporate vide, pas de PhD-required strict, pas de postes US-only sans remote /
-relocation AU possible. Si la session ramène 0 opportunité concrète, dis-le —
-pas de remplissage. N'invente jamais un poste ou un lien ; si un opening est
-douteux, écris `(source à reconfirmer)`.
+**Ce qu'on écarte (sans le mentionner)** : tout ce qui est clos ou deadline
+dépassée, l'exécutant générique sans angle, le PhD-required strict, le US-only
+sans remote ni relocation AU possible. Le junior iconoclaste, lui, est une
+cible — pas un repoussoir. Si la session ne ramène rien de concret, dis-le en
+deux mots, pas de remplissage. N'invente jamais un poste ou un lien ; si un
+opening est douteux, « à reconfirmer » + le lien.
 
 ## Étape 3 — Écrire le livrable dans working-memory
 
@@ -135,13 +156,12 @@ Front matter standard :
 task: ai_jobs_formations
 run_at: <YYYY-MM-DDTHH:MM:SS+00:00>
 status: completed
-formations_kept: <n>
-jobs_kept: <n>
 ---
 ```
 
-Puis les 3 sections ci-dessus (densité **700-1500 mots**, dense pas verbeux),
-suivies de :
+Puis les sections ci-dessus — **seulement celles qui ont de la matière**. Pas
+de plancher de mots : si une semaine ne sort que deux formations et zéro job
+fort, le mail fait quelques lignes. Suivies de :
 
 - **### Candidature mûre ?** — si un poste ou programme a fit fort + deadline
   proche (< 30j), propose un angle de candidature en 5-8 bullets (angles à

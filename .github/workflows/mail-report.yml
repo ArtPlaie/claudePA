@@ -81,14 +81,40 @@ jobs:
           set -euo pipefail
           : "${GMAIL_USER:?secret GMAIL_USER manquant}"
           : "${GMAIL_APP_PASSWORD:?secret GMAIL_APP_PASSWORD manquant}"
+          pip install --quiet markdown
           python3 - <<'PY'
           import os, re, smtplib, ssl, sys
           from email.message import EmailMessage
           from pathlib import Path
+          import markdown as md
 
           user = os.environ["GMAIL_USER"]
           pwd = os.environ["GMAIL_APP_PASSWORD"].replace(" ", "")
           to = os.environ.get("MAIL_TO") or user
+
+          # Noms lisibles pour le sujet du mail (pas de slug technique).
+          NICE = {
+              "sydney_opportunities": "Sydney & Suisse",
+              "weekly_briefing": "Briefing de la semaine",
+              "ai_jobs_formations": "Jobs & formations IA",
+              "local_activities": "Sorties locales",
+              "activities_next10days": "À faire ces 10 jours",
+              "health_watch": "Veille santé",
+          }
+
+          # Retire le front matter YAML en tête (--- ... ---) : c'est de la
+          # mémoire interne, Sylvain ne doit jamais le voir dans son mail.
+          def strip_front_matter(text):
+              return re.sub(r"\A---\s*\n.*?\n---\s*\n", "", text, count=1, flags=re.DOTALL)
+
+          # Enveloppe HTML sobre, lisible dans Gmail (police système, liens
+          # cliquables, sections nettes). Le body est déjà du HTML rendu.
+          def wrap_html(body_html):
+              return (
+                  '<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,'
+                  'Arial,sans-serif;font-size:15px;line-height:1.55;color:#1a1a1a;'
+                  'max-width:640px">' + body_html + "</div>"
+              )
 
           files = [l.strip() for l in Path("changed.txt").read_text().splitlines() if l.strip()]
           if not files:
@@ -105,11 +131,22 @@ jobs:
                   m = re.match(r"(\d{4}-\d{2}-\d{2})-\d{4}-(.+)\.md$", p.name)
                   date = m.group(1) if m else ""
                   task = m.group(2) if m else p.stem
+                  title = NICE.get(task, task)
+
+                  raw = strip_front_matter(p.read_text(encoding="utf-8")).strip()
+                  # Pas de nl2br : un retour simple devient une espace (paras
+                  # qui coulent), seules les lignes vides séparent — évite les
+                  # retours chariot parasites même si la source est wrappée.
+                  html = wrap_html(md.markdown(raw, extensions=["extra", "sane_lists"]))
+
                   msg = EmailMessage()
                   msg["From"] = user
                   msg["To"] = to
-                  msg["Subject"] = f"claudePA — {task} {date}".strip()
-                  msg.set_content(p.read_text(encoding="utf-8"))
+                  msg["Subject"] = f"claudePA — {title} ({date})".strip()
+                  # Texte brut (markdown sans front matter) en fallback,
+                  # version HTML rendue en principal.
+                  msg.set_content(raw)
+                  msg.add_alternative(html, subtype="html")
                   s.send_message(msg)
                   print(f"OK — envoyé : {f} -> {to}")
           PY

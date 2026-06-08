@@ -16,6 +16,28 @@ pushes toi-même. Suis les étapes dans l'ordre.
 
 ---
 
+## Règle d'or — le livrable est un mail, pas un rapport machine
+
+Sylvain lit ça dans sa boîte Gmail. Ça doit se lire comme un mail rédigé par
+un **excellent assistant humain** (calibré science) : phrases qui respirent,
+sections évidentes, rien de robotique.
+
+- **Recherche large, sortie courte.** Fouille beaucoup, écris peu. Le but
+  n'est pas de remplir des sections, c'est de remonter le vrai signal.
+- **Pas de minimum, pas de remplissage.** Si une section n'a rien de notable,
+  dis-le en **une demi-ligne en français** et passe. Pas de papier n=20 sur
+  souris pour faire du volume.
+- **Zéro back-office visible.** Pas de méta du type « fenêtre = 14 jours »,
+  « entries_isa: 2 », rappel de méthode. Sylvain veut le signal, pas le
+  making-of.
+- **Pas de jargon d'IA.** N'écris pas « de-dup », « score », « source
+  primaire ». Écris humain.
+- **Exception santé** : le **niveau de confiance** sur la qualité de la preuve
+  (faible / moyen / fort) et l'**applicabilité pour Isa** sont du vrai signal
+  evidence-based que Sylvain veut — garde-les. Ce n'est pas du jargon cosmétique
+  comme les « fit » de job, c'est l'info utile pour arbitrer.
+- **N'invente jamais** un résultat, une dose, un lien. Dans le doute, dis-le.
+
 ## Étape 0 — Gardes (avant tout)
 
 1. **Panic** : si le fichier `.panic` existe à la racine du repo, **arrête
@@ -152,14 +174,11 @@ Front matter standard :
 task: health_watch
 run_at: <YYYY-MM-DDTHH:MM:SS+00:00>
 status: completed
-entries_sylvain: <n>
-entries_isa: <n>
-entries_publique: <n>
 ---
 ```
 
-Puis les 3 sections ci-dessus (densité **500-1000 mots**, dense pas verbeux),
-suivies de :
+Puis les sections ci-dessus — seulement celles qui ont du signal. **Pas de
+plancher de mots** : une quinzaine calme = un mail court. Suivies de :
 
 - **### Suggéré pour drafts/** — si une action concrète émerge (ex : "évaluer
   biothérapie dupilumab avec ORL référent d'Isa", "tester protocole X en salle

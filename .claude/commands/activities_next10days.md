@@ -16,6 +16,22 @@ pushes toi-même. Suis les étapes dans l'ordre.
 
 ---
 
+## Règle d'or — le livrable est un mail, pas un rapport machine
+
+Sylvain (et Isa) lisent ça dans la boîte Gmail. Ça doit se lire comme un mail
+rédigé par un **excellent assistant humain** : court, décidé, des sorties
+évidentes à choisir, rien de robotique.
+
+- **Pas de remplissage.** Si rien d'actionnable dans les 10 jours, dis-le en
+  une ligne et stop. On ne force pas une short-list pour faire joli.
+- **Zéro back-office visible.** Pas de méta du type « input: stale »,
+  « selected: 3 », « fenêtre = 10j », rappel de méthode. Juste les sorties à
+  choisir et quoi réserver.
+- **Pas de jargon d'IA.** N'écris pas « score », « de-dup », « rank ». Le
+  classement se voit dans l'ordre, pas dans un vocabulaire de machine.
+- **N'invente jamais** un événement, une date, une météo. Dans le doute :
+  « à reconfirmer » ou « météo non vérifiée ».
+
 ## Étape 0 — Gardes (avant tout)
 
 1. **Panic** : si le fichier `.panic` existe à la racine du repo, **arrête
@@ -118,9 +134,6 @@ Front matter standard :
 task: activities_next10days
 run_at: <YYYY-MM-DDTHH:MM:SS+00:00>
 status: completed
-window: <YYYY-MM-DD> → <YYYY-MM-DD>
-input_items: <n>     # entrées dans la liste source (0 si absente)
-selected: <n>        # entrées retenues (3-5, ou 0 si rien)
 ---
 ```
 

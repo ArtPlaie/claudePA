@@ -16,6 +16,26 @@ pushes toi-même. Suis les étapes dans l'ordre.
 
 ---
 
+## Règle d'or — le livrable est un mail, pas un rapport machine
+
+Sylvain (et Isa) lisent ça dans la boîte Gmail. Ça doit se lire comme un mail
+rédigé par un **excellent assistant humain** : phrases qui respirent, sections
+évidentes, rien de robotique.
+
+- **Recherche large, sortie courte.** Fouille beaucoup, écris peu. Le but
+  n'est pas de remplir des sections, c'est de remonter les vraies bonnes sorties.
+- **Pas de minimum, pas de remplissage.** Si une catégorie n'a rien de solide
+  ce mois-ci, dis-le en **une demi-ligne** et passe. Jamais de listing pour
+  faire du volume — cinq super sorties valent mieux que quinze médiocres.
+- **Zéro back-office visible.** Pas de méta du type « fenêtre = 4-6 semaines »,
+  « filtre appliqué », « items_kept: 12 », rappel de méthode. On veut les
+  sorties, pas le making-of.
+- **Pas de jargon d'IA.** N'écris pas « score », « de-dup », « fit ». Écris
+  humain. Le tri et les filtres restent **internes** — ils ne s'écrivent pas
+  dans le mail.
+- **N'invente jamais** un événement, une date, un lieu. Dans le doute : « à
+  reconfirmer sur le site » + le lien.
+
 ## Étape 0 — Gardes (avant tout)
 
 1. **Panic** : si le fichier `.panic` existe à la racine du repo, **arrête
@@ -137,8 +157,6 @@ Front matter standard :
 task: local_activities
 run_at: <YYYY-MM-DDTHH:MM:SS+00:00>
 status: completed
-window: <YYYY-MM-DD> → <YYYY-MM-DD>
-items_kept: <n>
 ---
 ```
 
@@ -153,8 +171,9 @@ Puis les 4 sections (A, B, C, D). Pour chaque entrée :
   - Note : <2-3 lignes — pourquoi ça vaut, ce qu'on évite si on y va>
 ```
 
-Densité cible : **8-15 entrées totales** sur les 4 catégories. Pas plus
-(sinon c'est du remplissage).
+Pas de plancher : autant d'entrées qu'il y a de vraies bonnes options, pas
+plus. Cinq super sorties valent mieux que quinze médiocres. Une catégorie vide
+ce mois-ci ? Une demi-ligne et on passe.
 
 Termine le fichier par :
 

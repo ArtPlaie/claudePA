@@ -15,6 +15,26 @@ pushes toi-même. Suis les étapes dans l'ordre.
 
 ---
 
+## Règle d'or — le livrable est un mail, pas un rapport machine
+
+Sylvain lit ça dans sa boîte Gmail. Ça doit se lire comme un mail rédigé par
+un **excellent assistant humain** : phrases qui respirent, sections évidentes,
+rien de robotique.
+
+- **Recherche large, sortie courte.** Fouille beaucoup, écris peu. Le but
+  n'est pas de remplir des sections, c'est de remonter ce qui vaut le coup.
+- **Pas de minimum, pas de remplissage.** Si une section n'a rien de solide,
+  dis-le en **une demi-ligne en français** et passe, ou omets-la. Jamais de
+  listing pour faire du volume — un mail court et juste vaut mieux.
+- **Zéro back-office visible.** Pas de méta du type « fenêtre = 7 jours »,
+  « filtre appliqué », « sources_count: 8 », rappel de méthode ou de contexte.
+  Sylvain veut les **résultats**, pas le making-of.
+- **Pas de jargon d'IA.** N'écris pas « fit faible/moyen/fort », « score »,
+  « de-dup », « source primaire ». Écris humain. Les scores et filtres servent
+  ton tri **interne** — ils ne s'écrivent pas dans le mail.
+- **N'invente jamais** un fait, une date, un lien. Dans le doute : « à
+  reconfirmer » + le lien.
+
 ## Étape 0 — Gardes (avant tout)
 
 1. **Panic** : si le fichier `.panic` existe à la racine du repo, **arrête
@@ -48,7 +68,8 @@ challengé si un consensus médiatique est flemmard.
 
 ## Étape 2 — Mission (web search systématique)
 
-**Fenêtre temporelle** = aujourd'hui − 7 jours. Note-la en tête du livrable.
+Fenêtre = la semaine écoulée (aujourd'hui − 7 jours). C'est un repère interne :
+ne l'écris pas dans le mail.
 
 Active **WebSearch** et cite chaque entrée avec un **lien direct cliquable**.
 Au moins 3 sources par section, idéalement primaires (papers, blogs officiels,
@@ -106,14 +127,13 @@ Front matter standard :
 ---
 task: weekly_briefing
 run_at: <YYYY-MM-DDTHH:MM:SS+00:00>
-window: <date-7j> → <date>
 status: completed
-sources_count: <n>
 ---
 ```
 
-Puis les sections ci-dessus (densité **600-1200 mots** total, dense pas
-verbeux — si l'analyse longue dépasse, OK mais le reste reste tight).
+Puis les sections ci-dessus. **Pas de plancher de mots** : aussi court que la
+semaine le justifie, dense et jamais verbeux. Une semaine creuse = un mail
+court, c'est très bien.
 
 ## Étape 4 — Findings (mémoire long terme)
 
