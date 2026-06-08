@@ -207,6 +207,15 @@ décision d'archi prise) :
 
 - Pas de secret en clair dans le repo. GitHub Secrets pour les tasks
   GHA ; env vars de l'environnement routine pour les veilles.
+- **Rapports de veille → toujours sur `main`, jamais sur une branche de
+  feature.** Vaut pour les 6 veilles (`sydney_opportunities`,
+  `weekly_briefing`, `ai_jobs_formations`, `local_activities`,
+  `activities_next10days`, `health_watch`). C'est le push sur `main` qui
+  déclenche `mail-report.yml` (`on: push` filtré sur
+  `working-memory/*-<veille>.md`) → un rapport poussé ailleurs n'envoie
+  aucun mail. En session interactive, si une config impose une branche de
+  feature, le rapport doit quand même finir sur `main` (merge ff ou push
+  direct) — demander confirmation si la consigne de branche l'interdit.
 - Pas de `git push --force` sur main.
 - Tests d'idempotence avant merge d'une nouvelle tâche : un re-run
   ne doit pas re-créer un draft pour la même fenêtre.
