@@ -1,0 +1,99 @@
+name: task-mail-test
+
+# Test d'envoi de mail via SMTP Gmail (app password).
+#
+# Pourquoi ce workflow existe : l'envoi SMTP brut (port 465/587) ne marche
+# PAS depuis les environnements Claude Code on the web / routines — leur
+# egress passe par un proxy HTTP/HTTPS qui ne laisse sortir que le 443.
+# GitHub Actions, lui, a l'egress TCP brut → c'est ici qu'on valide la
+# chaîne d'envoi SMTP de bout en bout.
+#
+# Déclenchement : manuel uniquement (onglet Actions → "Run workflow"), ou
+# via workflow_dispatch API (Cloudflare Worker). Aucun cron : c'est un outil
+# de diagnostic, pas une veille.
+#
+# Secrets requis (Settings → Secrets and variables → Actions) :
+#   - GMAIL_USER          adresse du compte expéditeur (ex: ...claudepa@gmail.com)
+#   - GMAIL_APP_PASSWORD  app password 16 caractères (PAS le mot de passe du compte)
+#   - MAIL_TO             destinataire par défaut si l'input `to` est vide
+
+on:
+  workflow_dispatch:
+    inputs:
+      to:
+        description: "Destinataire (vide → secret MAIL_TO)"
+        required: false
+        default: ""
+      subject:
+        description: "Sujet du mail"
+        required: false
+        default: "Test claudePA — envoi SMTP OK"
+      message:
+        description: "Corps du mail"
+        required: false
+        default: "Mail de test depuis GitHub Actions via SMTP Gmail (app password). Si tu lis ça, la chaîne d'envoi fonctionne."
+
+permissions:
+  contents: read
+
+concurrency:
+  group: claudepa-mail-test
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Check panic sentinel
+        run: |
+          if [ -f .panic ]; then
+            echo "🔴 .panic présent — abandon de l'envoi."
+            cat .panic
+            exit 1
+          fi
+          echo "no panic, proceeding"
+
+      - name: Send test email
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          INPUT_TO: ${{ inputs.to }}
+          INPUT_SUBJECT: ${{ inputs.subject }}
+          INPUT_MESSAGE: ${{ inputs.message }}
+        run: |
+          set -euo pipefail
+          : "${GMAIL_USER:?secret GMAIL_USER manquant}"
+          : "${GMAIL_APP_PASSWORD:?secret GMAIL_APP_PASSWORD manquant}"
+          python3 - <<'PY'
+          import os, smtplib, ssl, sys
+          from email.message import EmailMessage
+          from datetime import datetime, timezone
+
+          user = os.environ["GMAIL_USER"]
+          pwd = os.environ["GMAIL_APP_PASSWORD"].replace(" ", "")
+          to = os.environ.get("INPUT_TO") or os.environ.get("MAIL_TO") or user
+
+          msg = EmailMessage()
+          msg["From"] = user
+          msg["To"] = to
+          msg["Subject"] = os.environ.get("INPUT_SUBJECT") or "Test claudePA — envoi SMTP OK"
+          body = os.environ.get("INPUT_MESSAGE") or "Mail de test."
+          stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+          msg.set_content(f"{body}\n\nEnvoyé : {stamp} (GitHub Actions)\n")
+
+          ctx = ssl.create_default_context()
+          try:
+              with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ctx, timeout=30) as s:
+                  s.login(user, pwd)
+                  s.send_message(msg)
+          except smtplib.SMTPAuthenticationError as e:
+              print(f"::error::Auth SMTP refusée — app password invalide/expiré ? {e}", file=sys.stderr)
+              sys.exit(1)
+          print(f"OK — mail envoyé : {user} -> {to}")
+          PY
