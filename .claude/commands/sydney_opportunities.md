@@ -167,3 +167,40 @@ git push origin main   # retry x4 backoff 2/4/8/16s si erreur réseau
 
 Ne push jamais en `--force`. Si rien n'a été produit (cas skip déjà géré en
 étape 0), ne crée pas de commit vide.
+
+## Étape 6 — Envoi email (best-effort, SMTP `claudePA@gmail.com`)
+
+Envoie le rapport par mail à Sylvain via SMTP Gmail. Si `GMAIL_USER`,
+`GMAIL_APP_PASSWORD` ou `MAIL_TO` ne sont pas définis, **skip en silence**
+(ne casse pas le run — le rapport reste committé dans `working-memory/`).
+
+Le corps du mail = le **rapport complet** (le fichier working-memory que tu
+viens d'écrire, en texte). Subject avec la date et les compteurs. Exécute,
+en remplaçant `WM_FILE` par le chemin réel du fichier produit à l'étape 3 :
+
+```bash
+WM_FILE="working-memory/<le-fichier-produit>.md"
+if [ -n "$GMAIL_USER" ] && [ -n "$GMAIL_APP_PASSWORD" ] && [ -n "$MAIL_TO" ]; then
+  WM_FILE="$WM_FILE" python3 - <<'PY'
+import os, smtplib, ssl, datetime
+from email.message import EmailMessage
+
+body = open(os.environ["WM_FILE"], encoding="utf-8").read()
+msg = EmailMessage()
+msg["From"] = os.environ["GMAIL_USER"]
+msg["To"] = os.environ["MAIL_TO"]
+msg["Subject"] = f"claudePA — veille Sydney {datetime.date.today():%Y-%m-%d}"
+run = os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID")
+header = f"Run: https://claude.ai/code/{run}\n\n" if run else ""
+msg.set_content(header + body)
+
+with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ssl.create_default_context()) as s:
+    s.login(os.environ["GMAIL_USER"], os.environ["GMAIL_APP_PASSWORD"])
+    s.send_message(msg)
+print("email sent to", os.environ["MAIL_TO"])
+PY
+fi
+```
+
+Note : l'app-password ne s'affiche jamais dans le repo ni les logs (il vient
+de l'env var de la routine). N'envoie pas le mail si l'étape 0 a skip le run.
