@@ -116,12 +116,18 @@ mémoire sans web search.
    - mission de la veille, méthode (web search, sources), format de sortie ;
    - étapes finales : écrire `working-memory/YYYY-MM-DD-HHMM-<nom>.md`
      (front matter standard), appender `digests/findings.md` si pertinent,
-     `git add && git commit && git push` sur `main`.
+     `git add && git commit && git push` sur `main`, puis **envoi email** du
+     rapport via `uv run python -m tasks.send_report --file <wm> --subject …`
+     (best-effort, skip si non configuré).
 2. Ajoute une entrée dans `schedule.yaml` (cadence indicative, model, canal).
 3. Crée la routine sur `claude.ai/code/routines` :
    - prompt : `Lance /<nom>. Suis les étapes finales de la command.` ;
    - repo : `artplaie/claudepa` ; *Allow unrestricted branch pushes* = ON ;
    - environnement : réseau **Full** (les veilles citent des liens directs) ;
+   - **setup script** : `uv sync` (installe les deps, dont les libs Gmail
+     pour `send_report`) — caché entre runs ;
+   - **env vars** : `GMAIL_TOKEN_PA_JSON` (token OAuth compte PA, pour
+     l'envoi mail HTTPS) + `MAIL_TO` (destinataire) ;
    - trigger scheduled selon `schedule.yaml` (cron custom via
      `/schedule update` si le preset ne suffit pas, min 1 h).
 4. `Run now` une fois, vérifie le commit + le `working-memory/...md` produit.
@@ -221,14 +227,18 @@ Statut courant : **Phase 1.5 + migration orchestration en cours**.
 - **Tasks GHA actives** : `daily_digest`, `mail_review`,
   `location_context`, `sliding_window`. OAuth Gmail wiré (perso readonly
   + PA modify). Crons opérés par CF Worker.
-- **Veilles** : migrent vers routines (`.claude/commands/`). Pilote =
-  `sydney_opportunities` — **command écrite** (`.claude/commands/sydney_opportunities.md`),
-  reste à créer la routine côté `claude.ai/code/routines` puis `Run now`.
-  Suivront : `weekly_briefing`,
+- **Veilles** : migrées vers routines (`.claude/commands/`). **6 commands
+  écrites** : `sydney_opportunities` (pilote), `weekly_briefing`,
   `ai_jobs_formations`, `local_activities`, `activities_next10days`,
-  `health_watch`. `prompts/*.md` est le mode dégradé historique
-  (copier-coller dans claude.ai) — sera retiré au fur et à mesure que
-  les commands prennent le relais.
+  `health_watch`. Toutes finissent par un **envoi email** du rapport
+  (`tasks/send_report.py`, API Gmail HTTPS). Reste à créer les routines côté
+  `claude.ai/code/routines` (une par command) puis `Run now`. `prompts/*.md`
+  = mode dégradé historique (bandeau en tête), retiré à terme.
+- **Envoi mail depuis une routine** : SMTP brut (465/587) est **bloqué** par
+  le proxy egress du web/routine (seul le 443 sort). On envoie via l'**API
+  Gmail OAuth HTTPS** (`tasks/_lib/gmail.py` compte PA, `GMAIL_TOKEN_PA_JSON`),
+  wrappée dans `tasks/send_report.py`. SMTP réservé au chemin GHA (cf.
+  `task-mail-test.yml`) ou local.
 - **Encore à arbitrer** : sort des 4 tasks GHA actives (rester GHA ou
   migrer routine) ; livraison des rapports de veille (lire dans le repo
   vs pousser sur Telegram/email) ; reprise du PA Telegram inbound.
