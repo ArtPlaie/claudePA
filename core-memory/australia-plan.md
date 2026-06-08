@@ -17,8 +17,8 @@ Tout poste intellectuellement stimulant pour un profil :
 
 - AI Safety / alignement (rôle technique, policy, ops, comms).
 - Recherche appliquée (think tanks, instituts).
-- Tech (rôles seniors produit / data / quanti).
-- Finance quanti (trading, market making, gestion).
+- Tech / produit / data dans des boîtes IA.
+- Formations IA et opportunités d'investissement / cofounding pertinentes.
 
 Pas de contrainte salariale bloquante. Pas de prérequis PhD.
 
@@ -27,6 +27,8 @@ Pas de contrainte salariale bloquante. Pas de prérequis PhD.
 - Rôles juniors / process / corporate sans substance.
 - Postes purement académiques nécessitant doctorat.
 - Roles 100% management sans fond technique / intellectuel.
+- **Trading / finance quanti / market making / hedge funds** — plus une
+  cible (Sylvain se reconvertit vers l'IA, pas de retour au trading).
 
 ## Suisse — secondaire
 

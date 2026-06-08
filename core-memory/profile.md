@@ -52,8 +52,9 @@ transport. Paris et grande couronne sont accessibles mais pas le défaut.
 
 - **Australie (Sydney)** : visa PR existant, travel facility à
   renouveler. Cherche tout poste intéressant pour un profil d'intello en
-  reconversion — AI safety, recherche, policy, tech, finance quanti. Pas
-  de contrainte salariale bloquante mais le poste doit être
+  reconversion — AI safety, recherche, policy, tech, formations IA,
+  invest/cofounding. **Pas de trading / finance quanti** (plus une cible).
+  Pas de contrainte salariale bloquante mais le poste doit être
   intellectuellement stimulant.
 - **Suisse** : relocalisation uniquement si poste ou formation très
   intéressant. Permis B nécessaire (contrat requis). Pas de move
