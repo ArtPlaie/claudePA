@@ -222,7 +222,9 @@ Statut courant : **Phase 1.5 + migration orchestration en cours**.
   `location_context`, `sliding_window`. OAuth Gmail wiré (perso readonly
   + PA modify). Crons opérés par CF Worker.
 - **Veilles** : migrent vers routines (`.claude/commands/`). Pilote =
-  `sydney_opportunities`. Suivront : `weekly_briefing`,
+  `sydney_opportunities` — **command écrite** (`.claude/commands/sydney_opportunities.md`),
+  reste à créer la routine côté `claude.ai/code/routines` puis `Run now`.
+  Suivront : `weekly_briefing`,
   `ai_jobs_formations`, `local_activities`, `activities_next10days`,
   `health_watch`. `prompts/*.md` est le mode dégradé historique
   (copier-coller dans claude.ai) — sera retiré au fur et à mesure que
