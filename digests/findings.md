@@ -42,3 +42,17 @@
 **Lien** : https://apply.joinef.com/
 **Pourquoi ça compte** : EF investit dans des individus (pas d'idée requise), focus AI/deeptech, sites incluant Singapour (APAC). Profil ex-fondateur/calibration différenciant. 3e et dernier round = deadline 22 juin.
 **Suite** : décision rapide à prendre (full-time + relocation temporaire = blocker famille à arbitrer) ; sinon candidater comme test de positionnement cofounder.
+
+### 2026-06-08 — Dupilumab approuvé (FDA) dans la rhinosinusite fongique allergique — option non-ATB pour Isa
+**Tags** : santé, isa, orl, biothérapie, non-atb
+**Source** : health_watch
+**Lien** : https://investor.regeneron.com/news-releases/news-release-details/dupixentr-dupilumab-approved-us-first-and-only-medicine-allergic
+**Pourquoi ça compte** : 1ère thérapie ciblée jamais approuvée sur l'AFRS (FDA, 24 fév. 2026), anti-IL-4/13, injectable — 100 % compatible avec la contre-indication ATB systémique d'Isa. Élargit le terrain du dupilumab au-delà de la CRSwNP. Si son ORL chronique est un phénotype inflammatoire type 2, c'est une vraie option de fond.
+**Suite** : poser la question du phénotype + éligibilité dupilumab à l'ORL référent d'Isa.
+
+### 2026-06-08 — Calendrier vaccinal FR 2026 : méningo ACWY+B obligatoires, rattrapage obligatoire 2-4 ans
+**Tags** : santé, publique, enfants, vaccination, meningocoque
+**Source** : health_watch
+**Lien** : https://professionnels.vaccination-info-service.fr/Toutes-les-actualites/Nouveautes-du-calendrier-vaccinal-2026
+**Pourquoi ça compte** : Hausse des infections invasives à méningocoque → ACWY + B obligatoires chez le nourrisson (nés ≥ 1 jan 2023) et rattrapage obligatoire/remboursé pour les 2-4 ans révolus (nés 2020-2024). Touche directement les deux plus jeunes enfants.
+**Suite** : vérifier le statut ACWY + B des enfants au prochain RDV pédiatre.
