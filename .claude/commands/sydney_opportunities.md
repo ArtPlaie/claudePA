@@ -1,14 +1,15 @@
 ---
-description: Veille Sydney + Suisse (jobs intello, news visa PR, leads) — routine hebdo
+description: Veille Sydney + Suisse — reconversion IA (jobs, formations, invest/cofounding, serendipity) — routine hebdo
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, WebSearch, WebFetch
 ---
 
 # /sydney_opportunities
 
-Run de la veille `sydney_opportunities` : focus **Sydney + Suisse**, jobs
-intellectuellement stimulants, news visa/PR Australie, leads pour la
-relocalisation 6-18 mois. Un seul livrable, écrit dans `working-memory/`,
-committé sur `main`.
+Run de la veille `sydney_opportunities` : focus **Sydney + Suisse**, axé
+**reconversion vers l'IA** — formations IA, jobs IA ouverts à un profil non-PhD,
+opportunités d'investissement/cofounding, et une section serendipity en
+créativité max. **Pas de trading / finance quanti.** News visa/PR Australie en
+contexte. Un seul livrable, écrit dans `working-memory/`, committé sur `main`.
 
 Tu tournes comme une **session Claude Code** (pas un copier-coller chat) :
 tu as les outils, tu lis la mémoire en direct, tu écris les fichiers et tu
@@ -55,56 +56,94 @@ aujourd'hui − 7 jours pour les news/openings récents ; pour les listings
 d'emploi, retiens tout poste dont la **date de clôture n'est pas dépassée**
 même si publié avant.
 
-Quatre sections obligatoires, dans cet ordre :
+Six sections obligatoires, dans cet ordre :
 
 ### 1. News visa / immigration Australie
 
 - Skilled migration / employer-sponsored / Global Talent (subclass
   189/186/491/858), points-test, processing times, **renouvellement travel
   facility PR** (si tu trouves une source officielle sur les dates, signale-la).
-- News régulation crypto / fintech / AI / data côté visa.
+- News régulation IA / data côté visa et talent.
 - Source primaire **obligatoire** : `homeaffairs.gov.au` + presse établie
   (SMH, AFR, ABC). Préfère toujours gov.au à l'analyse de presse, et précise
   la date de la page consultée.
 
-### 2. Leads emploi Sydney (cette semaine)
+### 2. Jobs IA — Sydney + Suisse (ouverts à un profil en reconversion)
 
-Scanne les postes ouverts matchant le profil. Cibles canoniques à vérifier
-systématiquement via web search :
+Postes ouverts dans l'IA accessibles à quelqu'un qui **se reconvertit** vers
+l'IA depuis un profil quanti non-PhD (calibration, pensée adversariale,
+Python, macro/finance). On vise : AI Safety / alignement (technique appliqué,
+ops, policy, eval, red-teaming, governance, comms), research engineering,
+product/data senior dans des boîtes IA. Cibles canoniques :
 
 - **Anthropic Sydney/APAC**, **OpenAI/DeepMind APAC** (si présence).
 - **CSIRO Data61** (responsible AI), **Australian AI Safety Institute** ou
   équivalent gouvernemental (DISR / Industry).
-- **Atlassian**, **Canva** — rôles seniors AI/ML/quanti/data.
-- Finance quanti : **Macquarie**, **AMP Capital**, **Optiver Sydney**,
-  **IMC**, **Akuna**, **SIG** ; hedge funds (**Regal**, **Munro**, **Bell
-  AM**) — systematic / quant.
-- Think tanks / policy : **Lowy Institute**, **Centre for Independent
-  Studies**, **Tech Council of Australia**.
-- Universités (Macquarie, Sydney, UNSW, ANU) — postes **non-académiques**
-  (AI policy fellow, industry liaison, research engineer).
+- **Atlassian**, **Canva** — équipes AI/ML/data.
+- Startups IA AU/CH, think tanks / policy : **Lowy Institute**, **Centre for
+  Independent Studies**, **Tech Council of Australia**.
+- Universités (Macquarie, Sydney, UNSW, ANU, **ETH/EPFL AI Center**, **CeSIA**)
+  — postes **non-académiques** (AI policy fellow, industry liaison, research
+  engineer).
+- Suisse : permis B = contrat préalable obligatoire (pas de frontalier).
 
 Pour chaque lead : titre · org · **lien direct** · seniority · remote
-(oui/non) · fit (faible/moyen/fort) · note 2-3 lignes (angle + risque).
+(oui/non) · fit (faible/moyen/fort) · note 2-3 lignes (angle de reconversion + risque).
 
-### 3. Suisse — leads secondaires (mention courte)
+> ⛔️ **EXCLU explicitement** (demande de Sylvain) : trading, market making,
+> finance quanti, hedge funds, "quant researcher / systematic strategies".
+> Ne propose **aucun** poste de ce type, même très bien payé. Si
+> `australia-plan.md` mentionne encore la finance quanti comme cible,
+> **ignore-le** : ce n'est plus une cible.
 
-- **ETH AI Center**, **EPFL AI Center**, **CLST**, **CeSIA** (FR), startups
-  IA suisses, finance quanti CH (Pictet quant, CFM Geneva, etc.).
-- Permis B = contrat préalable obligatoire (pas de frontalier). Si rien de
-  signal-fort : `(rien de notable côté CH cette semaine)`.
+### 3. Formations IA (priorité)
 
-### 4. Veille soft (contexte décision famille)
+Programmes pour monter en compétence / se reconvertir dans l'IA, adaptés à un
+profil quanti non-PhD. Scanne les sessions ouvertes + **deadlines** :
 
-- 1-3 entrées **non-emploi** substantielles : immo locatif Sydney, écoles
-  internationales, scène galeries (pour Isa), events crypto/AI APAC.
+- **MATS**, **ARENA**, **AI Safety Fundamentals** (BlueDot Impact), fellowships
+  (Anthropic, GovAI, Apollo, Redwood…), residencies, programmes ETH/EPFL,
+  bootcamps techniques sérieux, MOOCs avancés ciblés.
+- Pour chaque : nom · org · **lien** · format (remote/in-person) · prochaine
+  deadline · fit profil · note 1-2 lignes (pourquoi c'est pertinent pour lui).
+
+### 4. Investissement / cofounding
+
+Opportunités d'**investir** ou de **co-fonder** dans des domaines pertinents
+pour son profil (IA, AI safety tooling, crypto×IA, deeptech) :
+
+- Startups qui cherchent un cofounder technique/quant ; deals angel /
+  syndicates ; programmes type **Entrepreneur First**, **YC**, accélérateurs
+  APAC/EU ; incubateurs AI safety.
+- Pour chaque : nom · **lien** · ce qui est cherché (capital / cofounder /
+  advisor) · fit · note 1-2 lignes (angle + risque).
+- Si rien de solide : `(rien de concret côté invest/cofounding cette semaine)`.
+
+### 5. Serendipity — carte blanche (créativité max)
+
+1-3 idées **hors-piste** que tu proposes librement, en mode créativité
+maximale. Pas de filtre de format : projet perso, side-project, angle de
+contenu, personne à rencontrer, niche à explorer, pari contrarian,
+collaboration, mouvement de carrière inattendu. Sers-toi de tout le profil
+(ex-trader algo crypto reconverti, calibration sous incertitude, pensée
+adversariale, figure publique crypto FR `@ArtPlaie`, cap Australie, famille).
+Sois **audacieux et spécifique**, jamais générique. Assume les idées même
+incertaines — c'est exactement le but de cette section. Si une idée est
+brillante mais risquée, dis-le et propose-la quand même.
+
+### 6. Veille soft (contexte décision famille)
+
+- 1-2 entrées **non-emploi** substantielles : immo locatif Sydney, écoles
+  internationales, scène galeries (pour Isa), events IA APAC.
 - Filtre : substantiel uniquement, pas de tourisme.
 
-**Filtre dur** (toutes sections) : pas de junior / process / corporate sans
+**Filtre dur** (toutes sections) : **aucun** trading / finance quanti / market
+making (exclu sur demande). Pas de junior / process / corporate sans
 substance, pas de PhD-required strict, pas de poste US-only sans relocation
-AU possible, pas de buzz sans fond. Si la session ramène 0 opportunité
-concrète, dis-le — pas de remplissage. N'invente jamais un poste ou un lien ;
-si un opening est douteux, écris `(statut à reconfirmer)`.
+AU possible, pas de buzz sans fond. Si une section ne ramène rien de concret,
+dis-le — pas de remplissage. N'invente jamais un poste, une formation ou un
+lien ; si un opening est douteux, écris `(statut à reconfirmer)`. La section
+Serendipity, elle, doit **toujours** proposer quelque chose.
 
 ## Étape 3 — Écrire le livrable dans working-memory
 
@@ -116,25 +155,21 @@ Front matter standard :
 task: sydney_opportunities
 run_at: <YYYY-MM-DDTHH:MM:SS+00:00>
 status: completed
-news_visa: <n>
-leads_sydney: <n>
-leads_ch: <n>
+jobs_ia: <n>
+formations: <n>
+invest_cofounding: <n>
+serendipity: <n>
 ---
 ```
 
-Puis les 4 sections ci-dessus (densité **500-1000 mots**, dense pas verbeux),
+Puis les 6 sections ci-dessus (densité **600-1200 mots**, dense pas verbeux),
 suivies de :
 
-- **### Suggestion australia-plan.md** — si un lead concret a émergé (org +
-  rôle + statut), propose UNE ligne au format
-  `- [YYYY-MM-DD] <org> — <rôle/contexte> — <statut>`. **Ne modifie pas**
-  `core-memory/australia-plan.md` toi-même : c'est une suggestion que Sylvain
-  validera. Sinon `(rien à appender cette semaine)`.
-- **### Candidature mûre ?** — si un job ouvert a un fit fort + deadline
-  proche, propose un angle de candidature en 5-8 bullets (angles + risque
-  adversaire, pas de cover letter). Avant : vérifie `core-memory/skip-patterns.md`,
-  si pattern proche → n'insiste pas. Pas de création de draft/envoi
-  automatique : Sylvain décide.
+- **### Candidature / candidature formation mûre ?** — si un job ou une
+  formation a un fit fort + deadline proche, propose un angle en 5-8 bullets
+  (angles + risque, pas de cover letter). Avant : vérifie
+  `core-memory/skip-patterns.md`, si pattern proche → n'insiste pas. Pas de
+  création de draft/envoi automatique : Sylvain décide.
 
 ## Étape 4 — Findings (mémoire long terme)
 
