@@ -1,8 +1,16 @@
 # prompts/ — prompts auto-suffisants pour le chat web Claude
 
-> Mode dégradé en attendant que l'infra `claudePA` (GitHub Actions + Cloudflare Worker)
-> soit complètement câblée. Chaque fichier `<task>.md` est un prompt complet,
-> à copier-coller tel quel dans une nouvelle conversation sur https://claude.ai.
+> **Statut (révision 2026-06)** : ce dossier est le **mode dégradé
+> historique**. Décision prise de basculer les veilles sur **Claude Code
+> Routines** (cf. `SPEC.md` § "Orchestration — Claude Code Routines"). La
+> logique de chaque veille migre vers `.claude/commands/<task>.md`, et la
+> routine planifiée tourne sur l'infra Anthropic avec web search natif,
+> commit + push sur `main`.
+>
+> Tant que la command correspondante n'existe pas, le fichier
+> `prompts/<task>.md` ci-dessous reste utilisable en copier-coller dans
+> une nouvelle conversation sur https://claude.ai. Une fois la command
+> en place et la routine validée, le prompt sera retiré de ce dossier.
 
 ## Usage
 
@@ -30,14 +38,22 @@
 Chaque prompt demande à la fin un bloc **front matter YAML** + corps en markdown,
 équivalent à ce qu'écrirait la tâche dans `working-memory/`. Tu peux copier ce bloc
 manuellement dans `working-memory/YYYY-MM-DD-HHMM-<task>.md` après chaque run pour
-préserver la continuité de la mémoire quand l'infra sera prête.
+préserver la continuité de la mémoire.
 
 Les findings importants doivent aussi être appendés à `digests/findings.md` au format
 documenté en haut de ce fichier.
+
+> Note : ce copier-coller manuel disparaît côté routine — la command
+> écrit `working-memory/` et appende `findings.md` toute seule avant de
+> commit-push.
 
 ## Mises à jour
 
 Ces prompts sont une **photo** des fichiers `core-memory/*` et `SPEC.md` à la date
 de création. Si tu édites `profile.md`, `policies.md`, `family.md`, `current-location.md`
-ou `australia-plan.md`, regénère les prompts (ou édite-les à la main aux endroits
-annotés `<!-- core-memory:* -->`).
+ou `australia-plan.md`, il faut regénérer les prompts (ou les éditer à la main aux
+endroits annotés `<!-- core-memory:* -->`).
+
+C'est précisément ce défaut que la bascule routine corrige : les commands
+de `.claude/commands/` lisent les fichiers core-memory **en direct** au
+run, donc une édition de `profile.md` est prise en compte immédiatement.
