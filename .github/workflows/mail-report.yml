@@ -1,0 +1,115 @@
+name: mail-report
+
+# Envoi automatique par mail des rapports de veille.
+#
+# Pourquoi : les routines (Claude Code on the web) ne peuvent PAS envoyer en
+# SMTP (proxy egress = 443 only) ni dispatcher une GHA (pas de scope
+# actions:write). Mais une routine pousse son rapport sur `main`. Ce workflow
+# se déclenche sur ce push, lit le(s) rapport(s) de veille ajouté(s) et les
+# envoie en SMTP — sur l'infra GHA, où le SMTP brut fonctionne.
+#
+# Déclenchement : push sur `main` touchant un fichier working-memory de veille.
+# Les commits "auto:" des veilles matchent ; les autres tâches
+# (daily_digest, location_context, sliding_window) ne matchent pas (paths).
+# Les logs de skip (`*-<veille>-skip.md`) ne matchent pas non plus.
+#
+# Secrets requis : GMAIL_USER, GMAIL_APP_PASSWORD, MAIL_TO (déjà en place,
+# validés par task-mail-test).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "working-memory/*-sydney_opportunities.md"
+      - "working-memory/*-weekly_briefing.md"
+      - "working-memory/*-ai_jobs_formations.md"
+      - "working-memory/*-local_activities.md"
+      - "working-memory/*-activities_next10days.md"
+      - "working-memory/*-health_watch.md"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: claudepa-mail-report-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check panic sentinel
+        run: |
+          if [ -f .panic ]; then
+            echo "🔴 .panic présent — abandon de l'envoi."
+            exit 1
+          fi
+          echo "no panic, proceeding"
+
+      - name: Find changed veille reports
+        id: changed
+        run: |
+          set -uo pipefail
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.event.after }}"
+          # Garde-fous : si BEFORE est nul/invalide (création de branche,
+          # force-push), retombe sur le diff du dernier commit.
+          if [ -z "$BEFORE" ] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            BEFORE="${AFTER}~1"
+          fi
+          PATTERN='working-memory/.*-(sydney_opportunities|weekly_briefing|ai_jobs_formations|local_activities|activities_next10days|health_watch)\.md$'
+          git diff --name-only --diff-filter=AM "$BEFORE" "$AFTER" \
+            | grep -E "$PATTERN" > changed.txt || true
+          echo "Fichiers détectés :"
+          cat changed.txt || true
+          if [ ! -s changed.txt ]; then
+            echo "Aucun rapport de veille dans ce push — rien à envoyer."
+          fi
+
+      - name: Send reports by email
+        if: ${{ hashFiles('changed.txt') != '' }}
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          set -euo pipefail
+          : "${GMAIL_USER:?secret GMAIL_USER manquant}"
+          : "${GMAIL_APP_PASSWORD:?secret GMAIL_APP_PASSWORD manquant}"
+          python3 - <<'PY'
+          import os, re, smtplib, ssl, sys
+          from email.message import EmailMessage
+          from pathlib import Path
+
+          user = os.environ["GMAIL_USER"]
+          pwd = os.environ["GMAIL_APP_PASSWORD"].replace(" ", "")
+          to = os.environ.get("MAIL_TO") or user
+
+          files = [l.strip() for l in Path("changed.txt").read_text().splitlines() if l.strip()]
+          if not files:
+              print("rien à envoyer"); sys.exit(0)
+
+          ctx = ssl.create_default_context()
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ctx, timeout=30) as s:
+              s.login(user, pwd)
+              for f in files:
+                  p = Path(f)
+                  if not p.exists():
+                      print(f"absent, skip: {f}"); continue
+                  # nom: YYYY-MM-DD-HHMM-<task>.md → task + date
+                  m = re.match(r"(\d{4}-\d{2}-\d{2})-\d{4}-(.+)\.md$", p.name)
+                  date = m.group(1) if m else ""
+                  task = m.group(2) if m else p.stem
+                  msg = EmailMessage()
+                  msg["From"] = user
+                  msg["To"] = to
+                  msg["Subject"] = f"claudePA — {task} {date}".strip()
+                  msg.set_content(p.read_text(encoding="utf-8"))
+                  s.send_message(msg)
+                  print(f"OK — envoyé : {f} -> {to}")
+          PY

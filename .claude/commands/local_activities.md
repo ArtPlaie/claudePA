@@ -205,24 +205,14 @@ git push origin main   # retry x4 backoff 2/4/8/16s si erreur réseau
 Ne push jamais en `--force`. Si rien n'a été produit (cas skip déjà géré en
 étape 0), ne crée pas de commit vide.
 
-## Étape 6 — Envoi email du rapport (API Gmail HTTPS, compte PA)
+## Étape 6 — Envoi email (automatique, hors routine)
 
-⚠️ Le **SMTP brut (465/587) ne marche PAS** depuis une routine : le proxy
-egress ne laisse sortir que le 443. On envoie donc via l'**API Gmail OAuth
-en HTTPS**, wrappée dans `tasks/send_report.py` (compte PA, env var
-`GMAIL_TOKEN_PA_JSON`). Best-effort : si le compte PA n'est pas configuré,
-le helper log et sort en 0 — le rapport reste committé, le run n'est pas
-cassé.
+Tu n'as **rien à faire ici**. L'envoi du rapport par mail est géré par la
+GitHub Action `.github/workflows/mail-report.yml`, qui se déclenche toute
+seule quand ton rapport `working-memory/…-<task>.md` arrive sur `main`
+(étape 5). Elle lit le fichier et l'envoie en SMTP depuis l'infra GHA, où le
+SMTP fonctionne — contrairement au sandbox de la routine, qui ne peut sortir
+qu'en HTTPS/443.
 
-Après le push, en remplaçant `WM_FILE` par le chemin réel produit à l'étape 3 :
-
-```bash
-uv run python -m tasks.send_report \
-  --file "working-memory/<le-fichier-produit>.md" \
-  --subject "claudePA — sorties locales $(date -u +%Y-%m-%d)"
-```
-
-Prérequis côté routine (une fois) : setup script `uv sync` (installe les
-deps Google) + env var `GMAIL_TOKEN_PA_JSON` (token OAuth compte PA, déjà en
-GitHub Secrets). Destinataire = env var `MAIL_TO` sinon défaut. N'envoie pas
-si l'étape 0 a skip le run.
+Donc : assure-toi juste que l'étape 5 a bien **push le rapport sur `main`**.
+Si l'étape 0 a skip le run, aucun rapport n'est poussé → aucun mail (normal).

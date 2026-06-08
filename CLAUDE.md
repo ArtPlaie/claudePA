@@ -116,18 +116,17 @@ mémoire sans web search.
    - mission de la veille, méthode (web search, sources), format de sortie ;
    - étapes finales : écrire `working-memory/YYYY-MM-DD-HHMM-<nom>.md`
      (front matter standard), appender `digests/findings.md` si pertinent,
-     `git add && git commit && git push` sur `main`, puis **envoi email** du
-     rapport via `uv run python -m tasks.send_report --file <wm> --subject …`
-     (best-effort, skip si non configuré).
+     `git add && git commit && git push` sur `main`. **L'envoi email du
+     rapport est automatique** (pas géré par la routine) — voir ci-dessous.
 2. Ajoute une entrée dans `schedule.yaml` (cadence indicative, model, canal).
+   Pour que le rapport parte par mail, ajoute le glob
+   `working-memory/*-<nom>.md` aux `paths:` de `.github/workflows/mail-report.yml`.
 3. Crée la routine sur `claude.ai/code/routines` :
    - prompt : `Lance /<nom>. Suis les étapes finales de la command.` ;
    - repo : `artplaie/claudepa` ; *Allow unrestricted branch pushes* = ON ;
    - environnement : réseau **Full** (les veilles citent des liens directs) ;
-   - **setup script** : `uv sync` (installe les deps, dont les libs Gmail
-     pour `send_report`) — caché entre runs ;
-   - **env vars** : `GMAIL_TOKEN_PA_JSON` (token OAuth compte PA, pour
-     l'envoi mail HTTPS) + `MAIL_TO` (destinataire) ;
+   - pas d'env var ni de setup script requis pour l'email (c'est la GHA qui
+     envoie, avec ses propres secrets) ;
    - trigger scheduled selon `schedule.yaml` (cron custom via
      `/schedule update` si le preset ne suffit pas, min 1 h).
 4. `Run now` une fois, vérifie le commit + le `working-memory/...md` produit.
@@ -230,15 +229,18 @@ Statut courant : **Phase 1.5 + migration orchestration en cours**.
 - **Veilles** : migrées vers routines (`.claude/commands/`). **6 commands
   écrites** : `sydney_opportunities` (pilote), `weekly_briefing`,
   `ai_jobs_formations`, `local_activities`, `activities_next10days`,
-  `health_watch`. Toutes finissent par un **envoi email** du rapport
-  (`tasks/send_report.py`, API Gmail HTTPS). Reste à créer les routines côté
-  `claude.ai/code/routines` (une par command) puis `Run now`. `prompts/*.md`
-  = mode dégradé historique (bandeau en tête), retiré à terme.
-- **Envoi mail depuis une routine** : SMTP brut (465/587) est **bloqué** par
-  le proxy egress du web/routine (seul le 443 sort). On envoie via l'**API
-  Gmail OAuth HTTPS** (`tasks/_lib/gmail.py` compte PA, `GMAIL_TOKEN_PA_JSON`),
-  wrappée dans `tasks/send_report.py`. SMTP réservé au chemin GHA (cf.
-  `task-mail-test.yml`) ou local.
+  `health_watch`. Reste à créer les routines côté `claude.ai/code/routines`
+  (une par command) puis `Run now`. `prompts/*.md` = mode dégradé historique
+  (bandeau en tête), retiré à terme.
+- **Envoi mail des rapports** : une routine **ne peut pas** envoyer en SMTP
+  (proxy egress = 443 only) ni dispatcher une GHA (pas de scope
+  `actions:write`). Mécanisme retenu : la routine **pousse son rapport sur
+  `main`** (étape 5), et la GHA `.github/workflows/mail-report.yml` se
+  déclenche `on: push` (filtré sur les fichiers `working-memory/*-<veille>.md`),
+  lit le rapport et l'envoie en **SMTP depuis l'infra GHA** (secrets
+  `GMAIL_USER`/`GMAIL_APP_PASSWORD`/`MAIL_TO`, déjà validés par
+  `task-mail-test.yml`). Aucune config côté routine. Pour ajouter une veille
+  à l'envoi : ajouter son glob aux `paths:` du workflow.
 - **Encore à arbitrer** : sort des 4 tasks GHA actives (rester GHA ou
   migrer routine) ; livraison des rapports de veille (lire dans le repo
   vs pousser sur Telegram/email) ; reprise du PA Telegram inbound.
