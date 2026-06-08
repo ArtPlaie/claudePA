@@ -18,12 +18,13 @@ name: task-mail-test
 #   - MAIL_TO             destinataire par défaut si l'input `to` est vide
 
 on:
-  # Déclenchable par push d'un tag `mailtest-*` — utile quand on n'a pas
-  # le scope actions:write pour dispatcher via l'API (ex: l'intégration
-  # Claude). `git tag mailtest-$(date +%s) && git push --tags` suffit.
+  # Déclenchable par push sur la branche `mail-test-trigger` — utile quand
+  # on n'a pas le scope actions:write pour dispatcher via l'API (ex:
+  # l'intégration Claude, ou un proxy git qui bloque tags/dispatch).
+  # Chaque push sur cette branche = un run de test.
   push:
-    tags:
-      - "mailtest-*"
+    branches:
+      - "mail-test-trigger"
   workflow_dispatch:
     inputs:
       to:
