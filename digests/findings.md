@@ -42,3 +42,10 @@
 **Lien** : https://apply.joinef.com/
 **Pourquoi ça compte** : EF investit dans des individus (pas d'idée requise), focus AI/deeptech, sites incluant Singapour (APAC). Profil ex-fondateur/calibration différenciant. 3e et dernier round = deadline 22 juin.
 **Suite** : décision rapide à prendre (full-time + relocation temporaire = blocker famille à arbitrer) ; sinon candidater comme test de positionnement cofounder.
+
+### 2026-06-08 — Nuits des étoiles (annuel, 1er week-end d'août)
+**Tags** : local, astro, famille, isa, annuel
+**Source** : local_activities
+**Lien** : https://www.afastronomie.fr/les-nuits-des-etoiles
+**Pourquoi ça compte** : plus gros festival d'astro de France, gratuit, ~500 manifestations dont plusieurs en IDF à <1h. Astro/lumière = pile l'univers d'Isa, et l'aîné est en âge d'accrocher. Édition 2026 = 7-9 août, thème Soleil + compte à rebours éclipse partielle du 12 août + Perséides.
+**Suite** : info récurrente — re-checker chaque année début juillet le club AFA le plus proche et caler le week-end.
