@@ -4,11 +4,16 @@ name: mail-report
 #
 # Pourquoi : les routines (Claude Code on the web) ne peuvent PAS envoyer en
 # SMTP (proxy egress = 443 only) ni dispatcher une GHA (pas de scope
-# actions:write). Mais une routine pousse son rapport sur `main`. Ce workflow
-# se déclenche sur ce push, lit le(s) rapport(s) de veille ajouté(s) et les
-# envoie en SMTP — sur l'infra GHA, où le SMTP brut fonctionne.
+# actions:write). Mais une routine/session pousse son rapport sur git. Ce
+# workflow se déclenche sur ce push, lit le(s) rapport(s) de veille ajouté(s)
+# et les envoie en SMTP — sur l'infra GHA, où le SMTP brut fonctionne.
 #
-# Déclenchement : push sur `main` touchant un fichier working-memory de veille.
+# Déclenchement : push sur `main` OU sur une branche `claude/**` (session ou
+# routine) touchant un fichier working-memory de veille. Découplé de `main`
+# EXPRÈS : le harness Claude Code impose souvent une branche de feature aux
+# sessions/routines, et un rapport bloqué sur cette branche n'envoyait aucun
+# mail. Désormais le mail part quelle que soit la branche — Sylvain n'a plus
+# à merger à la main ni à lire les onglets.
 # Les commits "auto:" des veilles matchent ; les autres tâches
 # (daily_digest, location_context, sliding_window) ne matchent pas (paths).
 # Les logs de skip (`*-<veille>-skip.md`) ne matchent pas non plus.
@@ -18,7 +23,7 @@ name: mail-report
 
 on:
   push:
-    branches: [main]
+    branches: [main, "claude/**"]
     paths:
       - "working-memory/*-sydney_opportunities.md"
       - "working-memory/*-weekly_briefing.md"

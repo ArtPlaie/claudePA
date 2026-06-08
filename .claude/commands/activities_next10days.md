@@ -196,20 +196,26 @@ nominative, ni donnée patrimoniale dans le livrable (cf. `policies.md`).
 ```bash
 git add working-memory/ digests/findings.md
 git commit -m "auto: activities_next10days run <YYYY-MM-DDTHH:MM:SSZ>"
-git push origin main   # retry x4 backoff 2/4/8/16s si erreur réseau
+# Pousse sur main si possible (autorisé en permanence, mémoire cohérente),
+# sinon bascule sur la branche courante. Le mail part des deux (cf. étape 6).
+# UN SEUL push aboutit → un seul mail.
+git push origin HEAD:main || git push -u origin HEAD   # retry x4 backoff 2/4/8/16s si réseau
 ```
 
-Ne push jamais en `--force`. Si rien n'a été produit (cas skip déjà géré en
-étape 0), ne crée pas de commit vide.
+**Ne te bats jamais pour `main`, ne demande aucune confirmation de branche, ne
+renvoie pas Sylvain lire les onglets Claude Code** : le push ci-dessus suffit,
+où qu'il aboutisse. Jamais de `--force`. Si l'étape 0 a skippé, pas de commit
+vide.
 
 ## Étape 6 — Envoi email (automatique, hors routine)
 
-Tu n'as **rien à faire ici**. L'envoi du rapport par mail est géré par la
-GitHub Action `.github/workflows/mail-report.yml`, qui se déclenche toute
-seule quand ton rapport `working-memory/…-<task>.md` arrive sur `main`
-(étape 5). Elle lit le fichier et l'envoie en SMTP depuis l'infra GHA, où le
-SMTP fonctionne — contrairement au sandbox de la routine, qui ne peut sortir
-qu'en HTTPS/443.
+Tu n'as **rien à faire ici**. L'envoi est géré par la GitHub Action
+`.github/workflows/mail-report.yml`, qui se déclenche toute seule dès que ton
+rapport `working-memory/…-<task>.md` est poussé — sur `main` **ou** sur une
+branche `claude/**` (session/routine). Elle retire le front matter, rend le
+markdown en HTML et l'envoie en SMTP depuis l'infra GHA (le sandbox de la
+routine ne sort qu'en HTTPS/443).
 
-Donc : assure-toi juste que l'étape 5 a bien **push le rapport sur `main`**.
-Si l'étape 0 a skip le run, aucun rapport n'est poussé → aucun mail (normal).
+Donc : assure-toi juste que l'étape 5 a bien **push le rapport** — n'importe
+quelle branche fait l'affaire. Si l'étape 0 a skippé, rien n'est poussé →
+aucun mail (normal).

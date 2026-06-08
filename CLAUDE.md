@@ -5,6 +5,25 @@
 > récurrentes), (2) les workflows GitHub Actions (tasks Python
 > restantes), (3) les sessions interactives Sylvain.
 
+> ## ⚠️ Préférence ferme de Sylvain — branches & onglets (lire en premier)
+>
+> **Sylvain ne veut PAS avoir à lire les onglets Claude Code, jamais.** Ne le
+> renvoie jamais consulter un transcript de routine ou un onglet pour
+> débloquer une livraison.
+>
+> **Ne bloque jamais un livrable sur une question de branche.** Le harness
+> assigne souvent une branche de feature `claude/**` à la session/routine —
+> ce n'est pas un obstacle :
+> - **Rapports de veille** : pousse sur la **branche courante**
+>   (`git push -u origin HEAD`). `mail-report.yml` envoie le mail depuis
+>   `main` **ou** `claude/**`, donc ça suffit. Plus jamais de merge manuel ni
+>   de question.
+> - **Handovers de session & tout ce qui doit atteindre `main`** : Sylvain
+>   **t'autorise par la présente, de façon permanente et explicite**, à
+>   pousser sur `main` (ff-merge ou push direct) quand une consigne de session
+>   t'assigne une branche de feature. **Cette ligne EST la permission explicite
+>   exigée — ne la redemande pas.**
+
 ## Ce que c'est
 
 Assistant personnel autonome de Sylvain Ribes. Mémoire en markdown
@@ -197,9 +216,12 @@ décision d'archi prise) :
 1. Écris `working-memory/YYYY-MM-DD-HHMM-session-<slug>.md` avec front
    matter `task: session-handover` (résumé, décisions, **prochain pas
    concret**, état repo / branche).
-2. **Pousse-le sur `main`**, jamais seulement sur la branche de feature de
-   la session — sinon la prochaine session (ouverte depuis `main`) ne le
-   verra pas. C'est la règle qui rend la mémoire inter-session fiable.
+2. **Pousse-le sur `main`** (et non seulement sur la branche de feature de
+   la session — sinon la prochaine session, ouverte depuis `main`, ne le
+   verra pas). Si la session t'a assigné une branche `claude/**`, tu as
+   l'**autorisation permanente et explicite** de Sylvain de ff-merger /
+   pousser ce handover sur `main` (cf. préférence ferme en tête de fichier) —
+   ne redemande pas. C'est la règle qui rend la mémoire inter-session fiable.
    *(Le nom doit contenir `-session-` pour être récupéré par la commande
    de lecture au démarrage.)*
 
@@ -207,15 +229,17 @@ décision d'archi prise) :
 
 - Pas de secret en clair dans le repo. GitHub Secrets pour les tasks
   GHA ; env vars de l'environnement routine pour les veilles.
-- **Rapports de veille → toujours sur `main`, jamais sur une branche de
-  feature.** Vaut pour les 6 veilles (`sydney_opportunities`,
-  `weekly_briefing`, `ai_jobs_formations`, `local_activities`,
-  `activities_next10days`, `health_watch`). C'est le push sur `main` qui
-  déclenche `mail-report.yml` (`on: push` filtré sur
-  `working-memory/*-<veille>.md`) → un rapport poussé ailleurs n'envoie
-  aucun mail. En session interactive, si une config impose une branche de
-  feature, le rapport doit quand même finir sur `main` (merge ff ou push
-  direct) — demander confirmation si la consigne de branche l'interdit.
+- **Rapports de veille : le mail part de N'IMPORTE QUELLE branche.**
+  `mail-report.yml` se déclenche `on: push` sur `main` **et** sur les branches
+  `claude/**` (filtré sur `working-memory/*-<veille>.md`, retire le front
+  matter, rend le markdown en HTML). Vaut pour les 6 veilles
+  (`sydney_opportunities`, `weekly_briefing`, `ai_jobs_formations`,
+  `local_activities`, `activities_next10days`, `health_watch`). Donc une
+  routine/session qui pousse son rapport sur **sa branche assignée** envoie le
+  mail — **plus besoin de `main`**, plus de merge manuel, plus de question de
+  branche. ⛔️ Ne jamais bloquer un rapport en attente d'un push `main`, ni
+  renvoyer Sylvain lire les onglets (cf. préférence ferme en tête de fichier).
+  Pour ajouter une veille à l'envoi : ajouter son glob aux `paths:` du workflow.
 - Pas de `git push --force` sur main.
 - Tests d'idempotence avant merge d'une nouvelle tâche : un re-run
   ne doit pas re-créer un draft pour la même fenêtre.
@@ -243,13 +267,16 @@ Statut courant : **Phase 1.5 + migration orchestration en cours**.
   (bandeau en tête), retiré à terme.
 - **Envoi mail des rapports** : une routine **ne peut pas** envoyer en SMTP
   (proxy egress = 443 only) ni dispatcher une GHA (pas de scope
-  `actions:write`). Mécanisme retenu : la routine **pousse son rapport sur
-  `main`** (étape 5), et la GHA `.github/workflows/mail-report.yml` se
-  déclenche `on: push` (filtré sur les fichiers `working-memory/*-<veille>.md`),
-  lit le rapport et l'envoie en **SMTP depuis l'infra GHA** (secrets
-  `GMAIL_USER`/`GMAIL_APP_PASSWORD`/`MAIL_TO`, déjà validés par
-  `task-mail-test.yml`). Aucune config côté routine. Pour ajouter une veille
-  à l'envoi : ajouter son glob aux `paths:` du workflow.
+  `actions:write`). Mécanisme retenu : la routine/session **pousse son rapport
+  sur sa branche** (`main` ou `claude/**`, étape 5), et la GHA
+  `.github/workflows/mail-report.yml` se déclenche `on: push`
+  (`branches: [main, "claude/**"]`, filtré sur `working-memory/*-<veille>.md`),
+  retire le front matter, rend le markdown en HTML et l'envoie en **SMTP depuis
+  l'infra GHA** (secrets `GMAIL_USER`/`GMAIL_APP_PASSWORD`/`MAIL_TO`, validés
+  par `task-mail-test.yml`). **Découplé de `main` exprès** : le harness impose
+  souvent une branche de feature, et l'ancien trigger `main`-only laissait les
+  rapports bloqués sans mail. Aucune config côté routine. Pour ajouter une
+  veille : ajouter son glob aux `paths:` du workflow.
 - **Encore à arbitrer** : sort des 4 tasks GHA actives (rester GHA ou
   migrer routine) ; livraison des rapports de veille (lire dans le repo
   vs pousser sur Telegram/email) ; reprise du PA Telegram inbound.
