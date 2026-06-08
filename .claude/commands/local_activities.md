@@ -218,10 +218,10 @@ le livrable (cf. `policies.md`).
 ```bash
 git add working-memory/ digests/findings.md
 git commit -m "auto: local_activities run <YYYY-MM-DDTHH:MM:SSZ>"
-# Pousse sur main si possible (autorisé en permanence, mémoire cohérente),
-# sinon bascule sur la branche courante. Le mail part des deux (cf. étape 6).
-# UN SEUL push aboutit → un seul mail.
-git push origin HEAD:main || git push -u origin HEAD   # retry x4 backoff 2/4/8/16s si réseau
+# Pousse simplement sur ta branche courante. Tu n'as PAS à atteindre `main`
+# toi-même (le proxy te l'interdit souvent) : deux GHA sur l'infra GitHub s'en
+# chargent — mail + synchro du rapport sur `main` (cf. étape 6).
+git push -u origin HEAD   # retry x4 backoff 2/4/8/16s si erreur réseau
 ```
 
 **Ne te bats jamais pour `main`, ne demande aucune confirmation de branche, ne
@@ -231,13 +231,15 @@ vide.
 
 ## Étape 6 — Envoi email (automatique, hors routine)
 
-Tu n'as **rien à faire ici**. L'envoi est géré par la GitHub Action
-`.github/workflows/mail-report.yml`, qui se déclenche toute seule dès que ton
-rapport `working-memory/…-<task>.md` est poussé — sur `main` **ou** sur une
-branche `claude/**` (session/routine). Elle retire le front matter, rend le
-markdown en HTML et l'envoie en SMTP depuis l'infra GHA (le sandbox de la
-routine ne sort qu'en HTTPS/443).
+Tu n'as **rien à faire ici** une fois le rapport poussé (étape 5). Deux GitHub
+Actions tournent sur l'infra GitHub (aucun proxy → elles atteignent `main` sans
+souci) dès que ton rapport arrive sur ta branche `claude/**` :
 
-Donc : assure-toi juste que l'étape 5 a bien **push le rapport** — n'importe
-quelle branche fait l'affaire. Si l'étape 0 a skippé, rien n'est poussé →
-aucun mail (normal).
+- `mail-report.yml` — retire le front matter, rend le markdown en HTML et
+  l'envoie par mail (SMTP depuis GHA ; le sandbox de la routine ne sort qu'en
+  HTTPS/443).
+- `sync-veille-to-main.yml` — recopie ton rapport (et tes ajouts à
+  `findings.md`) sur `main`, pour que la mémoire reste retrouvable au prochain
+  run. **Tu n'as donc pas à pousser sur `main` toi-même.**
+
+Si l'étape 0 a skippé, rien n'est poussé → ni mail ni synchro (normal).

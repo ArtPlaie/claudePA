@@ -216,14 +216,14 @@ décision d'archi prise) :
 1. Écris `working-memory/YYYY-MM-DD-HHMM-session-<slug>.md` avec front
    matter `task: session-handover` (résumé, décisions, **prochain pas
    concret**, état repo / branche).
-2. **Pousse-le sur `main`** (et non seulement sur la branche de feature de
-   la session — sinon la prochaine session, ouverte depuis `main`, ne le
-   verra pas). Si la session t'a assigné une branche `claude/**`, tu as
-   l'**autorisation permanente et explicite** de Sylvain de ff-merger /
-   pousser ce handover sur `main` (cf. préférence ferme en tête de fichier) —
-   ne redemande pas. C'est la règle qui rend la mémoire inter-session fiable.
-   *(Le nom doit contenir `-session-` pour être récupéré par la commande
-   de lecture au démarrage.)*
+2. **Pousse-le sur ta branche courante** (`git push -u origin HEAD`). Tu n'as
+   PAS besoin d'atteindre `main` toi-même : la GHA `sync-veille-to-main.yml`
+   recopie automatiquement tout `working-memory/*-session-*.md` sur `main`
+   (infra GitHub, sans proxy), pour que la prochaine session — ouverte depuis
+   `main` — le retrouve. C'est ce qui rend la mémoire inter-session fiable sans
+   que tu aies à te battre avec la règle de branche. *(Le nom doit contenir
+   `-session-` pour être recopié ET récupéré par la commande de lecture au
+   démarrage.)*
 
 ## Garde-fous techniques
 
@@ -240,6 +240,15 @@ décision d'archi prise) :
   branche. ⛔️ Ne jamais bloquer un rapport en attente d'un push `main`, ni
   renvoyer Sylvain lire les onglets (cf. préférence ferme en tête de fichier).
   Pour ajouter une veille à l'envoi : ajouter son glob aux `paths:` du workflow.
+- **Mémoire sur `main` : garantie par l'infra, jamais par la routine.** Le proxy
+  Claude Code empêche souvent une routine/session (sur branche `claude/**`) de
+  pousser sur `main`. On ne compte donc PAS dessus : `sync-veille-to-main.yml`
+  (`on: push` sur `claude/**`) recopie rapports de veille + handovers
+  `*-session-*.md` + ajouts `findings.md` sur `main` depuis l'infra GitHub
+  (sans proxy, noms horodatés uniques → zéro conflit, `findings.md` fusionné en
+  append). Conséquence : une routine/session pousse **uniquement sur sa branche**
+  (`git push -u origin HEAD`), jamais besoin de se battre pour `main`. Le push
+  GITHUB_TOKEN de la sync ne re-déclenche aucun workflow → pas de double mail.
 - Pas de `git push --force` sur main.
 - Tests d'idempotence avant merge d'une nouvelle tâche : un re-run
   ne doit pas re-créer un draft pour la même fenêtre.
