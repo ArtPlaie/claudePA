@@ -17,8 +17,18 @@ Objectifs centraux :
 - Pouvoir ajouter une nouvelle veille en quelques minutes (modularité).
 - Donner à l'assistant une capacité de **réflexion sur lui-même** encadrée.
 
+> **Révision 2026-06 — orchestration.** La couche d'exécution des veilles
+> migre de *GitHub Actions + Cloudflare Worker* vers les **Claude Code
+> Routines**. Le modèle de mémoire, le catalogue de tâches et le pipeline
+> de validation ne changent pas. Voir la section
+> [Orchestration — Claude Code Routines](#orchestration--claude-code-routines-révision-2026-06)
+> qui fait désormais autorité ; les sections GHA/CF ci-dessous sont
+> conservées pour leur raisonnement mais marquées *(historique)* /
+> *(reporté au PA Telegram)*.
+
 Décisions cadres validées :
-- **Hébergement** : GitHub Actions (cron) + Cloudflare Workers (webhook entrant).
+- **Hébergement** *(historique — voir révision 2026-06)* : GitHub Actions
+  (cron) + Cloudflare Workers (webhook entrant).
 - **Canal temps réel** :
   - Telegram : **bot perso (1:1 Sylvain)** + **groupe commun** (Sylvain + Isa,
     pour briefings famille, activités, plannings). Bot + groupe **à créer**
@@ -83,7 +93,7 @@ Décisions cadres validées :
 └─────────────────────────────────────┘
 ```
 
-Une **tâche** = un workflow GitHub Actions qui :
+*(historique)* Une **tâche** version GHA = un workflow qui :
 1. checkout le repo
 2. installe les deps (`uv` + `anthropic` SDK)
 3. lance un script Python `tasks/<task>.py`
@@ -94,20 +104,128 @@ Une **tâche** = un workflow GitHub Actions qui :
 
 ---
 
+## Orchestration — Claude Code Routines (révision 2026-06)
+
+### Pourquoi on bascule
+
+Les veilles (`weekly_briefing`, `ai_jobs_formations`, `sydney_opportunities`,
+`local_activities`, `health_watch`) dépendent **toutes** du web search. Le
+chemin Python/SDK ne l'avait jamais wiré (décision Brave vs Tavily restée
+ouverte), d'où le mode dégradé `prompts/*.md` copié-collé dans claude.ai.
+Les **Claude Code Routines** ferment ce trou : une routine est une session
+Claude Code complète, planifiée, qui tourne sur l'infra Anthropic, clone le
+repo, a **WebSearch natif**, et peut commit-push.
+
+Ce que ça retire vs l'ancienne stack :
+
+| Brique GHA/CF | Avec Routines |
+|---|---|
+| CF Worker cron → `workflow_dispatch` → GHA | **Trigger scheduled** (presets hourly/daily/weekdays/weekly + cron custom via `/schedule update`, min 1 h) |
+| `tasks/_lib/llm.py` + `ANTHROPIC_API_KEY` + gate budget | **Le modèle = la session.** Conso sur l'abonnement claude.ai, pas de clé API, pas de gate à maintenir |
+| Brave / Tavily à intégrer | **WebSearch natif** (+ WebFetch, voir réseau) |
+| script Python qui assemble le prompt en inlinant `profile.md` | la session **lit `core-memory/*.md` en direct** dans le repo cloné — fin de la "photo" qui périme |
+| commit via workflow | `git commit && push` natif depuis la session |
+
+### Modèle d'une veille
+
+La logique vit dans le repo comme **slash command versionnée**
+(`.claude/commands/<task>.md`), pas dans le prompt de la routine. Le prompt
+de la routine reste trivial et stable :
+
+> *Lance `/<task>`. Écris le rapport dans `working-memory/`, appende les
+> findings, commit et push sur `main`.*
+
+Chaque `.claude/commands/<task>.md` reprend l'actuel `prompts/<task>.md`, mais :
+- **on retire** le bloc profil/policies inliné → remplacé par *"lis
+  `core-memory/profile.md`, `policies.md`, `family.md`,
+  `current-location.md`"*. Plus de duplication, plus de staleness.
+- **on ajoute** les étapes que le prompt web ne faisait pas :
+  1. check sentinelle `.panic` (exit si présente) + `vacation_mode`
+     (skip si actif hors whitelist) ;
+  2. écrire `working-memory/YYYY-MM-DD-HHMM-<task>.md` (front matter standard) ;
+  3. appender les findings à `digests/findings.md` (via la convention dedup) ;
+  4. `git commit && git push` sur `main`.
+
+### Config des routines (décidé 2026-06)
+
+- **Une routine par veille**, chacune avec son propre trigger scheduled
+  (cf. fréquences du [catalogue V1](#catalogue-des-tâches-v1)). Cron custom
+  via `/schedule update` quand le preset ne suffit pas (ex. mensuel).
+- **Push direct sur `main`** : option *Allow unrestricted branch pushes*
+  activée. Repo mémoire perso, pas de review → on évite la friction des
+  branches `claude/`.
+- **Réseau : Full.** Les veilles citent des **liens directs vers pages
+  officielles** (gov.au, homeaffairs, agendas culturels) ; l'env *Trusted*
+  par défaut bloque les domaines arbitraires côté WebFetch. Full lève le
+  blocage. (Trade-off accepté : env plus permissif, contenu lu reste à
+  considérer comme non-fiable — cf. OPSEC, aucune veille ne sort de comm
+  externe.)
+- **Livraison v1 = le repo.** Le rapport committé se lit sur GitHub / l'app
+  mobile. Brancher un connecteur (Telegram / email) pour pousser le rapport
+  est reporté (cf. PA Telegram).
+
+### Mapping veille → command → routine
+
+| Veille | Command | Cadence routine | Modèle |
+|---|---|---|---|
+| `sydney_opportunities` | `.claude/commands/sydney_opportunities.md` | hebdo (mer) | défaut session |
+| `weekly_briefing` | `.claude/commands/weekly_briefing.md` | hebdo (dim) | défaut session |
+| `ai_jobs_formations` | `.claude/commands/ai_jobs_formations.md` | tous les 14 j | défaut session |
+| `health_watch` | `.claude/commands/health_watch.md` | tous les 14 j | défaut session |
+| `local_activities` | `.claude/commands/local_activities.md` | mensuel (1er) | défaut session |
+| `activities_next10days` | `.claude/commands/activities_next10days.md` | hebdo (jeu), input = `local_activities` du mois | défaut session |
+
+Note : la sélection de modèle par tier (`_lib/llm.py`) devient caduque pour
+les veilles — la routine utilise le modèle choisi dans sa config. Le tableau
+de tiers reste pertinent pour les tâches encore sur GHA.
+
+### Ce qui reste inchangé
+
+- **Tout le modèle mémoire** (core / working / digests / findings / journal /
+  drafts / inbox) — c'est du markdown versionné, indépendant de l'orchestration.
+- **Pipeline drafts + validation humaine + OPSEC** pour toute action externe.
+  Les veilles n'émettent rien d'externe (elles écrivent des rapports) → pas
+  de draft/validation requis, ce qui en fait la cible facile de cette bascule.
+- **De-dup findings**, skip-patterns, sliding window.
+
+### Statut GHA / CF Worker
+
+- **Workflows GHA des veilles** : non codés → remplacés par des routines.
+- **4 tasks Python actives** (`daily_digest`, `mail_review`,
+  `location_context`, `sliding_window`) : restent sur GHA pour l'instant ;
+  migration vers routines à décider (Phase B/C).
+- **Cloudflare Worker** : conservé **uniquement** pour le futur PA Telegram
+  inbound (webhook OK/EDIT/SKIP, `/panic`). N'est plus sur le chemin des
+  veilles.
+
+### Phasage de la migration
+
+- **A — pilote** : convertir `sydney_opportunities` en command versionnée,
+  créer la routine, `Run now`, valider la boucle mémoire → web search →
+  rapport → push sur `main`.
+- **B** : convertir les autres veilles, une routine chacune.
+- **C** : trancher le sort des 4 tasks Python (rester GHA vs migrer) +
+  brancher une livraison (connecteur Telegram/email) si lire dans le repo
+  ne suffit pas.
+
+---
+
 ## Stack technique
 
 | Couche | Choix |
 |---|---|
-| Langage scripts | Python 3.12 (écosystème SDK Anthropic + intégrations mûr) |
+| **Orchestration veilles** | **Claude Code Routines** (scheduled trigger, infra Anthropic) — *révision 2026-06* |
+| **Web search veilles** | **WebSearch / WebFetch natifs** de la session (remplace Brave/Tavily) |
+| Langage scripts *(tasks GHA restantes)* | Python 3.12 (écosystème SDK Anthropic + intégrations mûr) |
 | Package mgr | `uv` (rapide, simple) |
-| Orchestration cron | GitHub Actions (`schedule:` cron par workflow) |
-| Webhook entrant | Cloudflare Workers (free tier, déclenche `workflow_dispatch`) |
-| LLM | Anthropic SDK : `claude-haiku-4-5-20251001`, `claude-sonnet-4-6`, `claude-opus-4-7` |
+| Orchestration cron *(historique / tasks GHA)* | GitHub Actions (`schedule:` cron par workflow) |
+| Webhook entrant *(reporté au PA Telegram)* | Cloudflare Workers (free tier, déclenche `workflow_dispatch`) |
+| LLM *(tasks GHA restantes)* | Anthropic SDK : `claude-haiku-4-5-20251001`, `claude-sonnet-4-6`, `claude-opus-4-7` |
 | Email | Gmail API (OAuth refresh token en secret) |
 | Calendrier | Google Calendar API |
 | Messagerie | Telegram Bot API (BotFather, gratuit) |
-| Web search | Brave Search API ou Tavily (à choisir au moment du build) |
-| Secrets | GitHub Secrets (env vars dans workflows) |
+| ~~Web search~~ | ~~Brave Search API ou Tavily~~ → caduc, WebSearch natif des routines |
+| Secrets | GitHub Secrets (tasks GHA) ; env vars de l'environnement routine (veilles) |
 | Lint/format | `ruff` + `pyright` |
 
 ---
@@ -472,6 +590,10 @@ Tâche `self_reflection` (mensuelle, Opus) :
 ---
 
 ## Phasage
+
+> Le phasage ci-dessous décrit le build initial (réalisé jusqu'à la Phase 1.5).
+> La bascule d'orchestration vers les Routines a son propre phasage A/B/C dans
+> la section [Orchestration — Claude Code Routines](#orchestration--claude-code-routines-révision-2026-06).
 
 **Phase 0 — Squelette (1 session)**
 - Scaffolding du repo (structure dossiers, `CLAUDE.md`, template `profile.md`,
