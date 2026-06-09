@@ -24,6 +24,7 @@ on:
       - "working-memory/*-local_activities.md"
       - "working-memory/*-activities_next10days.md"
       - "working-memory/*-health_watch.md"
+      - "working-memory/*-serendipity.md"
       - "working-memory/*-session-*.md"
       - "digests/findings.md"
 
@@ -77,7 +78,7 @@ jobs:
           PAT = re.compile(
               r"^(working-memory/.*-(?:sydney_opportunities|weekly_briefing|"
               r"ai_jobs_formations|local_activities|activities_next10days|"
-              r"health_watch)\.md|working-memory/.*-session-.*\.md)$")
+              r"health_watch|serendipity)\.md|working-memory/.*-session-.*\.md)$")
 
           diff = git("diff", "--name-only", "--diff-filter=AM", before, after,
                      capture=True).stdout.splitlines()

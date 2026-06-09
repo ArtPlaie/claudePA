@@ -22,8 +22,12 @@ Sylvain lit ça dans sa boîte Gmail. Ça doit se lire comme un mail rédigé pa
 un **excellent assistant humain** : phrases qui respirent, sections évidentes,
 rien de robotique.
 
-- **Recherche large, sortie courte.** Fouille beaucoup, écris peu. Le but
-  n'est pas de remplir des sections, c'est de remonter ce qui vaut le coup.
+- **Recherche large, sortie courte.** Fouille *vraiment* beaucoup : multiplie
+  les requêtes WebSearch (angles, synonymes, orgs et job boards différents) pour
+  ramasser au moins **2× plus de candidats bruts** que ce que tu garderas — tu
+  veux du **choix** avant de trier, pas trois liens trouvés vite fait. Le tri
+  reste impitoyable et la sortie courte ; c'est l'amont qui s'élargit, pas le
+  mail.
 - **Pas de minimum, pas de remplissage.** Si une section n'a rien de solide,
   dis-le en **une demi-ligne en français** et passe, ou omets-la. Jamais de
   listing pour faire du volume — un mail court et juste vaut mieux.
@@ -73,6 +77,14 @@ Active **WebSearch** et cite chaque entrée avec un **lien direct**. Window =
 aujourd'hui + 6 mois (focus sur ce qui a une deadline dans cette fenêtre, ou
 rolling). Pour les listings d'emploi, retiens tout poste dont la **date de
 clôture n'est pas dépassée** même si publié avant.
+
+**Volume de recherche** : ne te contente pas d'une requête par cible. Pour les
+formations comme pour les postes, scanne **chaque org de la liste canonique
+individuellement** (pas une seule recherche fourre-tout), ajoute des angles
+(« careers », « fellowship 2026 », « open roles », pages job boards type
+80,000 Hours / AI Safety jobs / EA jobs) et constitue un vivier d'au moins
+**2× plus de candidats** que ce que tu retiendras. Tu tries après (strong fit
+only) ; d'abord tu ramasses large pour avoir le choix.
 
 Trois sections obligatoires, dans cet ordre :
 

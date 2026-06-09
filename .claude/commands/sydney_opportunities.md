@@ -1,12 +1,12 @@
 ---
-description: Veille Sydney + Suisse — reconversion IA (jobs, formations, invest/cofounding, serendipity) — routine hebdo
+description: Veille Sydney + Suisse — reconversion IA (jobs, formations, invest/cofounding, wildcard carrière) — routine hebdo
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, WebSearch, WebFetch
 ---
 
 # /sydney_opportunities
 
 Veille **Sydney + Suisse** pour un profil **en reconversion vers l'IA** :
-jobs IA, formations, invest/cofounding, serendipity. Un seul livrable, écrit
+jobs IA, formations, invest/cofounding, wildcard carrière. Un seul livrable, écrit
 dans `working-memory/`, committé sur `main` (le mail part tout seul ensuite).
 
 Tu tournes comme une **session Claude Code** : tu as les outils, tu lis la
@@ -21,9 +21,12 @@ Sylvain lit ça dans sa boîte Gmail. Le texte doit se lire comme un mail
 rédigé par un **excellent assistant humain** : phrases qui respirent,
 sections évidentes, rien de robotique.
 
-- **Recherche large, sortie courte.** Tu peux fouiller beaucoup ; tu écris
-  peu. Le but n'est pas de remplir des sections, c'est de remonter ce qui
-  vaut vraiment le coup.
+- **Recherche large, sortie courte.** Fouille *vraiment* beaucoup : multiplie
+  les requêtes WebSearch (angles, synonymes, orgs et sources différentes) pour
+  ramasser au moins **2× plus de candidats bruts** que ce que tu garderas — tu
+  veux du **choix** avant de trier, pas trois liens trouvés vite fait. Le tri
+  reste impitoyable et la sortie courte ; c'est l'amont qui s'élargit, pas le
+  mail.
 - **Pas de minimum, pas de remplissage.** Si une section n'a rien de solide,
   tu le dis en **une demi-ligne en français** (« Rien de fort côté jobs cette
   semaine. ») ou tu l'omets. Jamais de listing pour faire du volume.
@@ -87,6 +90,14 @@ Window : openings publiés dans les ~7 derniers jours, plus tout listing dont
 la **deadline n'est pas passée** même s'il est plus ancien. Cite chaque entrée
 avec un **lien direct** (WebSearch/WebFetch).
 
+**Volume de recherche** : pour chaque section (jobs, formations, invest,
+serendipity), lance **plusieurs** requêtes WebSearch sous des angles différents
+— mots-clés variés, noms d'orgs ciblées, job boards, synonymes EN/FR — et
+constitue un vivier d'au moins **2× plus de candidats** que ce que tu
+retiendras. Tu tries ensuite (strong fit only) ; mais d'abord tu ramasses large
+pour avoir le choix. Mieux vaut sur-chercher et jeter que passer à côté d'une
+porte d'entrée atypique.
+
 ## Étape 3 — Écrire le livrable
 
 Écris `working-memory/<YYYY-MM-DD-HHMM>-sydney_opportunities.md` (HHMM = UTC),
@@ -121,7 +132,7 @@ Structure, dans cet ordre, en ne gardant que ce qui a de la matière :
    deals angel/syndicates, EF / YC / accélérateurs APAC-EU, incubateurs AI
    safety. Si un site vaut d'être fouillé pour de vraies idées, **fouille-le**.
    Pour chacun : nom · lien · ce qui est cherché · une phrase. Rien → une ligne.
-4. **Serendipity.** 1-3 idées **hors-piste**, créativité max. Projet perso,
+4. **Wildcard carrière.** 1-3 idées **hors-piste**, créativité max. Projet perso,
    side-project, angle de contenu, personne à rencontrer, pari contrarian,
    mouvement de carrière inattendu. Sers-toi de tout le profil (ex-trader algo
    crypto, calibration, pensée adversariale, figure crypto FR `@ArtPlaie`, cap

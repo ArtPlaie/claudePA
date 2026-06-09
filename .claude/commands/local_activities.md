@@ -22,8 +22,12 @@ Sylvain (et Isa) lisent ça dans la boîte Gmail. Ça doit se lire comme un mail
 rédigé par un **excellent assistant humain** : phrases qui respirent, sections
 évidentes, rien de robotique.
 
-- **Recherche large, sortie courte.** Fouille beaucoup, écris peu. Le but
-  n'est pas de remplir des sections, c'est de remonter les vraies bonnes sorties.
+- **Recherche large, sortie courte.** Fouille *vraiment* beaucoup : multiplie
+  les requêtes WebSearch (angles, lieux, sources et agendas différents) pour
+  ramasser au moins **2× plus de sorties candidates** que ce que tu garderas —
+  tu veux du **choix** avant de trier, pas trois liens trouvés vite fait. Le tri
+  reste impitoyable et la sortie courte ; c'est l'amont qui s'élargit, pas le
+  mail.
 - **Pas de minimum, pas de remplissage.** Si une catégorie n'a rien de solide
   ce mois-ci, dis-le en **une demi-ligne** et passe. Jamais de listing pour
   faire du volume — cinq super sorties valent mieux que quinze médiocres.
@@ -72,6 +76,13 @@ Active **WebSearch** et **WebFetch**. Cite chaque entrée avec un **lien
 direct vers la page officielle** (pas l'agrégateur). Window = aujourd'hui →
 fin du mois suivant (~4-6 semaines). Mentionne brièvement un événement M+2
 si la résa doit se faire maintenant.
+
+**Volume de recherche** : pour chaque catégorie (famille/nature, art/culture,
+intellectuel, weekends), scanne **chaque cible canonique individuellement** et
+ajoute des angles (agendas locaux, sites des lieux, « que faire à … ce mois-ci »,
+programmations saison). Constitue un vivier d'au moins **2× plus de sorties
+candidates** que ce que tu retiendras, puis tri impitoyable (5 super > 15
+médiocres). D'abord ramasser large pour avoir le choix, ensuite couper.
 
 **Zone géo** : déduite de `core-memory/current-location.md`. Base habituelle
 = Bois-le-Roi (77590), rayon 1h15 max porte-à-porte voiture ou RER R. Paris
