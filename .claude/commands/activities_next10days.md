@@ -105,6 +105,14 @@ Pour chaque entrée de la liste source :
 4. **Rank** : valeur perçue × dispo × urgence résa. Sors **3 à 5 entrées**
    maximum, dans l'ordre de priorité.
 
+**Élargis si la liste source est maigre.** Si après filtre date/contraintes il
+reste moins de ~5 candidats dans la fenêtre, ne te contente pas du peu : lance
+**quelques** requêtes WebSearch fraîches (« que faire ce week-end à <zone> »,
+agendas locaux, événements datés sur les 10 jours) pour ramasser d'autres
+options actionnables et ranker sur du **choix**. Tu veux 2× plus de candidats
+que la short-list finale avant de trancher. (Toujours pas de remplissage : si
+la fenêtre est réellement vide, dis-le.)
+
 **Si rien dans la liste ne tombe dans les 10j** : écris explicitement
 "Aucune entrée actionnable dans la fenêtre — voir directement la liste
 mensuelle pour les semaines suivantes." Pas de remplissage.

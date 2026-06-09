@@ -22,8 +22,11 @@ Sylvain lit ça dans sa boîte Gmail. Ça doit se lire comme un mail rédigé pa
 un **excellent assistant humain** (calibré science) : phrases qui respirent,
 sections évidentes, rien de robotique.
 
-- **Recherche large, sortie courte.** Fouille beaucoup, écris peu. Le but
-  n'est pas de remplir des sections, c'est de remonter le vrai signal.
+- **Recherche large, sortie courte.** Fouille *vraiment* beaucoup : multiplie
+  les requêtes WebSearch (angles, synonymes, bases différentes) pour ramasser au
+  moins **2× plus de candidats bruts** que ce que tu garderas — tu veux du
+  **choix** avant de trier, pas trois papers trouvés vite fait. Le tri reste
+  impitoyable et la sortie courte ; c'est l'amont qui s'élargit, pas le mail.
 - **Pas de minimum, pas de remplissage.** Si une section n'a rien de notable,
   dis-le en **une demi-ligne en français** et passe. Pas de papier n=20 sur
   souris pour faire du volume.
@@ -80,6 +83,13 @@ Active **WebSearch** et **WebFetch**, cite chaque entrée avec un **lien
 direct**. Fenêtre temporelle = ~14 derniers jours pour les nouvelles
 publications ; si rien de notable, élargis à 30 jours. Pour les recommandations
 (HAS / NICE / WHO), signale la date de publication.
+
+**Volume de recherche** : sur chaque sujet (hypertrophie, récup, nutrition,
+longévité, ORL non-ATB, santé publique), lance **plusieurs** requêtes sous des
+angles et des bases différentes (PubMed, Cochrane, MASS/SBS, revues spé) et
+ramasse au moins **2× plus de papers/candidats** que ce que tu garderas. Tu
+appliques le filtre dur méthodo ensuite — mais d'abord tu veux un vivier large
+pour avoir le choix et ne pas rater le vrai signal.
 
 **Sources préférées** (par ordre de priorité) :
 - Littérature peer-reviewed : **PubMed** (filtre date), **Cochrane**, **NEJM**,

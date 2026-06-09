@@ -21,8 +21,11 @@ Sylvain lit ça dans sa boîte Gmail. Ça doit se lire comme un mail rédigé pa
 un **excellent assistant humain** : phrases qui respirent, sections évidentes,
 rien de robotique.
 
-- **Recherche large, sortie courte.** Fouille beaucoup, écris peu. Le but
-  n'est pas de remplir des sections, c'est de remonter ce qui vaut le coup.
+- **Recherche large, sortie courte.** Fouille *vraiment* beaucoup : multiplie
+  les requêtes WebSearch (angles, synonymes, sources différentes) pour ramasser
+  au moins **2× plus de candidats bruts** que ce que tu garderas — tu veux du
+  **choix** avant de trier, pas trois liens trouvés vite fait. Le tri reste
+  impitoyable et la sortie courte ; c'est l'amont qui s'élargit, pas le mail.
 - **Pas de minimum, pas de remplissage.** Si une section n'a rien de solide,
   dis-le en **une demi-ligne en français** et passe, ou omets-la. Jamais de
   listing pour faire du volume — un mail court et juste vaut mieux.
@@ -72,9 +75,12 @@ Fenêtre = la semaine écoulée (aujourd'hui − 7 jours). C'est un repère inte
 ne l'écris pas dans le mail.
 
 Active **WebSearch** et cite chaque entrée avec un **lien direct cliquable**.
-Au moins 3 sources par section, idéalement primaires (papers, blogs officiels,
-presse de qualité — pas d'agrégateurs SEO). De-duplique : si une même histoire
-revient sous 3 angles, 1 entrée, pas 3.
+Pour chaque section, lance **plusieurs** requêtes sous des angles différents et
+ramasse un large vivier de candidats — vise au moins **2× plus de pistes** que
+ce que tu garderas, pour trier sur du choix plutôt que sur les 3 premiers
+résultats. Au moins 3 sources retenues par section, idéalement primaires
+(papers, blogs officiels, presse de qualité — pas d'agrégateurs SEO).
+De-duplique : si une même histoire revient sous 3 angles, 1 entrée, pas 3.
 
 **Filtre le bruit** :
 - Pas de drama Twitter pur sans substance.
