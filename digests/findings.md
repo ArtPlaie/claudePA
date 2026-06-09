@@ -61,3 +61,9 @@
 **Lien** : https://jobs.lever.co/apolloresearch/f66ef22f-f96a-42cb-ada9-fd48ce0d5fda
 **Pourquoi ça compte** : Research Scientist/Engineer (Evaluations / Science of Scheming), candidature rolling, et ils annoncent ne PAS exiger de diplôme ni d'expérience industrie — process = take-home empirique + interviews techniques sur le job réel, zéro LeetCode. Évaluer scheming/sabotage = pensée adversariale appliquée = fit franc avec le profil quanti non-PhD. Option Londres = géo acceptable (vs METR repassé Berkeley strict). C'est la porte d'entrée labo la plus crédible ouverte en continu.
 **Suite** : préparer un artefact (mini-eval reproductible) avant de postuler ; arbitrer Londres présentiel vs plan AU.
+### 2026-06-09 — Festival Django Reinhardt : événement annuel fin juin à Fontainebleau
+**Tags** : local, famille, musique, annuel, fontainebleau
+**Source** : local_activities
+**Lien** : https://www.festivaldjangoreinhardt.com/
+**Pourquoi ça compte** : 46e édition en 2026 (fin juin, 4 jours dans le parc du château), 100+ artistes, line-up éclectique jazz + électro. À 20 min de Bois-le-Roi, concerts OFF en ville gratuits. Événement établi et récurrent — à bloquer chaque année fin juin.
+**Suite** : info pure — à mémoriser pour l'an prochain ; programmer un rappel mai pour réserver les billets avant sold-out.
