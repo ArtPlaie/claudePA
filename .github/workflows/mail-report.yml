@@ -31,6 +31,7 @@ on:
       - "working-memory/*-local_activities.md"
       - "working-memory/*-activities_next10days.md"
       - "working-memory/*-health_watch.md"
+      - "working-memory/*-serendipity.md"
 
 permissions:
   contents: read
@@ -67,7 +68,7 @@ jobs:
           if [ -z "$BEFORE" ] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
             BEFORE="${AFTER}~1"
           fi
-          PATTERN='working-memory/.*-(sydney_opportunities|weekly_briefing|ai_jobs_formations|local_activities|activities_next10days|health_watch)\.md$'
+          PATTERN='working-memory/.*-(sydney_opportunities|weekly_briefing|ai_jobs_formations|local_activities|activities_next10days|health_watch|serendipity)\.md$'
           git diff --name-only --diff-filter=AM "$BEFORE" "$AFTER" \
             | grep -E "$PATTERN" > changed.txt || true
           echo "Fichiers détectés :"
@@ -105,6 +106,7 @@ jobs:
               "local_activities": "Sorties locales",
               "activities_next10days": "À faire ces 10 jours",
               "health_watch": "Veille santé",
+              "serendipity": "Serendipity",
           }
 
           # Retire le front matter YAML en tête (--- ... ---) : c'est de la

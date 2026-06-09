@@ -69,6 +69,12 @@ tasks:
     channel: perso        # canal famille déprécié
     model: sonnet         # le sous-agent d'analyse utilise opus, géré dans le code
 
+  serendipity:
+    description: "Veille serendipity : idées off-scope, contrarian, 'ce à quoi Sylvain n'a pas pensé'."
+    cron: "0 8 * * 6"     # Saturday 08:00 UTC (10:00 Paris) — cerveau du week-end
+    channel: perso
+    model: opus           # créativité / pensée latérale : on assume opus
+
   network_followups:
     description: "Anniversaires à venir + relances dormantes."
     cron: "0 16 * * 1"    # Monday 16:00 UTC, gated by cadence_days
