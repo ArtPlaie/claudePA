@@ -91,3 +91,9 @@
 **Lien** : https://www.space.com/stargazing/auroras/will-2026-still-bring-strong-auroras-what-the-suns-recent-activity-tells-us
 **Pourquoi ça compte** : Isa peint les aurores mais ne les a probablement jamais vues en vrai. Cycle solaire 25 a piqué 2024-25 et entame sa descente fin 2026 ; l'hiver 2026 (sept→mars) reste excellent, dernière saison forte avant ~mi-2030s. Idée : pèlerinage à deux vers son sujet (Senja = paysages Lofoten sans la foule, auto-tour ; Tromsø = base la plus simple). Revient avec ses propres photos de référence.
 **Suite** : décision saisonnière — bloquer 4-5 nuits déc-fév 2026 si on y va ; sinon fenêtre quasi fermée jusqu'aux années 2030.
+### 2026-06-09 — Éclipse totale 12 août 2026 (nord Espagne) : réserver maintenant
+**Tags** : serendipity, famille, isa, ciel, deadline
+**Source** : serendipity
+**Lien** : https://www.helioclipse.com/fr/blog/eclipse-totale-2026-espagne-trajectoire-horaires-ligne-centrale/
+**Pourquoi ça compte** : Première totale en Europe continentale depuis 1999. Bande de totalité La Corogne→Baléares (Burgos ~1min45 à 20h29), soleil bas → horizon ouest dégagé requis. Même nuit = pic des Perséides sans lune (nouvelle lune par définition). À ~9-10h de route de Bois-le-Roi ; hébergements dans la bande déjà sous tension. Prochaine occasion comparable en Europe : 2027 (sud Espagne, 2 août).
+**Suite** : bloquer 3-4 nuits région Burgos–Soria avant fin juin ; sinon pivot éclipse du 2 août 2027 (Andalousie).
