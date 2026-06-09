@@ -85,3 +85,9 @@
 **Lien** : https://www.fontainebleau-blog.com/insectes/ver-luisant-lampyris-noctiluca/
 **Pourquoi ça compte** : Deux phénomènes lumineux saisonniers à portée de Bois-le-Roi, même créneau chaque année (fin mai→début août). Vers luisants (Lampyris) en forêt, pic 22h-23h juin-juillet par nuit chaude/sans vent, sur lisières herbeuses loin de tout éclairage. Nuages noctulescents (NLC) visibles vers le NW 1-2h après le coucher, depuis ~48°N (Bois-le-Roi pile limite). Matière à souvenir famille + référence directe pour la peinture d'Isa (lumière/aurores).
 **Suite** : info pure récurrente — à ressortir chaque fin mai (rappel annuel "fenêtre lumières d'été").
+### 2026-06-09 — Aurores : hiver 2026 = dernière grande saison avant ~2035 (pour Isa)
+**Tags** : serendipity, isa, aurores, voyage, fenetre-temporelle
+**Source** : serendipity
+**Lien** : https://www.space.com/stargazing/auroras/will-2026-still-bring-strong-auroras-what-the-suns-recent-activity-tells-us
+**Pourquoi ça compte** : Isa peint les aurores mais ne les a probablement jamais vues en vrai. Cycle solaire 25 a piqué 2024-25 et entame sa descente fin 2026 ; l'hiver 2026 (sept→mars) reste excellent, dernière saison forte avant ~mi-2030s. Idée : pèlerinage à deux vers son sujet (Senja = paysages Lofoten sans la foule, auto-tour ; Tromsø = base la plus simple). Revient avec ses propres photos de référence.
+**Suite** : décision saisonnière — bloquer 4-5 nuits déc-fév 2026 si on y va ; sinon fenêtre quasi fermée jusqu'aux années 2030.
