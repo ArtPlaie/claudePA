@@ -21,13 +21,13 @@
 
 Trois enfants, ordre d'aînesse :
 
-| # | Âge approximatif | Notes (à compléter) |
-|---|---|---|
-| 1 | ~8 ans | |
-| 2 | ~5 ans | |
-| 3 | ~2 ans | |
+| # | Prénom | Sexe | Âge | Notes (à compléter) |
+|---|---|---|---|---|
+| 1 (aînée)    | Anna    | F | 8 ans   | |
+| 2 (cadet)    | Tristan | M | 5 ans   | |
+| 3 (benjamin) | César   | M | 20 mois | |
 
-> À compléter manuellement avec prénoms, écoles, dates d'anniversaire,
+> À compléter manuellement avec écoles, dates d'anniversaire,
 > spécificités (allergies, suivi médical, sports/loisirs).
 > **Rappel OPSEC** : ces données ne sortent jamais du repo, jamais
 > mentionnées dans une comm externe.

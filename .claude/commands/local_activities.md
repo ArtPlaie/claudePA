@@ -57,9 +57,9 @@ Lis ces fichiers maintenant — ils portent le profil, la famille et l'OPSEC.
 Ne réécris jamais une version périmée de mémoire : c'est la source.
 
 - `core-memory/profile.md` — qui est Sylvain (intello, retraité trading algo,
-  lecteur non-fiction, Magic/Dominion, profil quanti).
-- `core-memory/family.md` — Isa (peintre, astro/lumière), 3 enfants (~2, ~5,
-  ~8 ans), contraintes logistiques famille.
+  lecteur non-fiction, profil quanti).
+- `core-memory/family.md` — Isa (peintre, astro/lumière), 3 enfants : Anna (8),
+  Tristan (5), César (20 mois), contraintes logistiques famille.
 - `core-memory/current-location.md` — **où est Sylvain** : c'est de là que
   tu déduis la zone géo et le rayon des sorties. Déjà lu en étape 0.
 - `core-memory/policies.md` — OPSEC, validation humaine, budget.
@@ -102,7 +102,7 @@ Quatre sections obligatoires, dans cet ordre :
 Sorties compatibles 3 enfants (~2 à ~8 ans). Critères :
 - Trajet ≤ 1h15.
 - Quelque chose pour le petit (parc, espace ouvert, possibilité poussette).
-- Quelque chose pour l'aîné (curiosité, jeu d'observation, mini-défi).
+- Quelque chose pour l'aînée (curiosité, jeu d'observation, mini-défi).
 - Logistique faisable (parking, accès, toilettes/change, restau ou pique-nique).
 
 Cibles canoniques à scanner via web search :

@@ -6,8 +6,9 @@
 ## Identité & famille
 
 Sylvain Ribes, français, vit à Bois-le-Roi (Seine-et-Marne). ~2m, ~90kg.
-Diplômé d'école d'ingénieurs (2008). Marié à Isabelle (Isa). Trois enfants
-(~8 ans, ~5 ans, ~2 ans). Isabelle peint (thèmes étoiles/aurores boréales,
+Diplômé d'école d'ingénieurs (2008). Marié à Isabelle (Isa). Trois enfants :
+Anna (fille, 8 ans), Tristan (garçon, 5 ans), César (garçon, 20 mois).
+Isabelle peint (thèmes étoiles/aurores boréales,
 envisage Instagram), a des problèmes ORL chroniques et une contre-indication
 absolue aux antibiotiques systémiques. Sylvain est le parent principal au
 quotidien depuis sa retraite anticipée.
@@ -31,8 +32,7 @@ particulier). Python, intégration APIs (Azure TTS, OpenAI). Niveau
 technique intermédiaire-avancé côté produit/intégration. Familier avec
 les biais cognitifs, les estimations de Fermi, la littérature
 scientifique. Approche systématiquement evidence-based. Lecteur de
-non-fiction (histoire, psychologie, exploration). Joueur de Magic: The
-Gathering et Dominion.
+non-fiction (histoire, psychologie, exploration).
 
 ## Projets en cours
 
