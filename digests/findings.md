@@ -61,3 +61,15 @@
 **Lien** : https://jobs.lever.co/apolloresearch/f66ef22f-f96a-42cb-ada9-fd48ce0d5fda
 **Pourquoi ça compte** : Research Scientist/Engineer (Evaluations / Science of Scheming), candidature rolling, et ils annoncent ne PAS exiger de diplôme ni d'expérience industrie — process = take-home empirique + interviews techniques sur le job réel, zéro LeetCode. Évaluer scheming/sabotage = pensée adversariale appliquée = fit franc avec le profil quanti non-PhD. Option Londres = géo acceptable (vs METR repassé Berkeley strict). C'est la porte d'entrée labo la plus crédible ouverte en continu.
 **Suite** : préparer un artefact (mini-eval reproductible) avant de postuler ; arbitrer Londres présentiel vs plan AU.
+### 2026-06-09 — ML4Good Lyon : bootcamp AI safety gratuit en France, deadline 1er juillet
+**Tags** : serendipity, ai-safety, formation, france, deadline, no-phd
+**Source** : serendipity
+**Lien** : https://www.ml4good.org/
+**Pourquoi ça compte** : Bootcamp résidentiel gratuit (issu d'EffiSciences/écosystème FR), track technique 26 sept→4 oct à Lyon, empirique/appliqué — l'opposé du MIRI théorique qui a fait décrocher Sylvain d'AFFINE. À portée de voiture, porte d'entrée réseau FR sans gate PhD. Candidatures avant le 1er juillet.
+**Suite** : décider avant fin juin si on postule ; sinon prochaine session.
+### 2026-06-09 — Gray Swan Arena : compétitions red-teaming LLM, leaderboard = track record sans CV
+**Tags** : serendipity, ai-safety, red-teaming, competition, no-phd
+**Source** : serendipity
+**Lien** : https://app.grayswan.ai/arena
+**Pourquoi ça compte** : Manches de jailbreak/red-teaming avec leaderboard public et cash (Safeguards Challenge en cours, manches courtes régulières dont une avec l'UK AISI). Jeu adversarial à info cachée = transfert direct de l'edge poker/fraude-exposé. Un bon classement est une crédential que personne ne peut contester, hors circuit recruteur.
+**Suite** : faire une manche pour jauger le niveau ; si haut de tableau récurrent, en faire une ligne de positionnement.

@@ -63,6 +63,12 @@ tasks:
     channel: perso
     model: sonnet
 
+  serendipity:
+    description: "Veille carte blanche : idées hors-piste (reconversion IA, contenu, paris contrarian, side-projects, personnes à rencontrer)."
+    cron: "0 6 * * 6"     # Saturday 06:00 UTC (08:00 Paris)
+    channel: perso
+    model: sonnet
+
   weekly_briefing:
     description: "Briefing monde / IA / local, faits + analyse."
     cron: "0 17 * * 0"    # Sunday 17:00 UTC (19:00 Paris)
