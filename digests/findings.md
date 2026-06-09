@@ -79,3 +79,9 @@
 **Lien** : https://app.grayswan.ai/arena
 **Pourquoi ça compte** : Manches de jailbreak/red-teaming avec leaderboard public et cash (Safeguards Challenge en cours, manches courtes régulières dont une avec l'UK AISI). Jeu adversarial à info cachée = transfert direct de l'edge poker/fraude-exposé. Un bon classement est une crédential que personne ne peut contester, hors circuit recruteur.
 **Suite** : faire une manche pour jauger le niveau ; si haut de tableau récurrent, en faire une ligne de positionnement.
+### 2026-06-09 — Fenêtre "lumières d'été" Fontainebleau : vers luisants + nuages noctulescents
+**Tags** : serendipity, nature, famille, isa, annuel, fontainebleau
+**Source** : serendipity
+**Lien** : https://www.fontainebleau-blog.com/insectes/ver-luisant-lampyris-noctiluca/
+**Pourquoi ça compte** : Deux phénomènes lumineux saisonniers à portée de Bois-le-Roi, même créneau chaque année (fin mai→début août). Vers luisants (Lampyris) en forêt, pic 22h-23h juin-juillet par nuit chaude/sans vent, sur lisières herbeuses loin de tout éclairage. Nuages noctulescents (NLC) visibles vers le NW 1-2h après le coucher, depuis ~48°N (Bois-le-Roi pile limite). Matière à souvenir famille + référence directe pour la peinture d'Isa (lumière/aurores).
+**Suite** : info pure récurrente — à ressortir chaque fin mai (rappel annuel "fenêtre lumières d'été").
