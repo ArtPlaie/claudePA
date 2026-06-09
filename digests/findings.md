@@ -67,3 +67,15 @@
 **Lien** : https://www.festivaldjangoreinhardt.com/
 **Pourquoi ça compte** : 46e édition en 2026 (fin juin, 4 jours dans le parc du château), 100+ artistes, line-up éclectique jazz + électro. À 20 min de Bois-le-Roi, concerts OFF en ville gratuits. Événement établi et récurrent — à bloquer chaque année fin juin.
 **Suite** : info pure — à mémoriser pour l'an prochain ; programmer un rappel mai pour réserver les billets avant sold-out.
+### 2026-06-09 — ML4Good Lyon : bootcamp AI safety gratuit en France, deadline 1er juillet
+**Tags** : serendipity, ai-safety, formation, france, deadline, no-phd
+**Source** : serendipity
+**Lien** : https://www.ml4good.org/
+**Pourquoi ça compte** : Bootcamp résidentiel gratuit (issu d'EffiSciences/écosystème FR), track technique 26 sept→4 oct à Lyon, empirique/appliqué — l'opposé du MIRI théorique qui a fait décrocher Sylvain d'AFFINE. À portée de voiture, porte d'entrée réseau FR sans gate PhD. Candidatures avant le 1er juillet.
+**Suite** : décider avant fin juin si on postule ; sinon prochaine session.
+### 2026-06-09 — Gray Swan Arena : compétitions red-teaming LLM, leaderboard = track record sans CV
+**Tags** : serendipity, ai-safety, red-teaming, competition, no-phd
+**Source** : serendipity
+**Lien** : https://app.grayswan.ai/arena
+**Pourquoi ça compte** : Manches de jailbreak/red-teaming avec leaderboard public et cash (Safeguards Challenge en cours, manches courtes régulières dont une avec l'UK AISI). Jeu adversarial à info cachée = transfert direct de l'edge poker/fraude-exposé. Un bon classement est une crédential que personne ne peut contester, hors circuit recruteur.
+**Suite** : faire une manche pour jauger le niveau ; si haut de tableau récurrent, en faire une ligne de positionnement.
