@@ -55,3 +55,9 @@
 **Lien** : https://www.antler.co/location/australia
 **Pourquoi ça compte** : Résidence 8 sem deux fois/an (dont juillet), investit dans des individus via co-founder matching (pas de solo founder financé, mais on arrive solo). Équivalent EF ancré directement dans la ville cible. Même créneau de décision qu'EF (deadline 22 juin).
 **Suite** : vérifier la deadline exacte de la cohorte de juillet sur la page cohort dates ; décider si on teste le positionnement cofounder via Antler plutôt qu'EF/Singapour.
+### 2026-06-09 — Apollo Research recrute des autodidactes sur les évals (rolling, Londres/SF)
+**Tags** : ai-safety, job, apollo, evals, no-phd
+**Source** : ai_jobs_formations
+**Lien** : https://jobs.lever.co/apolloresearch/f66ef22f-f96a-42cb-ada9-fd48ce0d5fda
+**Pourquoi ça compte** : Research Scientist/Engineer (Evaluations / Science of Scheming), candidature rolling, et ils annoncent ne PAS exiger de diplôme ni d'expérience industrie — process = take-home empirique + interviews techniques sur le job réel, zéro LeetCode. Évaluer scheming/sabotage = pensée adversariale appliquée = fit franc avec le profil quanti non-PhD. Option Londres = géo acceptable (vs METR repassé Berkeley strict). C'est la porte d'entrée labo la plus crédible ouverte en continu.
+**Suite** : préparer un artefact (mini-eval reproductible) avant de postuler ; arbitrer Londres présentiel vs plan AU.
