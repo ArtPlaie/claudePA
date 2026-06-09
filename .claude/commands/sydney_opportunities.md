@@ -1,12 +1,12 @@
 ---
-description: Veille Sydney + Suisse — reconversion IA (jobs, formations, invest/cofounding, serendipity) — routine hebdo
+description: Veille Sydney + Suisse — reconversion IA (jobs, formations, invest/cofounding, wildcard carrière) — routine hebdo
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, WebSearch, WebFetch
 ---
 
 # /sydney_opportunities
 
 Veille **Sydney + Suisse** pour un profil **en reconversion vers l'IA** :
-jobs IA, formations, invest/cofounding, serendipity. Un seul livrable, écrit
+jobs IA, formations, invest/cofounding, wildcard carrière. Un seul livrable, écrit
 dans `working-memory/`, committé sur `main` (le mail part tout seul ensuite).
 
 Tu tournes comme une **session Claude Code** : tu as les outils, tu lis la
@@ -132,7 +132,7 @@ Structure, dans cet ordre, en ne gardant que ce qui a de la matière :
    deals angel/syndicates, EF / YC / accélérateurs APAC-EU, incubateurs AI
    safety. Si un site vaut d'être fouillé pour de vraies idées, **fouille-le**.
    Pour chacun : nom · lien · ce qui est cherché · une phrase. Rien → une ligne.
-4. **Serendipity.** 1-3 idées **hors-piste**, créativité max. Projet perso,
+4. **Wildcard carrière.** 1-3 idées **hors-piste**, créativité max. Projet perso,
    side-project, angle de contenu, personne à rencontrer, pari contrarian,
    mouvement de carrière inattendu. Sers-toi de tout le profil (ex-trader algo
    crypto, calibration, pensée adversariale, figure crypto FR `@ArtPlaie`, cap
