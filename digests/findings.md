@@ -42,3 +42,17 @@
 **Lien** : https://apply.joinef.com/
 **Pourquoi ça compte** : EF investit dans des individus (pas d'idée requise), focus AI/deeptech, sites incluant Singapour (APAC). Profil ex-fondateur/calibration différenciant. 3e et dernier round = deadline 22 juin.
 **Suite** : décision rapide à prendre (full-time + relocation temporaire = blocker famille à arbitrer) ; sinon candidater comme test de positionnement cofounder.
+
+### 2026-06-09 — TARA : accélérateur AI safety APAC en présentiel à Sydney (Round 2, apps 22 juin)
+**Tags** : sydney, ai-safety, formation, apac, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.taraprogram.org/
+**Pourquoi ça compte** : Programme part-time 14 sem (samedis présentiel, interpretabilité/RL/évals) dans les villes cibles (Sydney, Melbourne, Brisbane). Round 2 = 12 sept→12 déc 2026, candidatures ouvrent le 22 juin. Python requis, pas de PhD : on-ramp réel et famille-compatible vers le réseau safety AU, dans la fenêtre du Forum (juil) et NeurIPS Sydney (déc).
+**Suite** : noter le 22 juin (ouverture des candidatures) ; arbitrer présence physique Sydney sept-déc avec la famille.
+
+### 2026-06-09 — Antler Australia : résidence cofounding bi-annuelle (juillet) à Sydney/Melbourne
+**Tags** : sydney, cofounding, accelerator
+**Source** : sydney_opportunities
+**Lien** : https://www.antler.co/location/australia
+**Pourquoi ça compte** : Résidence 8 sem deux fois/an (dont juillet), investit dans des individus via co-founder matching (pas de solo founder financé, mais on arrive solo). Équivalent EF ancré directement dans la ville cible. Même créneau de décision qu'EF (deadline 22 juin).
+**Suite** : vérifier la deadline exacte de la cohorte de juillet sur la page cohort dates ; décider si on teste le positionnement cofounder via Antler plutôt qu'EF/Singapour.
