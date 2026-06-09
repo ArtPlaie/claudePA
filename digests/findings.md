@@ -97,3 +97,16 @@
 **Lien** : https://www.helioclipse.com/fr/blog/eclipse-totale-2026-espagne-trajectoire-horaires-ligne-centrale/
 **Pourquoi ça compte** : Première totale en Europe continentale depuis 1999. Bande de totalité La Corogne→Baléares (Burgos ~1min45 à 20h29), soleil bas → horizon ouest dégagé requis. Même nuit = pic des Perséides sans lune (nouvelle lune par définition). À ~9-10h de route de Bois-le-Roi ; hébergements dans la bande déjà sous tension. Prochaine occasion comparable en Europe : 2027 (sud Espagne, 2 août).
 **Suite** : bloquer 3-4 nuits région Burgos–Soria avant fin juin ; sinon pivot éclipse du 2 août 2027 (Andalousie).
+### 2026-06-09 — Pentagone débranche Anthropic : les red lines safety coûtent désormais des milliards
+**Tags** : ai-safety, policy, defense, anthropic
+**Source** : weekly_briefing
+**Lien** : https://www.bloomberg.com/news/articles/2026-05-21/pentagon-tests-rival-ai-models-in-race-to-replace-anthropic
+**Pourquoi ça compte** : Refus de lever les lignes rouges (surveillance de masse, armes autonomes) → désignation "supply-chain risk" par Hegseth, wind-down 6 mois de Claude dans Maven/réseaux classifiés, procès en cours. OpenAI a renégocié des terms "lawful use" sans ces limites. Premier cas chiffrable où des engagements safety coûtent un contrat majeur — référence pour le débat safety-washing vs coûteux.
+**Suite** : suivre l'issue du procès et si les red lines tiennent post-IPO.
+
+### 2026-06-09 — Anthropic S-1 confidentiel : le capital cycle IA passe aux marchés publics
+**Tags** : ia, marchés, ipo, anthropic
+**Source** : weekly_briefing
+**Lien** : https://www.anthropic.com/news/confidential-draft-s1-sec
+**Pourquoi ça compte** : Dépôt le 1er juin, après Series H à 965 Md$ post-money et run-rate ~47 Md$. Premiers vrais financials publics d'un labo frontière à venir (risk factors safety inclus). Vague IPO avec OpenAI/SpaceX = le capex IA devient trop gros pour le privé.
+**Suite** : lire le prospectus public quand il sortira — risk factors safety + unit economics réels.

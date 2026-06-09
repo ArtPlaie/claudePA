@@ -1,0 +1,41 @@
+---
+task: weekly_briefing
+run_at: 2026-06-09T20:30:00+00:00
+status: completed
+---
+
+# Briefing hebdo — 9 juin 2026
+
+## Monde
+
+**Iran–Israël : le cessez-le-feu a failli casser ce week-end.** Échange de missiles les 7-8 juin, le plus violent depuis des mois, avant que [les deux camps annoncent stopper — sous conditions](https://www.vpm.org/npr-news/npr-news/2026-06-08/israel-and-iran-exchange-missile-fire-threatening-middle-east-truce). Netanyahu parle d'arrêt des frappes sans prononcer le mot "cessez-le-feu", et Israël a aussi frappé la banlieue sud de Beyrouth le 7, première fois depuis la trêve d'avril. Le vrai sujet reste [le détroit d'Hormuz](https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis) : trafic toujours très réduit, blocus naval US maintenu tant qu'il n'y a pas d'accord. Tant que ça dure, la prime géopolitique sur le brut est structurelle, pas un spike — et pourtant le Brent tient sous les 100 $, ce qui en dit long sur la demande.
+
+**Ukraine : Kyiv accepte officiellement le gel du front.** Le 7 juin, [Starmer, Macron et Merz ont co-signé avec Zelensky](https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-june-8-2026) une proposition de cessez-le-feu immédiat avec gel de la ligne de contact comme base de négociation. Zelensky a confirmé avoir reçu Abramovich à Kyiv comme intermédiaire de Poutine — qui a rejeté l'offre de négociations directes. C'est la première fois que l'Ukraine endosse publiquement le gel territorial : concession majeure, la balle est ostensiblement côté Moscou, et le refus de Poutine clarifie qui bloque.
+
+**Macro : re-pricing inflationniste des deux côtés.** À la BCE, [Lane juge le scénario "bénin" sur le pétrole de moins en moins probable et deux officiels évoquent des hausses de taux](https://www.macrobond.com/resources/macro-charts/week-of-june-8-2026) — on parle bien de *hausses* en zone euro, régime inversé vs 2025. Aux US, [172k créations d'emplois en mai, le double du consensus](https://blog.swbc.com/investmenthub/market-commentary-week-of-june-8-2026) : le S&P a rendu 2,6 % vendredi (fin d'une série de 9 semaines de hausse), les yields ont spiké sur la peur de surchauffe. CPI américain cette semaine — c'est le print qui décidera si ce repricing tient.
+
+En demi-ligne : [l'épidémie d'Ebola en RDC progresse à un rythme inédit selon l'Africa CDC](https://www.npr.org/sections/world/) — à surveiller, pas encore de signal d'export hors région.
+
+## IA / AI Safety
+
+**Anthropic a déposé son S-1 confidentiel le 1er juin.** [Annonce officielle](https://www.anthropic.com/news/confidential-draft-s1-sec) : pas de calendrier, pas de prix, mais le mouvement suit la Series H à 965 Md$ post-money et [un run-rate annualisé passé les 47 Md$](https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html). Le so what : un prospectus SEC = les premiers vrais financials publics d'un labo frontière, risk factors compris — on saura enfin ce que coûtent (et rapportent) les engagements safety quand ils seront écrits noir sur blanc pour les actionnaires.
+
+**Le Pentagone débranche Anthropic — pour excès de scrupules.** Après le refus d'Anthropic de lever ses deux lignes rouges (surveillance de masse, armes autonomes ciblant des humains sans contrôle), Hegseth a classé la boîte "supply-chain risk" et [le DoD teste OpenAI, Google et Grok pour remplacer Claude](https://www.bloomberg.com/news/articles/2026-05-21/pentagon-tests-rival-ai-models-in-race-to-replace-anthropic) dans Maven et les réseaux classifiés, avec 6 mois pour tout migrer. Anthropic conteste en justice ; OpenAI, elle, a renégocié des conditions "lawful use" sans ces limites. C'est le cas d'école que la communauté safety attendait : des red lines qui coûtent réellement des milliards, pas du safety-washing. Précédent structurel dans les deux sens.
+
+**WWDC : Siri devient un wrapper Gemini, et l'EU est exclue au lancement.** Apple a annoncé le 8 juin [Siri AI](https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/), propulsé côté cloud par des modèles co-développés avec Google, plus [des agents Claude/Gemini/Codex intégrés à Xcode 27](https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/). Apple acte qu'elle ne rattrapera pas les labos sur les modèles. Et [les nouvelles features Siri AI ne sortiront ni en EU ni en Chine](https://www.macrumors.com/2026/06/08/siri-ai-not-available-eu-china/) : l'exclusion européenne par défaut devient la norme produit, pas l'exception.
+
+**EU AI Act : pleine application le 2 août, et l'enforcement n'est pas prêt.** La Commission a annoncé le 1er juin [un appui d'experts indépendants pour l'enforcement](https://www.glacis.io/guide-eu-ai-act), pendant que les États membres finalisent encore leurs autorités compétentes ; le [code de pratique sur le marquage des contenus générés](https://www.twobirds.com/en/insights/2026/taking-the-eu-ai-act-to-practice-understanding-the-draft-transparency-code-of-practice) doit être finalisé ce mois-ci. Le vrai sujet des 8 prochaines semaines, c'est le gap entre le texte et des régulateurs nationaux pas staffés.
+
+À noter aussi, plus gros que ça en a l'air : [SoftBank va investir jusqu'à 75 Md€ pour 5 GW de datacenters IA en France](https://group.softbank/en/news/press/20260531_0) (annoncé à Choose France) — première phase 45 Md€ / 3,1 GW dans les Hauts-de-France avec EDF et Schneider. Le plus gros engagement d'infra IA jamais annoncé en Europe, adossé au nucléaire français.
+
+## Local
+
+**Expos qui valent le déplacement** : la [rétrospective Calder à la Fondation Louis Vuitton](https://www.timeout.fr/paris/actualites/expositions-a-voir-absolument-juin-2026-060226) (300+ pièces, première d'envergure à Paris depuis les années 80 — les mobiles XXL devraient parler aux enfants autant qu'aux adultes) et [Lee Miller au Musée d'Art Moderne](https://www.sortiraparis.com/en/what-to-visit-in-paris/exhibit-museum/guides/53047-june-2026-exhibitions-this-month-s-artistic-outings-in-paris-and-ile-de-france) (250+ photos, du surréalisme au photojournalisme de guerre — pour Isa). Versace au Musée Maillol en troisième choix.
+
+**RER R** : [jusqu'au 31 juillet, en semaine de 9h30 à 16h, 1 train sur 2 entre Combs-la-Ville–Quincy et Melun](https://maligner.transilien.com/2026/06/01/informations-travaux-juin-2026/) — l'axe Melun–Paris est dégradé en heures creuses, vérifier les horaires avant un aller Paris en journée.
+
+**Météo** : [bascule anticyclonique en cours](https://www.sortiraparis.com/en/news/in-paris/articles/332748-weather-in-paris-and-ile-de-france-this-week-june-8-14-2026) — beau temps durable en fin de semaine, +1 à +3 °C au-dessus des normales. Les scénarios à 35-40 °C évoqués début juin [ont été abandonnés](https://www.meteo-paris.com/actualites/la-vague-de-chaleur-est-elle-confirmee-pour-la-semaine-prochaine) : pas de canicule d'ici mi-juin.
+
+## Le fil rouge de la semaine : la safety a maintenant un prix affiché
+
+Trois événements de la semaine racontent la même histoire. Anthropic dépose son S-1 le 1er juin ; le Pentagone organise sa sortie de Claude parce que la boîte refuse de lever ses lignes rouges ; et l'AI Act arrive à pleine application dans 8 semaines pendant qu'Apple exclut l'EU de Siri AI. Jusqu'ici, les engagements safety des labos étaient des positions morales à coût diffus — faciles à tenir parce que personne ne les facturait. Cette semaine, le coût devient explicite : un contrat défense perdu qui se chiffre en milliards, un prospectus SEC qui devra lister ces engagements comme risk factors, et bientôt un cours de bourse qui re-pricera chaque arbitrage éthique en temps réel. Le test des 12 prochains mois : est-ce que des red lines survivent à la discipline trimestrielle des marchés publics, ou est-ce qu'elles s'éroderont comme les politiques "don't be evil" de la génération d'avant. Lecture plus cynique, conviction moyenne : déposer son S-1 à 47 Md$ de run-rate, en plein pic narratif IA et pendant une vague d'IPO concurrentes, c'est aussi du market timing tout à fait classique — on lève au public quand le capex devient trop gros pour le privé *et* que les valorisations sont au sommet. Les deux lectures peuvent être vraies en même temps.
