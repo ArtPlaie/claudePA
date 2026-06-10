@@ -110,3 +110,16 @@
 **Lien** : https://www.anthropic.com/news/confidential-draft-s1-sec
 **Pourquoi ça compte** : Dépôt le 1er juin, après Series H à 965 Md$ post-money et run-rate ~47 Md$. Premiers vrais financials publics d'un labo frontière à venir (risk factors safety inclus). Vague IPO avec OpenAI/SpaceX = le capex IA devient trop gros pour le privé.
 **Suite** : lire le prospectus public quand il sortira — risk factors safety + unit economics réels.
+### 2026-06-10 — EF def/acc : programme thématique "défense + AI safety", deadline 22 juin
+**Tags** : sydney, cofounding, ai-safety, deadline, ef
+**Source** : sydney_opportunities
+**Lien** : https://www.joinef.com/posts/introducing-def-acc-at-ef/
+**Pourquoi ça compte** : Programme distinct du EF classique — Matt Clifford le pilote perso, focus défense (AI safety, biosec, cybersec), cohorte Londres 12 sem + option SF, ~$250k pour les équipes retenues. L'angle "Chasing Fake Volume 2026" (manipulation AI-générée, détection de fraude à l'ère LLM) est un fit thématique direct et différenciant. Deadline finale 22 juin 2026 — même jour que TARA et l'EF régulier.
+**Suite** : décision à prendre avant le 22 juin (blocker famille = présentiel Londres 12 sem).
+
+### 2026-06-10 — AU AI Safety Forum (7-8 juil, Sydney) : proposals de talks encore ouvertes
+**Tags** : sydney, ai-safety, event, networking, wildcard
+**Source** : sydney_opportunities
+**Lien** : https://www.aisafetyforum.au/
+**Pourquoi ça compte** : Pas de deadline affichée pour les proposals. Angle naturel : "Ce que le poker et la détection de fraude crypto m'ont appris sur le scheming des LLMs" — perspective adversariale non-académique unique dans ce forum. En pratique : premier ancrage public dans l'écosystème AU safety avant le move, réseau en personne avec recruteurs/orgs. Ticket à partir de $75. Ça demande ~2h pour monter une prop.
+**Suite** : soumettre une prop cette semaine avant que la deadline ne tombe ; sinon au moins s'inscrire comme participant.
