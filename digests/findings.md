@@ -135,3 +135,9 @@
 **Lien** : https://www.lesswrong.com/
 **Pourquoi ça compte** : Parallèle entre détection de faux volumes OKEx (2018) et évaluation du scheming/sandbagging LLM — angle unique dans la communauté safety, transfert direct poker/fraude crypto. Un post de 1000 mots publié avant le 22 juin débloquerait simultanément le dossier EF def/acc, TARA Round 2, la prop de talk AU Forum, et crée de l'inbound passif auprès d'Apollo/METR/Anthropic.
 **Suite** : écrire et publier avant le 22 juin ; cross-post Substack @ArtPlaie.
+### 2026-06-11 — Médiévales de Provins : fête médiévale annuelle à 55 min (UNESCO, juin)
+**Tags** : activities, famille, annuel, seine-et-marne, local
+**Source** : activities_next10days
+**Lien** : https://www.provins.net/medievales/
+**Pourquoi ça compte** : 41e édition en 2026 (13-14 juin), plus grande fête médiévale de France sur site classé UNESCO. À 55 min de Bois-le-Roi, très engageant pour les enfants dès 4-5 ans. Événement ancré et récurrent chaque année mi-juin.
+**Suite** : info pure récurrente — à mémoriser pour chaque année ; bloquer le weekend mi-juin à l'avance.
