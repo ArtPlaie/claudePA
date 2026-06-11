@@ -123,3 +123,15 @@
 **Lien** : https://www.aisafetyforum.au/
 **Pourquoi ça compte** : Pas de deadline affichée pour les proposals. Angle naturel : "Ce que le poker et la détection de fraude crypto m'ont appris sur le scheming des LLMs" — perspective adversariale non-académique unique dans ce forum. En pratique : premier ancrage public dans l'écosystème AU safety avant le move, réseau en personne avec recruteurs/orgs. Ticket à partir de $75. Ça demande ~2h pour monter une prop.
 **Suite** : soumettre une prop cette semaine avant que la deadline ne tombe ; sinon au moins s'inscrire comme participant.
+### 2026-06-11 — MATS Automne 2026 : manqué de 4 jours, mais tentable en contactant les orga
+**Tags** : ai-safety, formation, mats, deadline, berkeley, london
+**Source** : sydney_opportunities
+**Lien** : https://www.matsprogram.org/program/autumn-2026
+**Pourquoi ça compte** : Programme de 10 semaines à Berkeley ou Londres (28 sept – 4 déc), $5k/mois + logement + $8k compute. Deadline officielle = 7 juin, dépassée de 4 jours. Mais le profil non-PhD quanti/adversarial est statistiquement rare dans leur vivier — 20 minutes pour un mail froid aux orga avec un lien vers "Chasing Fake Volume" ont une vraie chance de déboucher sur une waitlist. Extension optionnelle 6–12 mois après le programme.
+**Suite** : envoyer mail cette semaine (matsprogram.org/apply) ; si refus, réorienter vers la cohorte Summer 2027.
+### 2026-06-11 — "Chasing Fake Alignment" : post LessWrong avant le 22 juin
+**Tags** : ai-safety, evals, wildcard, contenu, leverage
+**Source** : sydney_opportunities
+**Lien** : https://www.lesswrong.com/
+**Pourquoi ça compte** : Parallèle entre détection de faux volumes OKEx (2018) et évaluation du scheming/sandbagging LLM — angle unique dans la communauté safety, transfert direct poker/fraude crypto. Un post de 1000 mots publié avant le 22 juin débloquerait simultanément le dossier EF def/acc, TARA Round 2, la prop de talk AU Forum, et crée de l'inbound passif auprès d'Apollo/METR/Anthropic.
+**Suite** : écrire et publier avant le 22 juin ; cross-post Substack @ArtPlaie.
