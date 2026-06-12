@@ -141,3 +141,17 @@
 **Lien** : https://www.provins.net/medievales/
 **Pourquoi ça compte** : 41e édition en 2026 (13-14 juin), plus grande fête médiévale de France sur site classé UNESCO. À 55 min de Bois-le-Roi, très engageant pour les enfants dès 4-5 ans. Événement ancré et récurrent chaque année mi-juin.
 **Suite** : info pure récurrente — à mémoriser pour chaque année ; bloquer le weekend mi-juin à l'avance.
+
+### 2026-06-12 — Dupilumab : 1ère indication biologique pour AFRS (rhinosinusite fongique allergique)
+**Tags** : santé, isa, ORL, dupilumab, biothérapie, non-ATB
+**Source** : health_watch
+**Lien** : https://www.sanofi.com/fr/media-room/communiques-de-presse/2026/2026-02-24-14-30-00-3243732
+**Pourquoi ça compte** : FDA approval fév 2026 — dupilumab premier traitement biologique pour l'AFRS (rhinosinusite fongique allergique, phénotype type 2 distinct de la CRS classique). Réduction 92 % chirurgie/corticoïdes systémiques. Entièrement compatible avec la contre-indication ATB d'Isa. À distinguer diagnostiquement de la CRSwNP classique — si composante fongique allergique documentée chez Isa, change le positionnement du traitement.
+**Suite** : soulever avec l'ORL référent d'Isa lors du prochain RDV : AFRS vs CRS classique diagnostiquement établi ?
+
+### 2026-06-12 — Calendrier vaccinal 2026 : méningo ACWY+B obligatoire, rattrapage 2–4 ans
+**Tags** : santé, publique, vaccination, enfants, méningocoque
+**Source** : health_watch
+**Lien** : https://www.vidal.fr/actualites/37762-la-version-2026-du-calendrier-vaccinal-est-disponible.html
+**Pourquoi ça compte** : Méningocoque ACWY+B obligatoire pour enfants nés après 01/01/2023. Rattrapage ciblé 2–4 ans. Tristan (5 ans) potentiellement concerné si doses non à jour. PCV21 autorisé pour enfants à risque élevé 2–18 ans depuis mars 2026 (couverture sérotypique +20–40 %).
+**Suite** : vérifier carnet de vaccination Tristan au prochain pédiatre (rattrapage méningo ACWY+B si nécessaire).
