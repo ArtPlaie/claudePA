@@ -154,3 +154,16 @@
 **Lien** : https://www.vidal.fr/actualites/37762-la-version-2026-du-calendrier-vaccinal-est-disponible.html
 **Pourquoi ça compte** : Méningocoque ACWY+B obligatoire pour enfants nés après 01/01/2023. Rattrapage ciblé 2–4 ans. Tristan (5 ans) potentiellement concerné si doses non à jour. PCV21 autorisé pour enfants à risque élevé 2–18 ans depuis mars 2026 (couverture sérotypique +20–40 %).
 **Suite** : vérifier carnet de vaccination Tristan au prochain pédiatre (rattrapage méningo ACWY+B si nécessaire).
+### 2026-06-13 — Neo Research : lab d'évals frontier, remote global (AU inclus)
+**Tags** : sydney, ai-safety, job, evals, remote, no-phd
+**Source** : sydney_opportunities
+**Lien** : http://neoresearch.ai/careers
+**Pourquoi ça compte** : Lab indépendant d'évaluations frontier (CBRN, cyber, manipulation, systèmes agentiques). Research Scientist / Research Engineer, remote global confirmé incluant l'Australie. Rolling applications. Focus manipulation/adversarial = fit direct avec le profil poker/détection-fraude. Lab récent → track record à vérifier, mais angle d'entrée non-PhD rare dans l'espace évals.
+**Suite** : postuler après publication du post LessWrong (renforce la candidature) ; contacter contact@neoresearch.ai.
+
+### 2026-06-13 — BlueDot Rapid Grants : jusqu'à $10k en 24h pour un sprint AI safety
+**Tags** : ai-safety, financement, wildcard, sprint
+**Source** : sydney_opportunities
+**Lien** : https://bluedot.org/programs/rapid-grants
+**Pourquoi ça compte** : Grants rolling sans deadline, formulaire 5 min, réponse en 24h. Financement recherche safety, compute/API, events, travel. Angle direct : financer le sprint "Chasing Fake Alignment" (compute pour écrire et valider le benchmark eval avant publication). Une demande acceptée renforce simultanément le dossier EF def/acc et TARA Round 2 en montrant un projet déjà financé.
+**Suite** : déposer quand le draft LessWrong est prêt (description du projet = le post lui-même).
