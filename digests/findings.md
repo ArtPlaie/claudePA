@@ -167,3 +167,9 @@
 **Lien** : https://bluedot.org/programs/rapid-grants
 **Pourquoi ça compte** : Grants rolling sans deadline, formulaire 5 min, réponse en 24h. Financement recherche safety, compute/API, events, travel. Angle direct : financer le sprint "Chasing Fake Alignment" (compute pour écrire et valider le benchmark eval avant publication). Une demande acceptée renforce simultanément le dossier EF def/acc et TARA Round 2 en montrant un projet déjà financé.
 **Suite** : déposer quand le draft LessWrong est prêt (description du projet = le post lui-même).
+### 2026-06-14 — ML4Good Lyon : track gouvernance (sept 14-22), deadline 1er juillet
+**Tags** : ai-safety, formation, france, deadline, gouvernance, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://www.ml4good.org/
+**Pourquoi ça compte** : Track distinct du technique (déjà archivé) — 9 jours résidentiels à Lyon, 14-22 sept, focus politique/stratégie IA safety, moins Python-heavy. Plus accessible pour l'angle policy/comms que le track technique. Même deadline que le track tech (1er juillet), même format gratuit/résidentiel, même réseau EffiSciences FR. Les deux candidatures sont indépendantes — postuler aux deux est possible.
+**Suite** : décider avant le 1er juillet quel(s) track(s) on vise ; le gouvernance peut être le premier pas si le technique semble trop dense à ce stade.
