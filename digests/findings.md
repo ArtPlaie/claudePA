@@ -173,3 +173,17 @@
 **Lien** : https://www.ml4good.org/
 **Pourquoi ça compte** : Track distinct du technique (déjà archivé) — 9 jours résidentiels à Lyon, 14-22 sept, focus politique/stratégie IA safety, moins Python-heavy. Plus accessible pour l'angle policy/comms que le track technique. Même deadline que le track tech (1er juillet), même format gratuit/résidentiel, même réseau EffiSciences FR. Les deux candidatures sont indépendantes — postuler aux deux est possible.
 **Suite** : décider avant le 1er juillet quel(s) track(s) on vise ; le gouvernance peut être le premier pas si le technique semble trop dense à ce stade.
+
+### 2026-06-14 — Fable 5 / Mythos 5 : Anthropic inaugure l'accès différencié aux modèles frontier
+**Tags** : ia, anthropic, safety, architecture-modèle
+**Source** : weekly_briefing
+**Lien** : https://www.anthropic.com/news/claude-fable-5-mythos-5
+**Pourquoi ça compte** : Premier cas public d'un labo qui maintient deux niveaux d'accès simultanés sur le même socle de modèle (Mythos 5 = accès restreint cyberdéfense/infra critique ; Fable 5 = public avec safeguards). Signal structurel : la safety n'est plus uniquement dans les red-lines, elle est dans la topologie d'accès elle-même. Pertinent pour comprendre où Anthropic place ses curseurs — et donc ce qu'il faut démontrer pour travailler sur les évals/safety en interne.
+**Suite** : info pure + tester Fable 5 maintenant (inclus abonnement jusqu'au 22 juin).
+
+### 2026-06-14 — EU AI Act : consultation guidelines HRAI ouverte jusqu'au 23 juin
+**Tags** : ia, policy, eu-ai-act, consultation, deadline
+**Source** : weekly_briefing
+**Lien** : https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/
+**Pourquoi ça compte** : La Commission a publié ses draft guidelines de classification des systèmes à haut risque (HRAI). Consultation publique ouverte jusqu'au 23 juin. Les obligations HRAI ont été repoussées à décembre 2027 (deal Digital Omnibus). Fenêtre rare : les guidelines sont encore amendables, et la Commission lit les contributions. Pour un profil visant le policy/safety en EU, contribuer (ou lire attentivement) signale une maîtrise du dossier.
+**Suite** : lire les draft guidelines avant le 23 juin ; arbitrer si une contribution courte vaut le temps.
