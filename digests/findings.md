@@ -186,3 +186,16 @@
 **Lien** : https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/
 **Pourquoi ça compte** : La Commission a publié ses draft guidelines de classification des systèmes à haut risque (HRAI). Consultation publique ouverte jusqu'au 23 juin. Les obligations HRAI ont été repoussées à décembre 2027 (deal Digital Omnibus). Fenêtre rare : les guidelines sont encore amendables, et la Commission lit les contributions. Pour un profil visant le policy/safety en EU, contribuer (ou lire attentivement) signale une maîtrise du dossier.
 **Suite** : lire les draft guidelines avant le 23 juin ; arbitrer si une contribution courte vaut le temps.
+### 2026-06-15 — Anthropic Fellows Program : candidatures rolling pour les cohortes post-juillet
+**Tags** : ai-safety, formation, anthropic, fellows, rolling
+**Source** : sydney_opportunities
+**Lien** : https://job-boards.greenhouse.io/anthropic/jobs/5183044008
+**Pourquoi ça compte** : La deadline officielle (26 avril) pour la cohorte juillet est passée, mais Anthropic accepte des candidatures en continu via fellows@anthropic.com. Stipende $3 850/semaine sur 4 mois + ~$15k/mois compute. Programme AI safety research, non-PhD explicitement possible. Un angle concret ("Chasing Fake Alignment" / eval scheming) permet de candidater de façon crédible. Porte ouverte en permanence, pas d'attente de deadline.
+**Suite** : envoyer un mail court à fellows@anthropic.com une fois le post LessWrong/draft eval disponible.
+
+### 2026-06-15 — BlueDot Career Transition Grant : runway 6-12 mois pour pivot AI safety
+**Tags** : ai-safety, financement, transition, runway, rolling
+**Source** : sydney_opportunities
+**Lien** : https://bluedot.org/programs/career-transition-grant
+**Pourquoi ça compte** : Grant rolling (pas de deadline) fournissant 6-12 mois de runway financier + warm intros communauté + check-ins pour des gens faisant le pivot vers AI safety/biosec full-time. Complément structurel aux Rapid Grants (déjà archivés) — ceux-ci financent un sprint projet, les Career Transition Grants financent la personne pendant la reconversion. Plus accessible aux alumni BlueDot (cours AI Safety Fundamentals = double porte).
+**Suite** : à mobiliser si les grandes formations (MATS, Fellows) prennent du temps ; compléter un cours BlueDot d'abord pour renforcer l'éligibilité.
