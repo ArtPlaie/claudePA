@@ -199,3 +199,9 @@
 **Lien** : https://bluedot.org/programs/career-transition-grant
 **Pourquoi ça compte** : Grant rolling (pas de deadline) fournissant 6-12 mois de runway financier + warm intros communauté + check-ins pour des gens faisant le pivot vers AI safety/biosec full-time. Complément structurel aux Rapid Grants (déjà archivés) — ceux-ci financent un sprint projet, les Career Transition Grants financent la personne pendant la reconversion. Plus accessible aux alumni BlueDot (cours AI Safety Fundamentals = double porte).
 **Suite** : à mobiliser si les grandes formations (MATS, Fellows) prennent du temps ; compléter un cours BlueDot d'abord pour renforcer l'éligibilité.
+### 2026-06-16 — GovAI Winter 2027 Applied Track : deadline 12 juillet, Londres Jan–Avr 2027
+**Tags** : sydney, ai-safety, policy, govai, fellowship, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.governance.ai/opportunities
+**Pourquoi ça compte** : Fellowship 3 mois à Londres (Applied Track = policy, comms, opérations, plaidoyer — pas de recherche pure ni de PhD requis). £11k stipende + visa sponsorisé. Partenaires UK AISI, Far.AI, Oxford Martin School. Le track applied est conçu exactement pour les profils "influenceurs policy" non-académiques. Deadline July 12 = décision dans 4 semaines. Si le move AU glisse à 2027, ce fellowship en Jan-Avr 2027 s'imbrique bien comme brique de réseau/légitimité avant l'arrivée en Australie.
+**Suite** : candidater avant le 12 juillet ; application ~1h, angle adversarial calibration + influence publique AI safety.
