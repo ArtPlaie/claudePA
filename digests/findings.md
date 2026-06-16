@@ -205,3 +205,9 @@
 **Lien** : https://www.governance.ai/opportunities
 **Pourquoi ça compte** : Fellowship 3 mois à Londres (Applied Track = policy, comms, opérations, plaidoyer — pas de recherche pure ni de PhD requis). £11k stipende + visa sponsorisé. Partenaires UK AISI, Far.AI, Oxford Martin School. Le track applied est conçu exactement pour les profils "influenceurs policy" non-académiques. Deadline July 12 = décision dans 4 semaines. Si le move AU glisse à 2027, ce fellowship en Jan-Avr 2027 s'imbrique bien comme brique de réseau/légitimité avant l'arrivée en Australie.
 **Suite** : candidater avant le 12 juillet ; application ~1h, angle adversarial calibration + influence publique AI safety.
+### 2026-06-16 — FAR AI Research Engineer : remote global (AU inclus), rolling
+**Tags** : ai-safety, job, remote, australie, no-phd, evals
+**Source** : ai_jobs_formations
+**Lien** : https://www.far.ai/careers/research-engineer
+**Pourquoi ça compte** : FAR AI (Frontier Alignment Research, 6 rôles listés sur 80k Hours, partenaire AISI UK/GovAI) recrute un Research Engineer en rolling — **remote dans la plupart des pays, Australie confirmée**. $100k–$190k selon expérience et localisation. Process sans LeetCode : 72 min coding assessment + work trial payé. Non-PhD ok, focus ML safety/RL. Option concrète pour travailler dans un labo safety depuis Sydney dès l'arrivée, sans attendre un poste Anthropic ou Apollo.
+**Suite** : postuler une fois le post LessWrong/eval scheming en ligne (renforce la candidature) ; contact talent@far.ai.
