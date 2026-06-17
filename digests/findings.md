@@ -211,3 +211,9 @@
 **Lien** : https://www.far.ai/careers/research-engineer
 **Pourquoi ça compte** : FAR AI (Frontier Alignment Research, 6 rôles listés sur 80k Hours, partenaire AISI UK/GovAI) recrute un Research Engineer en rolling — **remote dans la plupart des pays, Australie confirmée**. $100k–$190k selon expérience et localisation. Process sans LeetCode : 72 min coding assessment + work trial payé. Non-PhD ok, focus ML safety/RL. Option concrète pour travailler dans un labo safety depuis Sydney dès l'arrivée, sans attendre un poste Anthropic ou Apollo.
 **Suite** : postuler une fois le post LessWrong/eval scheming en ligne (renforce la candidature) ; contact talent@far.ai.
+### 2026-06-17 — DeepMind Gemini Safety (Zurich) : PhD "ou expérience équivalente"
+**Tags** : suisse, ai-safety, job, deepmind, zurich, gemini, no-phd-clause
+**Source** : sydney_opportunities
+**Lien** : https://job-boards.greenhouse.io/deepmind/jobs/7731944
+**Pourquoi ça compte** : Research Scientist sur l'équipe Gemini Safety (sécurité/fairness des modèles Gemini en prod) à Zurich. Clause "PhD ou expérience pratique équivalente" — porte d'entrée non-académique théorique mais réelle chez Google, dans un vrai labo frontier, avec permis B direct (pas de move frontalier). Pas de deadline affichée. Le tri ATS classique filtrera probablement sur l'absence de PhD : la candidature seule a peu de chances, il faut un contact direct dans l'équipe pour porter le pitch adversarial (cf. working-memory du jour).
+**Suite** : candidater sur Greenhouse + chercher un contact direct dans l'équipe Gemini Safety pour porter le pitch "Chasing Fake Volume → Chasing Fake Alignment" en parallèle.
