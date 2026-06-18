@@ -217,3 +217,16 @@
 **Lien** : https://job-boards.greenhouse.io/deepmind/jobs/7731944
 **Pourquoi ça compte** : Research Scientist sur l'équipe Gemini Safety (sécurité/fairness des modèles Gemini en prod) à Zurich. Clause "PhD ou expérience pratique équivalente" — porte d'entrée non-académique théorique mais réelle chez Google, dans un vrai labo frontier, avec permis B direct (pas de move frontalier). Pas de deadline affichée. Le tri ATS classique filtrera probablement sur l'absence de PhD : la candidature seule a peu de chances, il faut un contact direct dans l'équipe pour porter le pitch adversarial (cf. working-memory du jour).
 **Suite** : candidater sur Greenhouse + chercher un contact direct dans l'équipe Gemini Safety pour porter le pitch "Chasing Fake Volume → Chasing Fake Alignment" en parallèle.
+### 2026-06-18 — Operation Token Mirrors : le DOJ confirme la thèse "Chasing Fake Volume" (2018)
+**Tags** : sydney, wildcard, crypto, credibility, content
+**Source** : sydney_opportunities
+**Lien** : https://www.coindesk.com/business/2026/04/02/doj-sting-exposes-crypto-wash-trading-continues-to-be-far-more-common-than-expected
+**Pourquoi ça compte** : Inculpation fédérale (NDCA, fin mars 2026) de dix personnes liées à quatre boîtes de market making (dont GotBit) pour wash trading organisé — bots, volume artificiel, transactions circulaires entre wallets liés (99% des transactions GotBit retracées comme circulaires). C'est exactement le mécanisme documenté par "Chasing Fake Volume" sur OKEx en 2018. Hook de contenu rare : relie le crédit public existant (@ArtPlaie) à l'angle "Chasing Fake Alignment" (détection de pattern appliquée au scheming LLM) sans attendre que ce dernier soit fini.
+**Suite** : écrire un post court reliant les deux ; à faire avant que le sujet ne devienne consensuel dans la presse crypto.
+
+### 2026-06-18 — Papiers LLM-poker 2026 : "knowing-doing gap" = angle direct sur le scheming
+**Tags** : ai-safety, wildcard, poker, deception, content, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://arxiv.org/html/2602.00528v1
+**Pourquoi ça compte** : "How Far Are LLMs from Professional Poker Players?" (Penn State/HKUST/Amazon/Tsinghua/Microsoft) documente un "knowing-doing gap" chez les LLMs au poker — ils articulent le bon raisonnement mais agissent autrement. C'est littéralement la question du deceptive alignment, mais les auteurs ne font pas le lien avec cette littérature. Papier compagnon "Readable Minds" (arXiv 2604.04157) sur le theory-of-mind émergent en poker a la même faiblesse. Angle qu'un pro de 9 ans avec un œil adversarial peut occuper seul.
+**Suite** : poster un commentaire (LessWrong ou réponse directe aux auteurs sur X) qui relie le knowing-doing gap au scheming ; bon point de contact concret pour le sous-champ deception evals.
