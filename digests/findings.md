@@ -230,3 +230,17 @@
 **Lien** : https://arxiv.org/html/2602.00528v1
 **Pourquoi ça compte** : "How Far Are LLMs from Professional Poker Players?" (Penn State/HKUST/Amazon/Tsinghua/Microsoft) documente un "knowing-doing gap" chez les LLMs au poker — ils articulent le bon raisonnement mais agissent autrement. C'est littéralement la question du deceptive alignment, mais les auteurs ne font pas le lien avec cette littérature. Papier compagnon "Readable Minds" (arXiv 2604.04157) sur le theory-of-mind émergent en poker a la même faiblesse. Angle qu'un pro de 9 ans avec un œil adversarial peut occuper seul.
 **Suite** : poster un commentaire (LessWrong ou réponse directe aux auteurs sur X) qui relie le knowing-doing gap au scheming ; bon point de contact concret pour le sous-champ deception evals.
+
+### 2026-06-19 — F/ai (Station F) : accélérateur IA multi-labos, batch sept-déc 2026
+**Tags** : sydney, invest, cofounding, accélérateur, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://stationf.co/news/get-into-f-ai
+**Pourquoi ça compte** : Premier accélérateur IA soutenu simultanément par OpenAI, Anthropic, Google, Meta, Microsoft et Mistral, lancé janvier 2026 à Station F. Sélection par recommandation de partenaire, pas par candidature ouverte — mais contact direct possible avec les 16 partenaires programme / 8 partenaires investisseurs. Prochain batch sept-déc 2026, fenêtre de prise de contact utile maintenant-juillet. Niveau de backing labo rare pour un profil qui prépare un projet eval/scheming public.
+**Suite** : identifier 2-3 partenaires F/ai pertinents (probablement côté Mistral/Anthropic) et tenter un contact direct une fois le post LessWrong/eval prêt à montrer comme traction.
+
+### 2026-06-19 — Metaculus Cup Summer 2026 : track record calibration public, gratuit
+**Tags** : sydney, wildcard, forecasting, calibration, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://www.metaculus.com/tournament/metaculus-cup-summer-2026/
+**Pourquoi ça compte** : Tournoi de prévision humain (pas de bot à coder), $5k de prix, gratuit, ouvert maintenant. Score basé sur calibration réelle sur questions réelles — exploite directement la compétence poker/trading algo. Portfolio piece concret et vérifiable publiquement pour candidater ensuite à un rôle forecasting/evals en AI safety, sans dépendre d'un CV académique.
+**Suite** : s'inscrire et jouer sur l'été ; un bon classement devient un argument concret pour les candidatures FAR AI / Apollo / evals.
