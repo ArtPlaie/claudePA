@@ -243,3 +243,23 @@
 **Lien** : https://www.metaculus.com/tournament/metaculus-cup-summer-2026/
 **Pourquoi ça compte** : Tournoi de prévision humain (pas de bot à coder), $5k de prix, gratuit, ouvert maintenant. Score basé sur calibration réelle sur questions réelles — exploite directement la compétence poker/trading algo. Portfolio piece concret et vérifiable publiquement pour candidater ensuite à un rôle forecasting/evals en AI safety, sans dépendre d'un CV académique.
 **Suite** : s'inscrire et jouer sur l'été ; un bon classement devient un argument concret pour les candidatures FAR AI / Apollo / evals.
+### 2026-06-20 — Anthropic Sydney : premier rôle technique (Applied AI Engineer)
+**Tags** : sydney, ai-job, anthropic, applied-ai
+**Source** : sydney_opportunities
+**Lien** : https://job-boards.greenhouse.io/anthropic/jobs/5248983008
+**Pourquoi ça compte** : Depuis l'ouverture du bureau Sydney (mars 2026), c'est le premier poste qui n'est pas sales/legal/datacenter. Forward deployed engineer (conseil technique clients sur Claude), pas un rôle safety, et l'annonce demande 8+ ans dans un rôle titré "Customer/Forward Deployed/Software Engineer" que Sylvain n'a jamais eu — fit à valider, mais porte d'entrée technique rare dans un labo frontier basé physiquement à Sydney.
+**Suite** : évaluer si le pitch "9 ans de prod Python sur bots de trading" peut substituer au titre manquant ; postuler si oui.
+
+### 2026-06-20 — BlueDot Technical AI Safety Course : deadline 28 juin
+**Tags** : ai-safety, formation, bluedot, deadline, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://bluedot.org/courses/technical-ai-safety
+**Pourquoi ça compte** : Cours phare BlueDot (alignement technique), format court (6 jours intensif ou 6 semaines part-time), gratuit. Porte d'entrée standard avant les gros programmes type MATS/Anthropic Fellows — coût quasi nul pour renforcer le dossier avant l'été.
+**Suite** : candidater avant le 28 juin si le calendrier le permet.
+
+### 2026-06-20 — GTO Wizard Benchmark : angle poker pro sur le "vrai GTO" des LLM
+**Tags** : sydney, wildcard, poker, content, scheming, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://arxiv.org/abs/2603.23660
+**Pourquoi ça compte** : Papier (auteurs affiliés GTO Wizard) qui teste si les LLM jouent vraiment en stratégie optimale ou simulent le raisonnement — terrain exact d'un pro qui a utilisé un solveur GTO pendant 9 ans. Prolonge le fil "Chasing Fake Alignment" (knowing-doing gap, déjà archivé le 18/06) avec un angle plus pointu et des auteurs probablement réceptifs à un retour de pro.
+**Suite** : contacter les auteurs ou publier un commentaire pointant les écarts GTO académique / GTO de table réelle.
