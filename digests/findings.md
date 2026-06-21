@@ -276,3 +276,10 @@
 **Lien** : https://www.gjopen.com/challenges
 **Pourquoi ça compte** : Plateforme publique de Good Judgment (Tetlock) qui recrute ses Superforecasters payés chaque année directement depuis le classement de GJ Open. Critère unique annoncé : la performance de calibration sur la durée — diplôme, âge et localisation explicitement ignorés. Complète le Metaculus Cup déjà archivé (19/06) avec une deuxième piste publique, vérifiable, qui élimine le problème du CV salarié inexistant.
 **Suite** : jouer en parallèle du Metaculus Cup cet été ; un bon classement sert de portfolio piece pour FRI, des rôles evals, ou le programme pro Good Judgment lui-même.
+
+### 2026-06-21 — Rappel Mythos : premier export control sur un modèle frontier déployé
+**Tags** : ai-safety, policy, anthropic, precedent
+**Source** : weekly_briefing
+**Lien** : https://www.techpolicy.press/anthropics-mythos-recall-and-the-white-houses-missing-ai-safety-playbook/
+**Pourquoi ça compte** : Dix jours après le lancement de Fable 5/Mythos 5 (cf. finding du 14/06 sur l'accès différencié), le Department of Commerce a forcé la suspension de Mythos pour tout ressortissant étranger après une alerte d'Amazon (Mythos donnait des infos cyberattaque censées être bloquées). Premier cas réel où un État ferme unilatéralement un modèle frontier déjà déployé — précédent qui va structurer tout le débat policy/safety US dans les mois qui viennent, et qui valide empiriquement ce que Dario Amodei décrivait dix jours plus tôt dans "Policy on the AI Exponential".
+**Suite** : suivre comment Anthropic/Maison Blanche formalisent le cadre d'intervention — ça deviendra probablement la référence citée dans tout dossier evals/safety policy.
