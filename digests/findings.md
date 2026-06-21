@@ -263,3 +263,16 @@
 **Lien** : https://arxiv.org/abs/2603.23660
 **Pourquoi ça compte** : Papier (auteurs affiliés GTO Wizard) qui teste si les LLM jouent vraiment en stratégie optimale ou simulent le raisonnement — terrain exact d'un pro qui a utilisé un solveur GTO pendant 9 ans. Prolonge le fil "Chasing Fake Alignment" (knowing-doing gap, déjà archivé le 18/06) avec un angle plus pointu et des auteurs probablement réceptifs à un retour de pro.
 **Suite** : contacter les auteurs ou publier un commentaire pointant les écarts GTO académique / GTO de table réelle.
+### 2026-06-21 — Forecasting Research Institute : Research Analyst, remote, no PhD
+**Tags** : sydney, ai-job, remote, forecasting, calibration, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://forecastingresearch.org/roles/research-analyst
+**Pourquoi ça compte** : Institut de Philip Tetlock, 100% remote (embauche dans la quasi-totalité des pays — donc compatible France comme futur Sydney), $70-130k, ouverts à "une large gamme de niveaux d'expérience" sans PhD requis. Le métier (designer des études de forecasting, transformer des sujets en questions calibrables, écrire des synthèses pour décideurs) est littéralement la compétence calibration/poker/trading de Sylvain, sans avoir besoin de faire passer 9 ans de trading pour un titre salarié qu'il n'a jamais eu.
+**Suite** : candidater (rolling) une fois un point d'appui concret prêt à montrer (ex. classement Metaculus/GJ Open).
+
+### 2026-06-21 — Good Judgment Open : chemin vers Superforecaster professionnel
+**Tags** : sydney, wildcard, forecasting, calibration, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://www.gjopen.com/challenges
+**Pourquoi ça compte** : Plateforme publique de Good Judgment (Tetlock) qui recrute ses Superforecasters payés chaque année directement depuis le classement de GJ Open. Critère unique annoncé : la performance de calibration sur la durée — diplôme, âge et localisation explicitement ignorés. Complète le Metaculus Cup déjà archivé (19/06) avec une deuxième piste publique, vérifiable, qui élimine le problème du CV salarié inexistant.
+**Suite** : jouer en parallèle du Metaculus Cup cet été ; un bon classement sert de portfolio piece pour FRI, des rôles evals, ou le programme pro Good Judgment lui-même.
