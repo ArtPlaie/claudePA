@@ -1,0 +1,8 @@
+---
+task: location_context
+run_at: '2026-06-22T04:00:15.920180+00:00'
+status: skipped
+---
+
+## Résumé
+task disabled in schedule.yaml
