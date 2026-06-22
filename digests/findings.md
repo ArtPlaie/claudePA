@@ -282,3 +282,10 @@
 **Lien** : https://www.techpolicy.press/anthropics-mythos-recall-and-the-white-houses-missing-ai-safety-playbook/
 **Pourquoi ça compte** : Dix jours après le lancement de Fable 5/Mythos 5 (cf. finding du 14/06 sur l'accès différencié), le Department of Commerce a forcé la suspension de Mythos pour tout ressortissant étranger après une alerte d'Amazon (Mythos donnait des infos cyberattaque censées être bloquées). Premier cas réel où un État ferme unilatéralement un modèle frontier déjà déployé — précédent qui va structurer tout le débat policy/safety US dans les mois qui viennent, et qui valide empiriquement ce que Dario Amodei décrivait dix jours plus tôt dans "Policy on the AI Exponential".
 **Suite** : suivre comment Anthropic/Maison Blanche formalisent le cadre d'intervention — ça deviendra probablement la référence citée dans tout dossier evals/safety policy.
+
+### 2026-06-22 — Poker Arena : classement jetons vs score cognitif divergent chez les LLM
+**Tags** : sydney, wildcard, poker, deception, content, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://arxiv.org/html/2606.13815
+**Pourquoi ça compte** : Étude qui fait jouer 7 LLM frontier (Claude, GPT-5.4, Grok, DeepSeek, Gemini, Qwen, Kimi) sur 1000 mains et les note sur 9 axes cognitifs (lecture d'adversaire, bluff intentionnel vs agressivité accidentelle, VPIP, facteur d'agressivité, mémoire) plutôt qu'un classement brut en jetons. Claude gagne le tournoi (+$15 730) mais ne finit que 5e en score cognitif ; Grok domine les métriques cognitives sans gagner. Troisième papier poker-LLM en un mois (après le knowing-doing gap du 18/06 et GTO Wizard du 20/06) — devient un vrai axe de contenu récurrent pour le fil "Chasing Fake Alignment", terrain où un pro de 9 ans juge mieux que les auteurs (IIT Roorkee + Raeth AI).
+**Suite** : commenter ou contacter les auteurs sur la pertinence des 9 axes vs l'expertise poker réelle ; matière à billet de blog/LessWrong.
