@@ -288,3 +288,17 @@
 **Lien** : https://arxiv.org/html/2606.13815
 **Pourquoi ça compte** : Étude qui fait jouer 7 LLM frontier (Claude, GPT-5.4, Grok, DeepSeek, Gemini, Qwen, Kimi) sur 1000 mains et les note sur 9 axes cognitifs (lecture d'adversaire, bluff intentionnel vs agressivité accidentelle, VPIP, facteur d'agressivité, mémoire) plutôt qu'un classement brut en jetons. Claude gagne le tournoi (+$15 730) mais ne finit que 5e en score cognitif ; Grok domine les métriques cognitives sans gagner. Troisième papier poker-LLM en un mois (après le knowing-doing gap du 18/06 et GTO Wizard du 20/06) — devient un vrai axe de contenu récurrent pour le fil "Chasing Fake Alignment", terrain où un pro de 9 ans juge mieux que les auteurs (IIT Roorkee + Raeth AI).
 **Suite** : commenter ou contacter les auteurs sur la pertinence des 9 axes vs l'expertise poker réelle ; matière à billet de blog/LessWrong.
+
+### 2026-06-23 — METR Research Engineer/Scientist : remote possible, visa sponsorisé
+**Tags** : ai-safety, job, remote, evals, forecasting, no-phd
+**Source** : ai_jobs_formations
+**Lien** : https://jobs.lever.co/metr/0a5e7a88-7e9e-4a06-8d4f-4a6d50352f62
+**Pourquoi ça compte** : METR (organisme derrière la métrique "agent time horizons") recrute en rolling sur un rôle qui mélange mesure de capacités, design d'évals et RCT — plus proche du terrain calibration/quanti que du pur deep learning. Préférence in-person mais remote international "pas un dealbreaker" pour les rôles techniques, visa sponsorisé, pas de PhD mentionné. Premier lead remote-friendly distinct de FAR AI déjà archivé.
+**Suite** : creuser le rôle précis et préparer le work test (paid) une fois le matériel eval scheming prêt à montrer.
+
+### 2026-06-23 — AISI UK : clearance bloque la piste tant que pas de résidence UK
+**Tags** : ai-safety, job, uk, aisi, blocker, info-pure
+**Source** : ai_jobs_formations
+**Lien** : https://www.aisi.gov.uk/careers
+**Pourquoi ça compte** : Les 8 rôles encore listés chez AISI UK demandent en général un Counter Terrorism Check ou Security Clearance, qui exigent 2+ ans de résidence UK récente. Tant que tu n'as pas vécu physiquement au UK (ex. via un fellowship GovAI), cette piste est morte — évite d'y reperdre du temps de veille tant que la situation n'a pas changé.
+**Suite** : info pure, à re-checker seulement si un séjour UK (GovAI Winter Fellowship ou autre) se concrétise.
