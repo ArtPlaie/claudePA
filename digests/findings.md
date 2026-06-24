@@ -301,3 +301,9 @@
 **Lien** : https://www.aisi.gov.uk/careers
 **Pourquoi ça compte** : Les 8 rôles encore listés chez AISI UK demandent en général un Counter Terrorism Check ou Security Clearance, qui exigent 2+ ans de résidence UK récente. Tant que tu n'as pas vécu physiquement au UK (ex. via un fellowship GovAI), cette piste est morte — évite d'y reperdre du temps de veille tant que la situation n'a pas changé.
 **Suite** : info pure, à re-checker seulement si un séjour UK (GovAI Winter Fellowship ou autre) se concrétise.
+### 2026-06-24 — TARA Round 2 : ouverture candidatures le 29 juin (pas le 22)
+**Tags** : sydney, ai-safety, formation, apac, deadline, urgent
+**Source** : ai_jobs_formations
+**Lien** : https://www.taraprogram.org/
+**Pourquoi ça compte** : Confirmation directe de la page taraprogram.org : les applications Round 2 ouvrent le **29 juin 2026** (pas le 22 comme indiqué dans la veille du 9/06). Programme 12 sept–12 déc, présentiel samedis, Sydney/Melbourne/Brisbane inclus. Deadline de candidature non encore annoncée mais probablement courte (le Round 1 avait eu une fenêtre de ~3 semaines). Aucune excuse pour rater l'ouverture cette fois.
+**Suite** : surveiller taraprogram.org le 29 juin et candidater immédiatement à l'ouverture.
