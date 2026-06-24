@@ -307,3 +307,23 @@
 **Lien** : https://www.taraprogram.org/
 **Pourquoi ça compte** : Confirmation directe de la page taraprogram.org : les applications Round 2 ouvrent le **29 juin 2026** (pas le 22 comme indiqué dans la veille du 9/06). Programme 12 sept–12 déc, présentiel samedis, Sydney/Melbourne/Brisbane inclus. Deadline de candidature non encore annoncée mais probablement courte (le Round 1 avait eu une fenêtre de ~3 semaines). Aucune excuse pour rater l'ouverture cette fois.
 **Suite** : surveiller taraprogram.org le 29 juin et candidater immédiatement à l'ouverture.
+### 2026-06-24 — Google for Startups AI First Australia : accélérateur equity-free, deadline 19 juillet
+**Tags** : sydney, cofounding, accelerator, google, deadline
+**Source** : sydney_opportunities
+**Lien** : https://startup.google.com/programs/accelerator/ai-first/australia/
+**Pourquoi ça compte** : Accélérateur AI-only lancé cette semaine, equity-free, kick-off 1er septembre en présentiel au bureau Google Sydney. Cible les boîtes AI seed/Series A. Si un projet sort du sprint "Chasing Fake Alignment" (eval outil, mini-lab), porte d'entrée dans l'écosystème startup Sydney sans céder de parts — et ancrage physique à Sydney dès la rentrée. Deadline 19 juillet.
+**Suite** : postuler si un projet concret existe ou prend forme avant le 19 juillet ; sinon surveiller pour la cohorte suivante.
+
+### 2026-06-24 — DeepMind + Schmidt Sciences + CAF : jusqu'à $10M multi-agent AI safety, deadline 8 août
+**Tags** : ai-safety, financement, deepmind, grant, wildcard, deadline
+**Source** : sydney_opportunities
+**Lien** : https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/
+**Pourquoi ça compte** : Appel à projets ouvert aux chercheurs **indépendants** (pas d'affiliation institutionnelle requise), jusqu'à $10M disponibles, deadline 8 août 2026. Lancé dans la foulée du AI Control Roadmap de DeepMind (18 juin) qui dit que l'alignement seul ne suffit pas. Le projet "Chasing Fake Alignment" (détection de scheming/sandbagging, angle multi-agent deception) est un fit thématique direct. Un grant comme chercheur indépendant renforce simultanément les dossiers TARA, Fellows, et crédentialise le projet avant les candidatures.
+**Suite** : préparer un 2-pager projet (résumé poker → fraude OKEx → scheming LLM → design eval multi-agent) et déposer avant le 8 août.
+
+### 2026-06-24 — Australian AISI founding team : citoyenneté requise (pas seulement PR)
+**Tags** : sydney, ai-safety, aisi-au, blocker, long-game
+**Source** : sydney_opportunities
+**Lien** : https://www.goodancestors.org.au/aisi-founders
+**Pourquoi ça compte** : L'AISI australien (budget AUD $29,9M, annoncé fin 2025) recrute une équipe fondatrice — profils technique, engineering, policy/governance. Blocker actuel : **citoyenneté australienne obligatoire**, pas seulement la PR. Pas actionnable maintenant, mais c'est probablement l'entrée la plus directe dans le système safety AU dès que la citoyenneté est obtainable (4 ans de résidence permanente continue). À recontacter lors des prochains runs dès que la date de citoyenneté est calculée.
+**Suite** : calculer la date d'éligibilité citoyenneté AU ; re-checker les openings à ce moment-là.
