@@ -327,3 +327,23 @@
 **Lien** : https://www.goodancestors.org.au/aisi-founders
 **Pourquoi ça compte** : L'AISI australien (budget AUD $29,9M, annoncé fin 2025) recrute une équipe fondatrice — profils technique, engineering, policy/governance. Blocker actuel : **citoyenneté australienne obligatoire**, pas seulement la PR. Pas actionnable maintenant, mais c'est probablement l'entrée la plus directe dans le système safety AU dès que la citoyenneté est obtainable (4 ans de résidence permanente continue). À recontacter lors des prochains runs dès que la date de citoyenneté est calculée.
 **Suite** : calculer la date d'éligibilité citoyenneté AU ; re-checker les openings à ce moment-là.
+### 2026-06-25 — Constellation Incubator : incubateur AI safety pre-idea, Berkeley, ouvert
+**Tags** : ai-safety, cofounding, incubateur, berkeley, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://constellation.org/programs/constellation-incubator
+**Pourquoi ça compte** : Incubateur AI safety 4 mois avec co-founder matching, workspace, réseau expert. Pre-idea OK — investissent dans des fondateurs avant même qu'une idée soit arrêtée. Même écosystème géographique que Redwood/ARC/METR. Candidatures ouvertes en continu. Moins blocant famille qu'EF (pas de sélection sur start date fixe).
+**Suite** : à activer si un projet concret (eval scheming, outil red-teaming) se concrétise ; peut se combiner avec Astra Fellowship (même campus Constellation).
+
+### 2026-06-25 — Catalyze AI Safety Incubator : créer de nouvelles orgs safety from scratch
+**Tags** : ai-safety, cofounding, incubateur, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://catalyze-impact.org/
+**Pourquoi ça compte** : Incubateur résidentiel pour créer de nouvelles orgs AI safety, 4 mois, funding + réseau expert. 11 orgs lancées en pilote, cadre plus ouvert que les accélérateurs startup classiques. Complément direct à Constellation si l'angle est "nouvelle org safety" plutôt que "startup commerciale". Candidatures ouvertes.
+**Suite** : à explorer en parallèle de Constellation si un projet org (lab eval indépendant, outil audit…) prend forme.
+
+### 2026-06-25 — Safe AI Fund (SAIF) : $100k SAFE + Geoff Ralston, rolling
+**Tags** : ai-safety, financement, cofounding, investissement, rolling
+**Source** : sydney_opportunities
+**Lien** : https://www.saif.vc/
+**Pourquoi ça compte** : $100k en SAFE note, mentoring hebdomadaire avec Geoff Ralston (ex-président YC), accès réseau VC top-tier. Pas de deadline, dossier rolling. Capital seed le plus rapide à activer dans l'espace safety si un projet prend forme. Le chèque est petit, mais c'est Ralston qui l'apporte — le réseau vaut le ticket.
+**Suite** : à mobiliser quand le projet eval/scheming est suffisamment défini pour présenter un 2-pager ; peut se combiner avec le grant DeepMind+Schmidt (déjà archivé).
