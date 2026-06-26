@@ -347,3 +347,24 @@
 **Lien** : https://www.saif.vc/
 **Pourquoi ça compte** : $100k en SAFE note, mentoring hebdomadaire avec Geoff Ralston (ex-président YC), accès réseau VC top-tier. Pas de deadline, dossier rolling. Capital seed le plus rapide à activer dans l'espace safety si un projet prend forme. Le chèque est petit, mais c'est Ralston qui l'apporte — le réseau vaut le ticket.
 **Suite** : à mobiliser quand le projet eval/scheming est suffisamment défini pour présenter un 2-pager ; peut se combiner avec le grant DeepMind+Schmidt (déjà archivé).
+
+### 2026-06-26 — OpenAI AI Deployment Engineer, Startups : forward-deployed Sydney, actif
+**Tags** : sydney, ai-job, openai, forward-deployed, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://builtinsydney.au/job/ai-deployment-engineer-startups/9306633
+**Pourquoi ça compte** : Rôle forward-deployed sur startups clientes (pipelines ML, agents, evals), priorité annoncée sur "high agency + product sense" plutôt que le titre. 5+ ans demandés mais relocation disponible, pas de mention citoyenneté. Meilleure porte OpenAI actuellement ouverte à Sydney pour un profil non-académique — complémentaire au rôle Anthropic Forward Deployed (8 ans, déjà archivé) mais seuil apparent plus accessible.
+**Suite** : pitcher Python bot de trading + adversarial thinking comme substitut aux "5 ans software/ML" ; postuler directement.
+
+### 2026-06-26 — Anthropic Research Engineer/Scientist Pre-training : Zurich, CHF 280–680k, visa sponsorisé
+**Tags** : suisse, zurich, ai-job, anthropic, pre-training, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://job-boards.greenhouse.io/anthropic/jobs/5135168008
+**Pourquoi ça compte** : Rôle de recherche sur le pré-entraînement multimodal LLM, BS requis / MS-PhD préféré mais pas obligatoire, visa sponsorisé, Anthropic dit explicitement de postuler sans tout cocher. Seul poste Anthropic Zurich actuellement visible qui ne demande pas 15+ ans d'expérience salariée. Si Zurich est dans les options, c'est la piste la plus directe — le contrat résoudrait le permis B.
+**Suite** : préparer le pitch "systèmes complexes + Python haute-fréquence" ; postuler et voir.
+
+### 2026-06-26 — ARENA 9.0 : bootcamp ML/AI safety financé, deadline 12 juillet
+**Tags** : formation, arena, ai-safety, funded, deadline, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://www.arena.education/
+**Pourquoi ça compte** : 4–5 semaines présentiel à Londres (octobre–novembre 2026), entièrement financé (vols, hébergement, repas). Fort Python + maths = admission sans diplôme. Passeport naturel vers MATS 2027. Deadline dans 16 jours (12 juillet). La seule contrainte réelle est l'absence 5 semaines pour la famille.
+**Suite** : décider avant le 12 juillet si la fenêtre famille octobre-novembre est tenable.
