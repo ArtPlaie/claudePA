@@ -367,3 +367,17 @@
 **Lien** : https://www.arena.education/
 **Pourquoi ça compte** : 4–5 semaines présentiel à Londres (octobre–novembre 2026), entièrement financé (vols, hébergement, repas). Fort Python + maths = admission sans diplôme. Passeport naturel vers MATS 2027. Deadline dans 16 jours (12 juillet). La seule contrainte réelle est l'absence 5 semaines pour la famille.
 **Suite** : décider avant le 12 juillet si la fenêtre famille octobre-novembre est tenable.
+
+### 2026-06-26 — MACRO trial (Lancet) : chirurgie endoscopique > ATB pour sinusite chronique
+**Tags** : santé, isa, ORL, sinusite, chirurgie, non-ATB
+**Source** : health_watch
+**Lien** : https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01248-6/fulltext
+**Pourquoi ça compte** : RCT phase 4 multicentrique (n=514, 20 sites UK) : chirurgie endoscopique > clarithromycine ≈ placebo sur le score SNOT-22 à 6 mois. Les macrolides longue durée ne font pas mieux qu'un placebo pour la sinusite chronique. Requalifie la chirurgie endoscopique comme option de première intention validée — pas un dernier recours — entièrement compatible avec la contre-indication ATB d'Isa.
+**Suite** : soulever avec l'ORL référent d'Isa si la sinusite chronique n'est pas stabilisée par les corticoïdes intranasaux : c'est maintenant l'argument de force pour la chirurgie.
+
+### 2026-06-26 — ACSM 2026 : nouvelles guidelines resistance training hypertrophie (1ère MAJ depuis 2009)
+**Tags** : santé, sylvain, hypertrophie, resistance-training, guidelines
+**Source** : health_watch
+**Lien** : https://pubmed.ncbi.nlm.nih.gov/41843416/
+**Pourquoi ça compte** : 137 revues systématiques, 30 000+ participants. Points clés qui changent la pratique : (1) le rep range n'a pas d'effet indépendant sur l'hypertrophie si volume et effort sont contrôlés — flexibilité totale sur les charges ; (2) s'arrêter 2-3 reps avant l'échec = équivalent à aller à l'échec complet pour l'hypertrophie et la force ; (3) drop sets / BFR / périodisation / TUT : aucun effet consistant au-delà du volume généré ; (4) ≥10 sets/groupe/semaine pour l'hypertrophie, dose-réponse sans plateau net ; (5) eccentric overload supérieur pour la taille.
+**Suite** : info pure — référence à re-lire pour calibrer les choix de programmation.
