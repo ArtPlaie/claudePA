@@ -97,6 +97,20 @@
 **Lien** : https://www.helioclipse.com/fr/blog/eclipse-totale-2026-espagne-trajectoire-horaires-ligne-centrale/
 **Pourquoi ça compte** : Première totale en Europe continentale depuis 1999. Bande de totalité La Corogne→Baléares (Burgos ~1min45 à 20h29), soleil bas → horizon ouest dégagé requis. Même nuit = pic des Perséides sans lune (nouvelle lune par définition). À ~9-10h de route de Bois-le-Roi ; hébergements dans la bande déjà sous tension. Prochaine occasion comparable en Europe : 2027 (sud Espagne, 2 août).
 **Suite** : bloquer 3-4 nuits région Burgos–Soria avant fin juin ; sinon pivot éclipse du 2 août 2027 (Andalousie).
+### 2026-06-27 — GovAI Winter Fellowship 2026-2027 : deadline 12 juillet, policy IA rigoureuse
+**Tags** : ai-safety, formation, policy, deadline, govai
+**Source** : sydney_opportunities
+**Lien** : https://www.governance.ai/
+**Pourquoi ça compte** : 3 mois présentiel Londres ou Washington DC (jan-mars 2027), focus policy IA, alumni RAND / Johns Hopkins / gouvernements. Deadline 12 juillet. Angle différenciant pour un profil quanti : raisonner en expected value sur les risques systémiques est rare parmi les candidats académiques habituels.
+**Suite** : confirmer la deadline exacte sur le site ; décider avant 5 juillet pour avoir du temps de rédaction.
+
+### 2026-06-27 — METR : évals adversariales frontier models, recrutement actif à Berkeley
+**Tags** : ai-safety, job, evals, adversarial, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://metr.org/careers
+**Pourquoi ça compte** : METR (ex-ARC Evals) évalue comment les frontier models se comportent sous conditions adversariales — capacités agentiques, risques de misalignment (exercices pilotes avec Anthropic, Google, Meta 2026). Le cœur du job = penser "comment un système échoue-t-il quand on essaie activement de le casser" — transfert direct depuis le poker/trading. Salaire élevé (~$285-503K), Berkeley on-site. Pas Sydney, mais construire une crédential évals là-bas accélère le repositionnement IA global.
+**Suite** : explorer le careers page ; option parallèle au plan AU sur 12-18 mois, pas en remplacement.
+
 ### 2026-06-09 — Pentagone débranche Anthropic : les red lines safety coûtent désormais des milliards
 **Tags** : ai-safety, policy, defense, anthropic
 **Source** : weekly_briefing
