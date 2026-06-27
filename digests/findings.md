@@ -380,3 +380,17 @@
 **Lien** : https://pubmed.ncbi.nlm.nih.gov/41843416/
 **Pourquoi ça compte** : 137 revues systématiques, 30 000+ participants. Points clés qui changent la pratique : (1) le rep range n'a pas d'effet indépendant sur l'hypertrophie si volume et effort sont contrôlés — flexibilité totale sur les charges ; (2) s'arrêter 2-3 reps avant l'échec = équivalent à aller à l'échec complet pour l'hypertrophie et la force ; (3) drop sets / BFR / périodisation / TUT : aucun effet consistant au-delà du volume généré ; (4) ≥10 sets/groupe/semaine pour l'hypertrophie, dose-réponse sans plateau net ; (5) eccentric overload supérieur pour la taille.
 **Suite** : info pure — référence à re-lire pour calibrer les choix de programmation.
+### 2026-06-27 — GovAI Winter Fellowship 2026-2027 : deadline 12 juillet, policy IA rigoureuse
+**Tags** : ai-safety, formation, policy, deadline, govai
+**Source** : sydney_opportunities
+**Lien** : https://www.governance.ai/
+**Pourquoi ça compte** : 3 mois présentiel Londres ou Washington DC (jan-mars 2027), focus policy IA, alumni RAND / Johns Hopkins / gouvernements. Deadline 12 juillet. Angle différenciant pour un profil quanti : raisonner en expected value sur les risques systémiques est rare parmi les candidats académiques habituels.
+**Suite** : confirmer la deadline exacte sur le site ; décider avant 5 juillet pour avoir du temps de rédaction.
+
+### 2026-06-27 — METR : évals adversariales frontier models, recrutement actif à Berkeley
+**Tags** : ai-safety, job, evals, adversarial, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://metr.org/careers
+**Pourquoi ça compte** : METR (ex-ARC Evals) évalue comment les frontier models se comportent sous conditions adversariales — capacités agentiques, risques de misalignment (exercices pilotes avec Anthropic, Google, Meta 2026). Le cœur du job = penser "comment un système échoue-t-il quand on essaie activement de le casser" — transfert direct depuis le poker/trading. Salaire élevé (~$285-503K), Berkeley on-site. Pas Sydney, mais construire une crédential évals là-bas accélère le repositionnement IA global.
+**Suite** : explorer le careers page ; option parallèle au plan AU sur 12-18 mois, pas en remplacement.
+
