@@ -394,3 +394,17 @@
 **Pourquoi ça compte** : METR (ex-ARC Evals) évalue comment les frontier models se comportent sous conditions adversariales — capacités agentiques, risques de misalignment (exercices pilotes avec Anthropic, Google, Meta 2026). Le cœur du job = penser "comment un système échoue-t-il quand on essaie activement de le casser" — transfert direct depuis le poker/trading. Salaire élevé (~$285-503K), Berkeley on-site. Pas Sydney, mais construire une crédential évals là-bas accélère le repositionnement IA global.
 **Suite** : explorer le careers page ; option parallèle au plan AU sur 12-18 mois, pas en remplacement.
 
+### 2026-06-29 — ARENA 9.0 : bootcamp ML safety London, deadline 12 juillet
+**Tags** : formation, ai-safety, arena, london, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.lesswrong.com/posts/y795kpdRqC3uRmhtt/arena-9-0-call-for-applicants
+**Pourquoi ça compte** : 4-5 semaines en présentiel à Londres (5 oct – 6 nov 2026), focus ML engineering / safety : transformers, interpretability, RLHF. Voyage + logement + repas couverts. Pas de PhD requis, profil autodidacte Python bienvenu. C'est l'on-ramp le plus concret et le mieux financé pour construire des compétences techniques safety sans gate académique. Deadline 12 juillet 23h59 AoE.
+**Suite** : candidater avant le 12 juillet ; peut se cumuler avec une candidature GovAI la même semaine.
+
+### 2026-06-29 — GovAI Winter Fellowship 2027 : AI governance research, deadline 12 juillet
+**Tags** : formation, ai-safety, govai, governance, london, dc, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.governance.ai/post/winter-fellowship-2027-research-track
+**Pourquoi ça compte** : Bourse de recherche 3 mois (jan–avr 2027), Londres ou DC, £12k stipend + frais. Projet indépendant + mentorship GovAI. Sélection = raisonnement + test payé + interview, pas de diplôme requis. Calibration + pensée adversariale sont exactement les compétences rares en policy IA. Deadline 12 juillet.
+**Suite** : candidater Research Track London ; utiliser "Chasing Fake Volume" comme writing sample d'analyse adversariale.
+
