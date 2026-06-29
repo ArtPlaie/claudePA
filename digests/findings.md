@@ -116,6 +116,19 @@
 **Lien** : https://www.joinef.com/posts/introducing-def-acc-at-ef/
 **Pourquoi ça compte** : Programme distinct du EF classique — Matt Clifford le pilote perso, focus défense (AI safety, biosec, cybersec), cohorte Londres 12 sem + option SF, ~$250k pour les équipes retenues. L'angle "Chasing Fake Volume 2026" (manipulation AI-générée, détection de fraude à l'ère LLM) est un fit thématique direct et différenciant. Deadline finale 22 juin 2026 — même jour que TARA et l'EF régulier.
 **Suite** : décision à prendre avant le 22 juin (blocker famille = présentiel Londres 12 sem).
+### 2026-06-29 — ARENA 9.0 : bootcamp ML safety London, deadline 12 juillet
+**Tags** : formation, ai-safety, arena, london, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.lesswrong.com/posts/y795kpdRqC3uRmhtt/arena-9-0-call-for-applicants
+**Pourquoi ça compte** : 4-5 semaines en présentiel à Londres (5 oct – 6 nov 2026), focus ML engineering / safety : transformers, interpretability, RLHF. Voyage + logement + repas couverts. Pas de PhD requis, profil autodidacte Python bienvenu. C'est l'on-ramp le plus concret et le mieux financé pour construire des compétences techniques safety sans gate académique. Deadline 12 juillet 23h59 AoE.
+**Suite** : candidater avant le 12 juillet ; peut se cumuler avec une candidature GovAI la même semaine.
+
+### 2026-06-29 — GovAI Winter Fellowship 2027 : AI governance research, deadline 12 juillet
+**Tags** : formation, ai-safety, govai, governance, london, dc, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.governance.ai/post/winter-fellowship-2027-research-track
+**Pourquoi ça compte** : Bourse de recherche 3 mois (jan–avr 2027), Londres ou DC, £12k stipend + frais. Projet indépendant + mentorship GovAI. Sélection = raisonnement + test payé + interview, pas de diplôme requis. Calibration + pensée adversariale sont exactement les compétences rares en policy IA. Deadline 12 juillet.
+**Suite** : candidater Research Track London ; utiliser "Chasing Fake Volume" comme writing sample d'analyse adversariale.
 
 ### 2026-06-10 — AU AI Safety Forum (7-8 juil, Sydney) : proposals de talks encore ouvertes
 **Tags** : sydney, ai-safety, event, networking, wildcard
