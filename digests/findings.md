@@ -421,3 +421,17 @@
 **Lien** : https://bluedot.org/courses/technical-ai-safety
 **Pourquoi ça compte** : La session avec deadline 28 juin (jamais candidatée) a fermé ; une nouvelle fenêtre vient de s'ouvrir avec la même échéance que TARA (26 juillet). Gratuit, 100% remote, 6 jours intensifs ou 6 semaines part-time, zéro prérequis PhD — la porte la plus simple et la moins risquée du lot pour renforcer n'importe quel autre dossier (MATS, Fellows, TARA).
 **Suite** : candidater avant le 26 juillet, en parallèle de TARA — les deux partagent la même deadline.
+
+### 2026-06-30 — Anthropic Model Safety Bug Bounty : jailbreaks Constitutional Classifiers, $35k/finding, rolling
+**Tags** : ai-safety, bounty, red-teaming, no-phd, rolling
+**Source** : ai_jobs_formations
+**Lien** : https://hackerone.com/anthropic
+**Pourquoi ça compte** : Programme permanent (ouvert depuis mai 2026) sur HackerOne, track "Model Safety" dédié aux jailbreaks universels contre les Constitutional Classifiers d'Anthropic (domaines CBRN/cyber), jusqu'à $35k par finding. Zéro process de recrutement classique, juste la compétence — fit direct pour un profil pensée adversariale (poker, market making crypto). Bon moyen de construire un track record red-teaming citable dans toutes les candidatures AI safety en cours (FAR.AI, MATS, etc.).
+**Suite** : tester sur un format court avant de s'investir ; citer tout résultat dans les candidatures FAR.AI / fellowships en cours.
+
+### 2026-06-30 — Open Philanthropy Technical AI Safety RFP : $40M, 21 axes de recherche, rolling
+**Tags** : ai-safety, financement, recherche, rolling, no-phd
+**Source** : ai_jobs_formations
+**Lien** : https://www.openphilanthropy.org/request-for-proposals-technical-ai-safety-research/
+**Pourquoi ça compte** : Appel à projets $40M sur 21 axes (adversarial ML, interprétabilité, reward hacking…), évaluation continue, pas de prérequis académique formel. Nécessite une proposition de recherche déjà structurée — donc plus un coup à jouer en phase 2 (après une première fellowship type Anthropic Fellows/MATS qui donne la matière du projet) qu'une candidature à froid maintenant.
+**Suite** : revisiter une fois un projet concret défini via Anthropic Fellows ou équivalent.
