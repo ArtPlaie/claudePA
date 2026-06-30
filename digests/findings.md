@@ -408,3 +408,16 @@
 **Pourquoi ça compte** : Bourse de recherche 3 mois (jan–avr 2027), Londres ou DC, £12k stipend + frais. Projet indépendant + mentorship GovAI. Sélection = raisonnement + test payé + interview, pas de diplôme requis. Calibration + pensée adversariale sont exactement les compétences rares en policy IA. Deadline 12 juillet.
 **Suite** : candidater Research Track London ; utiliser "Chasing Fake Volume" comme writing sample d'analyse adversariale.
 
+### 2026-06-30 — TARA Round 2 : deadline confirmée 26 juillet, Sydney inclus
+**Tags** : sydney, formation, ai-safety, tara, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.taraprogram.org/
+**Pourquoi ça compte** : Après plusieurs jours sans date ferme, la deadline est désormais publiée : 26 juillet pour le Round 2 (programme samedis en présentiel, 5 sept–12 déc, Sydney confirmé). C'est le programme safety le plus compatible famille de tout le pipeline (un jour/semaine, pas d'absence prolongée) et le seul ancré physiquement dans la ville cible.
+**Suite** : décider avant le 26 juillet ; caution remboursable à prévoir à l'inscription.
+
+### 2026-06-30 — BlueDot Technical AI Safety : nouvelle fenêtre, deadline 26 juillet
+**Tags** : formation, ai-safety, bluedot, deadline, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://bluedot.org/courses/technical-ai-safety
+**Pourquoi ça compte** : La session avec deadline 28 juin (jamais candidatée) a fermé ; une nouvelle fenêtre vient de s'ouvrir avec la même échéance que TARA (26 juillet). Gratuit, 100% remote, 6 jours intensifs ou 6 semaines part-time, zéro prérequis PhD — la porte la plus simple et la moins risquée du lot pour renforcer n'importe quel autre dossier (MATS, Fellows, TARA).
+**Suite** : candidater avant le 26 juillet, en parallèle de TARA — les deux partagent la même deadline.
