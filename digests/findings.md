@@ -434,3 +434,9 @@
 **Lien** : https://www.openphilanthropy.org/request-for-proposals-technical-ai-safety-research/
 **Pourquoi ça compte** : Appel à projets $40M sur 21 axes (adversarial ML, interprétabilité, reward hacking…), évaluation continue, pas de prérequis académique formel. Nécessite une proposition de recherche déjà structurée — donc plus un coup à jouer en phase 2 (après une première fellowship type Anthropic Fellows/MATS qui donne la matière du projet) qu'une candidature à froid maintenant.
 **Suite** : revisiter une fois un projet concret défini via Anthropic Fellows ou équivalent.
+### 2026-07-01 — MATS Automne 2026 : résultats attendus fin juillet–début août
+**Tags** : ai-safety, formation, mats, timing, tracker
+**Source** : sydney_opportunities
+**Lien** : https://www.matsprogram.org/program/autumn-2026
+**Pourquoi ça compte** : Les offres pour la cohorte (28 sept – 4 déc, Berkeley/Londres, $5k/mois + logement) partent en late juillet/début août. Si le mail froid post-deadline du 11 juin a été envoyé, c'est maintenant qu'on attend une réponse ou une invitation sur liste d'attente. Cohorte Summer 2027 comme plan B si refus.
+**Suite** : checker la boîte mail fin juillet ; si pas de retour avant le 1er août, re-envoyer ou pivoter vers Summer 2027.
