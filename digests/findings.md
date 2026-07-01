@@ -440,3 +440,10 @@
 **Lien** : https://www.matsprogram.org/program/autumn-2026
 **Pourquoi ça compte** : Les offres pour la cohorte (28 sept – 4 déc, Berkeley/Londres, $5k/mois + logement) partent en late juillet/début août. Si le mail froid post-deadline du 11 juin a été envoyé, c'est maintenant qu'on attend une réponse ou une invitation sur liste d'attente. Cohorte Summer 2027 comme plan B si refus.
 **Suite** : checker la boîte mail fin juillet ; si pas de retour avant le 1er août, re-envoyer ou pivoter vers Summer 2027.
+
+### 2026-07-01 — Nuit des étoiles : événement annuel AFA, deuxième semaine d'août, IDF
+**Tags** : local, astro, famille, isa, annuel
+**Source** : local_activities
+**Lien** : https://www.afastronomie.fr/les-nuits-des-etoiles
+**Pourquoi ça compte** : Événement national annuel organisé par l'Association Française d'Astronomie, chaque année en août (2026 : 7-9 août, thème : le Soleil). Clubs d'astronomie partout en Île-de-France, dont l'Uranoscope de Gretz-Armainvilliers (77, ~20 min de Bois-le-Roi). Gratuit, accessible tous âges, soirées d'observation + conférences + ateliers. Taillé pour Isa (peintre étoiles/aurores boréales). Programation exacte confirmée fin juillet sur afastronomie.fr.
+**Suite** : info pure — à anticiper chaque année en août, vérifier programme Uranoscope Gretz fin juillet.
