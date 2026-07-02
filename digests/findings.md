@@ -446,3 +446,16 @@
 **Lien** : https://www.afastronomie.fr/les-nuits-des-etoiles
 **Pourquoi ça compte** : Événement national annuel organisé par l'Association Française d'Astronomie, chaque année en août (2026 : 7-9 août, thème : le Soleil). Clubs d'astronomie partout en Île-de-France, dont l'Uranoscope de Gretz-Armainvilliers (77, ~20 min de Bois-le-Roi). Gratuit, accessible tous âges, soirées d'observation + conférences + ateliers. Taillé pour Isa (peintre étoiles/aurores boréales). Programation exacte confirmée fin juillet sur afastronomie.fr.
 **Suite** : info pure — à anticiper chaque année en août, vérifier programme Uranoscope Gretz fin juillet.
+### 2026-07-02 — Jazz aux Capucins : concerts gratuits plein air, chaque dimanche de juillet, Coulommiers (77)
+**Tags** : local, famille, musique, annuel, gratuit
+**Source** : activities_next10days
+**Lien** : https://www.seine-et-marne.fr/fr/fiche-evenement/jazz-aux-capucins-2026
+**Pourquoi ça compte** : Série annuelle de 4 concerts gratuits chaque dimanche de juillet à 16h au Parc des Capucins (Coulommiers, ~35 min de Bois-le-Roi). Format pique-nique familial, accès poussette. Programme varié (chanson FR, world, blues, jazz). Valeur récurrente : à bloquer chaque juillet comme option famille sans logistique.
+**Suite** : info pure — à anticiper chaque année en juillet, vérifier programme sur seine-et-marne.fr.
+
+### 2026-07-02 — Vaux-le-Vicomte soirées aux chandelles : chaque samedi d'été, ~30 min de Bois-le-Roi
+**Tags** : local, sylvain+isa, culture, récurrent, soirée
+**Source** : activities_next10days
+**Lien** : https://vaux-le-vicomte.com
+**Pourquoi ça compte** : Tous les samedis de la saison estivale (mai–octobre), soirée son et lumière aux chandelles dans le parc du château de Vaux-le-Vicomte (Maincy, 77, ~30 min de Bois-le-Roi). Guinguette, parc illuminé. Parfait pour une sortie Sylvain+Isa quand il fait chaud. Réservation obligatoire en ligne. Idéal quand une garde est disponible le samedi soir.
+**Suite** : info pure — à consulter chaque été sur vaux-le-vicomte.com, réserver à l'avance.
