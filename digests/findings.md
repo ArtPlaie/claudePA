@@ -479,3 +479,10 @@
 **Lien** : https://jobs.80000hours.org/organisations/epoch-ai
 **Pourquoi ça compte** : Epoch AI recrute en rolling pour évaluer des modèles frontier sur des tâches réelles hard-to-grade. Remote global (Australie éligible), $115–200k, junior (1–4 ans). Le travail = calibration, raisonnement adversarial, Python — correspondance directe avec le profil quanti. Epoch est crédible (référence mondiale sur les courbes de compute/scaling). Pas de PhD, pas de citizenship gate. Complète le pipeline FAR AI/Apollo/METR avec un premier rôle d'évals réellement accessible maintenant.
 **Suite** : candidater en rolling ; renforcer la candidature avec un artefact (post LessWrong + hackathon Apart).
+
+### 2026-07-03 — BJSM (n=147k, 30 ans) : dose-réponse force + longévité — sweet spot 90-120 min/semaine
+**Tags** : santé, sylvain, hypertrophie, longévité, mortalité, force
+**Source** : health_watch
+**Lien** : https://www.sciencedaily.com/releases/2026/06/260611024609.htm
+**Pourquoi ça compte** : Cohorte prospective 147 374 participants, 30 ans de suivi (Harvard). 90-120 min/semaine de renforcement = –13 % mortalité toutes causes, –19 % CV, –27 % neurologique. Plateau net au-delà. Combo force + aérobie = –45 %. La dose-réponse est linéaire jusqu'au plateau à 120 min — la frontière "en faire plus n'aide plus" est enfin chiffrée à grande échelle.
+**Suite** : info pure — calibrage pour le volume de training de Sylvain.
