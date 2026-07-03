@@ -459,3 +459,23 @@
 **Lien** : https://vaux-le-vicomte.com
 **Pourquoi ça compte** : Tous les samedis de la saison estivale (mai–octobre), soirée son et lumière aux chandelles dans le parc du château de Vaux-le-Vicomte (Maincy, 77, ~30 min de Bois-le-Roi). Guinguette, parc illuminé. Parfait pour une sortie Sylvain+Isa quand il fait chaud. Réservation obligatoire en ligne. Idéal quand une garde est disponible le samedi soir.
 **Suite** : info pure — à consulter chaque été sur vaux-le-vicomte.com, réserver à l'avance.
+### 2026-07-03 — Apart Research "Secret Loyalties" hackathon : rencontrer Kokotajlo + Greenblatt avec un artefact
+**Tags** : ai-safety, red-teaming, scheming, wildcard, hackathon, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://apartresearch.com/sprints/secret-loyalties-hackathon-2026-07-24-to-2026-07-26
+**Pourquoi ça compte** : Hackathon online 24-26 juillet sur les modèles AI qui servent un principal caché tout en trompant les opérateurs — structurellement identique à la détection de wash trading. Organisé avec Daniel Kokotajlo et Ryan Greenblatt (Redwood Research, lead AI control). Track "threat modeling + forecasts" accessible sans ML fine-tuning. Un angle "détection statistique de patterns circulaires en market making → sandbagging évals" est unique dans les soumissions. S'inscrire maintenant sur la page (142 inscrits au 2 juil, pas de deadline).
+**Suite** : s'inscrire cette semaine ; préparer une soumission liant méthodologie de détection OKEx à l'identification de comportements cachés chez les LLM.
+
+### 2026-07-03 — Singapore AI Safety Fellowship : résidentiel 3 mois, deadline 10 juillet
+**Tags** : ai-safety, formation, singapour, apac, deadline, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://scholarshipsjet.com/2026/07/01/empowering-the-future-of-secure-ai-the-singapore-ai-safety-fellowship-2026-fully-funded/
+**Pourquoi ça compte** : Fellowship résidentiel 10 semaines à Singapour (21 sept–4 déc 2026), SGD 5 000/mois + logement + vol A/R + $30k compute. Pas de PhD requis, background technique/data/CS attendu. Dans la région APAC, bien doté, pas de gate académique. Seul blocker : absence 3 mois pour la famille. Deadline dans 7 jours.
+**Suite** : décider avant le 10 juillet si Singapore 3 mois est famille-faisable ; candidater immédiatement si oui.
+
+### 2026-07-03 — Epoch AI Researcher Evaluations : remote global, $115-200k, rolling
+**Tags** : ai-safety, job, remote, evals, no-phd, australie-compatible
+**Source** : sydney_opportunities
+**Lien** : https://jobs.80000hours.org/organisations/epoch-ai
+**Pourquoi ça compte** : Epoch AI recrute en rolling pour évaluer des modèles frontier sur des tâches réelles hard-to-grade. Remote global (Australie éligible), $115–200k, junior (1–4 ans). Le travail = calibration, raisonnement adversarial, Python — correspondance directe avec le profil quanti. Epoch est crédible (référence mondiale sur les courbes de compute/scaling). Pas de PhD, pas de citizenship gate. Complète le pipeline FAR AI/Apollo/METR avec un premier rôle d'évals réellement accessible maintenant.
+**Suite** : candidater en rolling ; renforcer la candidature avec un artefact (post LessWrong + hackathon Apart).
