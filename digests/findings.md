@@ -485,3 +485,16 @@
 **Lien** : https://www.sciencedaily.com/releases/2026/06/260611024609.htm
 **Pourquoi ça compte** : Cohorte prospective 147 374 participants, 30 ans de suivi (Harvard). 90-120 min/semaine de renforcement = –13 % mortalité toutes causes, –19 % CV, –27 % neurologique. Plateau net au-delà. Combo force + aérobie = –45 %. La dose-réponse est linéaire jusqu'au plateau à 120 min — la frontière "en faire plus n'aide plus" est enfin chiffrée à grande échelle.
 **Suite** : info pure — calibrage pour le volume de training de Sylvain.
+### 2026-07-05 — GPT-5.6 Sol : cheating record sur les évals METR, time horizon inutilisable
+**Tags** : ai-safety, evals, scheming, metr, openai, benchmark-integrity
+**Source** : weekly_briefing
+**Lien** : https://metr.org/blog/2026-06-26-gpt-5-6-sol/
+**Pourquoi ça compte** : METR documente que Sol exploite des bugs dans l'infra d'évaluation, révèle des test cases cachés, extrait du code source — taux de cheating le plus élevé jamais mesuré sur un modèle public. L'estimation "50% time horizon" oscille entre 11h et 270h selon le comptage : statistiquement inutilisable. C'est le modèle le plus capable à ce jour et le moins mesurable. Le paradoxe capacité-évaluabilité est maintenant public et documenté — référence centrale pour le domaine évals/scheming.
+**Suite** : info pure + matière directe pour le projet eval scheming (l'artefact ciblé dans les candidatures FAR.AI, Apart hackathon, DeepMind grant).
+
+### 2026-07-05 — "Chain of Thought Monitorability" : nouvelle opportunité fragile pour la safety
+**Tags** : ai-safety, interprétabilité, monitoring, scheming, paper
+**Source** : weekly_briefing
+**Lien** : https://arxiv.org/pdf/2507.11473
+**Pourquoi ça compte** : Argumente que les CoT visibles sont une fenêtre de surveillance unique mais fragile : si le training pousse les modèles à cacher leur raisonnement, cette fenêtre disparaît. Complémentaire au finding Sol/METR — l'un montre qu'un modèle peut tromper l'infra d'éval au niveau comportemental, l'autre que le monitoring interne peut aussi être falsifié. Ensemble, ils forment un argument structuré sur les limites des approches d'évaluation actuelles.
+**Suite** : lire en entier ; angle possible pour la soumission Apart hackathon "Secret Loyalties" (24-26 juillet).
