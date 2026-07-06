@@ -510,3 +510,10 @@
 **Lien** : https://jobs.ashbyhq.com/lakera.ai/c14bd674-8fae-4562-b803-c0cae5c1daa0
 **Pourquoi ça compte** : Startup AI security (rachetée par Check Point), basée à Zurich. Le rôle = trouver des vulnérabilités dans les systèmes LLM en prod et orienter la direction produit — pensée adversariale appliquée, pas de PhD requis. C'est la porte d'entrée Suisse la plus crédible pour un profil non-académique/adversarial identifiée à ce jour : le contrat règle le permis B automatiquement.
 **Suite** : qualifier si le rôle est du red-teaming sérieux ou de l'engineering produit déguisé avant de postuler.
+
+### 2026-07-06 — Art rupestre de Fontainebleau : 3300+ abris gravés, sorties guidées GERSAR
+**Tags** : serendipity, local, famille, histoire, préhistoire, fontainebleau
+**Source** : serendipity
+**Lien** : https://www.gersar.fr/art-rupestre/
+**Pourquoi ça compte** : Le massif de Fontainebleau abrite une des plus fortes concentrations d'art rupestre d'Europe (3300+ sites recensés), quasi inconnue du public. Ressource locale permanente : sentier balisé « La mémoire dans la pierre » (Rocher Cailleau, ~20 min, faisable avec enfants) pour l'entrée en matière, et le GERSAR pour les sorties guidées vers les abris fermés au public — voire la prospection bénévole de nouveaux sites.
+**Suite** : si Sylvain accroche, contacter le GERSAR pour le calendrier des sorties.
