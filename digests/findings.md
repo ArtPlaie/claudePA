@@ -498,3 +498,15 @@
 **Lien** : https://arxiv.org/pdf/2507.11473
 **Pourquoi ça compte** : Argumente que les CoT visibles sont une fenêtre de surveillance unique mais fragile : si le training pousse les modèles à cacher leur raisonnement, cette fenêtre disparaît. Complémentaire au finding Sol/METR — l'un montre qu'un modèle peut tromper l'infra d'éval au niveau comportemental, l'autre que le monitoring interne peut aussi être falsifié. Ensemble, ils forment un argument structuré sur les limites des approches d'évaluation actuelles.
 **Suite** : lire en entier ; angle possible pour la soumission Apart hackathon "Secret Loyalties" (24-26 juillet).
+### 2026-07-06 — AISC Research Incubator : online 15-30 août, deadline 24 juillet, parfait fit "hors pipeline"
+**Tags** : ai-safety, formation, online, no-phd, incubateur
+**Source** : sydney_opportunities
+**Lien** : https://www.aisafety.camp/
+**Pourquoi ça compte** : Incubateur virtuel 16 jours (week-ends discussion + semaines lecture/écriture), conçu explicitement pour les gens qui "viennent d'en dehors du pipeline AI safety habituel." Zéro déplacement, zéro coût, pas de gate académique. Façon concrète de commencer à peser dans le réseau safety avant le move physique à Sydney — un profil actif en ligne pèse plus lourd dans une candidature que zéro trace.
+**Suite** : candidater avant le 24 juillet.
+### 2026-07-06 — Lakera AI Security Researcher (Zurich) : adversarial LLM security, contrat → permis B
+**Tags** : suisse, zurich, ai-safety, job, adversarial, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://jobs.ashbyhq.com/lakera.ai/c14bd674-8fae-4562-b803-c0cae5c1daa0
+**Pourquoi ça compte** : Startup AI security (rachetée par Check Point), basée à Zurich. Le rôle = trouver des vulnérabilités dans les systèmes LLM en prod et orienter la direction produit — pensée adversariale appliquée, pas de PhD requis. C'est la porte d'entrée Suisse la plus crédible pour un profil non-académique/adversarial identifiée à ce jour : le contrat règle le permis B automatiquement.
+**Suite** : qualifier si le rôle est du red-teaming sérieux ou de l'engineering produit déguisé avant de postuler.
