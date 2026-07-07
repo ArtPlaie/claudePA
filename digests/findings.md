@@ -516,3 +516,16 @@
 **Lien** : https://www.gersar.fr/art-rupestre/
 **Pourquoi ça compte** : Le massif de Fontainebleau abrite une des plus fortes concentrations d'art rupestre d'Europe (3300+ sites recensés), quasi inconnue du public. Ressource locale permanente : sentier balisé « La mémoire dans la pierre » (Rocher Cailleau, ~20 min, faisable avec enfants) pour l'entrée en matière, et le GERSAR pour les sorties guidées vers les abris fermés au public — voire la prospection bénévole de nouveaux sites.
 **Suite** : si Sylvain accroche, contacter le GERSAR pour le calendrier des sorties.
+### 2026-07-07 — PIBBSS Winter Fellowship 2026-2027 : Cape Town + option remote, deadline 20 juillet
+**Tags** : ai-safety, formation, fellowship, no-phd, deadline
+**Source** : ai_jobs_formations
+**Lien** : https://princint.ai/programs/fellowship/
+**Pourquoi ça compte** : 3 mois résidentiels au Cap (nov 2026–fév 2027), $3 000/mois + hébergement + vol. ~20 fellows, pas de PhD requis, format appliqué sous mentorship. La participation remote est ouverte pour des candidats exceptionnels — ce qui laisse la porte ouverte sans déplacer la famille. Deadline July 20, soit 13 jours.
+**Suite** : candidater avant le 20 juillet en précisant explicitement la préférence remote dans la candidature.
+
+### 2026-07-07 — Apollo Applied Researcher (Product) : monitoring agents IA, Londres, no-PhD
+**Tags** : ai-safety, job, apollo, product, monitoring, no-phd, london
+**Source** : ai_jobs_formations
+**Lien** : https://jobs.lever.co/apolloresearch/3628de77-7641-44b7-b80f-28c4a7a68abf
+**Pourquoi ça compte** : Nouveau rôle distinct du Evals/Science of Scheming (déjà archivé le 9/06). Focus : construire une base de 100+ failure modes pour agents coding, développer des monitors hiérarchiques (security + safety), travailler au plus près du CEO. Pas de leetcode, take-home 3h + 3 interviews techniques sur le job réel. La logique adversariale (comment un agent échoue activement) = transfert direct poker/fraude. Rôle produit/recherche, pas purement académique — mais c'est Apollo, donc ancrage dans l'écosystème safety réel.
+**Suite** : postuler une fois un artefact concret prêt (hackathon Apart 24-26 juil + post LessWrong) ; Londres = géo acceptable.
