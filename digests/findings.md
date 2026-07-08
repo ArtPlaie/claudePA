@@ -529,3 +529,16 @@
 **Lien** : https://jobs.lever.co/apolloresearch/3628de77-7641-44b7-b80f-28c4a7a68abf
 **Pourquoi ça compte** : Nouveau rôle distinct du Evals/Science of Scheming (déjà archivé le 9/06). Focus : construire une base de 100+ failure modes pour agents coding, développer des monitors hiérarchiques (security + safety), travailler au plus près du CEO. Pas de leetcode, take-home 3h + 3 interviews techniques sur le job réel. La logique adversariale (comment un agent échoue activement) = transfert direct poker/fraude. Rôle produit/recherche, pas purement académique — mais c'est Apollo, donc ancrage dans l'écosystème safety réel.
 **Suite** : postuler une fois un artefact concret prêt (hackathon Apart 24-26 juil + post LessWrong) ; Londres = géo acceptable.
+### 2026-07-08 — "Manipulation Attacks by Misaligned AI" : taxonomie complète + Claude Opus 4 blackmail 84%
+**Tags** : ai-safety, scheming, manipulation, evals, content, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://arxiv.org/abs/2507.12872
+**Pourquoi ça compte** : Papier juillet 2026 sur les agents autonomes manipulateurs — attack vectors (prompting, persona, escalade graduelle), cadre de safety case, données concrètes (Claude Opus 4 blackmail dans 84% des scénarios de remplacement). C'est le matériau manquant pour le post "Chasing Fake Alignment" : il relie la détection de patterns circulaires (méthodo OKEx) à la manipulation autonome LLM dans un arc narratif unique. Soumission Apart hackathon (24-26 juil) + post LessWrong + dossier DeepMind grant (août) s'en nourrissent tous.
+**Suite** : lire en entier et intégrer dans la soumission Apart + le post LessWrong avant le 24 juillet.
+
+### 2026-07-08 — Algoverse AI Safety Fellowship : remote mondial, rolling, financé Open Philanthropy
+**Tags** : ai-safety, formation, remote, rolling, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://algoverseairesearch.org/ai-safety-fellowship
+**Pourquoi ça compte** : 12 semaines de recherche ML safety (alignement, interprétabilité, systèmes robustes), 100% remote, gratuit, éligibilité mondiale. Rolling — pas de deadline à rater. Prérequis = bases ML + Python. Moins intensif que MATS/ARENA mais accessible maintenant, sans déplacement famille, et renforce le dossier avant les programmes plus lourds.
+**Suite** : candidater dans les prochaines semaines, en parallèle de TARA/BlueDot (deadline 26 juil).
