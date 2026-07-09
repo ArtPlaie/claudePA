@@ -562,3 +562,10 @@
 **Lien** : https://www.aisafetyforum.au/
 **Pourquoi ça compte** : L'Institut australien de sécurité IA a officiellement lancé son programme de test de modèles frontier le 7 juillet (co-annonce avec le Forum). Kate Conroy (GM AISI), Hunter Jay + Jay Bailey (évals) et Karl Berzins (FAR.AI, keynote) sont en mode post-forum LinkedIn maintenant. La fenêtre de contact naturel post-événement (72–96h) expire le 12 juillet. Un message ou commentaire sur leurs posts AI safety pendant cette fenêtre vaut 10× une candidature à froid dans 3 mois. Alexander Saeri (MIT FutureTech) et Aaron Snoswell (QUT GenAI Lab) sont deux autres contacts clés du Forum pour le réseau AU safety.
 **Suite** : commenter ou envoyer un message court avant le 12 juillet ; surveiller les offres AISI sur apsjobs.gov.au pour la prochaine vague de recrutement (citoyenneté AU requise — pas actionnable avant résidence mais à tracker).
+
+### 2026-07-09 — Médiévales de Compans : fête médiévale annuelle gratuite, 50 min, feu d'artifice
+**Tags** : activities, famille, local, juillet, seine-et-marne
+**Source** : activities_next10days
+**Lien** : https://www.sortiraparis.com/en/what-to-visit-in-paris/walks/articles/330190-compans-free-medieval-festival-for-2026-a-market-performances-and-a-fireworks-display-on-the-program
+**Pourquoi ça compte** : Médiévales de Compans (77), événement annuel gratuit mi-juillet dans la vallée de la Biberonne (~50 min de Bois-le-Roi via A104). Jousting, marché médiéval, jongleurs, feu d'artifice le samedi soir. Distinct des Médiévales de Provins (juin, payant, 55 min) — celui-ci est mi-juillet et gratuit. Parfait pour Anna (8) et Tristan (5), accessible poussette pour César.
+**Suite** : à noter chaque année pour la deuxième semaine de juillet. Vérifier les dates sur sortiraparis.com en juin.
