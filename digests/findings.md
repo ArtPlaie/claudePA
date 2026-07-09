@@ -542,3 +542,23 @@
 **Lien** : https://algoverseairesearch.org/ai-safety-fellowship
 **Pourquoi ça compte** : 12 semaines de recherche ML safety (alignement, interprétabilité, systèmes robustes), 100% remote, gratuit, éligibilité mondiale. Rolling — pas de deadline à rater. Prérequis = bases ML + Python. Moins intensif que MATS/ARENA mais accessible maintenant, sans déplacement famille, et renforce le dossier avant les programmes plus lourds.
 **Suite** : candidater dans les prochaines semaines, en parallèle de TARA/BlueDot (deadline 26 juil).
+### 2026-07-09 — Google DeepMind Agentic Red Team : le job Zurich le plus aligné avec le profil adversarial
+**Tags** : suisse, zurich, ai-safety, job, deepmind, adversarial, red-teaming, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://job-boards.greenhouse.io/deepmind/jobs/7596438
+**Pourquoi ça compte** : Senior Security Engineer sur l'"Agentic Red Team" — mission : fermer l'Agentic Launch Gap en trouvant des vulnérabilités dans les agents IA avant déploiement (prompt injection, training data extraction, attaques multi-tours). Posté le 7 juillet. Pas de PhD requis, Python/Go. C'est le rôle qui combine le mieux pensée adversariale, Zurich (permis B = contrat requis), et proximité avec la recherche frontier — clairement au-dessus des rôles Lakera ou DeepMind Gemini Safety précédemment identifiés.
+**Suite** : candidater avec le pitch "bots adversariaux en production 9 ans + exposition fraude circulaire OKEx" — ne pas attendre le post LessWrong.
+
+### 2026-07-09 — grantmaking.ai : $5k–$50k AI x-risk en 10 minutes, deadline prioritaire 13 juil
+**Tags** : ai-safety, financement, sprint, no-phd, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.grantmaking.ai/apply
+**Pourquoi ça compte** : Tour de grants $1M pour réduction du risque existentiel IA. Formulaire ~10 min, pas d'entité légale requise, transitions de carrière et projets exploratoires explicitement bienvenus. Deadline prioritaire = dimanche 13 juillet pour revue garantie (finale = 27 juillet). Reviewers : Ryan Kidd (CEO MATS) et Gavin Leech (AI PhD). Mécanisme de financement le plus rapide et le moins bureaucratique identifié dans l'espace safety — peut financer le sprint "Chasing Fake Alignment" (compute, API, temps) avant même d'avoir une organisation.
+**Suite** : déposer avant dimanche avec la description du projet eval scheming ; une demande acceptée renforce simultanément le dossier DeepMind/Schmidt (8 août) et les candidatures fellowships.
+
+### 2026-07-09 — AISI Australie opérationnel : fenêtre réseau 72h post-forum (7–8 juil)
+**Tags** : sydney, ai-safety, aisi-au, networking, signal
+**Source** : sydney_opportunities
+**Lien** : https://www.aisafetyforum.au/
+**Pourquoi ça compte** : L'Institut australien de sécurité IA a officiellement lancé son programme de test de modèles frontier le 7 juillet (co-annonce avec le Forum). Kate Conroy (GM AISI), Hunter Jay + Jay Bailey (évals) et Karl Berzins (FAR.AI, keynote) sont en mode post-forum LinkedIn maintenant. La fenêtre de contact naturel post-événement (72–96h) expire le 12 juillet. Un message ou commentaire sur leurs posts AI safety pendant cette fenêtre vaut 10× une candidature à froid dans 3 mois. Alexander Saeri (MIT FutureTech) et Aaron Snoswell (QUT GenAI Lab) sont deux autres contacts clés du Forum pour le réseau AU safety.
+**Suite** : commenter ou envoyer un message court avant le 12 juillet ; surveiller les offres AISI sur apsjobs.gov.au pour la prochaine vague de recrutement (citoyenneté AU requise — pas actionnable avant résidence mais à tracker).
