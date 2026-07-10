@@ -589,3 +589,17 @@
 **Pourquoi ça compte** : 4 mois remote (ou SF/London/Toronto), tracks AI Safety + AI Security + Economics/Policy + ML Systems. ~$15k/mois + $15k compute. Explicitement ouvert non-PhD avec background quanti. 40% des fellows rejoignent Anthropic full-time. Rolling = candidater immédiatement pour la cohorte sept/oct 2026. Caveat : requiert work authorization US, UK ou Canada — vérifier si track London accessible pour un ressortissant EU via visa UK.
 **Suite** : candidater en rolling ; qualifier le visa UK si nécessaire.
 
+
+### 2026-07-10 — Rapamycine PEARL à 24 mois : inflammation en recul, viscéral inchangé
+**Tags** : santé, sylvain, longévité, rapamycine, inflammation
+**Source** : health_watch
+**Lien** : https://pmc.ncbi.nlm.nih.gov/articles/PMC12074816/
+**Pourquoi ça compte** : Meilleur RCT humain à ce jour sur rapamycine (n=114, 50-85 ans, double aveugle). L'endpoint viscérale a raté mais à 24 mois : hs-CRP -18%, IL-6 -14% dans le bras 10 mg/sem, profil de sécurité identique placebo. Signal inflammatoire réel, cliniquement exploratoire mais tracé le plus sérieux disponible hors transplantation.
+**Suite** : surveiller les publications PEARL (endpoint fonctionnel et cognitif attendus) ; pas d'action avant données plus matures.
+
+### 2026-07-10 — Xylitol nasal vs NaCl (CRS chronique) : bénéfice symptomatique validé en méta
+**Tags** : santé, isa, ORL, xylitol, irrigation, non-ATB
+**Source** : health_watch
+**Lien** : https://onlinelibrary.wiley.com/doi/10.1111/coa.70057
+**Pourquoi ça compte** : Méta-analyse 7 études (263 patients, Clinical Otolaryngology 2026). Xylitol améliore NOSE et SNOT-22 vs NaCl seul. Add-on à faible risque pour Isa — pas de traitement de fond substitué, mais amélioration du vécu symptomatique documentée. 100% compatible contre-indication ATB.
+**Suite** : suggérer le switch NaCl → xylitol si Isa ne l'utilise pas encore.
