@@ -556,6 +556,27 @@
 **Pourquoi ça compte** : Tour de grants $1M pour réduction du risque existentiel IA. Formulaire ~10 min, pas d'entité légale requise, transitions de carrière et projets exploratoires explicitement bienvenus. Deadline prioritaire = dimanche 13 juillet pour revue garantie (finale = 27 juillet). Reviewers : Ryan Kidd (CEO MATS) et Gavin Leech (AI PhD). Mécanisme de financement le plus rapide et le moins bureaucratique identifié dans l'espace safety — peut financer le sprint "Chasing Fake Alignment" (compute, API, temps) avant même d'avoir une organisation.
 **Suite** : déposer avant dimanche avec la description du projet eval scheming ; une demande acceptée renforce simultanément le dossier DeepMind/Schmidt (8 août) et les candidatures fellowships.
 
+### 2026-07-10 — ARENA 9.0 : bootcamp safety technique Londres, deadline 12 juillet
+**Tags** : ai-safety, formation, résidentiel, deadline, no-phd, london
+**Source** : sydney_opportunities
+**Lien** : https://www.lesswrong.com/posts/y795kpdRqC3uRmhtt/arena-9-0-call-for-applicants
+**Pourquoi ça compte** : Bootcamp technique AI safety le plus intensif du réseau UK/EU (LISA, Londres). 5 semaines résidentiel du 5 oct au 6 nov 2026 — voyage, hébergement, repas 100% couverts, zéro coût. Contenu : interp, RL, evals, red-teaming. Pas de PhD, toutes origines. Format le plus court des programmes résidentiels sérieux — 5 semaines vs 10 semaines MATS. Renforce directement les candidatures Apollo/MATS/DeepMind post-programme. Deadline dimanche 12 juillet.
+**Suite** : candidater avant dimanche 23h59 AoE.
+
+### 2026-07-10 — EPFL DLAB — Eval & Red-teaming Engineer (Lausanne) : posté le 6 juillet, Master suffisant
+**Tags** : suisse, lausanne, ai-safety, job, adversarial, red-teaming, no-phd, epfl
+**Source** : sydney_opportunities
+**Lien** : https://dlab.epfl.ch/2026-07-06-safety-pretraining-engineer-positions/
+**Pourquoi ça compte** : Swiss AI Initiative recrute un ingénieur pour posséder le harness d'évaluation d'Apertus (LLM 700B open-source). Mission = automated jailbreak testing, persona-drift testing, ablation hygiene — adversarial pur. Master suffisant, PhD non requis. EU = permis B formalité standard. Posté il y a 4 jours. Le job suisse le plus aligné avec le profil adversarial identifié depuis Lakera (juillet 6) et DeepMind Agentic Red Team (juillet 9).
+**Suite** : postuler via Google Form (lien dans l'article DLAB) ; ne pas attendre le post LessWrong.
+
+### 2026-07-10 — Anthropic Fellows Program : rolling, ~$15k/mois, meilleur pipeline safety non-PhD
+**Tags** : ai-safety, formation, fellowship, rolling, no-phd, anthropic
+**Source** : sydney_opportunities
+**Lien** : https://job-boards.greenhouse.io/anthropic/jobs/5023394008
+**Pourquoi ça compte** : 4 mois remote (ou SF/London/Toronto), tracks AI Safety + AI Security + Economics/Policy + ML Systems. ~$15k/mois + $15k compute. Explicitement ouvert non-PhD avec background quanti. 40% des fellows rejoignent Anthropic full-time. Rolling = candidater immédiatement pour la cohorte sept/oct 2026. Caveat : requiert work authorization US, UK ou Canada — vérifier si track London accessible pour un ressortissant EU via visa UK.
+**Suite** : candidater en rolling ; qualifier le visa UK si nécessaire.
+
 ### 2026-07-09 — AISI Australie opérationnel : fenêtre réseau 72h post-forum (7–8 juil)
 **Tags** : sydney, ai-safety, aisi-au, networking, signal
 **Source** : sydney_opportunities
