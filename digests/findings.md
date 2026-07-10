@@ -568,3 +568,24 @@
 **Lien** : https://www.sortiraparis.com/en/what-to-visit-in-paris/walks/articles/330190-compans-free-medieval-festival-for-2026-a-market-performances-and-a-fireworks-display-on-the-program
 **Pourquoi ça compte** : Médiévales de Compans (77), événement annuel gratuit mi-juillet dans la vallée de la Biberonne (~50 min de Bois-le-Roi via A104). Jousting, marché médiéval, jongleurs, feu d'artifice le samedi soir. Distinct des Médiévales de Provins (juin, payant, 55 min) — celui-ci est mi-juillet et gratuit. Parfait pour Anna (8) et Tristan (5), accessible poussette pour César.
 **Suite** : à noter chaque année pour la deuxième semaine de juillet. Vérifier les dates sur sortiraparis.com en juin.
+### 2026-07-10 — ARENA 9.0 : bootcamp safety technique Londres, deadline 12 juillet
+**Tags** : ai-safety, formation, résidentiel, deadline, no-phd, london
+**Source** : sydney_opportunities
+**Lien** : https://www.lesswrong.com/posts/y795kpdRqC3uRmhtt/arena-9-0-call-for-applicants
+**Pourquoi ça compte** : Bootcamp technique AI safety le plus intensif du réseau UK/EU (LISA, Londres). 5 semaines résidentiel du 5 oct au 6 nov 2026 — voyage, hébergement, repas 100% couverts, zéro coût. Contenu : interp, RL, evals, red-teaming. Pas de PhD, toutes origines. Format le plus court des programmes résidentiels sérieux — 5 semaines vs 10 semaines MATS. Renforce directement les candidatures Apollo/MATS/DeepMind post-programme. Deadline dimanche 12 juillet.
+**Suite** : candidater avant dimanche 23h59 AoE.
+
+### 2026-07-10 — EPFL DLAB — Eval & Red-teaming Engineer (Lausanne) : posté le 6 juillet, Master suffisant
+**Tags** : suisse, lausanne, ai-safety, job, adversarial, red-teaming, no-phd, epfl
+**Source** : sydney_opportunities
+**Lien** : https://dlab.epfl.ch/2026-07-06-safety-pretraining-engineer-positions/
+**Pourquoi ça compte** : Swiss AI Initiative recrute un ingénieur pour posséder le harness d'évaluation d'Apertus (LLM 700B open-source). Mission = automated jailbreak testing, persona-drift testing, ablation hygiene — adversarial pur. Master suffisant, PhD non requis. EU = permis B formalité standard. Posté il y a 4 jours. Le job suisse le plus aligné avec le profil adversarial identifié depuis Lakera (juillet 6) et DeepMind Agentic Red Team (juillet 9).
+**Suite** : postuler via Google Form (lien dans l'article DLAB) ; ne pas attendre le post LessWrong.
+
+### 2026-07-10 — Anthropic Fellows Program : rolling, ~$15k/mois, meilleur pipeline safety non-PhD
+**Tags** : ai-safety, formation, fellowship, rolling, no-phd, anthropic
+**Source** : sydney_opportunities
+**Lien** : https://job-boards.greenhouse.io/anthropic/jobs/5023394008
+**Pourquoi ça compte** : 4 mois remote (ou SF/London/Toronto), tracks AI Safety + AI Security + Economics/Policy + ML Systems. ~$15k/mois + $15k compute. Explicitement ouvert non-PhD avec background quanti. 40% des fellows rejoignent Anthropic full-time. Rolling = candidater immédiatement pour la cohorte sept/oct 2026. Caveat : requiert work authorization US, UK ou Canada — vérifier si track London accessible pour un ressortissant EU via visa UK.
+**Suite** : candidater en rolling ; qualifier le visa UK si nécessaire.
+
