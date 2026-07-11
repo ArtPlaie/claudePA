@@ -602,3 +602,9 @@
 **Lien** : https://onlinelibrary.wiley.com/doi/10.1111/coa.70057
 **Pourquoi ça compte** : Méta-analyse 7 études (263 patients, Clinical Otolaryngology 2026). Xylitol améliore NOSE et SNOT-22 vs NaCl seul. Add-on à faible risque pour Isa — pas de traitement de fond substitué, mais amélioration du vécu symptomatique documentée. 100% compatible contre-indication ATB.
 **Suite** : suggérer le switch NaCl → xylitol si Isa ne l'utilise pas encore.
+### 2026-07-11 — [un]prompted.au : conférence AI × cybersecurity Sydney, 18–19 sept, talk proposals deadline 31 juillet
+**Tags** : sydney, ai-safety, red-teaming, adversarial, conference, talk, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.unprompted.au/
+**Pourquoi ça compte** : Édition australienne d'Unprompted (conférence US reconnue en security offensive). Audience = vulnerability researchers, red/blue teamers, exploit developers intégrant l'AI — pas les chercheurs alignment théoriques. Format talks research praticiens. L'angle "détection patterns circulaires wash trading OKEx → scheming LLM" est unique dans ce champ et c'est exactement ce que cette audience apprécie. Si accepté : speaker de la première édition AU avant le move physique = ancrage Sydney security/AI avec un public qui recrute et cofonde. Submissions via Sessionize.
+**Suite** : soumettre un abstract de 200–300 mots avant le 31 juillet via Sessionize (lien sur le site).
