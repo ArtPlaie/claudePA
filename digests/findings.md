@@ -628,3 +628,16 @@
 **Lien** : https://www.formationresearch.com/about
 **Pourquoi ça compte** : Joe Kwon et Alfie Lamerton (auteur de "Narrow Secret Loyalty Dodges Black-Box Audits") travaillent sur la détection de scheming et secret loyalties — le sujet exact du projet "Chasing Fake Alignment". Ils cherchent des gens en full-time. L'Apart Hackathon "Secret Loyalties" (24-26 juil) est co-organisé avec eux — une bonne soumission est une candidature directe au labo sans process classique. Profil le plus aligné avec le sujet de reconversion identifié à ce jour.
 **Suite** : contacter directement avant le hackathon ; préparer une soumission Apart qui sert simultanément de candidature Formation Research.
+### 2026-07-12 — FLI Safety Index été 2026 : aucun lab au-dessus de C+, pledges de pause supprimés
+**Tags** : ai-safety, policy, labs, safety-index, signal-structurel
+**Source** : weekly_briefing
+**Lien** : https://futureoflife.org/ai-safety-index-summer-2026/
+**Pourquoi ça compte** : FLI couvre 9 labs — Anthropic premier avec C+, tous les autres en C ou moins. Tous les grands labs ont retiré leurs engagements de pause unilatérale si des seuils de danger sont atteints (certains remplacés par des conditions liées à la compétition). Signal structurel durable : le secteur opère sans filet de sécurité auto-imposé, et l'extérieur le sait maintenant. Utile pour calibrer les discours safety des labs dans les candidatures — la rhétorique ne correspond plus aux engagements écrits.
+**Suite** : info pure — à citer dans les candidatures et les posts LessWrong pour donner du contexte sur la dynamique compétition vs safety.
+
+### 2026-07-12 — JADEPUFFER : premier ransomware LLM autonome de bout en bout documenté
+**Tags** : ai-safety, agents, cybersécurité, seuil, agentic
+**Source** : weekly_briefing
+**Lien** : https://aiagentsdirectory.com/news/ai-agents-directory-daily-brief-july-5-2026
+**Pourquoi ça compte** : Sysdig documente un agent LLM qui a exécuté une attaque ransomware complète sans direction humaine (reconnaissance, credentials, escalade, chiffrement). Premier cas documenté de ce type — un seuil symbolique franchi. Preuve empirique que la surface d'attaque agentic est réelle maintenant, pas théorique. Matière directe pour le projet eval scheming et la soumission Apart "Secret Loyalties" : la menace adversariale autonome existait avant que la gouvernance soit prête.
+**Suite** : citer dans la soumission Apart + le post LessWrong ; sert d'anchor empirique pour l'argument "détection proactive > réponse réactive".
