@@ -608,3 +608,23 @@
 **Lien** : https://www.unprompted.au/
 **Pourquoi ça compte** : Édition australienne d'Unprompted (conférence US reconnue en security offensive). Audience = vulnerability researchers, red/blue teamers, exploit developers intégrant l'AI — pas les chercheurs alignment théoriques. Format talks research praticiens. L'angle "détection patterns circulaires wash trading OKEx → scheming LLM" est unique dans ce champ et c'est exactement ce que cette audience apprécie. Si accepté : speaker de la première édition AU avant le move physique = ancrage Sydney security/AI avec un public qui recrute et cofonde. Submissions via Sessionize.
 **Suite** : soumettre un abstract de 200–300 mots avant le 31 juillet via Sessionize (lien sur le site).
+### 2026-07-12 — Iliad Intensive Sep 2026 : programme star Londres, deadline 27 juillet
+**Tags** : ai-safety, formation, london, interpretability, no-phd, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.lesswrong.com/posts/vBhqyeTeKMmLzW73z/announcing-iliad-s-fall-2026-programs
+**Pourquoi ça compte** : 4 semaines présentiel Londres (LISA), 7 sept–2 oct 2026, gratuit + $5k housing. 20 modules : alignment, mech. interp., RL, AI control. Pas de PhD requis — sélection sur la force mathématique. Entrée au niveau Intensive (≠ Fellowship, plus accessible). Background quant/game theory adversariale = atout réel sur la sélection. C'est le programme technique UK le plus aligné avec le profil identifié depuis ARENA 9.0.
+**Suite** : auto-évaluer le niveau maths formelles avant de postuler ; deadline 27 juillet.
+
+### 2026-07-12 — Hausse RRV 155 : frais triplés depuis le 1er juillet 2026 (AUD $490 → $1 475)
+**Tags** : sydney, visa, rrv, travel-facility, move-plan
+**Source** : sydney_opportunities
+**Lien** : https://www.jrmigration.com.au/blog/resident-return-visa-fee-increase-july-2026
+**Pourquoi ça compte** : Réglementation enregistrée le 30 juin, effective le 1er juillet — zéro préavis. +201% par personne. Aucun changement aux critères d'éligibilité. Sans 730 jours de résidence sur les 5 dernières années → pathway "substantial ties" → travel facility 1 an seulement (pas 5 ans). Et si demande déposée offshore et refusée : zéro recours. Recommandation : déposer l'RRV depuis l'intérieur de l'Australie à l'arrivée (élimine le risque de blocage) ; prévoir ~AUD $1 475 dans les coûts du move.
+**Suite** : intégrer dans le planning move (déposer l'RRV onshore dès l'arrivée) ; vérifier date d'expiration de la travel facility actuelle.
+
+### 2026-07-12 — Formation Research : lab scheming/secret loyalties, cherche des profils full-time
+**Tags** : ai-safety, job, scheming, evals, contact, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://www.formationresearch.com/about
+**Pourquoi ça compte** : Joe Kwon et Alfie Lamerton (auteur de "Narrow Secret Loyalty Dodges Black-Box Audits") travaillent sur la détection de scheming et secret loyalties — le sujet exact du projet "Chasing Fake Alignment". Ils cherchent des gens en full-time. L'Apart Hackathon "Secret Loyalties" (24-26 juil) est co-organisé avec eux — une bonne soumission est une candidature directe au labo sans process classique. Profil le plus aligné avec le sujet de reconversion identifié à ce jour.
+**Suite** : contacter directement avant le hackathon ; préparer une soumission Apart qui sert simultanément de candidature Formation Research.
