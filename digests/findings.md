@@ -596,6 +596,27 @@
 **Pourquoi ça compte** : Meilleur RCT humain à ce jour sur rapamycine (n=114, 50-85 ans, double aveugle). L'endpoint viscérale a raté mais à 24 mois : hs-CRP -18%, IL-6 -14% dans le bras 10 mg/sem, profil de sécurité identique placebo. Signal inflammatoire réel, cliniquement exploratoire mais tracé le plus sérieux disponible hors transplantation.
 **Suite** : surveiller les publications PEARL (endpoint fonctionnel et cognitif attendus) ; pas d'action avant données plus matures.
 
+### 2026-07-13 — Apart Secret Loyalties Hackathon : Detection & Auditing track, 24-26 juillet
+**Tags** : ai-safety, hackathon, adversarial, apart, deadline, sydney
+**Source** : sydney_opportunities
+**Lien** : https://apartresearch.com/sprints/secret-loyalties-hackathon-2026-07-24-to-2026-07-26
+**Pourquoi ça compte** : Thème "IA qui dissimule sa loyauté". Le track Detection & Auditing = détecter un agent qui ment sur ses alignements — même logique que OKEx fake volume detection. Artefact direct pour le post "Chasing Fake Alignment" + dossier Apollo Applied Researcher. Top teams invitées au Partnered Fellowship (compute, infra).
+**Suite** : s'inscrire et participer 24-26 juillet ; utiliser comme soumission Apart + base du post LessWrong.
+
+### 2026-07-13 — Schmidt Sciences + DeepMind Multi-agent Safety Fund : jusqu'à $1M, deadline 8 août
+**Tags** : ai-safety, grant, multi-agent, financement, deadline
+**Source** : sydney_opportunities
+**Lien** : https://schmidtsciences.smapply.io
+**Pourquoi ça compte** : Fonds conjoint DeepMind + Schmidt Sciences + Cooperative AI Foundation + Google.org (~$10M total). Tier 1 jusqu'à $300k, Tier 2 jusqu'à $1M, durée 1-2 ans. Chercheurs indépendants éligibles — pas d'affiliation académique requise. Focus sandboxes éval multi-agents et oversight de populations d'agents. Mécanisme naturel pour financer un projet "Chasing Fake Alignment" élargi après le sprint Apart (24-26 juil).
+**Suite** : préparer dossier post-Apart avant le 8 août ; se couple avec grantmaking.ai (finale 27 juil).
+
+### 2026-07-13 — DeepMind Frontier Safety Mitigations Zurich : red-teaming + evals prod, posté 7 juillet
+**Tags** : suisse, zurich, ai-safety, job, deepmind, red-teaming, evals, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://www.google.com/about/careers/applications/jobs/results/138624521266438854-research-engineer-frontier-safety-mitigations-deepmind
+**Pourquoi ça compte** : Research Engineer sur les mitigations safety en production — red-teaming, build evals, déploiement de garde-fous pour CBRNE/cyber/manipulation. Posté le 7 juillet. Pas de PhD, Bachelor's + 5 ans dev. Complète le rôle Agentic Red Team Zurich (déjà shortlisté) : deux postes DeepMind Zurich safety ouverts simultanément = fenêtre rare d'entrée dans le lab.
+**Suite** : candidater en parallèle du rôle Agentic Red Team ; pitch adversarial bots prod 9 ans + OKEx.
+
 ### 2026-07-10 — Xylitol nasal vs NaCl (CRS chronique) : bénéfice symptomatique validé en méta
 **Tags** : santé, isa, ORL, xylitol, irrigation, non-ATB
 **Source** : health_watch
