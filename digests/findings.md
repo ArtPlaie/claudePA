@@ -662,3 +662,10 @@
 **Pourquoi ça compte** : Research Engineer sur les mitigations safety en production — red-teaming, build evals, déploiement de garde-fous pour CBRNE/cyber/manipulation. Posté le 7 juillet. Pas de PhD, Bachelor's + 5 ans dev. Complète le rôle Agentic Red Team Zurich (déjà shortlisté) : deux postes DeepMind Zurich safety ouverts simultanément = fenêtre rare d'entrée dans le lab.
 **Suite** : candidater en parallèle du rôle Agentic Red Team ; pitch adversarial bots prod 9 ans + OKEx.
 
+
+### 2026-07-13 — Détection radio des météores via radar GRAVES : setup famille réutilisable
+**Tags** : serendipity, astronomie, radio, famille, DIY
+**Source** : serendipity
+**Lien** : https://www.rtl-sdr.com/using-the-graves-radar-to-listen-to-reflections-from-meteors-planes-and-spacecraft/
+**Pourquoi ça compte** : Le radar militaire GRAVES (143,050 MHz, près de Dijon) permet d'« entendre » chaque météore avec un dongle RTL-SDR ~35 € + antenne DIY + logiciel gratuit ECHOES, même de jour ou sous nuages. Setup permanent une fois monté : resservira aux Géminides (déc.) et à chaque pluie annuelle, pas seulement aux Perséides 2026 (12-13 août, nouvelle lune). Angle quant : compter les échos, tracer les taux horaires.
+**Suite** : proposé dans le rapport serendipity du 13 juillet ; si Sylvain monte le setup, le noter ici comme équipement disponible.
