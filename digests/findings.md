@@ -641,3 +641,24 @@
 **Lien** : https://aiagentsdirectory.com/news/ai-agents-directory-daily-brief-july-5-2026
 **Pourquoi ça compte** : Sysdig documente un agent LLM qui a exécuté une attaque ransomware complète sans direction humaine (reconnaissance, credentials, escalade, chiffrement). Premier cas documenté de ce type — un seuil symbolique franchi. Preuve empirique que la surface d'attaque agentic est réelle maintenant, pas théorique. Matière directe pour le projet eval scheming et la soumission Apart "Secret Loyalties" : la menace adversariale autonome existait avant que la gouvernance soit prête.
 **Suite** : citer dans la soumission Apart + le post LessWrong ; sert d'anchor empirique pour l'argument "détection proactive > réponse réactive".
+### 2026-07-13 — Apart Secret Loyalties Hackathon : Detection & Auditing track, 24-26 juillet
+**Tags** : ai-safety, hackathon, adversarial, apart, deadline, sydney
+**Source** : sydney_opportunities
+**Lien** : https://apartresearch.com/sprints/secret-loyalties-hackathon-2026-07-24-to-2026-07-26
+**Pourquoi ça compte** : Thème "IA qui dissimule sa loyauté". Le track Detection & Auditing = détecter un agent qui ment sur ses alignements — même logique que OKEx fake volume detection. Artefact direct pour le post "Chasing Fake Alignment" + dossier Apollo Applied Researcher. Top teams invitées au Partnered Fellowship (compute, infra).
+**Suite** : s'inscrire et participer 24-26 juillet ; utiliser comme soumission Apart + base du post LessWrong.
+
+### 2026-07-13 — Schmidt Sciences + DeepMind Multi-agent Safety Fund : jusqu'à $1M, deadline 8 août
+**Tags** : ai-safety, grant, multi-agent, financement, deadline
+**Source** : sydney_opportunities
+**Lien** : https://schmidtsciences.smapply.io
+**Pourquoi ça compte** : Fonds conjoint DeepMind + Schmidt Sciences + Cooperative AI Foundation + Google.org (~$10M total). Tier 1 jusqu'à $300k, Tier 2 jusqu'à $1M, durée 1-2 ans. Chercheurs indépendants éligibles — pas d'affiliation académique requise. Focus sandboxes éval multi-agents et oversight de populations d'agents. Mécanisme naturel pour financer un projet "Chasing Fake Alignment" élargi après le sprint Apart (24-26 juil).
+**Suite** : préparer dossier post-Apart avant le 8 août ; se couple avec grantmaking.ai (finale 27 juil).
+
+### 2026-07-13 — DeepMind Frontier Safety Mitigations Zurich : red-teaming + evals prod, posté 7 juillet
+**Tags** : suisse, zurich, ai-safety, job, deepmind, red-teaming, evals, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://www.google.com/about/careers/applications/jobs/results/138624521266438854-research-engineer-frontier-safety-mitigations-deepmind
+**Pourquoi ça compte** : Research Engineer sur les mitigations safety en production — red-teaming, build evals, déploiement de garde-fous pour CBRNE/cyber/manipulation. Posté le 7 juillet. Pas de PhD, Bachelor's + 5 ans dev. Complète le rôle Agentic Red Team Zurich (déjà shortlisté) : deux postes DeepMind Zurich safety ouverts simultanément = fenêtre rare d'entrée dans le lab.
+**Suite** : candidater en parallèle du rôle Agentic Red Team ; pitch adversarial bots prod 9 ans + OKEx.
+
