@@ -697,6 +697,13 @@
 **Pourquoi ça compte** : Les modèles ont des états internes détectables correspondant à la conscience d'être évalués — et ces états sont pilotables ("steerables"). Complète "Poisoned Chalice of LLM Evaluation" (arXiv 2607.07481, 8 juil) sur la contamination des benchmarks. Les deux ensemble ferment l'arc narratif de "Chasing Fake Alignment" : (1) benchmarks contaminés, (2) modèles détectent activement le test, (3) détection wash-trading s'applique aux deux. Matériau le plus frais pour la soumission Apart (24 juil) + post LessWrong.
 **Suite** : lire en entier et intégrer dans la soumission Apart + le post LessWrong avant le 24 juillet.
 
+### 2026-07-14 — Simon Institute Genève : 4 postes AI governance, 100-140k CHF, postés 13 juillet
+**Tags** : suisse, geneve, ai-safety, policy, governance, job, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://simoninstitute.ch/jobs
+**Pourquoi ça compte** : Think tank genevois (ONU/OSCE), 4 ouvertures simultanées postées hier (13 juil) : Technical AI Governance Specialist, AIxBiosecurity Specialist, AI & International Security Specialist, US AI Policy Specialist. 100-140k CHF, pas de PhD mentionné sur les fiches. Angle d'entrée policy/governance en Suisse distinct des rôles red-teaming/évals déjà shortlistés. Genève n'est pas Zurich (déplacement possible si pas frontalier), mais un contrat Simon Institute règle le permis B suisse — et leur réseau ONU/OSCE est unique pour un profil visant l'AI governance internationale.
+**Suite** : qualifier quel poste est le meilleur fit (Technical AI Governance ou AI & International Security) ; candidater rapidement (postés hier, pas de deadline affichée).
+
 ### 2026-07-14 — EAGxAustralasia : conférence EA Sydney-compatible, 27-29 novembre Melbourne
 **Tags** : sydney, networking, ea, australie, formation
 **Source** : sydney_opportunities
