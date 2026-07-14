@@ -717,3 +717,17 @@
 **Pourquoi ça compte** : Think tank genevois (ONU/OSCE), 4 ouvertures simultanées postées hier (13 juil) : Technical AI Governance Specialist, AIxBiosecurity Specialist, AI & International Security Specialist, US AI Policy Specialist. 100-140k CHF, pas de PhD mentionné sur les fiches. Angle d'entrée policy/governance en Suisse distinct des rôles red-teaming/évals déjà shortlistés. Genève n'est pas Zurich (déplacement possible si pas frontalier), mais un contrat Simon Institute règle le permis B suisse — et leur réseau ONU/OSCE est unique pour un profil visant l'AI governance internationale.
 **Suite** : qualifier quel poste est le meilleur fit (Technical AI Governance ou AI & International Security) ; candidater rapidement (postés hier, pas de deadline affichée).
 
+### 2026-07-14 — FAR AI Research Scientist : rôle senior distinct du Research Engineer, remote global
+**Tags** : ai-safety, job, remote, australie-compatible, evals, no-phd
+**Source** : ai_jobs_formations
+**Lien** : https://www.far.ai/careers/research-scientist
+**Pourquoi ça compte** : Rôle distinct du Research Engineer (déjà archivé juin 16) : le Scientist scope les directions de recherche en plus de les exécuter. Même format remote global (Australie confirmée), même process sans LeetCode (72 min assessment + work trial payé), fourchette $120k–$190k. Plus senior — le profil quanti autodidacte avec une publication adversariale publique ("Chasing Fake Volume") est dans leur vivier explicite.
+**Suite** : postuler en rolling une fois le post LessWrong/artefact eval scheming en ligne ; contact talent@far.ai.
+
+### 2026-07-14 — OpenAI Safety Fellowship : programme phare, cohorte sept 2026 déjà fermée
+**Tags** : ai-safety, formation, openai, fellowship, rolling
+**Source** : ai_jobs_formations
+**Lien** : https://openai.com/index/introducing-openai-safety-fellowship/
+**Pourquoi ça compte** : Programme sept 2026–fév 2027, $3 850/semaine + $15k/mois compute, remote possible (via espace Constellation Berkeley). Applications septembre–octobre 2026 pour la cohorte suivante. Focus safety evaluation, robustesse, oversight agentique. Pas de PhD requis, sélection sur la compétence. Résultats cohorte actuelle attendus le 25 juillet 2026 — à surveiller pour calibrer les prochains cycles.
+**Suite** : bloquer pour la prochaine cohorte (candidatures ~oct 2026) ; viser une soumission avec un artefact eval concret.
+
