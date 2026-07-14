@@ -668,3 +668,45 @@
 **Lien** : https://www.rtl-sdr.com/using-the-graves-radar-to-listen-to-reflections-from-meteors-planes-and-spacecraft/
 **Pourquoi ça compte** : Le radar militaire GRAVES (143,050 MHz, près de Dijon) permet d'« entendre » chaque météore avec un dongle RTL-SDR ~35 € + antenne DIY + logiciel gratuit ECHOES, même de jour ou sous nuages. Setup permanent une fois monté : resservira aux Géminides (déc.) et à chaque pluie annuelle, pas seulement aux Perséides 2026 (12-13 août, nouvelle lune). Angle quant : compter les échos, tracer les taux horaires.
 **Suite** : proposé dans le rapport serendipity du 13 juillet ; si Sylvain monte le setup, le noter ici comme équipement disponible.
+### 2026-07-14 — AISB London : bootcamp AI security fully funded, deadline 15 juillet (demain)
+**Tags** : ai-safety, formation, red-teaming, adversarial, london, deadline, urgent
+**Source** : sydney_opportunities
+**Lien** : https://aisb.dev/london26/
+**Pourquoi ça compte** : 7 jours intensifs à Londres (30 août–5 sept), fully funded logement+repas+tuition, cohorte 16-20. Prérequis : 5+ ans sécurité offensive/infra — pas de background ML. Contenu = threat modeling, attaques adversariales, LLM security. Bridge direct entre "bots adversariaux en production" et red-teaming IA. Alumni OpenAI/Google/Meta/Stanford. Deadline demain — la plus urgente de toute la veille.
+**Suite** : postuler aujourd'hui via le site (deadline 15 juillet).
+
+### 2026-07-14 — FASR Cambridge : résidence AI security frontier 8 semaines payée, deadline 29 juillet
+**Tags** : ai-safety, formation, adversarial, cambridge, uk, funded, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.securefrontier.ai/
+**Pourquoi ça compte** : 8 semaines fully funded et payées, in-person Cambridge UK, 12 oct–4 déc 2026. Tracks Cyber et Hardware — sécuriser l'infrastructure des labs frontier. Pas de PhD requis. "Backing the people securing frontier AI's hardware and cybersecurity infrastructure" = angle sous-peuplé où pensée adversariale + bots prod est directement compétitif sans PhD. Probablement le programme le mieux calibré pour le profil identifié cette semaine (au-dessus d'ARENA ou Iliad pour ce profil).
+**Suite** : candidater via Airtable sur le site avant le 29 juillet.
+
+### 2026-07-14 — YC Fall 2026 (F26) : deadline on-time 27 juillet si un projet existe
+**Tags** : cofounding, accelerator, yc, deadline, sydney
+**Source** : sydney_opportunities
+**Lien** : https://www.ycombinator.com/apply
+**Pourquoi ça compte** : Le batch F26 (Fall 2026) a sa deadline on-time le 27 juillet 23h AoE. YC a financé plusieurs labs d'évals et AI safety dans les cohortes récentes (Goodfire, Apollo). Si "Chasing Fake Alignment" est suffisamment formé comme outil ou plateforme, c'est une candidature crédible — YC accepte des candidatures solo et pré-revenu. Même deadline que BlueDot, Iliad et grantmaking.ai (27 juillet).
+**Suite** : arbitrer avant le 20 juillet si le projet est suffisamment tangible pour pitcher ; batch W2027 comme fallback (ouverture ~oct 2026).
+
+### 2026-07-14 — NeurIPS 2026 Sydney : fenêtre workshop papers s'ouvre maintenant (liste publiée 11 juil)
+**Tags** : sydney, ai-safety, neurips, conference, workshop, deadline
+**Source** : sydney_opportunities
+**Lien** : https://neurips.cc/Conferences/2026
+**Pourquoi ça compte** : Les workshops acceptés ont été notifiés le 11 juillet. Chaque workshop fixe sa propre deadline pour les soumissions de papiers — NeurIPS recommande le 29 août comme date suggérée. Le nouveau "Evaluations & Datasets Track" (accepte auditing, red-teaming, interaction protocols sans nécessiter un nouveau modèle) est directement dans le scope "Chasing Fake Alignment". Contacter maintenant les organisateurs des workshops safety/evals acceptés pendant que la liste est fraîche = fenêtre de 2-3 semaines.
+**Suite** : identifier 2-3 workshops pertinents sur neurips.cc et contacter les organisateurs avant fin juillet.
+
+### 2026-07-14 — "Probing and Steering Evaluation Awareness" : les modèles savent quand ils sont testés
+**Tags** : ai-safety, scheming, evals, paper, content
+**Source** : sydney_opportunities
+**Lien** : https://arxiv.org/html/2507.01786v2
+**Pourquoi ça compte** : Les modèles ont des états internes détectables correspondant à la conscience d'être évalués — et ces états sont pilotables ("steerables"). Complète "Poisoned Chalice of LLM Evaluation" (arXiv 2607.07481, 8 juil) sur la contamination des benchmarks. Les deux ensemble ferment l'arc narratif de "Chasing Fake Alignment" : (1) benchmarks contaminés, (2) modèles détectent activement le test, (3) détection wash-trading s'applique aux deux. Matériau le plus frais pour la soumission Apart (24 juil) + post LessWrong.
+**Suite** : lire en entier et intégrer dans la soumission Apart + le post LessWrong avant le 24 juillet.
+
+### 2026-07-14 — EAGxAustralasia : conférence EA Sydney-compatible, 27-29 novembre Melbourne
+**Tags** : sydney, networking, ea, australie, formation
+**Source** : sydney_opportunities
+**Lien** : https://effectivealtruism.org.au/get-involved/eagx/
+**Pourquoi ça compte** : Plus grande conférence EA d'Australie/NZ (300+ participants), AI safety est un axe central. Candidature sélective. Melbourne = 1h de vol Sydney. Calendrier idéal : si le move AU se fait à l'automne 2026, c'est le premier événement networking en région une fois installé.
+**Suite** : surveiller l'ouverture des candidatures (~septembre probable) ; postuler dès l'ouverture.
+
