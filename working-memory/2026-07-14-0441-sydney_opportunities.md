@@ -68,9 +68,15 @@ Nouveau, pas encore dans le pipeline. 8 semaines fully funded et payées, prése
 
 ## Jobs IA — Sydney + Suisse
 
-Rien de solide de nouveau cette semaine côté jobs purs à Sydney. Les rôles déjà shortlistés (DeepMind Agentic Red Team Zurich, DeepMind Frontier Safety Mitigations Zurich, EPFL DLAB Eval Lausanne, Lakera Zurich, Anthropic Applied AI Sydney) restent les options actives identifiées.
+Rien de nouveau côté safety research pur à Sydney cette semaine. Anthropic continue de recruter à Sydney sur l'infra datacenter (Country Lead Data Center Security, posté 10 juillet ; Staff Engineer Datacenter Server Lifecycle) — signe de la montée en puissance locale, mais pas encore des rôles alignment/safety research.
 
-Un signal à noter : **Gray Swan AI** vient de clôturer un Series B de $40M (1er juin 2026). Leur [Gray Swan Arena](https://app.grayswan.ai/arena) — plateforme de red-teaming adversarial LLM avec 15 000+ chercheurs et des manches avec l'UK AISI — reste ouverte en continu. Un bon classement est une credential que personne ne peut contester. Déjà archivé depuis juin mais le funding $40M confirme que l'org grossit et qu'il y aura des rôles à venir.
+**Suisse — nouveauté cette semaine :**
+
+**4 postes AI governance — [Simon Institute for Longterm Governance](https://simoninstitute.ch/jobs)** · Genève · postés **13 juillet** · 100-140k CHF
+
+Think tank genevois travaillant sur la gouvernance internationale des technologies transformatives, partenaire ONU/OSCE. 4 ouvertures simultanées : Technical AI Governance Specialist, AIxBiosecurity Specialist, AI & International Security Specialist, US AI Policy Specialist. Pas de PhD requis sur les fiches. Genève n'est pas Zurich (290 km), donc le move frontalier que Sylvain ne veut pas — mais un contrat Simon Institute règle le permis B pour toute la Suisse. La nature des postes (gouvernance, policy, technique) est un angle d'entrée différent des postes red-teaming/évals déjà dans le pipeline.
+
+Les rôles déjà shortlistés (DeepMind Agentic Red Team Zurich, DeepMind Frontier Safety Mitigations Zurich, EPFL DLAB Eval Lausanne, Lakera Zurich, Anthropic Applied AI Sydney) restent actifs.
 
 ---
 

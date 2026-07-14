@@ -710,3 +710,10 @@
 **Pourquoi ça compte** : Plus grande conférence EA d'Australie/NZ (300+ participants), AI safety est un axe central. Candidature sélective. Melbourne = 1h de vol Sydney. Calendrier idéal : si le move AU se fait à l'automne 2026, c'est le premier événement networking en région une fois installé.
 **Suite** : surveiller l'ouverture des candidatures (~septembre probable) ; postuler dès l'ouverture.
 
+### 2026-07-14 — Simon Institute Genève : 4 postes AI governance, 100-140k CHF, postés 13 juillet
+**Tags** : suisse, geneve, ai-safety, policy, governance, job, no-phd
+**Source** : sydney_opportunities
+**Lien** : https://simoninstitute.ch/jobs
+**Pourquoi ça compte** : Think tank genevois (ONU/OSCE), 4 ouvertures simultanées postées hier (13 juil) : Technical AI Governance Specialist, AIxBiosecurity Specialist, AI & International Security Specialist, US AI Policy Specialist. 100-140k CHF, pas de PhD mentionné sur les fiches. Angle d'entrée policy/governance en Suisse distinct des rôles red-teaming/évals déjà shortlistés. Genève n'est pas Zurich (déplacement possible si pas frontalier), mais un contrat Simon Institute règle le permis B suisse — et leur réseau ONU/OSCE est unique pour un profil visant l'AI governance internationale.
+**Suite** : qualifier quel poste est le meilleur fit (Technical AI Governance ou AI & International Security) ; candidater rapidement (postés hier, pas de deadline affichée).
+
