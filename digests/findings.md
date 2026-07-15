@@ -731,3 +731,17 @@
 **Pourquoi ça compte** : Programme sept 2026–fév 2027, $3 850/semaine + $15k/mois compute, remote possible (via espace Constellation Berkeley). Applications septembre–octobre 2026 pour la cohorte suivante. Focus safety evaluation, robustesse, oversight agentique. Pas de PhD requis, sélection sur la compétence. Résultats cohorte actuelle attendus le 25 juillet 2026 — à surveiller pour calibrer les prochains cycles.
 **Suite** : bloquer pour la prochaine cohorte (candidatures ~oct 2026) ; viser une soumission avec un artefact eval concret.
 
+### 2026-07-15 — LTFF : grants rolling $20k–$80k pour chercheurs indépendants sans affiliation
+**Tags** : ai-safety, financement, indépendant, rolling
+**Source** : sydney_opportunities
+**Lien** : https://funds.effectivealtruism.org/funds/far-future
+**Pourquoi ça compte** : Le Long-Term Future Fund finance des individus sans affiliation institutionnelle, en rolling, pour de la recherche AI safety. Montants plus substantiels que BlueDot Rapid Grants ($10k) ou les petits grants Schmidt. Si le sprint Apart (24-26 juil) produit un artefact solide sur l'eval scheming, un dossier LTFF dans la foulée est un chemin crédible pour financer 6 mois de recherche indépendante — le type de trajectoire qui précède une residency MATS/Constellation ou un rôle METR. Mécanisme durable, sous-utilisé par les profils quanti non-académiques.
+**Suite** : préparer un dossier post-Apart (août) en parallèle du grant DeepMind/Schmidt ; ces deux véhicules se complètent sans se cannibaler.
+
+### 2026-07-15 — Apart Digital Minds — hackathon suivant, 14–16 août
+**Tags** : ai-safety, hackathon, adversarial, apart, calendrier
+**Source** : sydney_opportunities
+**Lien** : https://www.apartresearch.com/
+**Pourquoi ça compte** : Le hackathon Apart de juillet (24-26) sur "Secret Loyalties" est déjà dans le pipeline. Le suivant "Digital Minds" (14-16 août) permet deux sprints consécutifs = deux outputs publiables en moins de 4 semaines = deux entrées CV en évals avant la fin de l'été. Apart fait aussi un Lab Fellowship avec compute + PMs + support publication pour les meilleurs projets — chaque hackathon est une audition.
+**Suite** : candidater à Digital Minds après avoir livré Secret Loyalties ; les deux ensemble forment un dossier évals cohérent pour LTFF, DeepMind grant, et METR.
+
