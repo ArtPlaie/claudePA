@@ -1,0 +1,75 @@
+name: task-prompt-feedback
+
+# Ingestion des réponses de Sylvain aux mails de rapport de veille.
+# Cf. tasks/prompt_feedback.py. Écrit des feedback/<ts>-<veille>.md (pending)
+# que la routine Claude Code /adapt_prompt applique ensuite aux prompts.
+#
+# Requiert :
+#   - GMAIL_TOKEN_PA_JSON (OAuth compte PA, scope gmail.modify — l'expéditeur
+#     des rapports, donc le destinataire des réponses)
+#   - MAIL_TO (adresse de Sylvain : on n'ingère que SES réponses)
+#   - TELEGRAM_* pour la notif best-effort
+#
+# Déclenchement : cron GitHub NATIF (pas via Cloudflare Worker). Ici le délai
+# 30min-2h des crons natifs est sans importance — l'ingestion de feedback n'est
+# pas sensible à la minute — et ça évite de consommer le budget de 5 cron
+# triggers du plan gratuit Cloudflare. Tourne plusieurs fois par jour pour que
+# tout feedback soit ingéré avant le run 11:00 de la routine /adapt_prompt.
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # toutes les 3h (offset 17min pour éviter la cohue)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Bypass cadence/vacances (dev/test). N'override pas panic ni enabled=false."
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claudepa-write
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install deps
+        run: uv sync
+
+      - name: Run task
+        env:
+          GMAIL_TOKEN_PA_JSON: ${{ secrets.GMAIL_TOKEN_PA_JSON }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
+          FORCE: ${{ inputs.force }}
+        run: uv run python -m tasks.prompt_feedback
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config user.name "claudePA bot"
+          git config user.email "bot@claudepa.local"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "no change to commit"
+          else
+            git commit -m "auto: prompt_feedback run $(date -u +%FT%TZ)"
+            for i in 1 2 3 4; do
+              if git push; then break; fi
+              sleep $((2 ** i))
+            done
+          fi

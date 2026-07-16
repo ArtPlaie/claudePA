@@ -38,6 +38,20 @@ tasks:
     model: sonnet
     enabled: true
 
+  prompt_feedback:
+    description: "Ingestion des réponses de Sylvain aux mails de rapport (inbox PA) → feedback/*.md pending pour la routine /adapt_prompt."
+    cron: "17 */3 * * *"  # toutes les 3h — cron NATIF GH (délai OK), pas via CF Worker
+    channel: perso
+    enabled: true         # GHA Python (Chemin B) : lit Gmail PA, pas de LLM
+
+  # Routine Claude Code (Chemin A) — pas gérée par schedule.py/run_guarded,
+  # tourne selon sa config UI claude.ai/code/routines. Entrée indicative :
+  adapt_prompt:
+    description: "Routine : applique les feedback/*.md pending en éditant .claude/commands/<veille>.md. Récap par mail."
+    cron: "0 11 * * *"    # daily 11:00 UTC (routine UI, indicatif)
+    channel: perso
+    model: sonnet
+
   local_activities:
     description: "Veille mensuelle activités locales (1h15 isochrone). Famille / art / intellectuel."
     cron: "0 7 1 * *"     # 1st of month, 07:00 UTC

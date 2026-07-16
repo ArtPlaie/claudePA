@@ -11,6 +11,7 @@ DIGESTS = REPO_ROOT / "digests"
 DIGESTS_MONTHLY = DIGESTS / "monthly"
 DRAFTS = REPO_ROOT / "drafts"
 INBOX = REPO_ROOT / "inbox"
+FEEDBACK = REPO_ROOT / "feedback"
 JOURNAL = REPO_ROOT / "journal"
 
 SCHEDULE_YAML = REPO_ROOT / "schedule.yaml"

@@ -13,6 +13,14 @@ name: sync-veille-to-main
 # on le RECOPIE sur `main` (noms horodatés uniques → zéro conflit) et on fusionne
 # `findings.md` en append (anti-conflit). Le push utilise GITHUB_TOKEN, qui ne
 # re-déclenche aucun workflow (anti-boucle natif GitHub) → pas de double mail.
+#
+# Étendu pour la boucle d'auto-tuning des prompts (/adapt_prompt) : on synchronise
+# aussi (a) les `feedback/*.md` mis à jour par la routine (statut pending→applied,
+# noms horodatés uniques), et (b) les `.claude/commands/*.md` édités par la
+# routine. Ces derniers ont un nom STABLE (overwrite) : c'est correct car la
+# routine est l'unique éditeur et repart toujours de `main` → recopier son
+# contenu sur `main` = last-write-wins voulu. C'est CE qui rend l'édition de
+# prompt effective (le prochain run de la veille clone `main`).
 
 on:
   push:
@@ -25,8 +33,11 @@ on:
       - "working-memory/*-activities_next10days.md"
       - "working-memory/*-health_watch.md"
       - "working-memory/*-serendipity.md"
+      - "working-memory/*-adapt_prompt.md"
       - "working-memory/*-session-*.md"
       - "digests/findings.md"
+      - "feedback/*.md"
+      - ".claude/commands/*.md"
 
 permissions:
   contents: write
@@ -78,11 +89,15 @@ jobs:
           PAT = re.compile(
               r"^(working-memory/.*-(?:sydney_opportunities|weekly_briefing|"
               r"ai_jobs_formations|local_activities|activities_next10days|"
-              r"health_watch|serendipity)\.md|working-memory/.*-session-.*\.md)$")
+              r"health_watch|serendipity|adapt_prompt)\.md|"
+              r"working-memory/.*-session-.*\.md)$")
+          # Fichiers de la boucle /adapt_prompt : feedback (statut) + prompts
+          # édités. Noms stables pour les commandes → recopie par overwrite.
+          EXTRA = re.compile(r"^(feedback/.*\.md|\.claude/commands/.*\.md)$")
 
           diff = git("diff", "--name-only", "--diff-filter=AM", before, after,
                      capture=True).stdout.splitlines()
-          report_files = [f for f in diff if PAT.match(f)]
+          report_files = [f for f in diff if PAT.match(f) or EXTRA.match(f)]
           findings_changed = "digests/findings.md" in diff
           print("fichiers détectés :", report_files,
                 "| findings:", findings_changed)
