@@ -8,8 +8,8 @@
 Sylvain Ribes, français, vit à Bois-le-Roi (Seine-et-Marne). ~2m, ~90kg.
 Diplômé d'école d'ingénieurs (2008). Marié à Isabelle (Isa). Trois enfants :
 Anna (fille, 8 ans), Tristan (garçon, 5 ans), César (garçon, 20 mois).
-Isabelle peint (thèmes étoiles/aurores boréales,
-envisage Instagram), a des problèmes ORL chroniques et une contre-indication
+Isabelle peint (envisage Instagram),
+a des problèmes ORL chroniques et une contre-indication
 absolue aux antibiotiques systémiques. Sylvain est le parent principal au
 quotidien depuis sa retraite anticipée.
 

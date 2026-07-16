@@ -7,15 +7,15 @@
 ## Isabelle (Isa)
 
 - Conjointe de Sylvain.
-- Pratique la peinture. Thèmes principaux : étoiles, aurores boréales.
+- Pratique la peinture.
 - Envisage de monter un compte Instagram dédié à son travail
   (statut : à confirmer avec elle).
 - Problèmes ORL chroniques.
 - **Contre-indication absolue aux antibiotiques systémiques.** Toute
   recommandation de soin doit en tenir compte.
 - À cibler pour la veille `isa_support` (V2) : galeries, expos
-  collectives, appels à candidature thème astro / aurores, conseils
-  promo Instagram pour artistes émergents.
+  collectives, appels à candidature, conseils promo Instagram pour
+  artistes émergents.
 
 ## Enfants
 
