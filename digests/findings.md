@@ -745,3 +745,9 @@
 **Pourquoi ça compte** : Le hackathon Apart de juillet (24-26) sur "Secret Loyalties" est déjà dans le pipeline. Le suivant "Digital Minds" (14-16 août) permet deux sprints consécutifs = deux outputs publiables en moins de 4 semaines = deux entrées CV en évals avant la fin de l'été. Apart fait aussi un Lab Fellowship avec compute + PMs + support publication pour les meilleurs projets — chaque hackathon est une audition.
 **Suite** : candidater à Digital Minds après avoir livré Secret Loyalties ; les deux ensemble forment un dossier évals cohérent pour LTFF, DeepMind grant, et METR.
 
+### 2026-07-16 — Belem : ventes des navigations ouvertes au public début décembre
+**Tags** : serendipity, aventure, calendrier, belem
+**Source** : serendipity
+**Lien** : https://www.fondationbelem.com/naviguer-3
+**Pourquoi ça compte** : Le trois-mâts Belem (1896) embarque des stagiaires sans expérience sur des étapes de 1 à 12 jours (48 couchettes, tournée France + Europe). Les réservations d'une année ouvrent début décembre de l'année précédente et les belles étapes partent en quelques semaines. Idée sortie au run serendipity du 16/07 — si Sylvain veut une étape 2027, la fenêtre d'action c'est décembre 2026.
+**Suite** : rappel début décembre 2026 — vérifier l'ouverture des ventes 2027 (via weekly_briefing ou serendipity).
