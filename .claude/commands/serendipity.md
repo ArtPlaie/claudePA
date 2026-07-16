@@ -59,8 +59,11 @@ goûts — pour ensuite explorer **au-delà**.
 
 - `core-memory/profile.md` — qui il est (saute la partie carrière/reconversion,
   hors-sujet ici ; garde l'humain, l'intello, ses goûts, son histoire).
-- `core-memory/family.md` — **source clé.** Isa (peintre, étoiles/aurores), et
-  les enfants : Anna (8), Tristan (5), César (20 mois). Leurs âges, leur stade.
+- `core-memory/family.md` — **source clé.** Isa (peintre), et les enfants :
+  Anna (8), Tristan (5), César (20 mois). Leurs âges, leur stade. Prends les
+  faits tels qu'écrits, n'en invente pas le détail (un style, un sujet, une
+  anecdote qui n'y est pas) — mieux vaut un fait sobre qu'un enjolivement
+  halluciné.
 - `core-memory/people.md` — son réseau perso : liens à raviver.
 - `core-memory/current-location.md` — où il est, un voyage qui se prépare, la
   saison : autant d'occasions.
@@ -84,6 +87,12 @@ trouver — seulement *comment* chercher pour que ça vaille le coup :
   « fais X avec l'enfant »). Cette mécanique-là ne produit que du banal qu'il a
   déjà en tête. Sers-toi du profil comme **tremplin pour sauter ailleurs**, pas
   comme menu à recombiner.
+- **Ne reste pas ancré sur la poignée de spécificités du prompt.** Sylvain,
+  Isa et les enfants sont des personnes normales avec des intérêts génériques
+  bien plus vastes que ce qui est écrit dans `core-memory/`. Le profil est un
+  point de départ, pas un plafond — pense aussi à ce qu'aimerait n'importe qui
+  de leur âge, leur milieu, leur époque, sans attendre que ce soit noté noir
+  sur blanc.
 - **Dépasse la première vague.** Les 10 premières idées qui te viennent sont les
   évidentes — celles que n'importe qui aurait. **Jette-les.** La valeur commence
   à la 20ᵉ, la 40ᵉ : celle qui te surprend *toi-même*. Brainstorme large en
@@ -187,3 +196,5 @@ souci) dès que ton rapport arrive sur ta branche `claude/**` :
   run. **Tu n'as donc pas à pousser sur `main` toi-même.**
 
 Si l'étape 0 a skippé, rien n'est poussé → ni mail ni synchro (normal).
+
+xxx pouet

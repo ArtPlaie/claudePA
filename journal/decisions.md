@@ -91,3 +91,15 @@ ajoutée sur dérogation explicite de Sylvain.
 babysitting (commit fiable, pas de faux "vert") ? Qualité du web search
 natif vs attentes ; faut-il finalement migrer aussi les 4 tasks GHA.
 
+---
+
+## 2026-07-16 — adapt_prompt : serendipity ajustée
+
+Retour Sylvain : « supprime les histoires de elle peint les étoiles etc […]
+tu es trop limité et anchored sur ce qui est marqué, ouvre tes horizons ».
+Changé : retiré le détail inventé (« étoiles/aurores ») sur Isa en Étape 1
+de `serendipity.md`, gardé juste « peintre » + consigne anti-enjolivement ;
+ajouté un garde-fou en Étape 2 pour ne pas s'ancrer sur la poignée de
+spécificités du prompt et traiter la famille comme des gens normaux aux
+intérêts génériques plus larges. (auto via /adapt_prompt)
+
