@@ -196,5 +196,3 @@ souci) dès que ton rapport arrive sur ta branche `claude/**` :
   run. **Tu n'as donc pas à pousser sur `main` toi-même.**
 
 Si l'étape 0 a skippé, rien n'est poussé → ni mail ni synchro (normal).
-
-xxx pouet

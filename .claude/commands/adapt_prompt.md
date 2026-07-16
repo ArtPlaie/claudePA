@@ -54,10 +54,17 @@ Puis :
 1. **Lis le prompt cible en entier** (`command_file`). Comprends sa structure
    (sections, garde-fous, format de sortie) avant de toucher quoi que ce soit.
 
-2. **Traduis le retour en intention concrète.** Qu'est-ce que Sylvain reproche
-   ou demande, précisément ? Ton ? Longueur ? Scope ? Profondeur de recherche ?
-   Type d'idées ? Cible la (ou les) section(s) du prompt qui gouverne(nt) ce
-   comportement — souvent la mission, un garde-fou, ou le format de sortie.
+2. **Traduis le retour en intention concrète, et repère la CIBLE.** Qu'est-ce que
+   Sylvain reproche ou demande, précisément ? Deux natures de retour, souvent
+   mêlées dans un même feedback :
+   - **Comportement de veille** (ton, longueur, scope, profondeur de recherche,
+     type d'idées) → ça se règle dans le **prompt** `command_file` (mission,
+     garde-fou, format de sortie).
+   - **Fait de mémoire faux ou à corriger** (« c'est faux », « supprime cette
+     info », « en vrai c'est X ») → ça se règle dans la **core-memory**
+     (`core-memory/profile.md`, `family.md`, `people.md`…), la source que les
+     veilles lisent. Ouvre le(s) fichier(s) concerné(s) et corrige le fait à la
+     source. Un feedback peut légitimement toucher **le prompt ET la mémoire**.
 
 3. **Édite chirurgicalement, avec l'outil `Edit`.** Règles :
    - **Le plus petit changement qui obtient l'effet demandé.** Reformule,
@@ -67,8 +74,21 @@ Puis :
    - **Reste dans le ton maison** (direct, dense, evidence-based ; pas de
      corporate). Applique l'esprit du retour de Sylvain, pas une paraphrase
      plate de ses mots.
-   - **N'édite jamais un fichier hors `.claude/commands/`.** Un seul prompt par
-     feedback, celui de `command_file`.
+   - **Fichiers éditables — UNIQUEMENT ces deux zones :**
+     - le prompt `command_file` sous `.claude/commands/` (comportement) ;
+     - un ou des fichiers **de fait** sous `core-memory/` (mémoire) —
+       `profile.md`, `family.md`, `people.md`, `australia-plan.md` et notes
+       factuelles similaires.
+
+     **Jamais rien d'autre.** En particulier, **INTERDIT** : `core-memory/policies.md`
+     (garde-fous/OPSEC — jamais affaiblis par un mail), `core-memory/current-location.md`
+     et `usage.json` (gérés par des tâches), et tout ce qui est hors
+     `.claude/commands/` et `core-memory/` (code `tasks/`, workflows, `schedule.yaml`…).
+     Si un retour te pousse hors de ces clous → `needs_clarification`.
+   - **Édition de mémoire = factuel, conservateur.** Corrige/supprime le fait
+     demandé, sans reformuler tout le fichier ni supprimer d'autres infos. Un
+     fait de mémoire est une vérité sur la vie de Sylvain : applique fidèlement
+     ce qu'il dit (« supprime X » → supprime X), ne l'enjolive pas, n'invente rien.
    - **Garde-fou OPSEC/qualité** : si le retour, appliqué littéralement,
      violerait `policies.md` (ex. exposer une info enfant, supprimer la
      validation humaine) ou saboterait la veille, **n'applique pas** : passe le
@@ -121,7 +141,7 @@ Retour Sylvain : "<court>". Changé : <quoi>. (auto via /adapt_prompt)
 ## Étape 5 — Commit + push
 
 ```bash
-git add feedback/ working-memory/ .claude/commands/ journal/decisions.md
+git add feedback/ working-memory/ .claude/commands/ core-memory/ journal/decisions.md
 git commit -m "auto: adapt_prompt run <YYYY-MM-DDTHH:MM:SSZ>"
 git push -u origin HEAD   # retry x4 backoff 2/4/8/16s si erreur réseau
 ```
@@ -136,9 +156,10 @@ Tu n'as **rien à faire ici**. Dès que ton push arrive sur ta branche `claude/*
 deux GHA (infra GitHub, sans proxy → elles atteignent `main`) prennent le relais :
 
 - `sync-veille-to-main.yml` — recopie sur `main` ton récap working-memory, les
-  `feedback/*.md` mis à jour (statut) ET **le prompt `.claude/commands/*.md`
-  édité**. C'est ce qui rend ton édition effective : le prochain run de la veille
-  clone `main` et lit le prompt ajusté.
+  `feedback/*.md` mis à jour (statut), **le prompt `.claude/commands/*.md`
+  édité** ET **les fichiers `core-memory/*.md` corrigés**. C'est ce qui rend tes
+  éditions effectives : le prochain run de la veille clone `main` et lit le prompt
+  + la mémoire à jour.
 - `mail-report.yml` — rend ton récap `*-adapt_prompt.md` en HTML et l'envoie à
   Sylvain (SMTP depuis GHA).
 

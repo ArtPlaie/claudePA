@@ -16,11 +16,13 @@ name: sync-veille-to-main
 #
 # Étendu pour la boucle d'auto-tuning des prompts (/adapt_prompt) : on synchronise
 # aussi (a) les `feedback/*.md` mis à jour par la routine (statut pending→applied,
-# noms horodatés uniques), et (b) les `.claude/commands/*.md` édités par la
-# routine. Ces derniers ont un nom STABLE (overwrite) : c'est correct car la
-# routine est l'unique éditeur et repart toujours de `main` → recopier son
-# contenu sur `main` = last-write-wins voulu. C'est CE qui rend l'édition de
-# prompt effective (le prochain run de la veille clone `main`).
+# noms horodatés uniques), et (b) les fichiers SOURCE à nom STABLE qu'elle édite —
+# `.claude/commands/*.md` (prompts) et `core-memory/*.md` (faits mémoire). Ces
+# derniers sont recopiés par OVERWRITE, donc UNIQUEMENT quand le push est un run
+# adapt_prompt (présence d'un récap `*-adapt_prompt.md` dans le diff) : la routine
+# est alors l'unique éditeur et repart de `main` → last-write-wins voulu, et on ne
+# propage jamais par erreur les edits source d'une autre session. C'est CE qui rend
+# l'édition de prompt / mémoire effective (le prochain run clone `main`).
 
 on:
   push:
@@ -38,6 +40,7 @@ on:
       - "digests/findings.md"
       - "feedback/*.md"
       - ".claude/commands/*.md"
+      - "core-memory/*.md"
 
 permissions:
   contents: write
@@ -91,13 +94,26 @@ jobs:
               r"ai_jobs_formations|local_activities|activities_next10days|"
               r"health_watch|serendipity|adapt_prompt)\.md|"
               r"working-memory/.*-session-.*\.md)$")
-          # Fichiers de la boucle /adapt_prompt : feedback (statut) + prompts
-          # édités. Noms stables pour les commandes → recopie par overwrite.
-          EXTRA = re.compile(r"^(feedback/.*\.md|\.claude/commands/.*\.md)$")
+          # feedback/ : noms horodatés uniques (statut mis à jour) → toujours sûr.
+          FEEDBACK = re.compile(r"^feedback/.*\.md$")
+          # Fichiers SOURCE à noms STABLES (overwrite) que /adapt_prompt édite :
+          # prompts de veille + faits de core-memory. Recopiés SEULEMENT si ce
+          # push est un run adapt_prompt (présence d'un récap *-adapt_prompt.md),
+          # pour ne jamais propager par erreur des edits d'une autre session.
+          ADAPT = re.compile(r"^working-memory/.*-adapt_prompt\.md$")
+          # policies.md exclu même en run adapt (garde-fous jamais propagés
+          # par ce canal — double sécurité avec l'interdit côté command).
+          SOURCE = re.compile(
+              r"^(\.claude/commands/.*\.md|core-memory/(?!policies\.md$).*\.md)$")
 
           diff = git("diff", "--name-only", "--diff-filter=AM", before, after,
                      capture=True).stdout.splitlines()
-          report_files = [f for f in diff if PAT.match(f) or EXTRA.match(f)]
+          is_adapt_run = any(ADAPT.match(f) for f in diff)
+          report_files = [
+              f for f in diff
+              if PAT.match(f) or FEEDBACK.match(f)
+              or (is_adapt_run and SOURCE.match(f))
+          ]
           findings_changed = "digests/findings.md" in diff
           print("fichiers détectés :", report_files,
                 "| findings:", findings_changed)
