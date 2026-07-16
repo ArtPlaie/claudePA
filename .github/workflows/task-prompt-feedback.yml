@@ -4,11 +4,12 @@ name: task-prompt-feedback
 # Cf. tasks/prompt_feedback.py. Écrit des feedback/<ts>-<veille>.md (pending)
 # que la routine Claude Code /adapt_prompt applique ensuite aux prompts.
 #
-# Requiert :
-#   - GMAIL_TOKEN_PA_JSON (OAuth compte PA, scope gmail.modify — l'expéditeur
-#     des rapports, donc le destinataire des réponses)
+# Requiert (MÊMES secrets que mail-report.yml — rien de neuf à créer) :
+#   - GMAIL_USER + GMAIL_APP_PASSWORD (compte PA : SMTP envoie, IMAP lit, même
+#     mot de passe d'application ; pas d'OAuth donc rien à régénérer)
 #   - MAIL_TO (adresse de Sylvain : on n'ingère que SES réponses)
 #   - TELEGRAM_* pour la notif best-effort
+# Prérequis compte PA : IMAP activé (Gmail → Paramètres → Transfert et POP/IMAP).
 #
 # Déclenchement : cron GitHub NATIF (pas via Cloudflare Worker). Ici le délai
 # 30min-2h des crons natifs est sans importance — l'ingestion de feedback n'est
@@ -51,7 +52,8 @@ jobs:
 
       - name: Run task
         env:
-          GMAIL_TOKEN_PA_JSON: ${{ secrets.GMAIL_TOKEN_PA_JSON }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_PERSO: ${{ secrets.TELEGRAM_CHAT_PERSO }}
