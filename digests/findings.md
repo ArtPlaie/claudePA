@@ -751,3 +751,10 @@
 **Lien** : https://www.fondationbelem.com/naviguer-3
 **Pourquoi ça compte** : Le trois-mâts Belem (1896) embarque des stagiaires sans expérience sur des étapes de 1 à 12 jours (48 couchettes, tournée France + Europe). Les réservations d'une année ouvrent début décembre de l'année précédente et les belles étapes partent en quelques semaines. Idée sortie au run serendipity du 16/07 — si Sylvain veut une étape 2027, la fenêtre d'action c'est décembre 2026.
 **Suite** : rappel début décembre 2026 — vérifier l'ouverture des ventes 2027 (via weekly_briefing ou serendipity).
+
+### 2026-07-17 — Dose-réponse hypertrophie/force : compter les séries indirectes à 0,5
+**Tags** : santé, sylvain, hypertrophie, resistance-training, volume
+**Source** : health_watch
+**Lien** : https://pubmed.ncbi.nlm.nih.gov/41343037/
+**Pourquoi ça compte** : Méta-régression 67 études / 2 058 participants (Sports Medicine, fév. 2026). Le modèle qui colle le mieux pondère les séries indirectes à 0,5 et les directes à 1,0 pour prédire l'hypertrophie. Volume → hypertrophie quasi linéaire, bien moins de rendements décroissants que pour la force ; la fréquence n'ajoute quasi rien à l'hypertrophie une fois le volume égalisé. Complète les guidelines ACSM 2026 avec une méthode de comptage concrète : les tractions/rowings créditent le dos ET une demi-série biceps.
+**Suite** : info pure — à intégrer dans le comptage de volume par groupe musculaire quand tu ajustes ta prog.
