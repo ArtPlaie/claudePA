@@ -85,15 +85,20 @@ candidates** que ce que tu retiendras, puis tri impitoyable (5 super > 15
 médiocres). D'abord ramasser large pour avoir le choix, ensuite couper.
 
 **Zone géo** : déduite de `core-memory/current-location.md`. Base habituelle
-= Bois-le-Roi (77590), rayon 1h15 max porte-à-porte voiture ou RER R. Paris
-intra-muros accessible mais pas le défaut — le 77/91/78/Orléanais/89/51 ouest
-sont OK aussi. Si Sylvain est ailleurs, adapte la zone en conséquence.
+= Bois-le-Roi (77590), rayon 1h15 max porte-à-porte voiture ou RER R.
+**Priorité au 77 local** (Fontainebleau, vallée du Loing, Brie) — creuse-le en
+premier et à fond avant d'aller chercher à Paris, qui n'est plus le réflexe
+par défaut. 91/78/Orléanais/89/51 ouest en complément si le 77 est sec ce
+mois-ci. Si Sylvain est ailleurs, adapte la zone en conséquence.
 
 **Filtre dur global** : pas de brocantes lambda, pas de randos Facebook sans
 encadrement crédible, pas de spectacles enfants bas de gamme (princesses Disney
 en mall), pas d'ateliers loisirs créatifs sans dimension artistique réelle, pas
 de networking corporate creux, pas de tourist traps, pas d'escape games
-commerciaux. Toute entrée de ce type est un échec de filtre.
+commerciaux, pas de cueillette (vergers, fermes à cueillette — Sylvain s'en
+fout, ne plus en proposer), pas d'événements famille en soirée type ciné plein
+air (les gosses sont fracassés le lendemain scolaire — inenvisageable sauf si
+vraiment extraordinaire). Toute entrée de ce type est un échec de filtre.
 
 Quatre sections obligatoires, dans cet ordre :
 
@@ -106,8 +111,9 @@ Sorties compatibles 3 enfants (~2 à ~8 ans). Critères :
 - Logistique faisable (parking, accès, toilettes/change, restau ou pique-nique).
 
 Cibles canoniques à scanner via web search :
-- Fermes pédagogiques 77/91, vergers cueillette saison, événements
-  ONF/réserves naturelles (Fontainebleau, Chamarande, vallée du Loing).
+- Fermes pédagogiques 77/91, événements ONF/réserves naturelles
+  (Fontainebleau, Chamarande, vallée du Loing). Pas de cueillette (cf. filtre
+  dur global).
 - Châteaux famille avec parc (Fontainebleau, Vaux-le-Vicomte, Champs-sur-Marne,
   Courances).
 - Événements parcs régionaux (Gâtinais, Vexin, Oise-Pays-de-France).
@@ -119,6 +125,10 @@ Cibles canoniques à scanner via web search :
 Critères : expos/galeries/ateliers/spectacles de qualité, compatibles avec les
 goûts d'Isa (peinture contemporaine et figurative, thèmes astro/nature/lumière
 en bonus), accessibles en demi-journée pour Sylvain+Isa avec ou sans enfants.
+**Barre spécifique Paris** : une expo à Paris ne se propose que si elle est
+vraiment unique/événementielle (rétrospective majeure, artiste rare,
+exclusivité) — jamais une expo de plus juste parce qu'elle existe, ça fait du
+bruit pour rien. Le régional (77/91/78) n'a pas cette contrainte de rareté.
 
 Cibles canoniques à scanner :
 - Expos majeures Paris (Pompidou, Orsay, Louvre, Jeu de Paume, MAM, Petit
@@ -149,8 +159,10 @@ Cibles canoniques à scanner :
 ### D. Bonus — événements weekend famille élargie
 
 1-3 événements **datés sur un weekend précis du mois** que Sylvain peut
-bloquer à l'avance dans le calendrier (ex : "Festival ciné plein air 12-14
-juin au Domaine de Chamarande", "Nuit des étoiles 9 août au Bois de Vincennes").
+bloquer à l'avance dans le calendrier (ex : "Journées du Patrimoine 19-20
+septembre au Château de Vaux-le-Vicomte", "Fête de la nature 23-24 mai en
+forêt de Fontainebleau"). Pas d'événements en soirée type ciné plein air (cf.
+filtre dur global).
 
 **De-dup par site/lieu** : pas 3 entrées sur Fontainebleau pour un même mois
 sauf raisons distinctes.
