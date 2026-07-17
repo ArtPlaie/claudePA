@@ -6,7 +6,9 @@ command_file: .claude/commands/local_activities.md
 report_subject: 'Re: claudePA — Sorties locales (2026-07-17)'
 from_addr: sylvainribes@gmail.com
 source_message_id: <CAHuLdqYwK=t+wjdw5t7ZHAXz_RhTEs_j_V4DKYm8c1Sy=Bfv6w@mail.gmail.com>
-status: pending
+status: applied
+applied_at: '2026-07-17T09:03:32+00:00'
+applied_summary: local_activities.md édité — plus de cueillette, plus d'events famille en soirée, barre Paris art relevée (unique/événementiel only), priorité 77 local avant Paris.
 ---
 
 ## Feedback de Sylvain (réponse au rapport)

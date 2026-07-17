@@ -91,3 +91,14 @@ ajoutée sur dérogation explicite de Sylvain.
 babysitting (commit fiable, pas de faux "vert") ? Qualité du web search
 natif vs attentes ; faut-il finalement migrer aussi les 4 tasks GHA.
 
+---
+
+## 2026-07-17 — adapt_prompt : local_activities ajustée
+
+Retour Sylvain : « cinéma le soir inenvisageable, cueillette je m'en branle,
+art Paris doit être vraiment unique, essaie plus seine-et-marnais local ».
+Changé : filtre dur global durci (plus d'événements famille en soirée type
+ciné plein air, plus de cueillette), barre relevée pour les expos parisiennes
+(unique/événementiel uniquement), zone géo réordonnée pour prioriser le 77
+avant Paris. (auto via /adapt_prompt)
+
