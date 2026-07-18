@@ -11,8 +11,9 @@ DIGESTS = REPO_ROOT / "digests"
 DIGESTS_MONTHLY = DIGESTS / "monthly"
 DRAFTS = REPO_ROOT / "drafts"
 INBOX = REPO_ROOT / "inbox"
-FEEDBACK = REPO_ROOT / "feedback"
-CALENDAR = REPO_ROOT / "calendar"
+FEEDBACK = REPO_ROOT / "feedback"   # legacy (ancienne boucle prompt-only)
+REPLIES = REPO_ROOT / "replies"     # réponses brutes de Sylvain (inbox de la routine)
+CALENDAR = REPO_ROOT / "calendar"   # cycle de vie des events (requested → created)
 JOURNAL = REPO_ROOT / "journal"
 
 SCHEDULE_YAML = REPO_ROOT / "schedule.yaml"

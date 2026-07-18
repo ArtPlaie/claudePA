@@ -21,12 +21,12 @@ Les actions ci-dessous **n'ont pas besoin** de passer par `drafts/` :
 - Labellisation / archivage Gmail (sans envoi).
 - Création de drafts Gmail (visibles dans l'app, pas envoyés).
 - Ajout d'un événement (visibilité privée) dans le calendar perso de
-  Sylvain. Inclut la **création directe** d'un event par la tâche
-  `prompt_feedback` quand Sylvain le demande dans une **réponse mail
-  explicite** à un rapport (« réserve X samedi 14h ») : sa réponse EST
+  Sylvain. Inclut la création d'un event quand Sylvain le demande dans une
+  **réponse mail explicite** à un rapport (« réserve X samedi 14h ») : la
+  routine `/adapt_prompt` le décide (résout la date), la tâche
+  `prompt_feedback` l'exécute via l'API Calendar. Sa réponse EST
   l'instruction humaine, pas besoin de re-valider. Agenda privé,
-  réversible. (Extraction date/heure via LLM ; si illisible → notif, pas
-  de création.)
+  réversible. Si la date est ambiguë → pas d'event, on demande à Sylvain.
 - Ajout d'entrées dans `digests/findings.md`.
 - Mise à jour de `core-memory/current-location.md` par la tâche
   `location_context`.

@@ -39,6 +39,8 @@ on:
       - "working-memory/*-session-*.md"
       - "digests/findings.md"
       - "feedback/*.md"
+      - "replies/*.md"
+      - "calendar/*.md"
       - ".claude/commands/*.md"
       - "core-memory/*.md"
 
@@ -94,8 +96,9 @@ jobs:
               r"ai_jobs_formations|local_activities|activities_next10days|"
               r"health_watch|serendipity|adapt_prompt)\.md|"
               r"working-memory/.*-session-.*\.md)$")
-          # feedback/ : noms horodatés uniques (statut mis à jour) → toujours sûr.
-          FEEDBACK = re.compile(r"^feedback/.*\.md$")
+          # feedback/replies/calendar : noms horodatés uniques (statut mis à
+          # jour, events en file) → recopie sûre (pas d'écrasement croisé).
+          UNIQUE = re.compile(r"^(feedback|replies|calendar)/.*\.md$")
           # Fichiers SOURCE à noms STABLES (overwrite) que /adapt_prompt édite :
           # prompts de veille + faits de core-memory. Recopiés SEULEMENT si ce
           # push est un run adapt_prompt (présence d'un récap *-adapt_prompt.md),
@@ -111,7 +114,7 @@ jobs:
           is_adapt_run = any(ADAPT.match(f) for f in diff)
           report_files = [
               f for f in diff
-              if PAT.match(f) or FEEDBACK.match(f)
+              if PAT.match(f) or UNIQUE.match(f)
               or (is_adapt_run and SOURCE.match(f))
           ]
           findings_changed = "digests/findings.md" in diff
