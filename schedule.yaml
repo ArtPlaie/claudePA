@@ -39,10 +39,10 @@ tasks:
     enabled: true
 
   prompt_feedback:
-    description: "Ingestion des réponses de Sylvain aux mails de rapport (inbox PA) → feedback/*.md pending pour la routine /adapt_prompt."
+    description: "Routeur des réponses aux mails de rapport (inbox PA, IMAP) : classe → feedback/*.md (prompt/mémoire) OU création directe d'event agenda (Calendar API)."
     cron: "17 */3 * * *"  # toutes les 3h — cron NATIF GH (délai OK), pas via CF Worker
     channel: perso
-    enabled: true         # GHA Python (Chemin B) : lit Gmail PA, pas de LLM
+    enabled: true         # GHA Python (Chemin B) : IMAP lecture + Calendar écriture + LLM classif
 
   # Routine Claude Code (Chemin A) — pas gérée par schedule.py/run_guarded,
   # tourne selon sa config UI claude.ai/code/routines. Entrée indicative :
