@@ -67,18 +67,42 @@ Tu en as besoin pour le script. Deux cas :
 `client_secret_....json` dans tes Téléchargements) → note son chemin, passe à
 l'étape 4.
 
-**Cas B — tu l'as perdu** → re-télécharge-le (le même client marche pour
-Calendar, pas besoin d'en créer un nouveau, mais tu peux) :
-1. **APIs & Services** → **Credentials** (« Identifiants »).
-2. Sous **OAuth 2.0 Client IDs**, tu dois voir une entrée type **Desktop**
-   (« Ordinateur de bureau »), genre `claudepa-cli`.
-   - Si elle existe : clique l'icône ⬇️ (Download) au bout de la ligne →
-     **Download JSON**.
-   - Si elle n'existe pas : **+ CREATE CREDENTIALS** → **OAuth client ID** →
-     Application type = **Desktop app** → Name `claudepa-cli` → **Create** →
-     **Download JSON**.
-3. Enregistre le fichier en local, par ex. `~/oauth-client.json`. **Ne le
-   commit jamais.**
+**Cas B — tu l'as perdu.** ⚠️ La **nouvelle** console Google (« Google Auth
+Platform ») a **retiré le "Download JSON"** pour les clients existants : la page
+du client affiche « Viewing and downloading client secrets is no longer
+available ». Tu ne peux donc plus re-télécharger le fichier. Deux options :
+
+- **Option 1 (recommandée) — reconstruire le JSON à la main.** Il te faut le
+  client_id (visible sur la page du client) et un client_secret complet :
+  1. Page du client (**Credentials** → clique `claudepa-cli`) → section **Client
+     secrets** → **+ Add secret**. Un nouveau secret s'affiche **en entier une
+     seule fois** → copie-le. (L'ancien secret masqué continue de marcher, en
+     ajouter un nouveau ne casse rien.)
+  2. Crée `~/oauth-client.json` avec ce contenu (remplace client_id, project_id
+     et le secret par les tiens) :
+
+     ```json
+     {
+       "installed": {
+         "client_id": "XXXXXX␣.apps.googleusercontent.com",
+         "project_id": "claudepa-XXXXXX",
+         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+         "token_uri": "https://oauth2.googleapis.com/token",
+         "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+         "client_secret": "GOCSPX-xxxx",
+         "redirect_uris": ["http://localhost"]
+       }
+     }
+     ```
+
+     C'est le format exact attendu par `from_client_secrets_file`.
+- **Option 2 — créer un nouveau client Desktop.** **+ CREATE CREDENTIALS** →
+  **OAuth client ID** → Application type = **Desktop app** → Create. À la
+  création (et seulement là), la nouvelle UI propose parfois encore un
+  téléchargement du JSON ; sinon, reconstruis-le comme en Option 1 avec le
+  client_id + secret du nouveau client.
+
+**Ne commit jamais ce fichier.**
 
 ---
 
