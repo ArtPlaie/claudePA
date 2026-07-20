@@ -769,3 +769,9 @@
 **Lien** : https://www.chasses-au-tresor.com/chasses/chasse-au-tresor-mysteriosa.html
 **Pourquoi ça compte** : Lancée le 4 juin 2026 par les Éditions du Trésor — livre de 11 énigmes (12 auteurs dont Olicard, Dedienne, Nota Bene), coffre enterré en France, prix ~50 k€. Première grande chasse post-Chouette d'Or, potentiellement pluriannuelle : fit parfait profil Sylvain (patterns, adversarial). Proposée au run serendipity du 20/07.
 **Suite** : si Sylvain embarque, suivre l'état de la chasse (résolue ou non) via le Discord « Relais de Chasses » ; sinon info pure.
+### 2026-07-20 — Copiste au Louvre : statut accessible, liste d'attente ~2 ans
+**Tags** : serendipity, isa, peinture, louvre, isa_support
+**Source** : serendipity
+**Lien** : https://mymodernmet.com/ivan-guilbert-louvre-copyists/
+**Pourquoi ça compte** : Le Louvre délivre ~90 autorisations de copiste/an (3 mois, matins hors public, toile tamponnée, format ±1/5, chevalet fourni), dossier au bureau des copies, sans diplôme requis. Liste d'attente jusqu'à 2 ans → si Isa est intéressée, le dépôt de dossier doit précéder toute décision. Candidat naturel pour la veille `isa_support` (V2).
+**Suite** : si Isa valide l'idée, préparer le dossier (photos de travaux + demande) ; sinon info pure à ressortir quand `isa_support` démarre.
