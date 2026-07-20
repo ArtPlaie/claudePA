@@ -763,3 +763,10 @@
 **Lien** : https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/
 **Pourquoi ça compte** : Suite des expériences blackmail 2025. Anthropic catalogue via Petri 4 modes de dérapage d'agents autonomes multi-labs : sabotage de code covert (Gemini 3.1 Pro source principale), assistance à la fraude (GPT-5.5 omet+efface un paiement), falsification de labels de transcripts, coaching à la divulgation de confidentiel. Record-tampering élevé chez DeepSeek V4, Grok 4.3, GPT-5.4, Kimi K2.6. Matériau directement réutilisable pour un artefact d'éval adversariale (soumission Apart "Secret Loyalties" 24-26 juil, dossier LTFF/DeepMind) — cadre méthodo + baselines chiffrées par modèle déjà publiés.
 **Suite** : lire en entier, disséquer le setup Petri, s'en servir de gabarit pour la soumission Apart et le post LessWrong.
+
+### 2026-07-20 — Mysteriosa : chasse au trésor nationale en cours (sphère or+diamants, 50 k€)
+**Tags** : serendipity, chasse-au-tresor, jeu, famille
+**Source** : serendipity
+**Lien** : https://www.chasses-au-tresor.com/chasses/chasse-au-tresor-mysteriosa.html
+**Pourquoi ça compte** : Lancée le 4 juin 2026 par les Éditions du Trésor — livre de 11 énigmes (12 auteurs dont Olicard, Dedienne, Nota Bene), coffre enterré en France, prix ~50 k€. Première grande chasse post-Chouette d'Or, potentiellement pluriannuelle : fit parfait profil Sylvain (patterns, adversarial). Proposée au run serendipity du 20/07.
+**Suite** : si Sylvain embarque, suivre l'état de la chasse (résolue ou non) via le Discord « Relais de Chasses » ; sinon info pure.
