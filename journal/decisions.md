@@ -91,3 +91,12 @@ ajoutée sur dérogation explicite de Sylvain.
 babysitting (commit fiable, pas de faux "vert") ? Qualité du web search
 natif vs attentes ; faut-il finalement migrer aussi les 4 tasks GHA.
 
+---
+
+## 2026-07-20 — adapt_prompt : serendipity ajustée
+Retour Sylvain : "pas que des trucs à faire, ras-le-bol du grandiloquent
+('boss', armoiries), et la structure Hook ça me fait chier". Fait : scope
+élargi aux idées pures (pas juste activités/events), garde-fou de ton ajouté
+(traiter comme un pote normal, pas de callback exploits/pompeux), structure
+"Hook" retirée du format de sortie. (auto via /adapt_prompt)
+
