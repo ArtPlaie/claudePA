@@ -775,3 +775,9 @@
 **Lien** : https://mymodernmet.com/ivan-guilbert-louvre-copyists/
 **Pourquoi ça compte** : Le Louvre délivre ~90 autorisations de copiste/an (3 mois, matins hors public, toile tamponnée, format ±1/5, chevalet fourni), dossier au bureau des copies, sans diplôme requis. Liste d'attente jusqu'à 2 ans → si Isa est intéressée, le dépôt de dossier doit précéder toute décision. Candidat naturel pour la veille `isa_support` (V2).
 **Suite** : si Isa valide l'idée, préparer le dossier (photos de travaux + demande) ; sinon info pure à ressortir quand `isa_support` démarre.
+### 2026-07-24 — Château de Rosa Bonheur (Thomery) : festival annuel + atelier, à 15 min
+**Tags** : local, isa, peinture, festival, lieu
+**Source** : local_activities
+**Lien** : https://www.chateau-rosa-bonheur.fr/festival-rosa-bonheur
+**Pourquoi ça compte** : À un quart d'heure de Bois-le-Roi, le château où Rosa Bonheur (plus grande peintre animalière du XIXe) a vécu 40 ans : atelier préservé visitable toute l'année (très Isa), salon de thé, et chaque été le Festival Rosa Bonheur (concerts dédiés à la création féminine dans le parc, 7e édition en 2026, juillet-août). Lieu + rendez-vous annuel à ressortir chaque début d'été.
+**Suite** : info pure — à re-proposer chaque année en juin quand la programmation du festival tombe.
