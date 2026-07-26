@@ -781,3 +781,9 @@
 **Lien** : https://www.chateau-rosa-bonheur.fr/festival-rosa-bonheur
 **Pourquoi ça compte** : À un quart d'heure de Bois-le-Roi, le château où Rosa Bonheur (plus grande peintre animalière du XIXe) a vécu 40 ans : atelier préservé visitable toute l'année (très Isa), salon de thé, et chaque été le Festival Rosa Bonheur (concerts dédiés à la création féminine dans le parc, 7e édition en 2026, juillet-août). Lieu + rendez-vous annuel à ressortir chaque début d'été.
 **Suite** : info pure — à re-proposer chaque année en juin quand la programmation du festival tombe.
+### 2026-07-26 — Incendies 2026 en forêt de Fontainebleau : ~2 000 ha, pire depuis 1863
+**Tags** : local, seine-et-marne, environnement, sécurité, foret-fontainebleau
+**Source** : weekly_briefing
+**Lien** : https://fr.wikipedia.org/wiki/Incendies_de_2026_en_for%C3%AAt_de_Fontainebleau
+**Pourquoi ça compte** : Feu parti le 12 juillet, fixé le 14, ~2 000 ha parcourus sur le massif de Fontainebleau et des Trois-Pignons — le plus grave depuis le début des relevés (1863). 800 pompiers mobilisés, plan d'action forêts lancé par la Région IdF. Massif adjacent à Bois-le-Roi : impact direct sur accès forêt (arrêt R Fontainebleau-Forêt suspendu), qualité de l'air en épisode caniculaire, et risque incendie récurrent à surveiller chaque été. Point de bascule sur la gestion des forêts franciliennes.
+**Suite** : suivre la réouverture des zones fermées et le plan Région IdF ; ressortir le risque feu au démarrage de chaque été (juin) pour les veilles activités famille.
