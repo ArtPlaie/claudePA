@@ -787,3 +787,9 @@
 **Lien** : https://fr.wikipedia.org/wiki/Incendies_de_2026_en_for%C3%AAt_de_Fontainebleau
 **Pourquoi ça compte** : Feu parti le 12 juillet, fixé le 14, ~2 000 ha parcourus sur le massif de Fontainebleau et des Trois-Pignons — le plus grave depuis le début des relevés (1863). 800 pompiers mobilisés, plan d'action forêts lancé par la Région IdF. Massif adjacent à Bois-le-Roi : impact direct sur accès forêt (arrêt R Fontainebleau-Forêt suspendu), qualité de l'air en épisode caniculaire, et risque incendie récurrent à surveiller chaque été. Point de bascule sur la gestion des forêts franciliennes.
 **Suite** : suivre la réouverture des zones fermées et le plan Région IdF ; ressortir le risque feu au démarrage de chaque été (juin) pour les veilles activités famille.
+### 2026-07-27 — Morilles de feu 2027 dans la cicatrice de l'incendie de Fontainebleau
+**Tags** : serendipity, foret-fontainebleau, cueillette, calendrier, ecologie
+**Source** : serendipity
+**Lien** : https://www.aujardin.info/fiches/champignons-incendies.php
+**Pourquoi ça compte** : Les morilles sont pyrophiles — elles fructifient au premier printemps suivant un incendie de moyenne intensité, sur sols mis à nu en terrain sableux (profil exact du massif de Fontainebleau, ~2 000 ha brûlés en juillet 2026, cf. finding du 26/07). Le printemps 2027 devrait donc offrir une flush exceptionnelle dans les zones brûlées rouvertes — phénomène ponctuel, non reproductible avant le prochain grand feu. Exercice de calibration (carte de sévérité de brûlage × exposition × pluie) qui colle au profil de Sylvain.
+**Suite** : rappel mars-avril 2027 — vérifier les arrêtés de réouverture des parcelles avant toute sortie ; ressortir l'idée via serendipity ou activities_next10days au bon créneau.
