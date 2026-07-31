@@ -793,3 +793,9 @@
 **Lien** : https://www.aujardin.info/fiches/champignons-incendies.php
 **Pourquoi ça compte** : Les morilles sont pyrophiles — elles fructifient au premier printemps suivant un incendie de moyenne intensité, sur sols mis à nu en terrain sableux (profil exact du massif de Fontainebleau, ~2 000 ha brûlés en juillet 2026, cf. finding du 26/07). Le printemps 2027 devrait donc offrir une flush exceptionnelle dans les zones brûlées rouvertes — phénomène ponctuel, non reproductible avant le prochain grand feu. Exercice de calibration (carte de sévérité de brûlage × exposition × pluie) qui colle au profil de Sylvain.
 **Suite** : rappel mars-avril 2027 — vérifier les arrêtés de réouverture des parcelles avant toute sortie ; ressortir l'idée via serendipity ou activities_next10days au bon créneau.
+### 2026-07-31 — Fête de la Moisson de Provins : fête agricole annuelle fin août
+**Tags** : local, famille, annuel, provins, traditions
+**Source** : local_activities
+**Lien** : https://www.provins-fete-moisson.org/
+**Pourquoi ça compte** : Fête de la Moisson à Provins (ville haute), 53e édition le 23 août 2026 — reconstitutions des travaux agricoles 1870-1950, battage à l'ancienne, attelages, folklore, tenue par les habitants depuis 50+ ans. L'anti-fête-médiévale-cliché, très famille. Se tient chaque année autour du dernier dimanche d'août. Distincte des Médiévales de Provins (juin, cf. finding du 11/06).
+**Suite** : info pure — à remettre dans la sélection local_activities chaque mois d'août.
