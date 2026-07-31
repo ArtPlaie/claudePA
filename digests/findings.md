@@ -793,3 +793,9 @@
 **Lien** : https://www.aujardin.info/fiches/champignons-incendies.php
 **Pourquoi ça compte** : Les morilles sont pyrophiles — elles fructifient au premier printemps suivant un incendie de moyenne intensité, sur sols mis à nu en terrain sableux (profil exact du massif de Fontainebleau, ~2 000 ha brûlés en juillet 2026, cf. finding du 26/07). Le printemps 2027 devrait donc offrir une flush exceptionnelle dans les zones brûlées rouvertes — phénomène ponctuel, non reproductible avant le prochain grand feu. Exercice de calibration (carte de sévérité de brûlage × exposition × pluie) qui colle au profil de Sylvain.
 **Suite** : rappel mars-avril 2027 — vérifier les arrêtés de réouverture des parcelles avant toute sortie ; ressortir l'idée via serendipity ou activities_next10days au bon créneau.
+### 2026-07-31 — GLP-1 : l'activité physique BAISSE sous traitement (données portables)
+**Tags** : santé, sylvain, glp-1, masse-musculaire, activité-physique, obésité
+**Source** : health_watch
+**Lien** : https://www.endocrine.org/news-and-advocacy/news-room/2026/maharjan-press-release-endo-2026
+**Pourquoi ça compte** : Cohorte All of Us (NIH) × Fitbit, n=753 sur GLP-1. Pré/post : pas 5 047→4 487/j, activité modérée-vigoureuse 28→22 min/j, aucun rebond tiré par la perte de poids. Fait comportemental gênant qui aggrave le débat masse maigre : la population qui devrait le plus préserver son muscle par le training est celle qui bouge moins. Contrepoint solide (S-LITE, RCT tirzépatide+résistance) : c'est de l'adhérence, pas une fatalité pharmaco. Observationnel (pas de DXA).
+**Suite** : info pure — point d'ancrage pour la veille GLP-1 × muscle ; surveiller RCT avec composition corporelle mesurée.
