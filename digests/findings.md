@@ -799,3 +799,9 @@
 **Lien** : https://www.endocrine.org/news-and-advocacy/news-room/2026/maharjan-press-release-endo-2026
 **Pourquoi ça compte** : Cohorte All of Us (NIH) × Fitbit, n=753 sur GLP-1. Pré/post : pas 5 047→4 487/j, activité modérée-vigoureuse 28→22 min/j, aucun rebond tiré par la perte de poids. Fait comportemental gênant qui aggrave le débat masse maigre : la population qui devrait le plus préserver son muscle par le training est celle qui bouge moins. Contrepoint solide (S-LITE, RCT tirzépatide+résistance) : c'est de l'adhérence, pas une fatalité pharmaco. Observationnel (pas de DXA).
 **Suite** : info pure — point d'ancrage pour la veille GLP-1 × muscle ; surveiller RCT avec composition corporelle mesurée.
+### 2026-07-31 — Fête de la Moisson de Provins : fête agricole annuelle fin août
+**Tags** : local, famille, annuel, provins, traditions
+**Source** : local_activities
+**Lien** : https://www.provins-fete-moisson.org/
+**Pourquoi ça compte** : Fête de la Moisson à Provins (ville haute), 53e édition le 23 août 2026 — reconstitutions des travaux agricoles 1870-1950, battage à l'ancienne, attelages, folklore, tenue par les habitants depuis 50+ ans. L'anti-fête-médiévale-cliché, très famille. Se tient chaque année autour du dernier dimanche d'août. Distincte des Médiévales de Provins (juin, cf. finding du 11/06).
+**Suite** : info pure — à remettre dans la sélection local_activities chaque mois d'août.
