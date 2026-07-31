@@ -5,7 +5,9 @@ veille: local_activities
 report_subject: 'Re: claudePA — Sorties locales (2026-07-31)'
 from_addr: sylvainribes@gmail.com
 source_message_id: <CAHuLdqYdwnr1o9YyW0KQKyg_5jJJ0NTJ4Kq8PFema8AGy=GUZA@mail.gmail.com>
-status: pending
+status: done
+done_at: '2026-07-31T16:02:00+02:00'
+actions_summary: Event mis en file pour le weekend de reconstitution 14-18 (Musée de la Grande Guerre, Meaux, 5-6 septembre 9h30-18h).
 ---
 
 ## Réponse de Sylvain
