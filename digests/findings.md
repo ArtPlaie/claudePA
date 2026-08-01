@@ -805,3 +805,15 @@
 **Lien** : https://www.provins-fete-moisson.org/
 **Pourquoi ça compte** : Fête de la Moisson à Provins (ville haute), 53e édition le 23 août 2026 — reconstitutions des travaux agricoles 1870-1950, battage à l'ancienne, attelages, folklore, tenue par les habitants depuis 50+ ans. L'anti-fête-médiévale-cliché, très famille. Se tient chaque année autour du dernier dimanche d'août. Distincte des Médiévales de Provins (juin, cf. finding du 11/06).
 **Suite** : info pure — à remettre dans la sélection local_activities chaque mois d'août.
+### 2026-08-01 — RRV subclass 155 : frais triplés au 1er juillet (490 → 1 475 AUD)
+**Tags** : sydney, visa, pr, travel-facility, couts
+**Source** : sydney_opportunities
+**Lien** : https://www.jrmigration.com.au/blog/resident-return-visa-fee-increase-july-2026
+**Pourquoi ça compte** : Le renouvellement du travel facility (RRV 155/157) est passé de 490 à 1 475 AUD au 1er juillet 2026 (+201 %), tarif fixé à la date de dépôt. Impact direct sur le plan Australie : le renouvellement se budgète au nouveau tarif, et la date d'expiration du travel facility de Sylvain n'est toujours pas renseignée dans `core-memory/australia-plan.md` — c'est le prérequis de tout voyage (ex. NeurIPS Sydney en décembre).
+**Suite** : retrouver la date d'expiration exacte (check VEVO, 5 min) et la consigner dans australia-plan.md ; budgéter 1 475 AUD.
+### 2026-08-01 — Harmony Intelligence : employeur cible évals sur fuseau Sydney (EOI ouverte)
+**Tags** : sydney, ai-safety, job, evals, employeur-cible
+**Source** : sydney_opportunities
+**Lien** : https://harmonyintelligence.com/careers
+**Pourquoi ça compte** : Boîte AI safety commerciale remote-first qui embauche sur SF/Sydney/Melbourne/Tokyo — évals de capacités dangereuses (cyber, biosec, persuasion, self-exfiltration), rôle type « Founding Research Engineer ». Pas d'ouverture active au 01/08 mais les postes reviennent par vagues (levées) et la page careers accepte les expressions d'intérêt. Une des très rares structures d'évals du fuseau Sydney : à surveiller en continu dans la fenêtre du move.
+**Suite** : déposer une EOI ; re-checker les openings à chaque run sydney_opportunities.
