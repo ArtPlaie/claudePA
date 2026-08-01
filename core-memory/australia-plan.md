@@ -52,4 +52,4 @@ Relocalisation **uniquement si** poste ou formation très intéressant
 > Append-only. Les findings importants remontent aussi dans
 > `digests/findings.md`.
 
-(vide pour l'instant)
+- [2026-08-01] Harmony Intelligence — évals capacités dangereuses, remote-first fuseau Sydney (SF/Sydney/Melbourne/Tokyo) — pas d'ouverture active, EOI déposable via https://harmonyintelligence.com/careers — employeur cible.
