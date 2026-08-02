@@ -829,3 +829,10 @@
 **Lien** : https://effectivealtruism.org.au/get-involved/eagx/
 **Pourquoi ça compte** : Les deux points d'entrée réseau AU de fin 2026 tombent à une semaine d'écart — une quinzaine nov-déc couvre EAGx Melbourne (communauté safety AU/NZ) puis NeurIPS Sydney (déjà ciblé pour un scoping famille, finding du 08/06). Fenêtre alignée avec l'horizon move 6-18 mois. Prérequis bloquant : renouvellement du travel facility PR (RRV, 1 475 AUD depuis juillet — finding du 01/08).
 **Suite** : caler le créneau nov-déc au planning famille, régler le RRV avant toute réservation, candidater EAGx à l'ouverture des inscriptions.
+
+### 2026-08-02 — EU AI Act : enforcement GPAI exécutoire (fin période d'ajustement)
+**Tags** : ai-policy, eu-ai-act, gpai, compliance
+**Source** : weekly_briefing
+**Lien** : https://artificialintelligenceact.eu/enforcement-of-chapter-v-under-the-eu-ai-act/
+**Pourquoi ça compte** : Bascule du régime UE de "voluntary" à répressif — la Commission peut désormais réclamer la doc, évaluer les modèles, ordonner des correctifs, retirer du marché et sanctionner jusqu'à 3 % du CA mondial ou 15 M€. Distinct de l'entrée du 14/06 (qui portait sur la consultation guidelines HRAI) : c'est la date d'exécution effective des obligations GPAI. Créneau gouvernance/policy IA qui se durcit — pertinent pour un angle carrière policy/eval côté UE.
+**Suite** : surveiller qui signe le Code of Practice et la première action d'enforcement réelle de l'AI Office.
