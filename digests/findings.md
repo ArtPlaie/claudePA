@@ -817,3 +817,15 @@
 **Lien** : https://harmonyintelligence.com/careers
 **Pourquoi ça compte** : Boîte AI safety commerciale remote-first qui embauche sur SF/Sydney/Melbourne/Tokyo — évals de capacités dangereuses (cyber, biosec, persuasion, self-exfiltration), rôle type « Founding Research Engineer ». Pas d'ouverture active au 01/08 mais les postes reviennent par vagues (levées) et la page careers accepte les expressions d'intérêt. Une des très rares structures d'évals du fuseau Sydney : à surveiller en continu dans la fenêtre du move.
 **Suite** : déposer une EOI ; re-checker les openings à chaque run sydney_opportunities.
+### 2026-08-02 — MATS Winter 2027 : candidatures ouvrent mi-août
+**Tags** : ai-safety, formation, mats, deadline
+**Source** : ai_jobs_formations
+**Lien** : https://www.matsprogram.org/apply
+**Pourquoi ça compte** : Après avoir manqué Autumn 2026 de 4 jours (finding du 11/06), la fenêtre visée s'ouvre : les candidatures Winter 2027 ouvrent mi-août 2026. Programme le plus structurant du pipeline formation ; les fenêtres MATS durent typiquement ~6 semaines, donc la candidature se joue août-septembre.
+**Suite** : surveiller la page dès mi-août, candidater tôt ; le dossier AIAF (5 liens de travaux + pitch recherche indépendante) se réutilise tel quel.
+### 2026-08-02 — EAGxAustralasia (Melbourne 27-29 nov) + NeurIPS Sydney (6-12 déc) : un seul voyage
+**Tags** : sydney, australie, reseau, conference, planning
+**Source** : ai_jobs_formations
+**Lien** : https://effectivealtruism.org.au/get-involved/eagx/
+**Pourquoi ça compte** : Les deux points d'entrée réseau AU de fin 2026 tombent à une semaine d'écart — une quinzaine nov-déc couvre EAGx Melbourne (communauté safety AU/NZ) puis NeurIPS Sydney (déjà ciblé pour un scoping famille, finding du 08/06). Fenêtre alignée avec l'horizon move 6-18 mois. Prérequis bloquant : renouvellement du travel facility PR (RRV, 1 475 AUD depuis juillet — finding du 01/08).
+**Suite** : caler le créneau nov-déc au planning famille, régler le RRV avant toute réservation, candidater EAGx à l'ouverture des inscriptions.
