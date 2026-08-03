@@ -835,3 +835,15 @@
 **Lien** : https://artificialintelligenceact.eu/enforcement-of-chapter-v-under-the-eu-ai-act/
 **Pourquoi ça compte** : Bascule du régime UE de "voluntary" à répressif — la Commission peut désormais réclamer la doc, évaluer les modèles, ordonner des correctifs, retirer du marché et sanctionner jusqu'à 3 % du CA mondial ou 15 M€. Distinct de l'entrée du 14/06 (qui portait sur la consultation guidelines HRAI) : c'est la date d'exécution effective des obligations GPAI. Créneau gouvernance/policy IA qui se durcit — pertinent pour un angle carrière policy/eval côté UE.
 **Suite** : surveiller qui signe le Code of Practice et la première action d'enforcement réelle de l'AI Office.
+### 2026-08-03 — Stade nautique olympique de Vaires-Torcy : la rivière des JO ouverte au public
+**Tags** : serendipity, local, sport, famille, ressource-permanente
+**Source** : serendipity
+**Lien** : https://vaires-torcy.iledeloisirs.fr/stade-nautique/
+**Pourquoi ça compte** : Le bassin de slalom de Paris 2024 (plus grande rivière artificielle d'Europe), à ~35 min de Bois-le-Roi, propose du rafting encadré grand public le week-end (31 €/pers, dès 10 ans, résa en ligne). Ressource permanente : sortie à deux dès maintenant, et activité à ressortir quand Anna atteint 10 ans (~2028).
+**Suite** : re-proposer via activities_next10days aux beaux jours ; rappel quand Anna a 10 ans.
+### 2026-08-03 — Artothèques : emprunter des œuvres d'art originales comme des livres
+**Tags** : serendipity, isa, art, ressource-permanente
+**Source** : serendipity
+**Lien** : https://www.kremlinbicetre.fr/loisirs-sorties/culture/artotheque/
+**Pourquoi ça compte** : 70-80 artothèques en France prêtent des œuvres originales (estampes, photos, peintures) aux particuliers pour quelques dizaines d'euros par an (ex. vérifié : Kremlin-Bicêtre, 16,55 €/an/famille, une œuvre tous les 2 mois ; celle de Melun est hélas réservée aux scolaires). Pertinent en continu pour Isa (peintre) : de l'art original en rotation à la maison. Concept à recycler pour la veille isa_support (V2).
+**Suite** : si l'idée prend, chercher l'artothèque ouverte aux particuliers la plus proche du 77.
