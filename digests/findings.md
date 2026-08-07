@@ -859,3 +859,9 @@
 **Lien** : https://pmc.ncbi.nlm.nih.gov/articles/PMC12777911/
 **Pourquoi ça compte** : Méta-régression dose-réponse (61 essais, 1 457 participants, déc. 2025). (1) Les sujets entraînés gagnent PLUS de masse maigre que les débutants (~1,82 vs 1,23 kg) — la créatine ne « sature » pas avec le niveau d'entraînement. (2) Aucune relation dose-réponse sur la FFM : plus de grammes = plus de poids d'eau, pas plus de muscle. Codifie deux réponses pratiques : dose d'entretien 3–5 g/j suffit, charger/empiler n'ajoute rien côté tissu maigre. Effet fiable en direction, amplitude bruitée (mesures FFM hétérogènes).
 **Suite** : info pure — confirme la ligne actuelle (entretien 3–5 g/j), pas de changement de protocole.
+### 2026-08-07 — Air Legend : meeting aérien majeur annuel à Melun-Villaroche
+**Tags** : local, famille, événement-annuel
+**Source** : local_activities
+**Lien** : https://airlegend.fr/
+**Pourquoi ça compte** : Un des plus gros meetings aériens d'Europe (warbirds, B-17, Rafale, Patrouille de France) se tient chaque année début septembre à l'aérodrome de Melun-Villaroche, à ~20 min de Bois-le-Roi. Gratuit pour les moins de 9 ans, tarif de lancement contingenté (30 € en 2026). Taillé famille complète, l'un des rares événements d'envergure nationale à distance quasi nulle.
+**Suite** : info pure — à remettre dans la sélection chaque année dès l'ouverture de la billetterie (printemps).
