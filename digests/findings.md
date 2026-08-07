@@ -847,3 +847,9 @@
 **Lien** : https://www.kremlinbicetre.fr/loisirs-sorties/culture/artotheque/
 **Pourquoi ça compte** : 70-80 artothèques en France prêtent des œuvres originales (estampes, photos, peintures) aux particuliers pour quelques dizaines d'euros par an (ex. vérifié : Kremlin-Bicêtre, 16,55 €/an/famille, une œuvre tous les 2 mois ; celle de Melun est hélas réservée aux scolaires). Pertinent en continu pour Isa (peintre) : de l'art original en rotation à la maison. Concept à recycler pour la veille isa_support (V2).
 **Suite** : si l'idée prend, chercher l'artothèque ouverte aux particuliers la plus proche du 77.
+### 2026-08-07 — Air Legend : meeting aérien majeur annuel à Melun-Villaroche
+**Tags** : local, famille, événement-annuel
+**Source** : local_activities
+**Lien** : https://airlegend.fr/
+**Pourquoi ça compte** : Un des plus gros meetings aériens d'Europe (warbirds, B-17, Rafale, Patrouille de France) se tient chaque année début septembre à l'aérodrome de Melun-Villaroche, à ~20 min de Bois-le-Roi. Gratuit pour les moins de 9 ans, tarif de lancement contingenté (30 € en 2026). Taillé famille complète, l'un des rares événements d'envergure nationale à distance quasi nulle.
+**Suite** : info pure — à remettre dans la sélection chaque année dès l'ouverture de la billetterie (printemps).
