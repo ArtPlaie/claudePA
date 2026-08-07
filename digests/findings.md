@@ -847,3 +847,15 @@
 **Lien** : https://www.kremlinbicetre.fr/loisirs-sorties/culture/artotheque/
 **Pourquoi ça compte** : 70-80 artothèques en France prêtent des œuvres originales (estampes, photos, peintures) aux particuliers pour quelques dizaines d'euros par an (ex. vérifié : Kremlin-Bicêtre, 16,55 €/an/famille, une œuvre tous les 2 mois ; celle de Melun est hélas réservée aux scolaires). Pertinent en continu pour Isa (peintre) : de l'art original en rotation à la maison. Concept à recycler pour la veille isa_support (V2).
 **Suite** : si l'idée prend, chercher l'artothèque ouverte aux particuliers la plus proche du 77.
+### 2026-08-07 — Cochrane 2025 : alternatives non-ATB dans l'OMC suppurée (le topique domine)
+**Tags** : santé, isa, ORL, non-ATB, cochrane, otite, topique
+**Source** : health_watch
+**Lien** : https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013056.pub3/full
+**Pourquoi ça compte** : Deux revues Cochrane liées (2025) sur l'otite moyenne chronique suppurée. Antiseptiques topiques seuls (CD013055) : acide borique + méchage et povidone iodée > placebo, preuve faible. Head-to-head (CD013056, 15 études / 2 371 patients) : les quinolones EN GOUTTES battent l'acide borique pour tarir l'otorrhée. Point clé pour la contrainte d'Isa : le comparateur gagnant est un ATB TOPIQUE (gouttes auriculaires), pas systémique — donc le traitement le mieux étayé de cette indication est déjà dans le périmètre autorisé, les antiseptiques étant le plan B à preuve plus faible. Certitude GRADE basse à très basse.
+**Suite** : contingent — pertinent seulement si otorrhée chronique / OMC suppurée avérée chez Isa. Si oui, cadre le choix : quinolone topique en 1re intention, antiseptiques (borique/povidone) en repli, zéro ATB systémique nécessaire.
+### 2026-08-07 — Créatine : efficace même entraîné, pas de dose-réponse sur la masse maigre
+**Tags** : santé, sylvain, hypertrophie, créatine, supplément, dose-réponse
+**Source** : health_watch
+**Lien** : https://pmc.ncbi.nlm.nih.gov/articles/PMC12777911/
+**Pourquoi ça compte** : Méta-régression dose-réponse (61 essais, 1 457 participants, déc. 2025). (1) Les sujets entraînés gagnent PLUS de masse maigre que les débutants (~1,82 vs 1,23 kg) — la créatine ne « sature » pas avec le niveau d'entraînement. (2) Aucune relation dose-réponse sur la FFM : plus de grammes = plus de poids d'eau, pas plus de muscle. Codifie deux réponses pratiques : dose d'entretien 3–5 g/j suffit, charger/empiler n'ajoute rien côté tissu maigre. Effet fiable en direction, amplitude bruitée (mesures FFM hétérogènes).
+**Suite** : info pure — confirme la ligne actuelle (entretien 3–5 g/j), pas de changement de protocole.
