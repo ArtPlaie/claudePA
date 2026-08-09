@@ -865,3 +865,9 @@
 **Lien** : https://airlegend.fr/
 **Pourquoi ça compte** : Un des plus gros meetings aériens d'Europe (warbirds, B-17, Rafale, Patrouille de France) se tient chaque année début septembre à l'aérodrome de Melun-Villaroche, à ~20 min de Bois-le-Roi. Gratuit pour les moins de 9 ans, tarif de lancement contingenté (30 € en 2026). Taillé famille complète, l'un des rares événements d'envergure nationale à distance quasi nulle.
 **Suite** : info pure — à remettre dans la sélection chaque année dès l'ouverture de la billetterie (printemps).
+### 2026-08-09 — Emploi US négatif en juillet : la Fed rebascule au statu quo
+**Tags** : macro, emploi, fed, taux, marchés, régime
+**Source** : weekly_briefing
+**Lien** : https://www.bls.gov/news.release/empsit.nr0.htm
+**Pourquoi ça compte** : Retournement net vs le briefing du 02/08. Payrolls −23 000 (1er mois négatif depuis février), révisions May/June −103 000, participation à 61,4 % (plus bas en 5 ans), salaires +3,2 % (plus bas depuis mai 2021). Le chômage baisse à 4,1 % mais par attrition de la population active, pas par embauche. Effet immédiat : les futures repassent d'un pricing « deux hausses d'ici fin 2026 » (post-FOMC 9–3) à un maintien à 3,50–3,75 % en septembre. Marqueur de bascule : côté emploi la Fed est désormais contrainte, alors que l'inflation (choc énergie/Hormuz) reste collante — configuration stagflationniste si le CPI de juillet (12 août) surprend à la hausse.
+**Suite** : surveiller CPI 12/08 + PPI 13/08, puis FOMC 15–16/09. Si CPI chaud + emploi faible → dilemme Fed, à retravailler dans le fil rouge macro.
