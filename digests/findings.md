@@ -871,3 +871,9 @@
 **Lien** : https://www.bls.gov/news.release/empsit.nr0.htm
 **Pourquoi ça compte** : Retournement net vs le briefing du 02/08. Payrolls −23 000 (1er mois négatif depuis février), révisions May/June −103 000, participation à 61,4 % (plus bas en 5 ans), salaires +3,2 % (plus bas depuis mai 2021). Le chômage baisse à 4,1 % mais par attrition de la population active, pas par embauche. Effet immédiat : les futures repassent d'un pricing « deux hausses d'ici fin 2026 » (post-FOMC 9–3) à un maintien à 3,50–3,75 % en septembre. Marqueur de bascule : côté emploi la Fed est désormais contrainte, alors que l'inflation (choc énergie/Hormuz) reste collante — configuration stagflationniste si le CPI de juillet (12 août) surprend à la hausse.
 **Suite** : surveiller CPI 12/08 + PPI 13/08, puis FOMC 15–16/09. Si CPI chaud + emploi faible → dilemme Fed, à retravailler dans le fil rouge macro.
+### 2026-08-10 — Ribes : le nom de famille est un genre botanique (fenêtre plantation novembre)
+**Tags** : serendipity, famille, jardin, ribes, fenetre-temporelle
+**Source** : serendipity
+**Lien** : https://fr.wikipedia.org/wiki/Ribes_(genre)
+**Pourquoi ça compte** : *Ribes* = genre botanique des groseilliers et cassissiers (~150 espèces, Grossulariaceae). Idée proposée : haie-collection dans le jardin (5 espèces sauvages françaises + exotiques type *R. sanguineum*), plantation à racines nues nov-mars. La fenêtre d'action est octobre-novembre 2026 — hors de portée de la mémoire 30j au moment du geste.
+**Suite** : re-proposer en octobre 2026 (serendipity ou local_activities) si Sylvain a accroché ; sinon info pure.
