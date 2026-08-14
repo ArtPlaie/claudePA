@@ -5,7 +5,9 @@ veille: local_activities
 report_subject: 'Re: claudePA — Sorties locales (2026-08-14)'
 from_addr: sylvainribes@gmail.com
 source_message_id: <CAHuLdqYxyvPG4dBu8v5pEzOuubUYCqBKMtUhydJe2k1p7faf2w@mail.gmail.com>
-status: pending
+status: done
+done_at: '2026-08-14T14:04:52+00:00'
+actions_summary: 2 events mis en file (Village des Sciences Savigny-le-Temple 10/10, Histoire en Scène Blandy 26-27/09) — création par la GHA au passage suivant.
 ---
 
 ## Réponse de Sylvain
