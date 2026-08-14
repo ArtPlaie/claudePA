@@ -877,3 +877,9 @@
 **Lien** : https://fr.wikipedia.org/wiki/Ribes_(genre)
 **Pourquoi ça compte** : *Ribes* = genre botanique des groseilliers et cassissiers (~150 espèces, Grossulariaceae). Idée proposée : haie-collection dans le jardin (5 espèces sauvages françaises + exotiques type *R. sanguineum*), plantation à racines nues nov-mars. La fenêtre d'action est octobre-novembre 2026 — hors de portée de la mémoire 30j au moment du geste.
 **Suite** : re-proposer en octobre 2026 (serendipity ou local_activities) si Sylvain a accroché ; sinon info pure.
+### 2026-07-30 — HAS : le Prevenar 20 (VPC20) devient le vaccin pneumocoque de référence chez l'enfant
+**Tags** : santé, publique, isa, enfants, vaccination, pneumocoque
+**Source** : health_watch
+**Lien** : https://www.has-sante.fr/jcms/p_4259831/fr/pneumocoques-une-strategie-vaccinale-actualisee-pour-mieux-proteger-les-populations-a-risque
+**Pourquoi ça compte** : Avis HAS du 30 juil. 2026. Le VPC20 remplace VPC13/VPC15 (et VPP23 dans certains cas) chez le nourrisson/enfant, schéma inchangé 2-4-6 mois + rappel 11 mois. Couverture des infections invasives à pneumocoque chez l'enfant qui passe de ~18 % à ~41 % (données 2024). Enfant déjà initié en VPC13/15 → poursuivre en VPC20, pas de reprise. Directement pertinent pour les trois enfants de Sylvain (surtout le benjamin, ~20 mois).
+**Suite** : vérifier au prochain RDV pédiatre la bascule vers Prevenar 20 (rappel/rattrapage éventuel du benjamin).
