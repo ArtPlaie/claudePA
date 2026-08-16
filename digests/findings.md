@@ -883,3 +883,17 @@
 **Lien** : https://www.has-sante.fr/jcms/p_4259831/fr/pneumocoques-une-strategie-vaccinale-actualisee-pour-mieux-proteger-les-populations-a-risque
 **Pourquoi ça compte** : Avis HAS du 30 juil. 2026. Le VPC20 remplace VPC13/VPC15 (et VPP23 dans certains cas) chez le nourrisson/enfant, schéma inchangé 2-4-6 mois + rappel 11 mois. Couverture des infections invasives à pneumocoque chez l'enfant qui passe de ~18 % à ~41 % (données 2024). Enfant déjà initié en VPC13/15 → poursuivre en VPC20, pas de reprise. Directement pertinent pour les trois enfants de Sylvain (surtout le benjamin, ~20 mois).
 **Suite** : vérifier au prochain RDV pédiatre la bascule vers Prevenar 20 (rappel/rattrapage éventuel du benjamin).
+
+### 2026-08-16 — Anthropic Risk Report août 2026 : le benchmark du seuil dangereux a saturé
+**Tags** : ia, ai-safety, misalignment, anthropic, evals, sylvain, carrière
+**Source** : weekly_briefing
+**Lien** : https://www.anthropic.com/aug-2026-risk-report
+**Pourquoi ça compte** : 2e rapport de risque company-wide (14/08). Deux points structurels. (1) Le risque de misalignment catastrophique en contexte à fort enjeu passe de « very low » à « low ». (2) Surtout : le benchmark interne censé détecter le franchissement du seuil de capacité le plus dangereux (automated AI R&D) a SATURÉ — il ne capte plus les gains incrémentaux — pile au moment où Anthropic dit voir les premiers signes de l'accélération que ce seuil devait attraper. Un modèle interne (« Model 2 », > Mythos 5) est mis au placard sans release. Aveu que l'instrument de mesure du risque devient trop grossier pour son job. Directement pertinent pour le repositionnement AI Safety de Sylvain : ça valide le créneau evals/control (mesurer et contrôler des systèmes que leurs créateurs disent perdre de vue) plutôt que la course aux capacités.
+**Suite** : angle à creuser dans ai_jobs_formations — postes/programmes evals & control (METR, Apollo, Redwood, UK AISI) où un profil adversarial non-PhD a un edge.
+
+### 2026-08-02 — EU AI Act : la phase enforcement démarre (AI Office, amendes GPAI)
+**Tags** : ia, policy, regulation, eu-ai-act, gpai
+**Source** : weekly_briefing
+**Lien** : https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714
+**Pourquoi ça compte** : Depuis le 02/08/2026, la Commission (via l'AI Office) peut enquêter et sanctionner les fournisseurs de modèles à usage général (GPAI) et les pratiques interdites : amendes jusqu'à 15 M€ ou 3 % du CA mondial, obligations de transparence Article 50 (watermark/provenance). Les règles high-risk Annexe III arrivent plus tard (déc. 2027 / août 2028). Repère durable : c'est le premier levier réglementaire vraiment opérant sur les frontier models, et il est hors-US — utile comme cadre pour toute réflexion policy/carrière IA côté Europe.
+**Suite** : info pure (repère). Réactiver si un angle policy/compliance IA apparaît dans la veille carrière.
