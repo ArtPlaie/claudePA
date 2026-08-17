@@ -896,3 +896,10 @@
 **Lien** : https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714
 **Pourquoi ça compte** : Depuis le 02/08/2026, la Commission (via l'AI Office) peut enquêter et sanctionner les fournisseurs de modèles à usage général (GPAI) et les pratiques interdites : amendes jusqu'à 15 M€ ou 3 % du CA mondial, obligations de transparence Article 50 (watermark/provenance). Les règles high-risk Annexe III arrivent plus tard (déc. 2027 / août 2028). Repère durable : c'est le premier levier réglementaire vraiment opérant sur les frontier models, et il est hors-US — utile comme cadre pour toute réflexion policy/carrière IA côté Europe.
 **Suite** : info pure (repère). Réactiver si un angle policy/compliance IA apparaît dans la veille carrière.
+
+### 2026-08-17 — Tapisserie de Bayeux au British Museum : vague de billets janv-mars 2027 en octobre
+**Tags** : serendipity, famille, fenetre-temporelle, londres, histoire
+**Source** : serendipity
+**Lien** : https://www.britishmuseum.org/exhibitions/bayeux-tapestry
+**Pourquoi ça compte** : Première sortie de France de la tapisserie en ~950 ans (British Museum, 10 sept 2026 – 11 juil 2027). Sept-déc 2026 déjà sold out ; la prochaine vague de billets (visites janv-mars 2027) sort en octobre 2026, la dernière (avr-juil) en janvier 2027. Fenêtre d'action hors de portée de la mémoire 30j : si l'idée du week-end Londres avec Anna prend, il faut être sur la vague d'octobre.
+**Suite** : rappeler début octobre 2026 (serendipity ou weekly_briefing) que la billetterie janv-mars ouvre.
