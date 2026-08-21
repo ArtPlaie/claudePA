@@ -902,3 +902,10 @@
 **Lien** : https://www.britishmuseum.org/exhibitions/bayeux-tapestry
 **Pourquoi ça compte** : Première sortie de France de la tapisserie en ~950 ans (British Museum, 10 sept 2026 – 11 juil 2027). Sept-déc 2026 déjà sold out ; la prochaine vague de billets (visites janv-mars 2027) sort en octobre 2026, la dernière (avr-juil) en janvier 2027. Fenêtre d'action hors de portée de la mémoire 30j : si l'idée du week-end Londres avec Anna prend, il faut être sur la vague d'octobre.
 **Suite** : rappeler début octobre 2026 (serendipity ou weekly_briefing) que la billetterie janv-mars ouvre.
+
+### 2026-08-21 — Irrigation nasale au budésonide (CRSwNP non opérée) : RCT positif, 100% non-ATB
+**Tags** : santé, isa, orl, rhinosinusite, corticoïde-topique, non-atb
+**Source** : health_watch
+**Lien** : https://onlinelibrary.wiley.com/doi/10.1002/alr.70112
+**Pourquoi ça compte** : RCT double-aveugle contrôlé placebo (Sant'Ana et al., Int Forum Allergy Rhinol, fév. 2026), 52 patients CRSwNP **sans chirurgie préalable**. Budésonide 1 mg en irrigation 2×/j / 4 sem → gain significatif SNOT-22 (+18,1 pts), VAS, score de polypes ; pas de gain olfactif. Intérêt pour Isa : intervention **entièrement topique, zéro ATB systémique**, et sur population non opérée (la plupart des données corticoïdes-irrigation portent sur du post-op). Limites : petit n, monocentrique, 4 sem. Applicabilité conditionnelle à un phénotype sinusien/polypes — diagnostic exact d'Isa non documenté en mémoire.
+**Suite** : à évoquer avec l'ORL d'Isa si tableau sinusien ; vérifier au passage si une biothérapie (dupilumab) a déjà été discutée.
