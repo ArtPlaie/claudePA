@@ -902,3 +902,9 @@
 **Lien** : https://www.britishmuseum.org/exhibitions/bayeux-tapestry
 **Pourquoi ça compte** : Première sortie de France de la tapisserie en ~950 ans (British Museum, 10 sept 2026 – 11 juil 2027). Sept-déc 2026 déjà sold out ; la prochaine vague de billets (visites janv-mars 2027) sort en octobre 2026, la dernière (avr-juil) en janvier 2027. Fenêtre d'action hors de portée de la mémoire 30j : si l'idée du week-end Londres avec Anna prend, il faut être sur la vague d'octobre.
 **Suite** : rappeler début octobre 2026 (serendipity ou weekly_briefing) que la billetterie janv-mars ouvre.
+### 2026-08-21 — Festival de la Terre 77 : la grande fête agricole annuelle (commune tournante)
+**Tags** : local, famille, annuel, brie, agriculture
+**Source** : local_activities
+**Lien** : https://www.seine-et-marne.fr/fr/fiche-evenement/festival-de-la-terre-2026
+**Pourquoi ça compte** : Fête agricole des Jeunes Agriculteurs 77, chaque année un dimanche de septembre dans une commune différente (2026 : Courpalay, 13/09). Moiss'batt'cross, baptêmes tracteur/quad/hélico, mini-ferme, marché fermier — taillé pour des enfants de 2 à 8 ans, 7 €/adulte et gratuit -10 ans. La commune hôte est annoncée au printemps.
+**Suite** : à re-proposer chaque année fin août (local_activities) ; guetter l'annonce de la commune hôte au printemps.
