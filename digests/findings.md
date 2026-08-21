@@ -908,3 +908,9 @@
 **Lien** : https://onlinelibrary.wiley.com/doi/10.1002/alr.70112
 **Pourquoi ça compte** : RCT double-aveugle contrôlé placebo (Sant'Ana et al., Int Forum Allergy Rhinol, fév. 2026), 52 patients CRSwNP **sans chirurgie préalable**. Budésonide 1 mg en irrigation 2×/j / 4 sem → gain significatif SNOT-22 (+18,1 pts), VAS, score de polypes ; pas de gain olfactif. Intérêt pour Isa : intervention **entièrement topique, zéro ATB systémique**, et sur population non opérée (la plupart des données corticoïdes-irrigation portent sur du post-op). Limites : petit n, monocentrique, 4 sem. Applicabilité conditionnelle à un phénotype sinusien/polypes — diagnostic exact d'Isa non documenté en mémoire.
 **Suite** : à évoquer avec l'ORL d'Isa si tableau sinusien ; vérifier au passage si une biothérapie (dupilumab) a déjà été discutée.
+### 2026-08-21 — Festival de la Terre 77 : la grande fête agricole annuelle (commune tournante)
+**Tags** : local, famille, annuel, brie, agriculture
+**Source** : local_activities
+**Lien** : https://www.seine-et-marne.fr/fr/fiche-evenement/festival-de-la-terre-2026
+**Pourquoi ça compte** : Fête agricole des Jeunes Agriculteurs 77, chaque année un dimanche de septembre dans une commune différente (2026 : Courpalay, 13/09). Moiss'batt'cross, baptêmes tracteur/quad/hélico, mini-ferme, marché fermier — taillé pour des enfants de 2 à 8 ans, 7 €/adulte et gratuit -10 ans. La commune hôte est annoncée au printemps.
+**Suite** : à re-proposer chaque année fin août (local_activities) ; guetter l'annonce de la commune hôte au printemps.
