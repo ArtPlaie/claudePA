@@ -914,3 +914,16 @@
 **Lien** : https://www.seine-et-marne.fr/fr/fiche-evenement/festival-de-la-terre-2026
 **Pourquoi ça compte** : Fête agricole des Jeunes Agriculteurs 77, chaque année un dimanche de septembre dans une commune différente (2026 : Courpalay, 13/09). Moiss'batt'cross, baptêmes tracteur/quad/hélico, mini-ferme, marché fermier — taillé pour des enfants de 2 à 8 ans, 7 €/adulte et gratuit -10 ans. La commune hôte est annoncée au printemps.
 **Suite** : à re-proposer chaque année fin août (local_activities) ; guetter l'annonce de la commune hôte au printemps.
+### 2026-08-23 — Redwood conteste les évals de risque d'Anthropic : le créneau evals/control se confirme
+**Tags** : ia, ai-safety, misalignment, evals, control, redwood, sylvain, carrière
+**Source** : weekly_briefing
+**Lien** : https://blog.redwoodresearch.org/p/sota-alignment-assessments-dont-strongly
+**Pourquoi ça compte** : Réponse directe (août 2026, Alexa Pan) au Anthropic Risk Report du 14/08 déjà archivé. Redwood démonte l'argument de fiabilité : la preuve que Mythos Preview manquait des capacités pour échapper au monitoring est jugée trop faible pour valider les assessments des modèles suivants. Deux semaines de suite, le même signal converge — l'instrument de mesure du risque (les évals) n'est pas à la hauteur de la conclusion rassurante qu'on lui fait porter, et les gens qui le disent le plus fort sont Redwood/METR/Apollo/UK AISI. C'est la validation externe du repositionnement de Sylvain : le créneau evals & control (mesurer/contrôler des systèmes que leurs créateurs perdent de vue) est actif, contesté publiquement, et ouvert à un profil adversarial non-PhD.
+**Suite** : nourrir ai_jobs_formations — chercher offres/programmes evals & control chez Redwood, METR, Apollo, UK AISI. Lire le post en entier avant.
+
+### 2026-08-23 — Choc énergie Iran/Hormuz verrouillé jusqu'à début 2027 (EIA)
+**Tags** : macro, énergie, pétrole, diesel, iran, hormuz, inflation, régime
+**Source** : weekly_briefing
+**Lien** : https://www.cnbc.com/2026/08/21/oil-prices-us-iran.html
+**Pourquoi ça compte** : L'EIA ne voit pas la production du Golfe revenir près des niveaux d'avant-conflit avant début 2027 — le choc pétrole devient un régime pluriannuel, pas un pic. Brent ~94 $ (+6 % sur la semaine), ~8 Mb/j toujours manquants dans Hormuz, diesel à un plus haut historique (double tenaille Hormuz + drones ukrainiens sur raffineries russes). Combiné à l'emploi US qui craque (finding 09/08), ça fige une configuration stagflationniste durable — pertinent pour le positionnement duration/growth du portefeuille et le dilemme Fed de Warsh à Jackson Hole (28/08).
+**Suite** : surveiller le discours Warsh (28/08) puis FOMC 15-16/09 ; guetter tout signe de réouverture négociée de Hormuz qui casserait le régime.
