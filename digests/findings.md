@@ -927,3 +927,10 @@
 **Lien** : https://www.cnbc.com/2026/08/21/oil-prices-us-iran.html
 **Pourquoi ça compte** : L'EIA ne voit pas la production du Golfe revenir près des niveaux d'avant-conflit avant début 2027 — le choc pétrole devient un régime pluriannuel, pas un pic. Brent ~94 $ (+6 % sur la semaine), ~8 Mb/j toujours manquants dans Hormuz, diesel à un plus haut historique (double tenaille Hormuz + drones ukrainiens sur raffineries russes). Combiné à l'emploi US qui craque (finding 09/08), ça fige une configuration stagflationniste durable — pertinent pour le positionnement duration/growth du portefeuille et le dilemme Fed de Warsh à Jackson Hole (28/08).
 **Suite** : surveiller le discours Warsh (28/08) puis FOMC 15-16/09 ; guetter tout signe de réouverture négociée de Hormuz qui casserait le régime.
+
+### 2026-08-24 — Grues cendrées au lac du Der : fenêtre fin octobre–mi-novembre
+**Tags** : serendipity, famille, nature, fenetre-temporelle, migration
+**Source** : serendipity
+**Lien** : https://champagne-ardenne.lpo.fr/grue-cendree/migration-et-hivernage/les-compteurs-de-grues-au-lac-du-der
+**Pourquoi ça compte** : Jusqu'à 450 000 grues cendrées font escale au lac du Der (~2 h de Bois-le-Roi) chaque automne, pics >250 000 simultanées ; le spectacle est l'envol à l'aube. Fenêtre idéale fin octobre–mi-novembre — hors de portée de la mémoire 30j au moment du geste. La LPO publie les comptages hebdo pour viser le pic ; le festival photo animalière de Montier-en-Der (fin nov) peut doubler la sortie pour Isa.
+**Suite** : re-proposer mi-octobre (serendipity ou activities_next10days) avec les comptages LPO du moment.
