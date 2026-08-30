@@ -933,3 +933,16 @@
 **Lien** : https://champagne-ardenne.lpo.fr/grue-cendree/migration-et-hivernage/les-compteurs-de-grues-au-lac-du-der
 **Pourquoi ça compte** : Jusqu'à 450 000 grues cendrées font escale au lac du Der (~2 h de Bois-le-Roi) chaque automne, pics >250 000 simultanées ; le spectacle est l'envol à l'aube. Fenêtre idéale fin octobre–mi-novembre — hors de portée de la mémoire 30j au moment du geste. La LPO publie les comptages hebdo pour viser le pic ; le festival photo animalière de Montier-en-Der (fin nov) peut doubler la sortie pour Isa.
 **Suite** : re-proposer mi-octobre (serendipity ou activities_next10days) avec les comptages LPO du moment.
+### 2026-08-30 — Warsh confirme le virage hawkish de la Fed à Jackson Hole (hausses possibles)
+**Tags** : macro, fed, warsh, taux, inflation, régime, portefeuille
+**Source** : weekly_briefing
+**Lien** : https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html
+**Pourquoi ça compte** : Le discours guetté dans le finding du 23/08 a eu lieu (28/08). Warsh, premier grand discours comme chair, casse la tradition : inflation « too high », tendances de fond non améliorées, Fed prête à *monter* les taux. Fed à 3.50-3.75 % depuis janvier, marché calé sur des cuts → repricing. Il annonce aussi une Fed « plus silencieuse » (moins de forward guidance = plus de vol sur les taux longs). Confirmé en parallèle : BCE attendue +25 bps et BoJ 1→1.25 % en septembre. Trois banques centrales qui resserrent en même temps, alors que la Chine cale (invest -7 % sur 7 mois) et exporte de la déflation. Régime à dispersion élevée : pertinent pour le positionnement duration/growth et à croiser avec le régime pétrole >90 $ (finding 23/08).
+**Suite** : surveiller PCE US comme pivot, puis FOMC 15-16/09 ; guetter tout chiffre d'inflation qui déclenche le repricing.
+
+### 2026-08-30 — Anthropic : des chercheurs d'alignment automatisés corrigent 10/10 échecs (harness open-source)
+**Tags** : ia, ai-safety, alignment, scalable-oversight, automation, sylvain, evals
+**Source** : weekly_briefing
+**Lien** : https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures
+**Pourquoi ça compte** : Papier du 28/08. Des « Automated Alignment Researchers » (LLM qui lisent la littérature, proposent une méthode, entraînent 30 min, itèrent) améliorent les 10 benchmarks de comportements désalignés testés, sans dégrader la perf globale, et ça généralise hors distribution. ~4 $/h vs ~150 $/h pour un humain. Harness open-sourcé. Un des premiers résultats crédibles où l'automatisation vise l'*alignment* et pas juste les capabilities — cœur du pari « scalable oversight » d'Anthropic, et signal fort d'auto-amélioration. Pour le repositionnement de Sylvain : le champ evals/alignment continue de produire des artefacts concrets et outillés (harness réutilisable), pas que de la théorie.
+**Suite** : lire le papier + explorer le harness open-source comme base d'un projet eval perso ; nourrir ai_jobs_formations.
