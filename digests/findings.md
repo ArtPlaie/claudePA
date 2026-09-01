@@ -946,3 +946,9 @@
 **Lien** : https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures
 **Pourquoi ça compte** : Papier du 28/08. Des « Automated Alignment Researchers » (LLM qui lisent la littérature, proposent une méthode, entraînent 30 min, itèrent) améliorent les 10 benchmarks de comportements désalignés testés, sans dégrader la perf globale, et ça généralise hors distribution. ~4 $/h vs ~150 $/h pour un humain. Harness open-sourcé. Un des premiers résultats crédibles où l'automatisation vise l'*alignment* et pas juste les capabilities — cœur du pari « scalable oversight » d'Anthropic, et signal fort d'auto-amélioration. Pour le repositionnement de Sylvain : le champ evals/alignment continue de produire des artefacts concrets et outillés (harness réutilisable), pas que de la théorie.
 **Suite** : lire le papier + explorer le harness open-source comme base d'un projet eval perso ; nourrir ai_jobs_formations.
+### 2026-09-01 — AI Digest (AI Village) recrute un Research Scientist full remote
+**Tags** : sydney, ai-safety, evals, jobs, remote, agents
+**Source** : sydney_opportunities
+**Lien** : https://theaidigest.org/hiring
+**Pourquoi ça compte** : AI Digest (projet de Sage, équipe de 3) fait tourner l'AI Village — agents frontière sur objectifs long terme, livestreamés — et cherche un Research Scientist remote (~$150-350k) pour étudier les comportements et publier des insights capacités/dynamiques émergentes. Observation adversariale d'agents + écriture publique, sans PhD requis : un des meilleurs fits identifiés pour le profil, compatible Bois-le-Roi aujourd'hui et Sydney demain. Employeur cible durable même si ce rôle se pourvoit.
+**Suite** : candidater vite (rolling, pas de deadline) ; sinon garder AI Digest dans la liste des employeurs cibles.
