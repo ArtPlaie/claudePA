@@ -952,3 +952,9 @@
 **Lien** : https://theaidigest.org/hiring
 **Pourquoi ça compte** : AI Digest (projet de Sage, équipe de 3) fait tourner l'AI Village — agents frontière sur objectifs long terme, livestreamés — et cherche un Research Scientist remote (~$150-350k) pour étudier les comportements et publier des insights capacités/dynamiques émergentes. Observation adversariale d'agents + écriture publique, sans PhD requis : un des meilleurs fits identifiés pour le profil, compatible Bois-le-Roi aujourd'hui et Sydney demain. Employeur cible durable même si ce rôle se pourvoit.
 **Suite** : candidater vite (rolling, pas de deadline) ; sinon garder AI Digest dans la liste des employeurs cibles.
+### 2026-09-02 — MATS Residency : 6-24 mois financés pour un agenda perso, deadline 31 octobre
+**Tags** : ai-safety, formation, mats, residency, deadline, sylvain, carrière
+**Source** : ai_jobs_formations
+**Lien** : https://www.matsprogram.org/residency/apply
+**Pourquoi ça compte** : Nouveau format MATS lancé avec la cohorte Winter 2027 : 6 à 24 mois de financement pour poursuivre son propre agenda de recherche, vs les 12 semaines mentorées du fellowship. Fenêtre de candidature 15 août–31 octobre 2026 — elle ferme AVANT les réponses du fellowship (début nov.), donc ça se joue en parallèle, pas en plan B séquentiel. L'agenda « détection de fraude de marché → détection de scheming/sandbagging » est exactement le genre de programme qu'on y pitche.
+**Suite** : si le fellowship Winter 2027 (deadline 6 sept) est envoyé, articuler l'agenda perso et candidater à la Residency avant le 31 octobre.
