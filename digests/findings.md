@@ -958,3 +958,10 @@
 **Lien** : https://www.matsprogram.org/residency/apply
 **Pourquoi ça compte** : Nouveau format MATS lancé avec la cohorte Winter 2027 : 6 à 24 mois de financement pour poursuivre son propre agenda de recherche, vs les 12 semaines mentorées du fellowship. Fenêtre de candidature 15 août–31 octobre 2026 — elle ferme AVANT les réponses du fellowship (début nov.), donc ça se joue en parallèle, pas en plan B séquentiel. L'agenda « détection de fraude de marché → détection de scheming/sandbagging » est exactement le genre de programme qu'on y pitche.
 **Suite** : si le fellowship Winter 2027 (deadline 6 sept) est envoyé, articuler l'agenda perso et candidater à la Residency avant le 31 octobre.
+
+### 2026-09-04 — Dupilumab CRSwNP : dé-escalade de dose validée (Q2W → Q4W), effet maintenu à 5 ans
+**Tags** : santé, isa, ORL, dupilumab, biothérapie, dé-escalade, non-ATB
+**Source** : health_watch
+**Lien** : https://onlinelibrary.wiley.com/doi/10.1002/alr.70125
+**Pourquoi ça compte** : Le corpus real-world 2026 converge : dans la rhinosinusite chronique avec polypes, le bénéfice dupilumab culmine dès 6 mois et tient à 5 ans, et ~40 % des patients allongent l'intervalle (Q2W → Q4W ou plus) sans perte d'efficacité et avec moins d'effets indésirables (confirmé par une 2e série, Pharmaceuticals 2026, doi 10.3390/ph19060961). Répond à la vraie objection d'engagement ("Q2W à vie ?"). Preuve observationnelle rétrospective (petits effectifs), pas de RCT sur la dé-escalade → confiance moyenne. Compatible non-ATB (anti-IL-4/IL-13), pertinent pour Isa si tableau CRSwNP confirmé.
+**Suite** : à évoquer avec l'ORL d'Isa si indication CRSwNP — angle dé-escalade, pas seulement mise en route.
