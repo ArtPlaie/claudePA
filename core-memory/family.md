@@ -10,7 +10,10 @@
 - Pratique la peinture.
 - Envisage de monter un compte Instagram dédié à son travail
   (statut : à confirmer avec elle).
-- Problèmes ORL chroniques.
+- Problèmes ORL chroniques : sinusite chronique, **pas de polypes nasaux
+  identifiés** — à ce jour plutôt d'origine idiopathique (pas de dupilumab
+  ni autre biothérapie anti-polypes pertinente pour son cas tant que ce
+  diagnostic tient).
 - **Contre-indication absolue aux antibiotiques systémiques.** Toute
   recommandation de soin doit en tenir compte.
 - À cibler pour la veille `isa_support` (V2) : galeries, expos

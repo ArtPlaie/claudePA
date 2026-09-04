@@ -108,9 +108,15 @@ pour avoir le choix et ne pas rater le vrai signal.
 d'échantillon, design (RCT > obs > case report), conflits d'intérêt visibles,
 hétérogénéité si méta.
 
-Trois sections obligatoires, dans cet ordre :
+Sections, dans cet ordre (1 est conditionnelle, 2 et 3 obligatoires) :
 
-### 1. Sylvain — hypertrophie & longévité (recherche récente)
+### 1. Sylvain — hypertrophie & longévité (uniquement si breakthrough)
+
+**Cette section ne s'affiche que s'il y a un vrai breakthrough** — une donnée
+nouvelle qui changerait sa pratique ou sa compréhension, pas un recyclage de
+papers déjà connus ni une confirmation mineure. Si rien de tel cette
+quinzaine : **n'écris pas la section du tout** (pas de ligne "RAS" à la
+place, pas de remplissage — Sylvain ne veut pas être notifié pour du bruit).
 
 Veille sur les ~14 derniers jours sur :
 
@@ -171,6 +177,12 @@ Pour chaque entrée : énoncé · analyse critique · lien · confiance ·
 HAS / NICE / WHO, retrait de molécule, alerte épidémio FR/IDF (grippe,
 COVID, virus respiratoires saisonniers), vaccination enfants (pneumocoque,
 méningo). Cible : enfants Sylvain (âges dans `family.md`) et grand public.
+
+Ajoute aussi ici les **breakthroughs notables en médecine générale**, même
+hors ORL/hypertrophie/famille : nouveau traitement ou classe thérapeutique
+majeure, essai clinique qui change un standard de soin, découverte
+significative — filtre haut (peer-reviewed ou reco officielle, pas de la
+vulgarisation).
 
 Si rien de notable : `(RAS structurel cette quinzaine)`.
 
