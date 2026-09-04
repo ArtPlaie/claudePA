@@ -91,3 +91,21 @@ ajoutée sur dérogation explicite de Sylvain.
 babysitting (commit fiable, pas de faux "vert") ? Qualité du web search
 natif vs attentes ; faut-il finalement migrer aussi les 4 tasks GHA.
 
+---
+
+## 2026-09-04 — adapt_prompt : health_watch ajustée
+
+Retour Sylvain : "ne mentionne la muscu/cardio que si ya des breakthroughs".
+Fait : section 1 (hypertrophie/longévité) passe d'obligatoire à
+conditionnelle — disparaît du mail s'il n'y a pas de vrai breakthrough (plus
+de "RAS" de remplissage). Ajout d'un scope breakthroughs médecine générale
+en section 3. (auto via /adapt_prompt)
+
+## 2026-09-04 — adapt_prompt : local_activities ajustée
+
+Retour Sylvain : "vérifie les dates blandy et vaux tu te goures d'année
+jcrois" — vérification confirmée : Carnaval des Animaux (Vaux) rapporté avec
+des dates/horaires 2025 recopiés par erreur. Fait : garde-fou ajouté pour
+vérifier explicitement l'année (pas juste jour/mois) des événements
+récurrents issus d'agrégateurs. (auto via /adapt_prompt)
+

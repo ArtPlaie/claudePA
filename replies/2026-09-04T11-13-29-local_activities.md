@@ -5,7 +5,16 @@ veille: local_activities
 report_subject: 'Re: claudePA — Sorties locales (2026-09-04)'
 from_addr: sylvainribes@gmail.com
 source_message_id: <CAHuLdqYS8039Er+ZqN_A=9VTdGA50LkeTUSAGr9HR7ov0bV0Hw@mail.gmail.com>
-status: pending
+status: done
+done_at: '2026-09-04T16:04:00+02:00'
+actions_summary: >-
+  Vérifié sur site officiel : Blandy des Légendes bien 2026 (17 oct-1er nov,
+  confirmé chateau-blandy.fr). Vaux-le-Vicomte "Carnaval des Animaux" :
+  horaires quotidiens 10h30-18h30 rapportés semblent en fait recopiés de
+  l'édition 2025 (mercredis 22 et 29 oct seulement, source sortiraparis) ;
+  dates 2026 pas confirmées officiellement à ce jour. Ajusté
+  local_activities.md pour forcer une vérif d'année sur les événements
+  récurrents issus d'agrégateurs.
 ---
 
 ## Réponse de Sylvain

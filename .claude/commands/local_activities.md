@@ -211,8 +211,14 @@ exceptionnel à mémoriser pour l'an prochain. Sinon : (rien à archiver)>
 ```
 
 **Garde-fous** : si tu doutes d'une date/lieu → `(à reconfirmer sur le site)`.
-N'invente jamais d'événement. OPSEC : pas de noms d'enfants, pas d'adresse
-précise, pas d'école dans le livrable.
+N'invente jamais d'événement. **Vérifie l'année**, pas juste le jour/mois :
+les agrégateurs (sortiraparis, kidiklik…) indexent souvent l'édition de
+l'année passée d'un événement récurrent (carnaval, marché de Noël, chasse
+aux œufs) sans le dire clairement dans le titre. Avant de donner des horaires
+précis pour un événement annuel, confirme sur la page officielle du lieu que
+l'édition citée est bien celle de l'année en cours (cf. date du jour) — sinon
+`(dates de l'an dernier, à reconfirmer)`. OPSEC : pas de noms d'enfants, pas
+d'adresse précise, pas d'école dans le livrable.
 
 ## Étape 4 — Findings (mémoire long terme)
 
