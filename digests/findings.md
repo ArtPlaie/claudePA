@@ -964,3 +964,15 @@
 **Lien** : https://onlinelibrary.wiley.com/doi/10.1002/alr.70125
 **Pourquoi ça compte** : Le corpus real-world 2026 converge : dans la rhinosinusite chronique avec polypes, le bénéfice dupilumab culmine dès 6 mois et tient à 5 ans, et ~40 % des patients allongent l'intervalle (Q2W → Q4W ou plus) sans perte d'efficacité et avec moins d'effets indésirables (confirmé par une 2e série, Pharmaceuticals 2026, doi 10.3390/ph19060961). Répond à la vraie objection d'engagement ("Q2W à vie ?"). Preuve observationnelle rétrospective (petits effectifs), pas de RCT sur la dé-escalade → confiance moyenne. Compatible non-ATB (anti-IL-4/IL-13), pertinent pour Isa si tableau CRSwNP confirmé.
 **Suite** : à évoquer avec l'ORL d'Isa si indication CRSwNP — angle dé-escalade, pas seulement mise en route.
+### 2026-09-06 — Vague de modèles cyber-offensifs : OpenAI Astra franchit le seuil « Critical »
+**Tags** : ia, ai-safety, cyber, preparedness-framework, evals, sylvain, dual-use
+**Source** : weekly_briefing
+**Lien** : https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html
+**Pourquoi ça compte** : En 72h (1-2 sept) tous les grands labos ont sorti un modèle à capacité cyber (Anthropic Fable 5.1 + Mythos 5.1, DeepMind Gemini 3.8 Flash + variante Cyber défenseurs, Meta Muse Spark 1.3). OpenAI Astra est le premier modèle classé « Critical » sur son propre Preparedness Framework : 100 % ExploitBench, découverte + enchaînement de 2 zero-days sans pilotage humain. Premier cas où un labo déclare officiellement franchir un seuil de danger que le framework devait garder — la sortie a lieu quand même (accès restreint, pas de pause). Marqueur historique : la ligne rouge n'arrête plus la livraison.
+**Suite** : surveiller tout incident cyber attribuable à un modèle frontière ou toute reprise en main réglementaire (UK AISI / EU AI Act) sur les seuils auto-attribués ; nourrit l'angle carrière eval/red-team de Sylvain.
+### 2026-09-06 — AI Safety Index été 2026 (FLI) : les labos relâchent les engagements de pause
+**Tags** : ia, ai-safety, gouvernance, fli, frameworks, moving-goalposts
+**Source** : weekly_briefing
+**Lien** : https://futureoflife.org/ai-safety-index-summer-2026/
+**Pourquoi ça compte** : Personne au-dessus de C+ (Anthropic 2,66 en tête ; OpenAI et DeepMind C ; xAI/DeepSeek/Mistral F). Les évaluateurs accusent Anthropic, OpenAI, DeepMind et Meta d'avoir affaibli/supprimé leurs engagements à pauser si un système approche un seuil de danger (« moving the goalposts »). Lu en face d'Astra qui franchit un tel seuil la même semaine : les garde-fous de gouvernance reculent au moment exact où les capacités atteignent les lignes qu'ils devaient tenir. Asymétrie structurelle capacités↑ / gouvernance↓.
+**Suite** : baromètre de référence à re-checker à la prochaine édition ; croiser avec l'évolution EU AI Act / UK AISI.
