@@ -976,3 +976,9 @@
 **Lien** : https://futureoflife.org/ai-safety-index-summer-2026/
 **Pourquoi ça compte** : Personne au-dessus de C+ (Anthropic 2,66 en tête ; OpenAI et DeepMind C ; xAI/DeepSeek/Mistral F). Les évaluateurs accusent Anthropic, OpenAI, DeepMind et Meta d'avoir affaibli/supprimé leurs engagements à pauser si un système approche un seuil de danger (« moving the goalposts »). Lu en face d'Astra qui franchit un tel seuil la même semaine : les garde-fous de gouvernance reculent au moment exact où les capacités atteignent les lignes qu'ils devaient tenir. Asymétrie structurelle capacités↑ / gouvernance↓.
 **Suite** : baromètre de référence à re-checker à la prochaine édition ; croiser avec l'évolution EU AI Act / UK AISI.
+### 2026-09-07 — Route du Rhum 2026 : village Saint-Malo 20 oct–1er nov, départ le 1er nov (Toussaint)
+**Tags** : serendipity, famille, fenetre-temporelle, voile, saint-malo
+**Source** : serendipity
+**Lien** : https://www.routedurhum.com/en/saint-malo
+**Pourquoi ça compte** : Édition tous les 4 ans. Village gratuit (70 000 m² de quais, bateaux à toucher) du 20 octobre au 1er novembre 2026, départ le 1er nov à 13h02 au large de Cancale — pile les vacances de la Toussaint zone C. Fenêtre hors de portée de la mémoire 30j : hébergement Saint-Malo pour le week-end du départ à réserver dès que possible. Suivi cartographie avec les enfants pendant la course = rituel de novembre gratuit.
+**Suite** : re-proposer mi-octobre (activities_next10days ou serendipity) — village ouvert, et vérifier hébergement si Sylvain a mordu.
