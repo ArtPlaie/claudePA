@@ -982,3 +982,9 @@
 **Lien** : https://www.routedurhum.com/en/saint-malo
 **Pourquoi ça compte** : Édition tous les 4 ans. Village gratuit (70 000 m² de quais, bateaux à toucher) du 20 octobre au 1er novembre 2026, départ le 1er nov à 13h02 au large de Cancale — pile les vacances de la Toussaint zone C. Fenêtre hors de portée de la mémoire 30j : hébergement Saint-Malo pour le week-end du départ à réserver dès que possible. Suivi cartographie avec les enfants pendant la course = rituel de novembre gratuit.
 **Suite** : re-proposer mi-octobre (activities_next10days ou serendipity) — village ouvert, et vérifier hébergement si Sylvain a mordu.
+### 2026-09-11 — Dupilumab dans la CRS *sans* polypes (essai ORION) : signal restreint aux éosinophiles élevés
+**Tags** : santé, isa, ORL, dupilumab, biothérapie, CRSsNP, non-ATB, eosinophiles
+**Source** : health_watch
+**Lien** : https://pubmed.ncbi.nlm.nih.gov/42467018/
+**Pourquoi ça compte** : Premier essai randomisé (phase 2, Liberty ORION, n=71) du dupilumab dans la rhinosinusite chronique SANS polypes — jusqu'ici toute la data portait sur la CRS AVEC polypes, hors du tableau d'Isa. Bénéfice sur le scanner (Lund-Mackay −6,63 à S24) uniquement dans le sous-groupe éosinophiles sanguins ≥300/µL (n=16), simple tendance sur les symptômes. Pas d'AMM dans la CRSsNP → usage off-label, un seul essai, confiance faible-moyenne. Corrige le cadrage des runs précédents (on poussait le dupilumab polypes, non applicable) : la molécule ne devient une piste pour Isa que si elle est éosinophilique/type-2.
+**Suite** : à évoquer avec l'ORL d'Isa UNIQUEMENT si NFS montre éosinophilie ≥300/µL ; sinon info pure, ne pas drafter.
