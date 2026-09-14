@@ -1000,3 +1000,9 @@
 **Lien** : https://www.bloomberg.com/news/articles/2026-09-10/ecb-lifts-rates-for-second-time-as-iran-war-drives-inflation
 **Pourquoi ça compte** : Bascule confirmée cette semaine : Brent >100 $ (guerre US-Iran) → inflation zone euro 3,3 % (plus haut 3 ans) → BCE monte le dépôt à 2,5 % (2e hausse depuis la guerre, guidance vers une 3e en déc.), Fed à ~60 % d'une 1re hausse au FOMC 15-16/09. Le cycle de baisses 2024-25 est mort et inversé, sur de l'inflation d'offre que les CB ne peuvent pas soigner. C'est le déclencheur "taux qui remontent" flaggé le 06/09 pour la concentration tech : la tech/IA long-duration décroche (2e séance de selloff). Angle EV : tant qu'Ormuz est dans le prix, régime "taux↑ / growth↓" ; le risque du call = cessez-le-feu qui dégonfle le baril et inverse tout.
 **Suite** : surveiller CPI US, décision Fed du 16/09, statut Ormuz ; re-checker si un cessez-le-feu inverse le régime.
+### 2026-09-14 — Petits Champions de la Lecture : inscriptions jusqu'au 2 décembre (Anna, si CM1)
+**Tags** : serendipity, famille, anna, lecture, deadline
+**Source** : serendipity
+**Lien** : https://www.lespetitschampionsdelalecture.fr/le-jeu/comment-s-inscrire/
+**Pourquoi ça compte** : Concours national de lecture à voix haute CM1-CM2, finale à la Comédie-Française. Inscriptions 24/08 → 02/12/2026, possibles hors temps scolaire via un groupe monté en bibliothèque (n'importe quel adulte peut inscrire). Dépend du niveau réel d'Anna (CE2 ou CM1, non renseigné dans family.md) — à vérifier avec elle.
+**Suite** : si Anna est en CM1, re-proposer avant mi-novembre (marge pour monter un groupe en bibliothèque avant le 02/12) ; sinon re-proposer à la rentrée 2027.
