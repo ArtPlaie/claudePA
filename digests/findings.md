@@ -1006,3 +1006,9 @@
 **Lien** : https://www.lespetitschampionsdelalecture.fr/le-jeu/comment-s-inscrire/
 **Pourquoi ça compte** : Concours national de lecture à voix haute CM1-CM2, finale à la Comédie-Française. Inscriptions 24/08 → 02/12/2026, possibles hors temps scolaire via un groupe monté en bibliothèque (n'importe quel adulte peut inscrire). Dépend du niveau réel d'Anna (CE2 ou CM1, non renseigné dans family.md) — à vérifier avec elle.
 **Suite** : si Anna est en CM1, re-proposer avant mi-novembre (marge pour monter un groupe en bibliothèque avant le 02/12) ; sinon re-proposer à la rentrée 2027.
+### 2026-09-18 — Corticoïde topique "soufflé" (EDS-FLU) : efficace dans la sinusite chronique SANS polypes, et épargneur d'ATB
+**Tags** : santé, isa, orl, rhinosinusite, crssnp, corticoïde-topique, non-atb, epargne-atb
+**Source** : health_watch
+**Lien** : https://pubmed.ncbi.nlm.nih.gov/42647052/
+**Pourquoi ça compte** : Analyse poolée des RCT ReOpen (Schlosser, Otolaryngol Head Neck Surg, 26 août 2026) comparant EDS-FLU (fluticasone en système à expiration, XHANCE) avec polypes (n=206) vs SANS polypes (n=341). Bénéfice congestion/SNOT-22 présent aussi dans le groupe SANS polypes — pile le phénotype d'Isa, là où la plupart des données corticoïde-haute-délivrance portaient sur les polypeux — ET réduction des exacerbations aiguës de 56-66 % avec moins d'ATB associés (l'angle qui compte vu sa contre-indication systémique). Preuve = sous-groupe post-hoc de RCT 2018-2021 (confiance moyenne). XHANCE non commercialisé en France → cible le mécanisme accessible ici : irrigation nasale corticoïde à haut volume (rinçage budésonide, déposé haut/postérieur). Complète le finding 2026-08-21 (budésonide irrigation, mais population AVEC polypes).
+**Suite** : à évoquer avec l'ORL d'Isa — protocole d'irrigation corticoïde haut volume comme levier non-ATB pour réduire les poussées ; ne pas viser XHANCE (indisponible FR).
