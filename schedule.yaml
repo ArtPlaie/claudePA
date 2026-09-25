@@ -36,7 +36,9 @@ tasks:
     cadence_days: 5
     channel: perso
     model: sonnet
-    enabled: true
+    enabled: false        # DÉSACTIVÉ 2026-09-25 : GMAIL_TOKEN_PERSO_JSON révoqué
+                           # (invalid_grant en boucle). Réactiver après ré-auth OAuth
+                           # (docs/setup-gmail.md) + refresh du secret GH.
 
   prompt_feedback:
     description: "Pont I/O bête : dépose les réponses mail brutes (IMAP → replies/*.md) et exécute les events mis en file par la routine /adapt_prompt (calendar/*.md → Calendar API). Zéro LLM."
