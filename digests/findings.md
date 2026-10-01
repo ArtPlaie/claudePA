@@ -1042,3 +1042,15 @@
 **Lien** : https://aiweekly.co/alerts/verge-metr-apollo-got-days-not-weeks-for-openai-safety-audits
 **Pourquoi ça compte** : Réponse au « tell » flaggé le 20/09 (les évaluateurs externes auront-ils des dents contraignantes ?) — et elle va dans le mauvais sens. Pour les audits GPT-6 chez OpenAI : METR + Redwood ont eu 6 jours sur site, Apollo 3 jours pour Astra dont seulement 2 avec accès chain-of-thought. Trois petites assos sont devenues les auditeurs de facto du frontier avec des fenêtres d'accès qui rétrécissent pendant que les capacités montent (salve Opus 5.5 / GPT-6 le 22/09). En parallèle Apollo publie avec UK AISI, METR, Redwood et Berkeley « Towards evaluations-based safety cases for AI scheming » — la brique méthodo pour argumenter qu'un système ne complote pas. Fit carrière direct Sylvain (éval/red-team/detection scheming, METR déjà cible) : la demande se muscle pendant que l'accès se restreint → l'expertise éval adversariale gagne en valeur.
 **Suite** : suivre si l'accès auditeur devient contraignant (temps + CoT garantis par régulation/charte) ou reste discrétionnaire ; le papier safety-cases est matière directe pour l'argumentaire de candidature (Chasing Fake Alignment / scheming).
+### 2026-10-01 — Harmony Intelligence : l'org evals/red-teaming née à Sydney, employeur cible naturel
+**Tags** : sydney, ai-safety, evals, red-team, employeur-cible, carrière
+**Source** : sydney_opportunities
+**Lien** : https://harmonyintelligence.com/careers
+**Pourquoi ça compte** : Startup remote-first fondée 2023 (Soroush Pour), équipes Sydney/Melbourne/SF/Tokyo, spécialisée dangerous capability evals et red-teaming automatisé (cyber, persuasion, self-exfiltration) — le créneau exact de l'angle carrière de Sylvain, dans sa ville cible. Pas de poste ouvert au 01/10 mais expressions of interest acceptées et ouvertures engineering/research annoncées ; leur absence de sponsoring visa est un non-sujet (PR). Rare org safety où être basé à Sydney est un atout, pas une concession.
+**Suite** : déposer l'EOI + viser un café à Sydney pendant la semaine NeurIPS (décembre) ; re-checker la page careers à chaque run.
+### 2026-10-01 — Pivotal Research Fellowship 27Q1 (LISA Londres, 18/01–30/04/2027) : candidatures ouvrent en octobre
+**Tags** : formation, ai-safety, fellowship, londres, deadline
+**Source** : sydney_opportunities
+**Lien** : https://www.pivotal-research.org/fellowship
+**Pourquoi ça compte** : 15 semaines de recherche mentorée (mentors Redwood/DeepMind/FAR AI/SecureBio) à LISA, £6-8k + logement/voyage/compute, ouvert à tous sans condition de diplôme — même famille de porte d'entrée que MATS (manqué en sept.), fenêtre suivante dans le calendrier. Candidatures fellows annoncées pour octobre 2026 ; 1,3 % d'acceptation au round précédent (long shot assumé, dossier mutualisable avec Apollo/BlueDot).
+**Suite** : guetter l'ouverture (début octobre) et décider vite — même arbitrage famille/Londres que MATS et le poste evals Apollo.
