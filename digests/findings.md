@@ -1054,3 +1054,15 @@
 **Lien** : https://www.pivotal-research.org/fellowship
 **Pourquoi ça compte** : 15 semaines de recherche mentorée (mentors Redwood/DeepMind/FAR AI/SecureBio) à LISA, £6-8k + logement/voyage/compute, ouvert à tous sans condition de diplôme — même famille de porte d'entrée que MATS (manqué en sept.), fenêtre suivante dans le calendrier. Candidatures fellows annoncées pour octobre 2026 ; 1,3 % d'acceptation au round précédent (long shot assumé, dossier mutualisable avec Apollo/BlueDot).
 **Suite** : guetter l'ouverture (début octobre) et décider vite — même arbitrage famille/Londres que MATS et le poste evals Apollo.
+### 2026-10-02 — MATS Residency : 6-24 mois salariés ($155-285k) pour un agenda perso, deadline 31/10
+**Tags** : formation, ai-safety, mats, residency, deadline, carrière
+**Source** : ai_jobs_formations
+**Lien** : https://www.matsprogram.org/residency
+**Pourquoi ça compte** : Pas le fellowship 12 semaines : un vrai poste de recherche indépendante financé ($155-285k/an, compute sans cap, relocation $25k), hybride Berkeley/Londres/DC avec seulement ≥1/3 du temps sur place — l'option la plus compatible famille identifiée depuis juin. Sélection sur « quality and seriousness of your work, not the titles on your CV », vise explicitement les transitions vers la safety. Candidatures 25/08 → 31/10 AoE, réponse fin nov., work test payé début déc. (collision possible NeurIPS Sydney). Agenda naturel : manipulation de marché → détection scheming/sandbagging.
+**Suite** : décision avant fin octobre ; produire l'artefact public (critique safety-case scheming) avant le 31/10, il sert aussi pour Apollo.
+### 2026-10-02 — AISI UK : des rôles red team accessibles sans historique UK (BPSS seulement) — update du blocker de juin
+**Tags** : ai-safety, job, uk, aisi, red-team, clearance, update
+**Source** : ai_jobs_formations
+**Lien** : https://job-boards.eu.greenhouse.io/aisi/jobs/4977023101
+**Pourquoi ça compte** : Le finding du 23/06 classait AISI UK « piste morte » (CTC/SC = 2+ ans de résidence UK). L'annonce Alignment Red Team RE/RS (deadline 11/10, £65-145k, pas de PhD, « any nationality or background ») n'exige que le BPSS, le CTC n'étant qu'une « strong preference ». La porte est entrouverte, pas grande ouverte : la préférence CTC pénalise à dossier égal, et le requis « projet de recherche significatif en AI safety » reste à argumenter. Vague de 12 rôles au total, même deadline.
+**Suite** : réviser le réflexe « skip AISI UK » — vérifier le niveau de clearance exigé rôle par rôle aux prochains runs au lieu d'écarter d'office.
