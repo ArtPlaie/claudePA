@@ -1090,3 +1090,9 @@
 **Lien** : https://www.aaff.fr/incendies/
 **Pourquoi ça compte** : Plus de 2 000 ha brûlés, zone fermée, 25 Bosses et Faisanderie impraticables. L'AAFF (qui balise et entretient tous les sentiers bleus Denecourt depuis 1842) annonce des chantiers de restauration ouverts aux adhérents « le moment venu ». C'est une occasion rare de mettre la main sur la forêt locale, avec les enfants.
 **Suite** : si Sylvain adhère, surveiller l'annonce des chantiers bénévoles (veilles locales) et la lui pousser dès qu'elle tombe.
+### 2026-10-09 — Rencontres du Ciel et de l'Espace : le grand rendez-vous astro biennal (Cité des sciences, mi-novembre années paires)
+**Tags** : local, astro, famille, Isa
+**Source** : local_activities
+**Lien** : https://www.afastronomie.fr/rencontres-ciel-espace
+**Pourquoi ça compte** : Organisé par l'AFA avec la Cité des sciences tous les deux ans (15e édition les 13-15 nov. 2026). C'est le plus gros rassemblement astro d'Europe : ~150 conférences et ateliers, un salon du matériel et une braderie. Il colle à l'astro/lumière d'Isa et à la curiosité de l'aînée. Comme il revient tous les deux ans, il sort de la mémoire 30j.
+**Suite** : info pure, à re-proposer en septembre 2028 (local_activities) pour bloquer le weekend et prendre les billets tôt.
