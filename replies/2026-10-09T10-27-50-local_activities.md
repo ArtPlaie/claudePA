@@ -5,7 +5,9 @@ veille: local_activities
 report_subject: 'Re: claudePA — Sorties locales (2026-10-09)'
 from_addr: sylvainribes@gmail.com
 source_message_id: <CAHuLdqbEuEuEJc41L=O2MLPYP8GmN=fL75=NTR2b2ZqyFO5POw@mail.gmail.com>
-status: pending
+status: done
+done_at: 2026-10-09T14:02:30+00:00
+actions_summary: Isa astro/aurores retiré du prompt local_activities (4 mentions); règle vérif. département du lieu ajoutée; question Montreuil répondue dans le récap
 ---
 
 ## Réponse de Sylvain

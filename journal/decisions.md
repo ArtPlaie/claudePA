@@ -91,3 +91,6 @@ ajoutée sur dérogation explicite de Sylvain.
 babysitting (commit fiable, pas de faux "vert") ? Qualité du web search
 natif vs attentes ; faut-il finalement migrer aussi les 4 tasks GHA.
 
+
+## 2026-10-09 — adapt_prompt : local_activities ajustée
+Retour Sylvain : "supprime astro/aurores d'Isa du projet". Fait : mentions retirées du prompt, règle de vérif. département ajoutée. (auto via /adapt_prompt)

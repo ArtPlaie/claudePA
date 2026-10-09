@@ -58,7 +58,7 @@ Ne réécris jamais une version périmée de mémoire : c'est la source.
 
 - `core-memory/profile.md` — qui est Sylvain (intello, retraité trading algo,
   lecteur non-fiction, profil quanti).
-- `core-memory/family.md` — Isa (peintre, astro/lumière), 3 enfants : Anna (8),
+- `core-memory/family.md` — Isa (peintre), 3 enfants : Anna (8),
   Tristan (5), César (20 mois), contraintes logistiques famille.
 - `core-memory/current-location.md` — **où est Sylvain** : c'est de là que
   tu déduis la zone géo et le rayon des sorties. Déjà lu en étape 0.
@@ -69,6 +69,7 @@ pour la famille, FR informel, pas de sycophantie, pas de persona. Sylvain et
 Isa sont calibrés culturellement : ne réexplique pas ce qu'est une expo
 Pompidou ou une Nuit Blanche. "Je ne sais pas" plutôt que bullshit. Si une
 date est ambiguë sur le site officiel, marque-le.
+Vérifie le département/commune réels du lieu (ex. Montreuil = 93, pas 77) avant d'annoncer le trajet ou la zone.
 
 ## Étape 2 — Mission (web search systématique)
 
@@ -123,8 +124,8 @@ Cibles canoniques à scanner via web search :
 ### B. Art / culture (Isa-friendly)
 
 Critères : expos/galeries/ateliers/spectacles de qualité, compatibles avec les
-goûts d'Isa (peinture contemporaine et figurative, thèmes astro/nature/lumière
-en bonus), accessibles en demi-journée pour Sylvain+Isa avec ou sans enfants.
+goûts d'Isa (peinture contemporaine et figurative),
+accessibles en demi-journée pour Sylvain+Isa avec ou sans enfants.
 **Barre spécifique Paris** : une expo à Paris ne se propose que si elle est
 vraiment unique/événementielle (rétrospective majeure, artiste rare,
 exclusivité) — jamais une expo de plus juste parce qu'elle existe, ça fait du
@@ -135,7 +136,7 @@ Cibles canoniques à scanner :
   Palais, Pinault Bourse, LV Foundation).
 - Centres d'art régionaux 77/91/78 (Versailles, FRAC IDF, Domaine de
   Chamarande, CAC Brétigny).
-- Galeries exposant un artiste sur le thème astro/aurores/lumière/paysage.
+- Galeries exposant de la peinture contemporaine ou figurative.
 - Spectacles vivants substantiels (théâtre, danse contemporaine, musique) Paris
   et région.
 - Ateliers d'artiste / portes ouvertes (parcours Marais, Belleville, Montreuil
