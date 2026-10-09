@@ -1084,3 +1084,10 @@
 **Lien** : https://clinicaltrials.gov/study/NCT06691113
 **Pourquoi ça compte** : Prolonge le finding 2026-09-25 (échec du brensocatib → la sinusite chronique SANS polypes, phénotype exact d'Isa, se retrouvait sans traitement systémique ciblé). L'itepekimab (anticorps anti-IL-33, Sanofi) est le candidat suivant sur ce créneau : essai de preuve de concept randomisé vs placebo, 24 sem, critère principal = opacification sinusienne au scanner. ClinicalTrials.gov le marque COMPLETED (vérif. 08/2026) mais AUCUN résultat d'efficacité n'est publié (ni papier, ni abstract, ni communiqué), et les registres se contredisent sur l'effectif (60 vs 109). Confiance faible sur l'efficacité (zéro donnée), moyenne sur le statut "prochain shot sérieux". Compatible non-ATB (biologique), mais même réserve que le dupilumab : piste réelle seulement si positif ET phénotype type-2 confirmé.
 **Suite** : à surveiller — guetter le readout (communiqué Sanofi, abstract congrès ORL/allergo, posting CT.gov). Ne pas re-flaguer la CRSsNP ciblée comme "espace vide" : itepekimab est la pièce vivante du pipeline. Tant que pas de données, info pure, ne pas drafter.
+
+### 2026-10-09 — Rencontres du Ciel et de l'Espace : le grand rendez-vous astro biennal (Cité des sciences, mi-novembre années paires)
+**Tags** : local, astro, famille, Isa
+**Source** : local_activities
+**Lien** : https://www.afastronomie.fr/rencontres-ciel-espace
+**Pourquoi ça compte** : Organisé par l'AFA avec la Cité des sciences tous les deux ans (15e édition les 13-15 nov. 2026). C'est le plus gros rassemblement astro d'Europe : ~150 conférences et ateliers, un salon du matériel et une braderie. Il colle à l'astro/lumière d'Isa et à la curiosité de l'aînée. Comme il revient tous les deux ans, il sort de la mémoire 30j.
+**Suite** : info pure, à re-proposer en septembre 2028 (local_activities) pour bloquer le weekend et prendre les billets tôt.
