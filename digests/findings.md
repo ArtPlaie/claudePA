@@ -1084,3 +1084,10 @@
 **Lien** : https://clinicaltrials.gov/study/NCT06691113
 **Pourquoi ça compte** : Prolonge le finding 2026-09-25 (échec du brensocatib → la sinusite chronique SANS polypes, phénotype exact d'Isa, se retrouvait sans traitement systémique ciblé). L'itepekimab (anticorps anti-IL-33, Sanofi) est le candidat suivant sur ce créneau : essai de preuve de concept randomisé vs placebo, 24 sem, critère principal = opacification sinusienne au scanner. ClinicalTrials.gov le marque COMPLETED (vérif. 08/2026) mais AUCUN résultat d'efficacité n'est publié (ni papier, ni abstract, ni communiqué), et les registres se contredisent sur l'effectif (60 vs 109). Confiance faible sur l'efficacité (zéro donnée), moyenne sur le statut "prochain shot sérieux". Compatible non-ATB (biologique), mais même réserve que le dupilumab : piste réelle seulement si positif ET phénotype type-2 confirmé.
 **Suite** : à surveiller — guetter le readout (communiqué Sanofi, abstract congrès ORL/allergo, posting CT.gov). Ne pas re-flaguer la CRSsNP ciblée comme "espace vide" : itepekimab est la pièce vivante du pipeline. Tant que pas de données, info pure, ne pas drafter.
+
+### 2026-10-09 — AAFF : restauration des sentiers bleus après l'incendie de juillet
+**Tags** : serendipity, foret, fontainebleau, benevolat, famille
+**Source** : serendipity
+**Lien** : https://www.aaff.fr/incendies/
+**Pourquoi ça compte** : Plus de 2 000 ha brûlés, zone fermée, 25 Bosses et Faisanderie impraticables. L'AAFF (qui balise et entretient tous les sentiers bleus Denecourt depuis 1842) annonce des chantiers de restauration ouverts aux adhérents « le moment venu ». C'est une occasion rare de mettre la main sur la forêt locale, avec les enfants.
+**Suite** : si Sylvain adhère, surveiller l'annonce des chantiers bénévoles (veilles locales) et la lui pousser dès qu'elle tombe.
