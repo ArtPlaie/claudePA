@@ -1108,3 +1108,9 @@
 **Lien** : https://www.implicator.ai/openai-372-math-results-mathematicians-race-to-read/
 **Pourquoi ça compte** : Si la preuve UGC tient, saut qualitatif sur la recherche autonome. ~42 % des résultats ont un certificat Lean, mais personne n'a encore validé la UGC (exposé jugé illisible par Moshkovitz), certains certificats via native_decide, et Lean ne garantit pas la fidélité de l'énoncé formel. Cas d'école de la question « qui vérifie ce que produisent les modèles » → argument scalable oversight.
 **Suite** : guetter la validation/réfutation par la communauté TCS (blog Aaronson, experts UGC) dans les semaines qui viennent.
+### 2026-10-16 — Chirurgie endoscopique > traitement médical seul dans la sinusite aiguë récidivante (1er RCT)
+**Tags** : santé, isa, orl, non-atb
+**Source** : health_watch
+**Lien** : https://jamanetwork.com/journals/jamaotolaryngology/fullarticle/10.1001/jamaoto.2026.1537
+**Pourquoi ça compte** : RCT finlandais (n=59, JAMA Oto 2026) : +22 pts de SNOT-22 à 6 mois avec la chirurgie vs traitement médical seul, qui ne bouge pas ; les cures d'ATB baissent aussi (pas de chiffres dans l'abstract). Petit, ouvert, arrêté tôt → confiance moyenne. Option non-ATB si le tableau d'Isa comporte des poussées aiguës répétées ; 3/30 infections post-op → prévoir un plan non-ATB.
+**Suite** : question à poser à l'ORL (forme chronique continue vs poussées récidivantes).
