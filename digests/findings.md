@@ -1114,3 +1114,9 @@
 **Lien** : https://jamanetwork.com/journals/jamaotolaryngology/fullarticle/10.1001/jamaoto.2026.1537
 **Pourquoi ça compte** : RCT finlandais (n=59, JAMA Oto 2026) : +22 pts de SNOT-22 à 6 mois avec la chirurgie vs traitement médical seul, qui ne bouge pas ; les cures d'ATB baissent aussi (pas de chiffres dans l'abstract). Petit, ouvert, arrêté tôt → confiance moyenne. Option non-ATB si le tableau d'Isa comporte des poussées aiguës répétées ; 3/30 infections post-op → prévoir un plan non-ATB.
 **Suite** : question à poser à l'ORL (forme chronique continue vs poussées récidivantes).
+### 2026-10-16 — Ferme du Buisson (Noisiel, 77) : scène nationale à suivre
+**Tags** : local, culture, famille, théâtre, art-contemporain
+**Source** : local_activities
+**Lien** : https://www.lafermedubuisson.com/programme
+**Pourquoi ça compte** : Scène nationale à ~45 min de Bois-le-Roi. Elle réunit du théâtre de premier plan (*Saïgon* de Guiela Nguyen en nov. 2026), des spectacles jeune public dès 3 ans, un centre d'art contemporain et des ateliers famille à 5 € pendant les vacances. C'est le meilleur filon culturel du 77 hors châteaux, et il est sous-exploité par les veilles jusqu'ici.
+**Suite** : scanner son programme à chaque run de local_activities / activities_next10days.
