@@ -1108,3 +1108,9 @@
 **Lien** : https://www.implicator.ai/openai-372-math-results-mathematicians-race-to-read/
 **Pourquoi ça compte** : Si la preuve UGC tient, saut qualitatif sur la recherche autonome. ~42 % des résultats ont un certificat Lean, mais personne n'a encore validé la UGC (exposé jugé illisible par Moshkovitz), certains certificats via native_decide, et Lean ne garantit pas la fidélité de l'énoncé formel. Cas d'école de la question « qui vérifie ce que produisent les modèles » → argument scalable oversight.
 **Suite** : guetter la validation/réfutation par la communauté TCS (blog Aaronson, experts UGC) dans les semaines qui viennent.
+### 2026-10-16 — Ferme du Buisson (Noisiel, 77) : scène nationale à suivre
+**Tags** : local, culture, famille, théâtre, art-contemporain
+**Source** : local_activities
+**Lien** : https://www.lafermedubuisson.com/programme
+**Pourquoi ça compte** : Scène nationale à ~45 min de Bois-le-Roi. Elle réunit du théâtre de premier plan (*Saïgon* de Guiela Nguyen en nov. 2026), des spectacles jeune public dès 3 ans, un centre d'art contemporain et des ateliers famille à 5 € pendant les vacances. C'est le meilleur filon culturel du 77 hors châteaux, et il est sous-exploité par les veilles jusqu'ici.
+**Suite** : scanner son programme à chaque run de local_activities / activities_next10days.
