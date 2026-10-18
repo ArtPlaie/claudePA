@@ -1120,3 +1120,17 @@
 **Lien** : https://www.lafermedubuisson.com/programme
 **Pourquoi ça compte** : Scène nationale à ~45 min de Bois-le-Roi. Elle réunit du théâtre de premier plan (*Saïgon* de Guiela Nguyen en nov. 2026), des spectacles jeune public dès 3 ans, un centre d'art contemporain et des ateliers famille à 5 € pendant les vacances. C'est le meilleur filon culturel du 77 hors châteaux, et il est sous-exploité par les veilles jusqu'ici.
 **Suite** : scanner son programme à chaque run de local_activities / activities_next10days.
+
+### 2026-10-18 — Anthropic embarque METR avec accès quasi-employé et droit de publier sans veto (premier évaluateur embarqué réel)
+**Tags** : ia, ai-safety, evals, embedded-evaluations, metr, anthropic, policy, sylvain, carrière
+**Source** : weekly_briefing
+**Lien** : https://www.anthropic.com/news/an-update-on-independent-evaluators
+**Pourquoi ça compte** : Suite concrète du finding du 04/10 (Apollo au Sénat, embedded evaluations). Le 15/10, 6 personnes de METR obtiennent matériel, bureaux et outils internes au niveau des équipes risques d'Anthropic, avec publication sans veto (seulement des caviardages de catégories définies à l'avance). Système à 3 niveaux (SecureBio en niveau 1 sur le chapitre bio/chimie, Accenture et Faculty en discussion). Arrive pendant que le SIF rédige ses règles à 120 jours, donc c'est probablement le modèle de référence. L'évaluateur embarqué devient un vrai métier à staffer.
+**Suite** : surveiller (1) la première publication METR sous ce régime, (2) si OpenAI/Google suivent, (3) si les règles SIF (vers mi-février 2027) reprennent le modèle. Matière directe pour une candidature METR/Apollo — détail dans ai_jobs_formations.
+
+### 2026-10-18 — Les labos sous enquête de partout la même semaine : FTC (CID), AI Office UE, charte SIF à 120 jours, 8 États contre OpenAI
+**Tags** : ia, policy, regulation, ftc, eu-ai-act, anthropic, openai
+**Source** : weekly_briefing
+**Lien** : https://www.technology.org/2026/10/16/white-house-super-intelligence-force-charter-120-days/
+**Pourquoi ça compte** : Effet direct des incidents d'agents (finding du 11/10). FTC : CID de plus de 50 pages à OpenAI et Anthropic + témoignage des dirigeants prévu. SIF : charte du 15/10 (rapport PCAST, règles de déclaration des brèches, 120 jours pour recommander un cadre de supervision frontière). AI Office UE : demande de dossiers (source unique, à reconfirmer). 8 États républicains : procès en protection des consommateurs contre OpenAI. La déclaration d'incidents devient une contrainte réelle, avant toute régulation des capacités.
+**Suite** : échéance SIF autour de mi-février 2027 ; section risques du S-1 Anthropic (IPO mi-novembre) ; info pure sinon.
