@@ -1133,3 +1133,10 @@
 **Lien** : https://www.technology.org/2026/10/16/white-house-super-intelligence-force-charter-120-days/
 **Pourquoi ça compte** : Effet direct des incidents d'agents (finding du 11/10). FTC : CID de plus de 50 pages à OpenAI et Anthropic + témoignage des dirigeants prévu. SIF : charte du 15/10 (rapport PCAST, règles de déclaration des brèches, 120 jours pour recommander un cadre de supervision frontière). AI Office UE : demande de dossiers (source unique, à reconfirmer). 8 États républicains : procès en protection des consommateurs contre OpenAI. La déclaration d'incidents devient une contrainte réelle, avant toute régulation des capacités.
 **Suite** : échéance SIF autour de mi-février 2027 ; section risques du S-1 Anthropic (IPO mi-novembre) ; info pure sinon.
+
+### 2026-10-19 — Phare de l'île Louët (Carantec) : guetter l'ouverture des résas 2027
+**Tags** : serendipity, voyage, famille, bretagne
+**Source** : serendipity
+**Lien** : https://www.baiedemorlaix.bzh/en/discover/ile-louet/
+**Pourquoi ça compte** : maison du gardien de phare louable 2 nuits max (1er août → 30 oct), 10 couchages, ~709 €/week-end, accès bateau (transfert 137 € A/R). Places rares, fenêtre 2026 fermée.
+**Suite** : demander à gitesinsolites@tourisme-morlaix.bzh la date d'ouverture des résas 2027, réserver dès l'ouverture si partant.
