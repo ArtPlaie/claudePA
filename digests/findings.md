@@ -1151,3 +1151,9 @@
 **Lien** : https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/
 **Pourquoi ça compte** : première phase 3 positive d'un vaccin thérapeutique conçu sur les néoantigènes de chaque patient (n=1 137) : 82,2 % vs 70,0 % sans récidive à 2 ans, métastases à distance HR 0,62, toxicité grave inchangée. Valide la plateforme au-delà du mélanome. Survie globale pas encore mature.
 **Suite** : info pure ; surveiller la publication NEJM et les données de survie globale.
+### 2026-10-23 — Les Impériales de Fontainebleau (weekend napoléonien annuel, mi/fin novembre)
+**Tags** : local, famille, histoire, fontainebleau, annuel
+**Source** : local_activities
+**Lien** : https://www.sortiraparis.com/en/what-to-visit-in-paris/history-heritage/articles/321309-the-first-empire-s-imperial-ball-at-fontainebleau-virtual-reality-and-strategy-games-77
+**Pourquoi ça compte** : événement municipal récurrent (16-17 nov. 2024, 15-16 nov. 2025, 21-22 nov. 2026) à 10 min de la maison : conférences d'historiens, bal Empire avec initiation, animations jeunesse, en grande partie gratuites. Rare combo famille + Sylvain au même endroit.
+**Suite** : info pure — vérifier les dates début octobre chaque année et les mettre dans le mail local_activities.
