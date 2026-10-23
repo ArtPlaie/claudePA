@@ -1139,3 +1139,15 @@
 **Lien** : https://www.baiedemorlaix.bzh/en/discover/ile-louet/
 **Pourquoi ça compte** : maison du gardien de phare louable 2 nuits max (1er août → 30 oct), 10 couchages, ~709 €/week-end, accès bateau (transfert 137 € A/R). Places rares, fenêtre 2026 fermée.
 **Suite** : demander à gitesinsolites@tourisme-morlaix.bzh la date d'ouverture des résas 2027, réserver dès l'ouverture si partant.
+### 2026-10-23 — Dupilumab dans la CRS sans polypes : deuxième RCT positif (Johns Hopkins, JACI)
+**Tags** : santé, isa, orl, biothérapie, non-atb
+**Source** : health_watch
+**Lien** : https://doi.org/10.1016/j.jaci.2026.08.032
+**Pourquoi ça compte** : RCT indépendant d'ORION (n=33, 6 mois, double aveugle) : SNOT-22 −7 vs placebo (p<0,001), effet plus marqué chez les profils type 2 (définis par éosinophiles OU prick-tests positifs). ORION était positif sur le scanner, celui-ci l'est sur les symptômes : deux essais concordants sur le phénotype d'Isa. Toujours hors AMM, effectifs petits.
+**Suite** : faire classer Isa type 2 ou non (éosinophiles + bilan allergique) à la prochaine consult ORL ; si oui, discuter le dupilumab hors AMM.
+### 2026-10-23 — INTerpath-001 : vaccin ARN personnalisé + pembrolizumab, HR 0,58 sur la récidive du mélanome
+**Tags** : santé, publique, oncologie, arnm
+**Source** : health_watch
+**Lien** : https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/
+**Pourquoi ça compte** : première phase 3 positive d'un vaccin thérapeutique conçu sur les néoantigènes de chaque patient (n=1 137) : 82,2 % vs 70,0 % sans récidive à 2 ans, métastases à distance HR 0,62, toxicité grave inchangée. Valide la plateforme au-delà du mélanome. Survie globale pas encore mature.
+**Suite** : info pure ; surveiller la publication NEJM et les données de survie globale.
