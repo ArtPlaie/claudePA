@@ -1175,3 +1175,9 @@
 **Lien** : https://doi.org/10.1056/NEJMoa2609482
 **Pourquoi ça compte** : DeLLphi-305 (NEJM, 24/10/2026, ESMO), phase 3 ouverte, n=563 : le tarlatamab (bispécifique DLL3×CD3) ajouté au durvalumab en maintenance donne une survie globale HR 0,42 (médiane 21,1 vs 12,7 mois), soit le premier vrai gain de survie dans ce cancer depuis l'immunothérapie (2019). Le relargage cytokinique est fréquent mais de bas grade.
 **Suite** : info pure.
+### 2026-10-30 — Résidence Hengelbrock / Balthasar Neumann au château de Fontainebleau (saison 2026-27)
+**Tags** : local, musique, fontainebleau, saison
+**Source** : local_activities
+**Lien** : https://www.chateaudefontainebleau.fr/concert-de-thomas-hengelbrock/
+**Pourquoi ça compte** : un ensemble de niveau international joue en résidence au château, à 10 min de la maison, d'octobre 2026 à mai 2027. Au programme : des concerts de la reine en octobre, les Vêpres de Monteverdi pour Noël (11-13 déc., dim. 15h, 27 €), des balades musicales et des projets jeune public au printemps. C'est l'alternative locale aux concerts parisiens.
+**Suite** : surveiller la billetterie pour les dates du printemps 2027 ; vérifier si la résidence est reconduite en 2027-28.
