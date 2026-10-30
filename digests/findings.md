@@ -1169,3 +1169,9 @@
 **Lien** : https://soundapproach.co.uk/pages/nocmig
 **Pourquoi ça compte** : chaque automne, pic de passage nocturne des grives (mauvis, musiciennes, litornes) fin octobre–début novembre. Un smartphone ou un AudioMoth (~100 €) posé dehors du crépuscule à l'aube capte leurs cris, analysables en spectrogramme (Audacity) ; réseau participatif LPO « Vol de nuit » (MNHN, Trektellen). Gratuit, saisonnier, faisable avec les enfants.
 **Suite** : info pure — re-proposer en rappel début octobre si Sylvain a accroché.
+### 2026-10-30 — Tarlatamab en maintenance : nouveau standard dans le cancer du poumon à petites cellules étendu
+**Tags** : santé, publique, oncologie, breakthrough
+**Source** : health_watch
+**Lien** : https://doi.org/10.1056/NEJMoa2609482
+**Pourquoi ça compte** : DeLLphi-305 (NEJM, 24/10/2026, ESMO), phase 3 ouverte, n=563 : le tarlatamab (bispécifique DLL3×CD3) ajouté au durvalumab en maintenance donne une survie globale HR 0,42 (médiane 21,1 vs 12,7 mois), soit le premier vrai gain de survie dans ce cancer depuis l'immunothérapie (2019). Le relargage cytokinique est fréquent mais de bas grade.
+**Suite** : info pure.
