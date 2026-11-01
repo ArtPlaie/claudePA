@@ -1181,3 +1181,10 @@
 **Lien** : https://www.chateaudefontainebleau.fr/concert-de-thomas-hengelbrock/
 **Pourquoi ça compte** : un ensemble de niveau international joue en résidence au château, à 10 min de la maison, d'octobre 2026 à mai 2027. Au programme : des concerts de la reine en octobre, les Vêpres de Monteverdi pour Noël (11-13 déc., dim. 15h, 27 €), des balades musicales et des projets jeune public au printemps. C'est l'alternative locale aux concerts parisiens.
 **Suite** : surveiller la billetterie pour les dates du printemps 2027 ; vérifier si la résidence est reconduite en 2027-28.
+
+### 2026-11-01 — Apollo : le poste evals « autodidactes bienvenus » a disparu du board, remplacé par un Lead
+**Tags** : sydney, ai-safety, evals, apollo, jobs
+**Source** : sydney_opportunities
+**Lien** : https://jobs.lever.co/apolloresearch
+**Pourquoi ça compte** : Le Research Scientist/Engineer (Evaluations) remonté le 01/10 comme meilleur fit n'est plus en ligne. Il reste un Lead (Embedded Evaluations) et un poste Fundamental Science, plus AI Security & Control Researcher (Londres/SF). Les fenêtres rolling ouvertes « pour profils atypiques » se ferment en quelques semaines : il faut candidater le mois où elles sortent.
+**Suite** : info pure ; surveiller le board pour une réouverture.
