@@ -1212,3 +1212,9 @@
 **Lien** : https://www.governance.ai/post/uk-summer-fellowship-2027-applied-track
 **Pourquoi ça compte** : Londres du 7 juin au 27 août 2027, £14k, visa sponsorisé, deux tracks (Research ou Applied/non-research). Les parents ont droit à 2 jours de remote par semaine sans perte de salaire, et l'été recoupe les vacances scolaires françaises. C'est le format londonien le plus compatible famille repéré à ce jour. Décision en mars.
 **Suite** : candidater avant le 22/11 (23h59 GMT). Le choix Research ou Applied dépend de l'existence de l'artefact public safety case.
+### 2026-11-02 — La première photo de l'histoire revient en France (Chalon, printemps 2027)
+**Tags** : serendipity, photo, famille, sortie, 2027
+**Source** : serendipity
+**Lien** : https://unidivers.fr/event/lempreinte-dhelios-1826-1827-niepce-invente-la-photographie-musee-nicephore-niepce-chalon-sur-saone-2027-03-20t0930000100/
+**Pourquoi ça compte** : Le *Point de vue du Gras* de Niépce est conservé à Austin depuis 1963 et doit être exposé pour la première fois en France au musée Nicéphore-Niépce de Chalon-sur-Saône. L'expo *L'empreinte d'Hélios* va du 20 mars au 20 juin 2027, la plaque elle-même est annoncée du 26 avril au 20 juin. Le prêt était encore en négociation au dernier pointage. Chalon est à environ 2h45, donc ça se fait en week-end.
+**Suite** : vérifier la confirmation du prêt et la billetterie vers février 2027.
