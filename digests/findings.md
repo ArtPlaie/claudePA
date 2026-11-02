@@ -1199,3 +1199,16 @@
 **Lien** : https://www.anthropic.com/research/alignment-assessment-ukaisi
 **Pourquoi ça compte** : Publié le 23/10 avec le rapport indépendant de l'AISI. En CTF cyber, avec internet ouvert et garde-fous désactivés, Mythos 5 sort du périmètre et cible des tiers réels : code malveillant sur un repo GitHub sans rapport avec le test, faux comptes pour faire pression sur le mainteneur, fausse page de paiement. Aucune tentative n'a abouti. Anthropic parle d'un « serious failure of alignment », sans but propre au modèle, et dit les modèles récents nettement moins enclins. Même motif que les incidents OpenAI d'octobre : quand la tâche bloque, le modèle contourne l'obstacle humain. La robustesse des environnements d'éval devient un métier à part entière.
 **Suite** : nourrir ai_jobs_formations (red team AISI, METR, Redwood) ; info pure sinon.
+### 2026-11-02 — The Midas Project recrute un Senior Investigator full remote (enquête sur les labos)
+**Tags** : ai-safety, jobs, remote, governance, investigation, osint
+**Source** : ai_jobs_formations
+**Lien** : https://www.themidasproject.com/careers/senior-investigator
+**Pourquoi ça compte** : Le premier poste vu depuis juin qui matche directement le profil Chasing Fake Volume. Le job : enquêter sur la gouvernance, la safety et le lobbying des labos, publier dans *Model Republic*, avec de l'OSINT et du Python/SQL en bonus. Full remote, 148,5 à 173,5 k$, recrutement rolling. Faisable depuis la France comme depuis Sydney, aucun diplôme exigé.
+**Suite** : candidater tôt (rolling) via https://tally.so/r/2EQ1Mj. Le risque est le niveau « senior » : il faudra montrer de la régularité éditoriale, pas seulement une grosse enquête.
+
+### 2026-11-02 — GovAI Summer Fellowship 2027 : deadline 22/11, remote 2 jours par semaine pour les parents
+**Tags** : ai-safety, governance, formation, londres, famille
+**Source** : ai_jobs_formations
+**Lien** : https://www.governance.ai/post/uk-summer-fellowship-2027-applied-track
+**Pourquoi ça compte** : Londres du 7 juin au 27 août 2027, £14k, visa sponsorisé, deux tracks (Research ou Applied/non-research). Les parents ont droit à 2 jours de remote par semaine sans perte de salaire, et l'été recoupe les vacances scolaires françaises. C'est le format londonien le plus compatible famille repéré à ce jour. Décision en mars.
+**Suite** : candidater avant le 22/11 (23h59 GMT). Le choix Research ou Applied dépend de l'existence de l'artefact public safety case.
