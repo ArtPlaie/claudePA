@@ -1218,3 +1218,10 @@
 **Lien** : https://unidivers.fr/event/lempreinte-dhelios-1826-1827-niepce-invente-la-photographie-musee-nicephore-niepce-chalon-sur-saone-2027-03-20t0930000100/
 **Pourquoi ça compte** : Le *Point de vue du Gras* de Niépce est conservé à Austin depuis 1963 et doit être exposé pour la première fois en France au musée Nicéphore-Niépce de Chalon-sur-Saône. L'expo *L'empreinte d'Hélios* va du 20 mars au 20 juin 2027, la plaque elle-même est annoncée du 26 avril au 20 juin. Le prêt était encore en négociation au dernier pointage. Chalon est à environ 2h45, donc ça se fait en week-end.
 **Suite** : vérifier la confirmation du prêt et la billetterie vers février 2027.
+
+### 2026-11-06 — Bepirovirsen (Hibsago) : 1ère guérison fonctionnelle de l'hépatite B chronique autorisée (FDA)
+**Tags** : santé, publique, hépatite B, antisens
+**Source** : health_watch
+**Lien** : https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-the-us-for-the-treatment-of-chronic-hepatitis-b-chb/
+**Pourquoi ça compte** : premier traitement à durée finie (6 mois) qui fait disparaître l'antigène HBs et l'ADN viral 24 semaines après l'arrêt de tous les traitements : 19 % contre 0 % sous placebo (B-Well 1+2, n=1834), 26 % si HBs ≤1000 UI/mL. Indication restreinte (patients sans cirrhose, déjà contrôlés, HBs ≤3000 UI/mL). Durabilité à long terme encore inconnue.
+**Suite** : info pure (suivre l'avis EMA/HAS).
