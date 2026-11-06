@@ -1224,3 +1224,9 @@
 **Lien** : https://www.gsk.com/en-gb/media/press-releases/hibsago-bepirovirsen-approved-in-the-us-for-the-treatment-of-chronic-hepatitis-b-chb/
 **Pourquoi ça compte** : premier traitement à durée finie (6 mois) qui fait disparaître l'antigène HBs et l'ADN viral 24 semaines après l'arrêt de tous les traitements : 19 % contre 0 % sous placebo (B-Well 1+2, n=1834), 26 % si HBs ≤1000 UI/mL. Indication restreinte (patients sans cirrhose, déjà contrôlés, HBs ≤3000 UI/mL). Durabilité à long terme encore inconnue.
 **Suite** : info pure (suivre l'avis EMA/HAS).
+### 2026-11-06 — Académie des sciences : après-midis thématiques gratuits
+**Tags** : local, intellectuel, sciences, paris
+**Source** : local_activities
+**Lien** : https://www.academie-sciences.fr/en/events
+**Pourquoi ça compte** : conférences et colloques de niveau recherche, gratuits sur inscription Eventbrite, quai de Conti (ex. « Prédictibilité : que peut-on prédire ? », 1er décembre 2026). Un format adulte, en semaine, en plein dans le profil de Sylvain (incertitude, systèmes complexes).
+**Suite** : scanner l'agenda à chaque run local_activities ; s'inscrire dès l'ouverture, les places sont limitées.
