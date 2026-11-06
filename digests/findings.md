@@ -1218,3 +1218,10 @@
 **Lien** : https://unidivers.fr/event/lempreinte-dhelios-1826-1827-niepce-invente-la-photographie-musee-nicephore-niepce-chalon-sur-saone-2027-03-20t0930000100/
 **Pourquoi ça compte** : Le *Point de vue du Gras* de Niépce est conservé à Austin depuis 1963 et doit être exposé pour la première fois en France au musée Nicéphore-Niépce de Chalon-sur-Saône. L'expo *L'empreinte d'Hélios* va du 20 mars au 20 juin 2027, la plaque elle-même est annoncée du 26 avril au 20 juin. Le prêt était encore en négociation au dernier pointage. Chalon est à environ 2h45, donc ça se fait en week-end.
 **Suite** : vérifier la confirmation du prêt et la billetterie vers février 2027.
+
+### 2026-11-06 — Académie des sciences : après-midis thématiques gratuits
+**Tags** : local, intellectuel, sciences, paris
+**Source** : local_activities
+**Lien** : https://www.academie-sciences.fr/en/events
+**Pourquoi ça compte** : conférences et colloques de niveau recherche, gratuits sur inscription Eventbrite, quai de Conti (ex. « Prédictibilité : que peut-on prédire ? », 1er décembre 2026). Un format adulte, en semaine, en plein dans le profil de Sylvain (incertitude, systèmes complexes).
+**Suite** : scanner l'agenda à chaque run local_activities ; s'inscrire dès l'ouverture, les places sont limitées.
