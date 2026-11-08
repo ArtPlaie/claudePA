@@ -1230,3 +1230,16 @@
 **Lien** : https://www.academie-sciences.fr/en/events
 **Pourquoi ça compte** : conférences et colloques de niveau recherche, gratuits sur inscription Eventbrite, quai de Conti (ex. « Prédictibilité : que peut-on prédire ? », 1er décembre 2026). Un format adulte, en semaine, en plein dans le profil de Sylvain (incertitude, systèmes complexes).
 **Suite** : scanner l'agenda à chaque run local_activities ; s'inscrire dès l'ouverture, les places sont limitées.
+### 2026-11-08 — METR mesure une accélération ×2 de la R&D d'Anthropic, ~80 % attribuée à l'IA elle-même
+**Tags** : ia, ai-safety, evals, metr, anthropic, automated-rd, sylvain, carrière
+**Source** : weekly_briefing
+**Lien** : https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/
+**Pourquoi ça compte** : Première mesure externe, sur données internes (11 semaines, 2,5 ETP), de la boucle « l'IA accélère l'IA ». Capacités sur tâches bien spécifiées ~2× plus rapides que mars 2024-oct. 2025 (indice ×1,9, IC 1,5-2,8), sans hausse du rythme compute, ~80 % attribués à l'usage de l'IA en R&D. Pas de goulot convaincant à 12 mois (faible confiance). Limites : pas d'accès aux modèles non publiés, caviardage unilatéral d'Anthropic sur les preuves clés. Éval démarrée avant le régime d'évaluateur embarqué du 15/10.
+**Suite** : comparer avec le premier rapport METR sous le régime « publication sans veto » ; argument pour candidatures METR/Apollo (le goulot = des gens qui lisent des données internes de façon adversariale).
+
+### 2026-11-08 — Midterms : Congrès démocrate, krach semis (SOX −12 %) sur le risque moratoire datacenters
+**Tags** : monde, macro, ia, politique-us, datacenters, marchés
+**Source** : weekly_briefing
+**Lien** : https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html
+**Pourquoi ça compte** : Le 5/11, Nasdaq −5,5 %, S&P −4,4 %, SOX −12 % (pire séance depuis mars 2020) après des appels démocrates à un moratoire national sur les datacenters (Goldman : ~45 % de la capacité US planifiée exposée). Un moratoire fédéral est improbable (veto), le vrai canal est étatique (372 moratoires locaux, Texas, Pennsylvanie). Le risque du capex IA passe du crédit au politique.
+**Suite** : suivre les textes État par État (Texas, Géorgie), le pricing de l'IPO Anthropic (fourchette sur EDGAR) et le premier agenda des commissions démocrates en janvier.
