@@ -1243,3 +1243,10 @@
 **Lien** : https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html
 **Pourquoi ça compte** : Le 5/11, Nasdaq −5,5 %, S&P −4,4 %, SOX −12 % (pire séance depuis mars 2020) après des appels démocrates à un moratoire national sur les datacenters (Goldman : ~45 % de la capacité US planifiée exposée). Un moratoire fédéral est improbable (veto), le vrai canal est étatique (372 moratoires locaux, Texas, Pennsylvanie). Le risque du capex IA passe du crédit au politique.
 **Suite** : suivre les textes État par État (Texas, Géorgie), le pricing de l'IPO Anthropic (fourchette sur EDGAR) et le premier agenda des commissions démocrates en janvier.
+
+### 2026-11-13 — Lp(a) HORIZON : −78 % de Lp(a), zéro bénéfice cardiovasculaire
+**Tags** : santé, publique, cardio, lp(a), essai-négatif
+**Source** : health_watch
+**Lien** : https://newsroom.heart.org/news/lp-a-horizon-trial-lp-a-fell-by-78-but-cardiovascular-outcomes-unexpectedly-neutral
+**Pourquoi ça compte** : Premier essai de morbi-mortalité d'un anti-Lp(a) (pelacarsen, n=8 323, prévention secondaire, NEJM 7/11) : aucun effet sur les MACE ni la mortalité, dans aucun sous-groupe. Fragilise l'hypothèse causale issue de la génétique et met sous pression olpasiran/lepodisiran. Même AHA : ZEUS (anti-IL-6) négatif aussi (HR 0,99).
+**Suite** : info pure ; surveiller les résultats olpasiran (OCEAN(a)-Outcomes) et lepodisiran.
