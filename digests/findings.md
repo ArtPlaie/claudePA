@@ -1243,3 +1243,10 @@
 **Lien** : https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html
 **Pourquoi ça compte** : Le 5/11, Nasdaq −5,5 %, S&P −4,4 %, SOX −12 % (pire séance depuis mars 2020) après des appels démocrates à un moratoire national sur les datacenters (Goldman : ~45 % de la capacité US planifiée exposée). Un moratoire fédéral est improbable (veto), le vrai canal est étatique (372 moratoires locaux, Texas, Pennsylvanie). Le risque du capex IA passe du crédit au politique.
 **Suite** : suivre les textes État par État (Texas, Géorgie), le pricing de l'IPO Anthropic (fourchette sur EDGAR) et le premier agenda des commissions démocrates en janvier.
+
+### 2026-11-13 — « Le Collège à la Bibliothèque » : conférences gratuites Collège de France à la BnF
+**Tags** : local, intellectuel, paris, conférences, sylvain
+**Source** : local_activities
+**Lien** : https://www.college-de-france.fr/fr/actualites/le-college-la-bibliotheque-3e-saison
+**Pourquoi ça compte** : Cycle récurrent (3e saison, avec *Pour la Science*) où des titulaires du Collège donnent des conférences grand public gratuites à la BnF François-Mitterrand, de 18h30 à 20h. La réservation ouvre un mois avant. Exemples de décembre 2026 : Mallat sur l'IA et Kant (15/12), Lilti sur Mesmer (1/12). Ça colle au profil de Sylvain.
+**Suite** : scanner le programme à chaque run local_activities et réserver dès l'ouverture.
