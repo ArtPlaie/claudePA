@@ -1249,3 +1249,9 @@
 **Lien** : https://newsroom.heart.org/news/lp-a-horizon-trial-lp-a-fell-by-78-but-cardiovascular-outcomes-unexpectedly-neutral
 **Pourquoi ça compte** : Premier essai de morbi-mortalité d'un anti-Lp(a) (pelacarsen, n=8 323, prévention secondaire, NEJM 7/11) : aucun effet sur les MACE ni la mortalité, dans aucun sous-groupe. Fragilise l'hypothèse causale issue de la génétique et met sous pression olpasiran/lepodisiran. Même AHA : ZEUS (anti-IL-6) négatif aussi (HR 0,99).
 **Suite** : info pure ; surveiller les résultats olpasiran (OCEAN(a)-Outcomes) et lepodisiran.
+### 2026-11-13 — « Le Collège à la Bibliothèque » : conférences gratuites Collège de France à la BnF
+**Tags** : local, intellectuel, paris, conférences, sylvain
+**Source** : local_activities
+**Lien** : https://www.college-de-france.fr/fr/actualites/le-college-la-bibliotheque-3e-saison
+**Pourquoi ça compte** : Cycle récurrent (3e saison, avec *Pour la Science*) où des titulaires du Collège donnent des conférences grand public gratuites à la BnF François-Mitterrand, de 18h30 à 20h. La réservation ouvre un mois avant. Exemples de décembre 2026 : Mallat sur l'IA et Kant (15/12), Lilti sur Mesmer (1/12). Ça colle au profil de Sylvain.
+**Suite** : scanner le programme à chaque run local_activities et réserver dès l'ouverture.
