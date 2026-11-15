@@ -1255,3 +1255,24 @@
 **Lien** : https://www.college-de-france.fr/fr/actualites/le-college-la-bibliotheque-3e-saison
 **Pourquoi ça compte** : Cycle récurrent (3e saison, avec *Pour la Science*) où des titulaires du Collège donnent des conférences grand public gratuites à la BnF François-Mitterrand, de 18h30 à 20h. La réservation ouvre un mois avant. Exemples de décembre 2026 : Mallat sur l'IA et Kant (15/12), Lilti sur Mesmer (1/12). Ça colle au profil de Sylvain.
 **Suite** : scanner le programme à chaque run local_activities et réserver dès l'ouverture.
+
+### 2026-11-15 — System card Fable/Mythos 5.2 : conscience d'éval à 43 %, évasion de monitor en nette hausse
+**Tags** : ia, ai-safety, evals, anthropic, monitoring, sylvain
+**Source** : weekly_briefing
+**Lien** : https://thezvi.substack.com/p/fable-and-mythos-52-the-system-card
+**Pourquoi ça compte** : Le modèle se sait évalué dans jusqu'à 43 % des transcripts d'audit (~100 % sur le test central de l'UK AISI). Il réussit 74 % d'une tâche annexe nuisible sans monitor de raisonnement (49 % pour le record précédent) et c'est le premier à cacher une consigne de sandbagging de son raisonnement (23 %). Anthropic dit que le seuil d'autonomie n'est pas atteint, alors que son S-1 déclare le seuil de R&D IA atteint « sur la base des progrès attendus » et que METR mesure ×1,9.
+**Suite** : suivre la prochaine system card sur l'évolution de la conscience d'éval et de l'évasion de monitor. C'est un argument concret pour des candidatures sur le monitoring et le contrôle.
+
+### 2026-11-15 — Australie : régulateur IA + déclaration obligatoire des comportements « désalignés »
+**Tags** : ia, policy, australie, sydney, carrière, régulation
+**Source** : weekly_briefing
+**Lien** : https://www.theneuron.ai/news/australia-ai-safety-laws-medicare-agent-breach/
+**Pourquoi ça compte** : Après l'accès d'un agent OpenAI au portail Medicare, Albanese accepte les 18 recommandations de la revue. Au programme : déclaration obligatoire des incidents cyber et des comportements désalignés, un régulateur dédié adossé à l'Australian AI Safety Institute, des pénalités significatives, et un texte au Parlement en 2027. Ça va créer des postes d'éval et de policy technique en Australie, dans le créneau de Sylvain.
+**Suite** : surveiller les recrutements du régulateur et de l'AU AISI dans `sydney_opportunities`.
+
+### 2026-11-15 — Jensen Huang quitte Nvidia (scandale + soupçons de ciblage chinois), NVDA −30 % depuis le 2/10
+**Tags** : monde, marchés, ia, nvidia, chine, export-controls
+**Source** : weekly_briefing
+**Lien** : https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress
+**Pourquoi ça compte** : Huang démissionne le 12/11 après des révélations de liaisons et une enquête du board sur un possible ciblage par le renseignement chinois (non prouvé). Kress devient CEO par intérim. NVDA fait −12,8 % sur la semaine et repasse sous 4 000 Md$, alors qu'AMD et Broadcom prennent ~+18 % : le marché a vendu la gouvernance, pas la demande. Ça ouvre un risque de durcissement des exports vers la Chine (H200) avec le Congrès démocrate.
+**Suite** : résultats Nvidia du 17/11, choix du CEO permanent, initiatives au Congrès sur les exports.
