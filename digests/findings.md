@@ -1275,3 +1275,10 @@
 **Lien** : https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress
 **Pourquoi ça compte** : Huang démissionne le 12/11 après des révélations de liaisons et une enquête du board sur un possible ciblage par le renseignement chinois (non prouvé). Kress devient CEO par intérim. NVDA fait −12,8 % sur la semaine et repasse sous 4 000 Md$, alors qu'AMD et Broadcom prennent ~+18 % : le marché a vendu la gouvernance, pas la demande. Ça ouvre un risque de durcissement des exports vers la Chine (H200) avec le Congrès démocrate.
 **Suite** : résultats Nvidia du 17/11, choix du CEO permanent, initiatives au Congrès sur les exports.
+
+### 2026-11-16 — Dino Snores NHM Londres : nuit au musée pour Anna (7-11 ans)
+**Tags** : serendipity, famille, londres, anna
+**Source** : serendipity
+**Lien** : https://www.nhm.ac.uk/events/dino-snores-for-kids.html
+**Pourquoi ça compte** : nuit au Natural History Museum réservée aux 7-11 ans + adulte (~87 £/pers, VIP 140 £). Anna a 8 ans → fenêtre de ~3 ans. Aucune date ouverte au 16/11/2026, elles sortent par vagues et partent vite.
+**Suite** : surveiller l'ouverture des dates 2027 et réserver la première dispo si Sylvain est partant.
