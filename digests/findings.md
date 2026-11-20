@@ -1287,3 +1287,9 @@
 **Lien** : https://www.biospace.com/drug-development/bayer-wins-first-in-class-fda-nod-for-blood-thinner-setting-stage-for-bms-j-j-rival
 **Pourquoi ça compte** : première nouvelle classe d'anticoagulants depuis les AOD. OCEANIC-STROKE : −26 % de récidive d'AVC ischémique sans hausse globale des saignements majeurs. Échec antérieur dans la FA, donc indication étroite. Milvexian attendu fin 2026.
 **Suite** : info pure (suivre milvexian et l'arrivée en Europe)
+### 2026-11-20 — Jazz au Théâtre (Fontainebleau), fin novembre chaque année
+**Tags** : local, musique, jazz, fontainebleau, annuel
+**Source** : local_activities
+**Lien** : https://festivaldjangoreinhardt.com/jazz-au-theatre
+**Pourquoi ça compte** : la version d'hiver du festival Django Reinhardt, dans le théâtre à l'italienne de Fontainebleau (~500 places), à 10 min de la maison. L'affiche est sérieuse (en 2026 : Roberto Fonseca & Vincent Segal, Mathias Lévy Trio).
+**Suite** : à mémoriser pour l'an prochain — surveiller la programmation dès octobre.
