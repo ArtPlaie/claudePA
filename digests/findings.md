@@ -1281,3 +1281,10 @@
 **Lien** : https://www.nhm.ac.uk/events/dino-snores-for-kids.html
 **Pourquoi ça compte** : nuit au Natural History Museum réservée aux 7-11 ans + adulte (~87 £/pers, VIP 140 £). Anna a 8 ans → fenêtre de ~3 ans. Aucune date ouverte au 16/11/2026, elles sortent par vagues et partent vite.
 **Suite** : surveiller l'ouverture des dates 2027 et réserver la première dispo si Sylvain est partant.
+
+### 2026-11-20 — Jazz au Théâtre (Fontainebleau), fin novembre chaque année
+**Tags** : local, musique, jazz, fontainebleau, annuel
+**Source** : local_activities
+**Lien** : https://festivaldjangoreinhardt.com/jazz-au-theatre
+**Pourquoi ça compte** : la version d'hiver du festival Django Reinhardt, dans le théâtre à l'italienne de Fontainebleau (~500 places), à 10 min de la maison. L'affiche est sérieuse (en 2026 : Roberto Fonseca & Vincent Segal, Mathias Lévy Trio).
+**Suite** : à mémoriser pour l'an prochain — surveiller la programmation dès octobre.
