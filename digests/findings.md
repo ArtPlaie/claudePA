@@ -1281,3 +1281,9 @@
 **Lien** : https://www.nhm.ac.uk/events/dino-snores-for-kids.html
 **Pourquoi ça compte** : nuit au Natural History Museum réservée aux 7-11 ans + adulte (~87 £/pers, VIP 140 £). Anna a 8 ans → fenêtre de ~3 ans. Aucune date ouverte au 16/11/2026, elles sortent par vagues et partent vite.
 **Suite** : surveiller l'ouverture des dates 2027 et réserver la première dispo si Sylvain est partant.
+### 2026-11-20 — Asundexian : 1er anti-facteur XIa autorisé (FDA, AVC secondaire)
+**Tags** : santé, publique, cardio, neuro, anticoagulant, nouvelle-classe
+**Source** : health_watch
+**Lien** : https://www.biospace.com/drug-development/bayer-wins-first-in-class-fda-nod-for-blood-thinner-setting-stage-for-bms-j-j-rival
+**Pourquoi ça compte** : première nouvelle classe d'anticoagulants depuis les AOD. OCEANIC-STROKE : −26 % de récidive d'AVC ischémique sans hausse globale des saignements majeurs. Échec antérieur dans la FA, donc indication étroite. Milvexian attendu fin 2026.
+**Suite** : info pure (suivre milvexian et l'arrivée en Europe)
