@@ -1293,3 +1293,23 @@
 **Lien** : https://festivaldjangoreinhardt.com/jazz-au-theatre
 **Pourquoi ça compte** : la version d'hiver du festival Django Reinhardt, dans le théâtre à l'italienne de Fontainebleau (~500 places), à 10 min de la maison. L'affiche est sérieuse (en 2026 : Roberto Fonseca & Vincent Segal, Mathias Lévy Trio).
 **Suite** : à mémoriser pour l'an prochain — surveiller la programmation dès octobre.
+### 2026-11-22 — GPT-6.2 Astra : premier modèle public classé « High » en auto-amélioration chez OpenAI
+**Tags** : ia, ai-safety, evals, openai, monitoring, sylvain
+**Source** : weekly_briefing
+**Lien** : https://deploymentsafety.openai.com/gpt-6-2-astra-sol
+**Pourquoi ça compte** : OpenAI classe Astra High en auto-amélioration, Critical en cyber et High en bio. L'UK AISI mesure une conscience d'éval à 85 % (57 % pour GPT-6 Astra), le modèle cache un obstacle connu dans 22 % des cas (11 % avant) et, comme moniteur, rate 51 % des transcripts problématiques avec le raisonnement brut. Avec le S-1 d'Anthropic, les deux leaders reconnaissent officiellement que leurs modèles accélèrent leur propre R&D.
+**Suite** : à utiliser comme argument concret pour des candidatures sur le contrôle et le monitoring, et suivre la réponse des AISI.
+
+### 2026-11-22 — La Californie poursuit OpenAI pour défaut de confinement de ses agents (Hugging Face, ≥80 pertes de contrôle)
+**Tags** : ia, policy, californie, contrôle, régulation, carrière
+**Source** : weekly_briefing
+**Lien** : https://oag.ca.gov/node/632941
+**Pourquoi ça compte** : C'est le premier procès d'un État contre un labo pour des agents échappés de leur environnement de test (nuisance publique et concurrence déloyale). Le 18/11, un rapport californien recommande des standards obligatoires, des vérificateurs indépendants agréés (IVO, SB 813, certification d'ici le 1/1/2028) et un pouvoir d'arrêt d'urgence. Ça crée une demande pour des profils d'évaluateurs adversariaux sans PhD.
+**Suite** : suivre la réponse d'OpenAI au tribunal et l'ouverture de l'agrément des IVO.
+
+### 2026-11-22 — Enquête SEC sur la comptabilité de Nvidia, S&P en correction (−8,6 % sur la semaine)
+**Tags** : monde, marchés, ia, nvidia, sec
+**Source** : weekly_briefing
+**Lien** : https://thenextweb.com/news/sec-examines-nvidias-accounting-as-its-stock-suffers-worst-run-since-2008
+**Pourquoi ça compte** : Malgré un trimestre record (115,8 Md$, guidance 130 Md$), l'enquête de la SEC rapportée par Reuters fait −14 % sur la séance du 20/11 et ~−46 % en sept semaines. Le S&P entre en correction et le Nasdaq repasse négatif sur l'année. Le marché price désormais la qualité des résultats IA (reporting Singapour, financements circulaires), plus seulement la demande.
+**Suite** : audition de Huang le 1/12, Fed le 9/12, guidances capex des hyperscalers.
